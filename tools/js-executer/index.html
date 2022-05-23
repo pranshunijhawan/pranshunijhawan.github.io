@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="var(--body-color);">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/PN-logo-Fav-Icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/PN-logo-Fav-Icon.png" />
+    <link rel="apple-touch-icon" href="../../assets/img/PN-logo-Fav-Icon.png" />
+    <link rel="apple-touch-icon" href="../../assets/img/PN-logo-Fav-Icon.png" />
+    <link rel="apple-touch-icon" href="../../assets/img/PN-logo-Fav-Icon.png" />
+    <link rel="apple-touch-icon" href="../../assets/img/PN-logo-Fav-Icon.png" />
+    <title>JavaScript Executer</title>
+  </head>
+  <body>
+    <div class="container fade-in-animation" style="--delay: 0.1s">
+      <div class="center__element">
+        <p class="title">JavaScript Executer</p>
+      </div>
+      <div class="two__column__grid grid">
+        <div>
+          <p class="sub__heading">Please enter the JavaScript Code below: </p>
+          <textarea class="codesnippet__area" id="input-code" onkeyup="textAreaAdjust()"></textarea>
+        </div>
+        <div>
+          <p class="sub__heading">Result: </p>
+          <pre id="log" class="result"></pre>
+        </div>
+      </div>
+      <div class="button" id="submit">Execute</div>
+      <div class="clearButton" id="clear">Clear</div>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
