@@ -104,3 +104,7 @@ export const Calendar = styled(BsFillCalendar2DateFill)`
 export const TimeLineDescription = styled.p`
     margin-bottom: var(--mb-1)
 `
+
+export const TimeLineContentContainer = styled.div`
+    margin-top: -1rem;
+`

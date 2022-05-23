@@ -4,7 +4,7 @@ import { grid } from "../../types/common-css";
 export const HeaderContainer = styled.div<{
     show: boolean;
 }>`
-    width: 100%;
+    width: 97%;
     height: var(--header-height);
     position: fixed;
     top: 0;
