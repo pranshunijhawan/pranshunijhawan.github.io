@@ -13,7 +13,9 @@ const FocusContainer = styled.div<{
     delay?: number
 }>`
     ${({ scaleIn }) => scaleIn ? scaleInElement : '' }
-    animation-delay: ${({ delay }) => delay ? delay : 0 }s
+    animation-delay: ${({ delay }) => delay ? delay : 0 }s;
+    transform: scale(0);
+    opacity: 1;
 `
 
 const Scale = ({ children, delay }: ScaleProps) => {

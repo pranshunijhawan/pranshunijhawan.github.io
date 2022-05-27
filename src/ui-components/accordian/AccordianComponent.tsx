@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Focus from "../animated/Focus";
 import Bullet from "../Bullet";
 import { AccordianContent, AccordianDescription, AccordianDescriptionContent, AccordianItem, AccordianTitle } from "./styles";
 
@@ -21,10 +22,12 @@ const AccordianComponent = ({ id, title, content }: AccordianComponentProps) => 
                     <AccordianTitle>{title}</AccordianTitle>
                     <AccordianContent isOpen={isOpenState}>
                         {content.map((desc, index) => (
-                                    <AccordianDescriptionContent>
-                                        <Bullet color='var(--first-color)' />
-                                        <AccordianDescription key={index}>{desc}</ AccordianDescription>
-                                    </AccordianDescriptionContent>
+                                    <Focus>
+                                        <AccordianDescriptionContent>
+                                            <Bullet color='var(--first-color)' />
+                                            <AccordianDescription key={index}>{desc}</ AccordianDescription>
+                                        </AccordianDescriptionContent>
+                                    </Focus>
                         ))}
                     </AccordianContent>
         </AccordianItem>

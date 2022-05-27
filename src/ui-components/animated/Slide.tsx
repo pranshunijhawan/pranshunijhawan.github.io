@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import { slideIn, slideOut } from "../../types/common-css";
+import { slideIn } from "../../types/common-css";
 
 interface SlideProps {
     children: React.ReactNode;
@@ -13,7 +13,9 @@ const SlideContainer = styled.div<{
     delay?: number
 }>`
     ${({ slideInView }) => slideInView ? slideIn : '' }
-    animation-delay: ${({ delay }) => delay ? delay : 0 }s
+    animation-delay: ${({ delay }) => delay ? delay : 0 }s;
+    transform: translateY(50px);
+    opacity: 0;
 `
 
 const Slide = ({ children, delay }: SlideProps) => {

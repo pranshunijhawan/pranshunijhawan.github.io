@@ -13,7 +13,8 @@ const FocusContainer = styled.div<{
     delay?: number
 }>`
     ${({ focus }) => focus ? focusIn : '' }
-    animation-delay: ${({ delay }) => delay ? delay : 0 }s
+    animation-delay: ${({ delay }) => delay ? delay : 0 }s;
+    opacity: 0;
 `
 
 const Focus = ({ children, delay }: FocusProps) => {
