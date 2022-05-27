@@ -97,7 +97,8 @@ export const Calendar = styled(BsFillCalendar2DateFill)`
 `
 
 export const TimeLineDescription = styled.p`
-    margin-bottom: var(--mb-1)
+    margin-bottom: var(--mb-1);
+    margin-top: 0;
 `
 
 export const DownIcon = styled(AiOutlineArrowDown)<{
