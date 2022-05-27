@@ -10,7 +10,6 @@ export const HeaderContainer = styled.div<{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 1.5rem;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
     display: flex;

@@ -89,6 +89,7 @@ export const TimelineEndLine = styled.div`
 `
 
 export const TimelineTitle = styled.h3`
+    margin-top: 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 `
