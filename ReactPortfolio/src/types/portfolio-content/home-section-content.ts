@@ -13,8 +13,7 @@ const homeSectionProps: HomeSectionProps = {
         height: 150,
         width: 150,
         source: process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'
-    },
-    visibility: false
+    }
 }
 
 export default homeSectionProps;

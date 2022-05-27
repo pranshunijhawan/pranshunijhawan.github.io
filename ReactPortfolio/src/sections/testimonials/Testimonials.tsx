@@ -1,4 +1,5 @@
 import BaseSectionProps from "../../types/base-section-props";
+import Slide from "../../ui-components/animated/Slide";
 import Quote, { QuoteProps } from "../../ui-components/quote/Quote";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
@@ -13,9 +14,11 @@ const Testimonials = ({ sectionTitle, quoteProps }: TestimonialProps) => {
     return (
         <Section id='testimonials'>
                 <SectionTitle content={sectionTitle} />
-                <TestimonialsContainer>
-                    <Quote quoteMetaData={quoteProps.quoteMetaData} />
-                </TestimonialsContainer>
+                <Slide>
+                    <TestimonialsContainer>
+                        <Quote quoteMetaData={quoteProps.quoteMetaData} />
+                    </TestimonialsContainer>
+                </Slide>
         </Section>
     )
 }

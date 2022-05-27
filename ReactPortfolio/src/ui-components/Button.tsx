@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Focus from './animated/Focus';
 
 export interface ButtonProps {
     link: string;
@@ -26,7 +27,7 @@ const Button = ({ link, name, icon, target }: ButtonProps) => {
     const buttonTarget = target && target === 'none' ? '' : '_blank';
 
     return (
-        <ButtonComponent target={buttonTarget} href={link}>{name} {icon}</ButtonComponent>
+        <Focus><ButtonComponent target={buttonTarget} href={link}>{name} {icon}</ButtonComponent></Focus>
     )
 }
 

@@ -6,6 +6,8 @@ import { EmailIcon, LinkedInIcon, LocationIcon, PhoneIcon } from "./sections/con
 import EducationalQualifications from "./sections/educational-qualifications/EducationalQualifications";
 import Header from "./sections/header/Header";
 import HomeSection from "./sections/home/Home";
+import SubHomeSection from "./sections/home/SubHome";
+import Intro from "./sections/intro/Intro";
 import MostProudOf from "./sections/most-proud-of/MostProudOf";
 import ProfessionalExperience from "./sections/professional-experience/ProfessionalExperience";
 import { BackEndIcon, CloudIcon, DatabaseIcon, DataEngineeringIcon, FrontEndIcon } from "./sections/technology-proficiency/styles";
@@ -16,6 +18,7 @@ import certificationsContent from "./types/portfolio-content/certifications-cont
 import contactMeContent from "./types/portfolio-content/contact-me-content";
 import educationalQualificationsContent from "./types/portfolio-content/educational-qualifications-content";
 import homeSectionProps from './types/portfolio-content/home-section-content';
+import introProps from "./types/portfolio-content/intro-content";
 import mostProudOfProps from './types/portfolio-content/most-proud-of-section-content';
 import professionalExperienceContent from "./types/portfolio-content/professional-experience-content";
 import technologyProficiencyProps from "./types/portfolio-content/technology-proficiency-content";
@@ -36,7 +39,26 @@ const Portfolio = () => {
     contactMeContent.contactMetaData[2].icon = <LocationIcon />
     contactMeContent.contactMetaData[3].icon = <LinkedInIcon />
 
-    const [visibility] = useState(true);
+    const [isEnter, setIsEnter] = useState(true);
+    const [visibility, setVisibility] = useState(false);
+    const [showHome, setShowHome] = useState(false);
+    const [hideIntro, setHideIntro] = useState(false);
+
+    setTimeout(() => {
+        setIsEnter(false);
+    }, 2000);
+
+    setTimeout(() => {
+      setHideIntro(true);
+    }, 2900);
+
+    setTimeout(() => {
+        setShowHome(true);
+    }, 3100);
+
+    setTimeout(() => {
+        setVisibility(true);
+    }, 4000);
 
     // useEffect(() => {
     //     setTimeout(() => {
@@ -45,29 +67,34 @@ const Portfolio = () => {
     // });
 
     const page = <>
-                  <AboutSection 
+                    <SubHomeSection name={homeSectionProps.name}
+                        designation={homeSectionProps.designation}
+                        headline={homeSectionProps.headline}
+                        buttonProps={homeSectionProps.buttonProps}
+                        imageProps={homeSectionProps.imageProps} />
+                    <AboutSection 
                         sectionTitle={aboutSectionContent.sectionTitle} 
                         content={aboutSectionContent.content}
                         buttonProps={aboutSectionContent.buttonProps} />
-                      <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
+                    <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
                         content={mostProudOfProps.content} />
-                      <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
+                    <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
                       <EducationalQualifications title={educationalQualificationsContent.title} timeline={educationalQualificationsContent.timeline} />
-                      <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
-                      <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
-                      <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
-                      <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
+                    <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
+                    <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
+                    <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
+                    <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
                   </>
     
     return (
       <>
-        <Header visibility={visibility} />
-        <HomeSection name={homeSectionProps.name}
-            designation={homeSectionProps.designation}
-            headline={homeSectionProps.headline}
-            buttonProps={homeSectionProps.buttonProps}
-            imageProps={homeSectionProps.imageProps}
-            visibility={visibility} />
+        {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
+        {visibility && <Header visibility={visibility} />}
+        {showHome && <HomeSection name={homeSectionProps.name}
+                        designation={homeSectionProps.designation}
+                        headline={homeSectionProps.headline}
+                        buttonProps={homeSectionProps.buttonProps}
+                        imageProps={homeSectionProps.imageProps} />}
         {visibility && page}
       </>
     )

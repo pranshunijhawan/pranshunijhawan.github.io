@@ -1,6 +1,7 @@
 import BaseSectionProps from "../../types/base-section-props";
 import Accordian from "../../ui-components/accordian/Accordian";
 import { AccordianComponentProps } from "../../ui-components/accordian/AccordianComponent";
+import Slide from "../../ui-components/animated/Slide";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
 import { MostProudOfContainer } from "./styles";
@@ -13,9 +14,11 @@ const MostProudOf = ({ sectionTitle, content }: MostProudOfProps) => {
     return (
         <Section id='mostproudof'>
                 <SectionTitle content={sectionTitle} />
-                <MostProudOfContainer>
-                    <Accordian content={content} />
-                </MostProudOfContainer>
+                <Slide>
+                    <MostProudOfContainer>
+                        <Accordian content={content} />
+                    </MostProudOfContainer>
+                </Slide>
         </Section>
     )
 }

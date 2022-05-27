@@ -1,4 +1,5 @@
 import BaseSectionProps from "../../types/base-section-props";
+import Slide from "../../ui-components/animated/Slide";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
 import Skills, { SkillsProps } from "../../ui-components/skills/Skills";
@@ -14,7 +15,7 @@ const TechnologyProficiencyProps = ({ sectionTitle, skills }: TechnologyProficie
                 <SectionTitle content={sectionTitle} />
                 <SkillsContainer>
                 {skills.map((item, index) => (
-                            <Skills category={item.category} skills={item.skills} icon={item.icon} key={index} />
+                            <Slide key={index}><Skills category={item.category} skills={item.skills} icon={item.icon} /></Slide>
                         ))}
                 </SkillsContainer>
         </Section>

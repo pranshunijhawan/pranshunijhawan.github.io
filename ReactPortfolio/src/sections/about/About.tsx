@@ -3,6 +3,7 @@ import { Section } from '../../ui-components/Section';
 import SectionTitle from '../../ui-components/SectionTitle';
 import { AboutContainer, AboutButtons, AboutDescription, DownloadIcon } from './styles';
 import Button, { ButtonProps } from '../../ui-components/Button';
+import Slide from '../../ui-components/animated/Slide';
 
 export interface AboutSectionProps extends BaseSectionProps {
     content: string[];
@@ -20,11 +21,13 @@ const AboutSection = ({
     return (
         <Section id='about'>
                 <SectionTitle content={sectionTitle} />
-                <AboutContainer>
-                    {content.map((item, index) => (
-                        <AboutDescription key={index}>{item}</AboutDescription>
-                    ))}
-                </AboutContainer>
+                <Slide>
+                    <AboutContainer>
+                        {content.map((item, index) => (
+                            <AboutDescription key={index}>{item}</AboutDescription>
+                        ))}
+                    </AboutContainer>
+                </Slide>
                 <AboutButtons>
                     <Button
                         link={buttonProps.link} 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RolesAndResponsibilities from "./RolesAndResponsibilities";
-import { ViewRandR, ViewRandRContainer } from "./styles";
+import { ViewRandR, ViewRandRContainer, DownIcon } from "./styles";
 
 interface ViewRolesAndResponsibilitiesProps {
     description: string[];
@@ -20,6 +20,7 @@ const ViewRolesAndResponsibilities = ({ description }: ViewRolesAndResponsibilit
             <>
                 <ViewRandRContainer onClick={handleAccordianClickEvent}>
                     <ViewRandR>View Roles and Responsibilities</ViewRandR>
+                    <DownIcon isOpen={isOpenState} />
                 </ViewRandRContainer>
                 <RolesAndResponsibilities description={description} isOpenState={isOpenState} />
             </>}

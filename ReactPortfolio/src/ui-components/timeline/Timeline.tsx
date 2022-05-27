@@ -1,4 +1,4 @@
-import { Calendar, TimelineContainer, TimelineDataContainer, TimeLineDate, TimeLineDateContainer, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
+import { TimelineContainer, TimelineDataContainer, TimeLineDate, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
 import ViewRolesAndResponsibilities from "./ViewRolesAndResponsibilities";
 
 export interface TimelineProps {
@@ -15,16 +15,13 @@ const Timeline = ({ title, subTitle, date, description, last }: TimelineProps) =
         <TimelineContainer>
             <TimelineDataContainer>
                 <div>
-                    <TimelineRounder />
-                    {!last && <TimelineRounderLine />}
-                </div>
-                <div>
                     <TimelineTitle>{title}</TimelineTitle>
                     <TimeLineSubTitle>{subTitle}</TimeLineSubTitle>
                     <TimeLineDate>📅 {'\u00A0'} {date}</TimeLineDate>
                     <ViewRolesAndResponsibilities description={description || []} />
                 </div>
             </TimelineDataContainer>
+            <TimelineRounderLine />
         </TimelineContainer>
     )
 }

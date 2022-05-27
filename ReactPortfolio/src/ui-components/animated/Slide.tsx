@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import { slideIn, slideOut } from "../types/common-css";
+import { slideIn, slideOut } from "../../types/common-css";
 
 interface SlideProps {
     children: React.ReactNode;

@@ -1,36 +1,36 @@
 import styled from "styled-components";
-import { focusIn, focusOut } from "../types/common-css";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+import { scaleInElement, scaleOutElement } from "../../types/common-css";
 
-interface FocusProps {
+interface ScaleProps {
     children: React.ReactNode;
     delay?: number
 }
 
 const FocusContainer = styled.div<{
-    focus: boolean
+    scaleIn: boolean
     delay?: number
 }>`
-    ${({ focus }) => focus ? focusIn : focusOut }
+    ${({ scaleIn }) => scaleIn ? scaleInElement : scaleOutElement }
     animation-delay: ${({ delay }) => delay ? delay : 0 }s
 `
 
-const Focus = ({ children, delay }: FocusProps) => {
+const Scale = ({ children, delay }: ScaleProps) => {
     const [ref, inView] = useInView();
-    const [inFocus, setInFocus] = useState(false);
+    const [scaleIn, setScaleIn] = useState(false);
 
     useEffect(() => {
         if (inView) {
-            setInFocus(true);
+            setScaleIn(true);
         } else {
-            setInFocus(false);
+            setScaleIn(false);
         }
     }, [inView])
 
     return (
-        <FocusContainer focus={inFocus} delay={delay} ref={ref}>{children}</FocusContainer>
+        <FocusContainer scaleIn={scaleIn} delay={delay} ref={ref}>{children}</FocusContainer>
     )
 }
 
-export default Focus;
+export default Scale;

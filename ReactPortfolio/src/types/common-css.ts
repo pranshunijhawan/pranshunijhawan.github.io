@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { fadeInBottom, fadeOutTop, textFocusIn, textFocusOut } from './keyframes';
+import { fadeInBottom, fadeOutTop, scaleIn, scaleOut, slideInBackEnter, slideInBackExit, textFocusIn, textFocusOut, trackingIn, trackingOut } from './keyframes';
 
 export const bdGrid = css`
     display: grid;
@@ -43,17 +43,41 @@ export const CenterScreen = css`
 `
 
 export const focusIn = css`
-    animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: ${textFocusIn} 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 `
 
 export const focusOut = css`
-    animation: ${textFocusOut} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: ${textFocusOut} 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 `
 
 export const slideIn = css`
-    animation: ${fadeInBottom} 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: ${fadeInBottom} 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 `
 
 export const slideOut = css`
-    animation: ${fadeOutTop} 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: ${fadeOutTop} 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+`
+
+export const showTitle = css`
+    animation: ${trackingIn} 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+`
+
+export const hideTitle = css`
+    animation: ${trackingOut} 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+`
+
+export const scaleInElement = css`
+    animation: ${scaleIn} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+`
+
+export const scaleOutElement = css`
+    animation: ${scaleOut} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+`
+
+export const slideInEnter = css`
+    animation: ${slideInBackEnter} 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+`
+
+export const slideInExit = css`
+    animation: ${slideInBackExit} 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 `

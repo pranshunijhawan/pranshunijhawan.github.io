@@ -1,4 +1,6 @@
 import BaseSectionProps from "../../types/base-section-props";
+import Focus from "../../ui-components/animated/Focus";
+import Slide from "../../ui-components/animated/Slide";
 import Contact, { ContactProps } from "../../ui-components/contact/Contact";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
@@ -15,13 +17,13 @@ const ContactMe = ({ sectionTitle, contactMetaData }: ContactMeProps) => {
                 <SectionTitle content={sectionTitle} />
                 <ContactMeContainer>
                     {contactMetaData && contactMetaData.map((item, index) => (
-                        <div key={index}>
+                        <Slide key={index}>
                             <Contact icon={item.icon} content={item.content} href={item.href} />
-                        </div>
+                        </Slide>
                     ))}
                 </ContactMeContainer>
                 <CopyRightContainer>
-                    <CopyRightMessage>Built With ❤️ By Pranshu! © {new Date().getFullYear()}</CopyRightMessage>
+                    <Focus><CopyRightMessage>Built With ❤️ By Pranshu! © {new Date().getFullYear()}</CopyRightMessage></Focus>
                 </CopyRightContainer>
         </Section>
     )

@@ -1,3 +1,4 @@
+import Focus from "../animated/Focus";
 import Bullet from "../Bullet";
 import { DescriptionContainer, TimeLineDescription } from "./styles";
 
@@ -11,9 +12,11 @@ const RolesAndResponsibilities = ({ description, isOpenState }: RolesAndResponsi
     return (
         <DescriptionContainer isOpen={isOpenState}>
                 {description && description.length > 0 && description.map((item, index) => (
-                    <TimeLineDescription key={index}><Bullet color='var(--first-color)' />{item}</TimeLineDescription>
+                    <Focus>
+                        <TimeLineDescription key={index}><Bullet color='var(--first-color)' />{item}</TimeLineDescription>
+                    </Focus>
                 ))}
-            </DescriptionContainer>
+        </DescriptionContainer>
     )
 }
 

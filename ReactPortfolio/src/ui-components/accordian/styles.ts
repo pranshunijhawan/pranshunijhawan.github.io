@@ -79,7 +79,7 @@ export const AccordianContent = styled.div<{
 export const AccordianHeaderContainer = styled.div`
     display: flex;
     flex : flex-grow;
-    flex-shrink flex-basis;
+    flex-shrink: flex-basis;
 `
 
 export const AccordianDescription = styled.p`

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { sectionTitle } from '../types/common-css'
+import TitleTrackingInOut from './animated/TitleTrackingInOut'
 
 const Title = styled.h2`
     ${sectionTitle}
@@ -14,7 +15,7 @@ const SectionTitle = ({
     }: SectionTitleProps) => {
     
     return (
-        <Title>{content}</Title>
+        <TitleTrackingInOut><Title>{content}</Title></TitleTrackingInOut>
     )
 }
 
