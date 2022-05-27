@@ -9,7 +9,7 @@ const baseCSS = css`
 	}
 	html {
 		:root {
-			--header-height: 4rem;
+			--header-height: 5.2rem;
 			/*========== Colors ==========*/
 			/* Change favorite color */
 			--hue-color: 220;

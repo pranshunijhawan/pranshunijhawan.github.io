@@ -19,7 +19,7 @@ const HomeSection = ({
   }: HomeSectionProps) => {
     
     return (
-        <Section id="home" style={{'marginBottom': '-2rem'}}>
+        <Section id="home">
                 <HomeContainer>
                     <HomeContent>
                         <Focus><Name>Hi, I'm {name}</Name></Focus>

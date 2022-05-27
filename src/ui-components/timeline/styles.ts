@@ -52,6 +52,7 @@ export const TimelineContainer = styled.div`
 `
 
 export const TimelineDataContainer = styled.div`
+    display: flex;
     grid-template-columns: 1fr;
     column-gap: 0.5rem;
 
@@ -60,7 +61,24 @@ export const TimelineDataContainer = styled.div`
     }
 `
 
+export const TimelineRounder = styled.div`
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    margin-top: 0.3rem;
+`
+
 export const TimelineRounderLine = styled.div`
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+`
+
+export const TimelineEndLine = styled.div`
     display: block;
     width: 100%;
     height: 1px;
@@ -113,4 +131,8 @@ export const DownIcon = styled(AiOutlineArrowDown)<{
 
 export const DescriptionContentContainer = styled.div`
     display: flex;
+`
+
+export const TimelineContentContainer = styled.div`
+    margin-top: 0;
 `

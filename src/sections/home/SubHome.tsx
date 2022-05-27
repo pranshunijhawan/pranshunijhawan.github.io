@@ -2,7 +2,7 @@ import Button, { ButtonProps } from "../../ui-components/Button";
 import Focus from "../../ui-components/animated/Focus";
 import Image, { ImageProps } from "../../ui-components/Image";
 import Slide from "../../ui-components/animated/Slide";
-import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer } from "./styles";
+import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer, SubHomeContainer } from "./styles";
 
 export interface HomeSectionProps {
     name: string;
@@ -22,7 +22,7 @@ const SubHomeSection = ({
     
     return (
         <>
-                <HomeContainer>
+                <SubHomeContainer>
                     <HomeContent>
                         <Slide>
                             <Headline>{headline}</Headline>
@@ -32,14 +32,7 @@ const SubHomeSection = ({
                                     target={buttonProps.target} />
                         </Slide>
                         </HomeContent>
-                </HomeContainer>
-                <Focus>
-                    <LogoContainer>
-                            <Image source={imageProps.source}
-                                height={imageProps.height}
-                                width={imageProps.width} />
-                    </LogoContainer>
-                </Focus>
+                </SubHomeContainer>
         </>
     )
   }

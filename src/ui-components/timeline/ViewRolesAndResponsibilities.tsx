@@ -9,9 +9,15 @@ interface ViewRolesAndResponsibilitiesProps {
 const ViewRolesAndResponsibilities = ({ description }: ViewRolesAndResponsibilitiesProps) => {
 
     const [isOpenState, setIsOpen] = useState(false);
+    const [rolesAndResponsibilitiesMessage, setRolesAndResponsibilitiesMessage] = useState('View Roles and Responsibilities');
 
     const handleAccordianClickEvent = () => {
         setIsOpen(!isOpenState);
+        if (isOpenState) {
+            setRolesAndResponsibilitiesMessage('View Roles and Responsibilities')
+        } else {
+            setRolesAndResponsibilitiesMessage('Hide Roles and Responsibilities')
+        }
     }
 
     return(
@@ -19,7 +25,7 @@ const ViewRolesAndResponsibilities = ({ description }: ViewRolesAndResponsibilit
             {description && description.length > 0 && 
             <>
                 <ViewRandRContainer onClick={handleAccordianClickEvent}>
-                    <ViewRandR>View Roles and Responsibilities</ViewRandR>
+                    <ViewRandR>{rolesAndResponsibilitiesMessage}</ViewRandR>
                 </ViewRandRContainer>
                 <RolesAndResponsibilities description={description} isOpenState={isOpenState} />
             </>}

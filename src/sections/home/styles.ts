@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { buttonIcon, CenterScreen, container, grid } from "../../types/common-css";
 import { IoMdContact } from 'react-icons/io';
 
-export const HomeContainer = styled.div`
+const HomeCSS = css`
     ${container}
     ${grid}
     gap: 1rem;
@@ -12,6 +12,15 @@ export const HomeContainer = styled.div`
           row-gap: 5rem;
         }
     }
+`
+
+export const HomeContainer = styled.div`
+    ${HomeCSS}
+    margin-bottom: -2rem;
+`
+
+export const SubHomeContainer = styled.div`
+    ${HomeCSS}
 `
 
 export const HomeContent = styled.div`

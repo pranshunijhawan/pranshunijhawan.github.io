@@ -21,8 +21,6 @@ export const HeaderContainer = styled.div<{
 `
 
 export const HeaderLogoContainer = styled.div`
-    ${grid}
-    display: flex;
     align-items: center;
     margin-top: 0.75rem;
 `

@@ -13,7 +13,7 @@ const Header = ({ visibility }: HeaderProps) => {
         <>
             <HeaderContainer show={visibility}>
                 <HeaderLogoContainer>
-                    <Focus><Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={40} height={40} /></Focus>
+                    <Focus><Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={60} height={60} /></Focus>
                 </HeaderLogoContainer>
             </HeaderContainer>
         </>
