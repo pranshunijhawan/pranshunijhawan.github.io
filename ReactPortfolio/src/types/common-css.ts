@@ -8,7 +8,7 @@ export const bdGrid = css`
 `
 
 export const section = css`
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 2rem;
 `
 
 export const sectionTitle = css`

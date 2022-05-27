@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { grid } from "../../types/common-css";
+import { CenterScreen, grid } from "../../types/common-css";
 
 export const HeaderContainer = styled.div<{
     show: boolean;
 }>`
+    ${CenterScreen}
     width: 100%;
     height: var(--header-height);
     position: fixed;
@@ -23,6 +24,7 @@ export const HeaderLogoContainer = styled.div`
     ${grid}
     display: flex;
     align-items: center;
+    margin-top: 0.75rem;
 `
 
 export const LogoText = styled.p`

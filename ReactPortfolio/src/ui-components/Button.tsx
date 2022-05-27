@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export interface ButtonProps {
-    link: string,
-    name: string
-    icon?: JSX.Element
+    link: string;
+    name: string;
+    icon?: JSX.Element;
+    target?: string;
 }
 
 const ButtonComponent = styled.a`
@@ -20,10 +21,12 @@ const ButtonComponent = styled.a`
     }
 `
 
-const Button = ({ link, name, icon }: ButtonProps) => {
+const Button = ({ link, name, icon, target }: ButtonProps) => {
+
+    const buttonTarget = target && target === 'none' ? '' : '_blank';
 
     return (
-        <ButtonComponent target='_blank' href={link}>{name} {icon}</ButtonComponent>
+        <ButtonComponent target={buttonTarget} href={link}>{name} {icon}</ButtonComponent>
     )
 }
 

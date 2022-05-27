@@ -1,5 +1,4 @@
 import Bullet from "../Bullet";
-import Motion from "../Motion";
 import { DescriptionContainer, TimeLineDescription } from "./styles";
 
 interface RolesAndResponsibilitiesProps {
@@ -12,9 +11,7 @@ const RolesAndResponsibilities = ({ description, isOpenState }: RolesAndResponsi
     return (
         <DescriptionContainer isOpen={isOpenState}>
                 {description && description.length > 0 && description.map((item, index) => (
-                    <Motion key={index}>
-                        <TimeLineDescription><Bullet color='var(--first-color)' />{item}</TimeLineDescription>
-                    </Motion>
+                    <TimeLineDescription key={index}><Bullet color='var(--first-color)' />{item}</TimeLineDescription>
                 ))}
             </DescriptionContainer>
     )

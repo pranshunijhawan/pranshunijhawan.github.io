@@ -1,6 +1,5 @@
 import BaseSectionProps from "../../types/base-section-props";
 import Contact, { ContactProps } from "../../ui-components/contact/Contact";
-import Motion from "../../ui-components/Motion";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
 import { ContactMeContainer, CopyRightContainer, CopyRightMessage } from "./styles";
@@ -12,8 +11,7 @@ export interface ContactMeProps extends BaseSectionProps {
 const ContactMe = ({ sectionTitle, contactMetaData }: ContactMeProps) => {
 
     return (
-        <Motion>
-            <Section id='contactme'>
+        <Section id='contactme'>
                 <SectionTitle content={sectionTitle} />
                 <ContactMeContainer>
                     {contactMetaData && contactMetaData.map((item, index) => (
@@ -25,8 +23,7 @@ const ContactMe = ({ sectionTitle, contactMetaData }: ContactMeProps) => {
                 <CopyRightContainer>
                     <CopyRightMessage>Built With ❤️ By Pranshu! © {new Date().getFullYear()}</CopyRightMessage>
                 </CopyRightContainer>
-            </Section>
-        </Motion>
+        </Section>
     )
 }
 

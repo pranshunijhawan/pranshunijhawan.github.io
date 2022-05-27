@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Motion from "../Motion";
 import Skill, { SkillProps } from "./Skill";
 import { DownIcon, SkillCategory, SkillsContainer, SkillsHeaderContainer } from "./styles";
 
@@ -26,10 +25,8 @@ const Skills = ({ category, skills, icon }: SkillsProps) => {
             </SkillsHeaderContainer>
             <SkillsContainer isOpen={isOpenState}>
                 {skills.map((item, index) => (
-                            <Motion key={index}>
-                                <Skill name={item.name}
-                                        percentage={item.percentage} />
-                            </Motion>
+                            <Skill name={item.name}
+                            percentage={item.percentage} key={index} />
                 ))}
             </ SkillsContainer>
         </div>

@@ -15,13 +15,11 @@ import aboutSectionContent from './types/portfolio-content/about-section-content
 import certificationsContent from "./types/portfolio-content/certifications-content";
 import contactMeContent from "./types/portfolio-content/contact-me-content";
 import educationalQualificationsContent from "./types/portfolio-content/educational-qualifications-content";
-import headerProps from "./types/portfolio-content/header-content";
 import homeSectionProps from './types/portfolio-content/home-section-content';
 import mostProudOfProps from './types/portfolio-content/most-proud-of-section-content';
 import professionalExperienceContent from "./types/portfolio-content/professional-experience-content";
 import technologyProficiencyProps from "./types/portfolio-content/technology-proficiency-content";
 import testimonialsContent from "./types/portfolio-content/testimonials-content";
-import BlockReveal from "./ui-components/block-reveal/BlockReveal";
 
 
 
@@ -38,35 +36,39 @@ const Portfolio = () => {
     contactMeContent.contactMetaData[2].icon = <LocationIcon />
     contactMeContent.contactMetaData[3].icon = <LinkedInIcon />
 
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    const [visibility, setVisibility] = useState(true);
 
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setVisibility(true);
+    //     }, 2700);
+    // });
 
-    const page = 
+    const page = <>
+                  <AboutSection 
+                        sectionTitle={aboutSectionContent.sectionTitle} 
+                        content={aboutSectionContent.content}
+                        buttonProps={aboutSectionContent.buttonProps} />
+                      <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
+                        content={mostProudOfProps.content} />
+                      <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
+                      <EducationalQualifications title={educationalQualificationsContent.title} timeline={educationalQualificationsContent.timeline} />
+                      <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
+                      <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
+                      <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
+                      <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
+                  </>
+    
+    return (
       <>
+        <Header visibility={visibility} />
         <HomeSection name={homeSectionProps.name}
             designation={homeSectionProps.designation}
             headline={homeSectionProps.headline}
             buttonProps={homeSectionProps.buttonProps}
-            imageProps={homeSectionProps.imageProps} />
-          <AboutSection 
-            sectionTitle={aboutSectionContent.sectionTitle} 
-            content={aboutSectionContent.content}
-            buttonProps={aboutSectionContent.buttonProps} />
-          <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
-            content={mostProudOfProps.content} />
-          <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
-          <EducationalQualifications title={educationalQualificationsContent.title} timeline={educationalQualificationsContent.timeline} />
-          <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
-          <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
-          <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
-          <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
-      </>
-    
-    return (
-      <>
-        <Header menuItems={headerProps.menuItems} tMenu={setMenuOpen} />
-        {!isMenuOpen && <BlockReveal color='var(--first-color)' children={page} duration={1} fadeAnimationDelay={0.5}
-                    blockAnimationDelay={0} fullScreen={false} leftToRight={false} />}
+            imageProps={homeSectionProps.imageProps}
+            visibility={visibility} />
+        {visibility && page}
       </>
     )
   }

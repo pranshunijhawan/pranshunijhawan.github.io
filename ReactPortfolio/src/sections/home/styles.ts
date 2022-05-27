@@ -15,7 +15,6 @@ export const HomeContainer = styled.div`
 `
 
 export const HomeContent = styled.div`
-    padding-top: 2.5rem;
     column-gap: 2rem;
     grid-column: 1/3;
 

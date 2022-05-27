@@ -3,7 +3,6 @@ import { Section } from '../../ui-components/Section';
 import SectionTitle from '../../ui-components/SectionTitle';
 import { AboutContainer, AboutButtons, AboutDescription, DownloadIcon } from './styles';
 import Button, { ButtonProps } from '../../ui-components/Button';
-import Motion from '../../ui-components/Motion';
 
 export interface AboutSectionProps extends BaseSectionProps {
     content: string[];
@@ -19,8 +18,7 @@ const AboutSection = ({
   }: AboutSectionProps) => {
     
     return (
-        <Motion>
-            <Section id='about'>
+        <Section id='about'>
                 <SectionTitle content={sectionTitle} />
                 <AboutContainer>
                     {content.map((item, index) => (
@@ -34,8 +32,7 @@ const AboutSection = ({
                         icon={downloadIcon}
                     />
                 </AboutButtons>
-            </Section>
-        </Motion>
+        </Section>
     )
   }
   

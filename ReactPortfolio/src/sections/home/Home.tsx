@@ -1,9 +1,5 @@
-import { useEffect, useState } from "react";
-import BlockReveal from "../../ui-components/block-reveal/BlockReveal";
 import Button, { ButtonProps } from "../../ui-components/Button";
-import Chevron from "../../ui-components/Chevron";
 import Image, { ImageProps } from "../../ui-components/Image";
-import Motion from "../../ui-components/Motion";
 import Opacity from "../../ui-components/Opacity";
 import { Section } from "../../ui-components/Section";
 import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer, ChevronContainer } from "./styles";
@@ -13,7 +9,8 @@ export interface HomeSectionProps {
     designation: string;
     headline: string;
     buttonProps: ButtonProps;
-    imageProps: ImageProps
+    imageProps: ImageProps;
+    visibility: boolean;
 }
 
 const contactIcon = <HomeIcon />
@@ -23,30 +20,22 @@ const HomeSection = ({
     designation,
     headline,
     buttonProps,
-    imageProps
+    imageProps,
+    visibility
   }: HomeSectionProps) => {
-
-    const [visibility, setVisibility] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setVisibility(true);
-        }, 4200);
-    });
     
     return (
-        <Motion>
-            <Section id="home">
+        <Section id="home">
                 <HomeContainer>
                     <HomeContent>
-                        <BlockReveal color='var(--first-color)' children={<Name>Hi, I'm {name}</Name>} duration={2} fadeAnimationDelay={1.3} blockAnimationDelay={1} fullScreen={false} leftToRight={true} />
-                        <BlockReveal color='var(--text-color)' children={<Designation>{designation}</Designation>} duration={2} fadeAnimationDelay={3}
-                        blockAnimationDelay={2} fullScreen={false} leftToRight={true} />
+                        <Name>Hi, I'm {name}</Name>
+                        <Designation>{designation}</Designation>
                         <Opacity show={visibility}>
                             <Headline>{headline}</Headline>
                             <Button link={buttonProps.link}
                                 name={buttonProps.name} 
-                                icon={contactIcon} />
+                                icon={contactIcon}
+                                target={buttonProps.target} />
                         </Opacity>
                     </HomeContent>
                 </HomeContainer>
@@ -56,14 +45,8 @@ const HomeSection = ({
                             height={imageProps.height}
                             width={imageProps.width} />
                     </LogoContainer>
-                    <ChevronContainer>
-                        <Chevron />
-                        <Chevron />
-                        <Chevron />
-                    </ChevronContainer>
                 </Opacity>
-            </Section>
-        </Motion>
+        </Section>
     )
   }
   
