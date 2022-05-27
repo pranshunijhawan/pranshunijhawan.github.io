@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AboutSection from "./sections/about/About"
 import Certifications from "./sections/certifications/Certifications";
 import ContactMe from "./sections/contact-me/ContactMe";
@@ -36,7 +36,7 @@ const Portfolio = () => {
     contactMeContent.contactMetaData[2].icon = <LocationIcon />
     contactMeContent.contactMetaData[3].icon = <LinkedInIcon />
 
-    const [visibility, setVisibility] = useState(true);
+    const [visibility] = useState(true);
 
     // useEffect(() => {
     //     setTimeout(() => {

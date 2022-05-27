@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { fadeInBottom, fadeOutTop, textFocusIn, textFocusOut } from './keyframes';
 
 export const bdGrid = css`
     display: grid;
@@ -39,4 +40,20 @@ export const CenterScreen = css`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`
+
+export const focusIn = css`
+    animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+`
+
+export const focusOut = css`
+    animation: ${textFocusOut} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+`
+
+export const slideIn = css`
+    animation: ${fadeInBottom} 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+`
+
+export const slideOut = css`
+    animation: ${fadeOutTop} 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 `

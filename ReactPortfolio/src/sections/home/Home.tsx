@@ -1,8 +1,9 @@
 import Button, { ButtonProps } from "../../ui-components/Button";
+import Focus from "../../ui-components/Focus";
 import Image, { ImageProps } from "../../ui-components/Image";
-import Opacity from "../../ui-components/Opacity";
 import { Section } from "../../ui-components/Section";
-import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer, ChevronContainer } from "./styles";
+import Slide from "../../ui-components/Slide";
+import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer } from "./styles";
 
 export interface HomeSectionProps {
     name: string;
@@ -28,24 +29,24 @@ const HomeSection = ({
         <Section id="home">
                 <HomeContainer>
                     <HomeContent>
-                        <Name>Hi, I'm {name}</Name>
-                        <Designation>{designation}</Designation>
-                        <Opacity show={visibility}>
+                        <Focus><Name>Hi, I'm {name}</Name></Focus>
+                        <Focus><Designation>{designation}</Designation></Focus>
+                        <Slide>
                             <Headline>{headline}</Headline>
                             <Button link={buttonProps.link}
-                                name={buttonProps.name} 
-                                icon={contactIcon}
-                                target={buttonProps.target} />
-                        </Opacity>
-                    </HomeContent>
+                                    name={buttonProps.name} 
+                                    icon={contactIcon}
+                                    target={buttonProps.target} />
+                        </Slide>
+                        </HomeContent>
                 </HomeContainer>
-                <Opacity show={visibility}>
-                    <LogoContainer>
+                <Slide>
+                <LogoContainer>
                         <Image source={imageProps.source}
                             height={imageProps.height}
                             width={imageProps.width} />
-                    </LogoContainer>
-                </Opacity>
+                </LogoContainer>
+                </Slide>
         </Section>
     )
   }

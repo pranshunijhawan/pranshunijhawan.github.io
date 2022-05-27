@@ -1,4 +1,4 @@
-import { HeaderLogoContainer, Navigation } from "./styles";
+import { HeaderLogoContainer } from "./styles";
 import { HeaderContainer, LogoText } from "./styles";
 import Image from '../../ui-components/Image';
 
@@ -13,7 +13,6 @@ const Header = ({ visibility }: HeaderProps) => {
             <HeaderContainer show={visibility}>
                 <HeaderLogoContainer>
                     <Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={40} height={40} />
-                    <LogoText>Pranshu Nijhawan</LogoText>
                 </HeaderLogoContainer>
             </HeaderContainer>
         </>

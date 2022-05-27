@@ -1,13 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { AiOutlineArrowDown } from 'react-icons/ai';
-
-// export const percentageBar = (width: number) => keyframes`
-//     0% {
-//         width: 0;
-//     }
-//     100% {
-//         width: ${width}%;
-//     }
+import { percentageBar } from "../../types/keyframes";
 
 export const SkillContent = styled.div`
     margin-top: var(--mb-2);
@@ -88,4 +81,5 @@ export const SkillPercentageBar = styled.span<{
     width: ${({ width }) => width }%;
     display: block;
     background-color: var(--first-color);
+    animation: ${({ width }) => percentageBar(width) } 3s normal forwards;
 `
