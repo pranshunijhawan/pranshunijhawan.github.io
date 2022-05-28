@@ -26,8 +26,10 @@ const HomeSection = ({
         <Section id="home">
                 <HomeContainer>
                     <HomeContent>
-                        <Slide><Name>Hi, I'm {name}</Name></Slide>
-                        <Slide><Designation>{designation}</Designation></Slide>
+                        <Slide>
+                            <Name>Hi, I'm {name}</Name>
+                            <Designation>{designation}</Designation>
+                        </Slide>
                     </HomeContent>
                     <HomeContent>
                         <Slide>
