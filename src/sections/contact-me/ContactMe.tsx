@@ -23,7 +23,7 @@ const ContactMe = ({ sectionTitle, contactMetaData }: ContactMeProps) => {
                     ))}
                 </ContactMeContainer>
                 <CopyRightContainer>
-                    <Focus><CopyRightMessage>Designed & Built With <HeartIcon /> By Pranshu! © ${new Date().getFullYear()}</CopyRightMessage></Focus>
+                    <Focus><CopyRightMessage>Designed & Built With <HeartIcon /> By Pranshu! © {new Date().getFullYear()}</CopyRightMessage></Focus>
                 </CopyRightContainer>
         </Section>
     )

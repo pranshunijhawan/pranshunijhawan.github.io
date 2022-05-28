@@ -9,6 +9,7 @@ export const CertificateContainer = styled.div`
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
     display: flex;
+    align-items: center;
 `
 
 export const LogoImageContainer = styled.div`
@@ -22,7 +23,7 @@ export const CertificateDetailsContainer = styled.div`
     row-gap: 1.5rem;
     height: max-content;
     margin-top: var(--mb-1);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-1-5);
     margin-left: var(--mb-2);
 `
 

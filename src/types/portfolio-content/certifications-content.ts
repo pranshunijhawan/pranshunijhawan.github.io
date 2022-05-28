@@ -12,7 +12,7 @@ const certificationsContent: CertificationsProps = {
                 },
                 buttonProps: {
                     link: process.env.PUBLIC_URL + '/pdf/Microsoft Azure Certified Developer - Associate.pdf',
-                    name: 'Show'
+                    name: 'Credential'
                 },
                 title: 'Microsoft Azure Certified Developer - Associate'
             },
@@ -24,7 +24,7 @@ const certificationsContent: CertificationsProps = {
                 },
                 buttonProps: {
                     link: process.env.PUBLIC_URL + '/pdf/AWS Certified Developer - Associate certificate.pdf',
-                    name: 'Show'
+                    name: 'Credential'
                 },
                 title: 'AWS Certified Developer - Associate'
             }
