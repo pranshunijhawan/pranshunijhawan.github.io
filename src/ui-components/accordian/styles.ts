@@ -44,6 +44,7 @@ export const AccordianTitle = styled.h3<{
 }>`
     ${TitleStyle}
     color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
+    margin-bottom: 0;
 `
 
 export const PlusIcon = styled.span<{
@@ -69,4 +70,5 @@ export const AccordianDescription = styled.p`
 
 export const AccordianDescriptionContent = styled.div`
     display: flex;
+    margin-left: var(--mb-1);
 `
