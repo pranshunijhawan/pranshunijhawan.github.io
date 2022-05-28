@@ -3,7 +3,7 @@ import { AiOutlineArrowDown } from 'react-icons/ai';
 import { percentageBar } from "../../types/keyframes";
 
 export const SkillContent = styled.div`
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-1-5);
     font-size: var(--h3-font-size);
     display: flex;
     justify-content: space-between;

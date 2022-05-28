@@ -1,7 +1,6 @@
 import { HeaderLogoContainer } from "./styles";
 import { HeaderContainer } from "./styles";
 import Image from '../../ui-components/Image';
-import Focus from "../../ui-components/animated/Focus";
 import Slide from "../../ui-components/animated/Slide";
 
 interface HeaderProps {

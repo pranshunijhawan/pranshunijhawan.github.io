@@ -1,8 +1,8 @@
-import { AiTwotoneMail } from "react-icons/ai";
 import { BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs";
 import styled, { css } from "styled-components";
 import { container, grid } from "../../types/common-css";
-import { FaLocationArrow } from "react-icons/fa";
+import { ImLocation } from "react-icons/im";
+import { AiTwotoneMail } from "react-icons/ai";
 
 
 export const ContactMeContainer = styled.div`
@@ -35,7 +35,7 @@ export const EmailIcon = styled(AiTwotoneMail)`
     ${IconCSS}
 `
 
-export const LocationIcon = styled(FaLocationArrow)`
+export const LocationIcon = styled(ImLocation)`
     ${IconCSS}
 `
 

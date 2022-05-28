@@ -64,7 +64,6 @@ export const AccordianContent = styled.div`
 
 export const AccordianDescription = styled.p`
     font-size: var(--small-font-size);
-    padding-bottom: var(--mb-1);
     margin-top: 0;
 `
 

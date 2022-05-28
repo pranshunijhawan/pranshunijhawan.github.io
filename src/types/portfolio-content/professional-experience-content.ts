@@ -9,7 +9,7 @@ const professionalExperienceContent: ProfessionalExperienceProps = {
             date: 'March 2022 - Present',
             description: [
                 'Design and Development of Products in Marketing & Sales practice, building Enterprise Pricing Strategy and Promotion Optimisation, that transform business operations of large Retail and CPG clients worldwide.',
-                'Build modern GraphQL Microservices using Node.JS and Typescript with both SQL & Non-SQL Data Stores that transcend high performance, customised, stable and scalable results.',
+                'Build modern GraphQL Microservices using Node.JS and Typescript with both SQL & NoSQL Data Stores that transcend high performance, customised, stable and scalable results.',
                 'Manage and Build highly optimised and re-usable UI components and fragments using React with Typescript based on Micro-Frontends Architecture.',
                 'Design and Build highly complex and scalable Data Processing Pipelines for Batch/Stream Processes using various Data Transformation tools architected using Azure Databricks (Apache Spark) and Azure Stream Analytics, managed and orchestrated by Azure DataFactory.'
             ]

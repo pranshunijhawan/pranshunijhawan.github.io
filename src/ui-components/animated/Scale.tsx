@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import { scaleInElement, scaleOutElement } from "../../types/common-css";
+import { scaleInElement } from "../../types/common-css";
 
 interface ScaleProps {
     children: React.ReactNode;

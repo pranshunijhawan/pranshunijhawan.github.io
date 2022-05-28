@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { focusIn, focusOut } from "../../types/common-css";
+import { focusIn } from "../../types/common-css";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 

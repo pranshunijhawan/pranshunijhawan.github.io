@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CenterScreen, container, grid } from "../../types/common-css";
+import { container } from "../../types/common-css";
 
 export const MostProudOfContainer = styled.div`
     ${container}

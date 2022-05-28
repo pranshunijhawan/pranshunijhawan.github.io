@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Focus from "../animated/Focus";
-import Slide from "../animated/Slide";
 import Bullet from "../Bullet";
 import { AccordianContent, AccordianDescription, AccordianDescriptionContent, AccordianItem, AccordianTitle, PlusIcon } from "./styles";
 
