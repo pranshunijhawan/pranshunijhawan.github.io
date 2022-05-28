@@ -1,5 +1,6 @@
 import { TechnologyProficiencyProps } from "../../sections/technology-proficiency/TechnologyProficiency";
 
+
 const technologyProficiencyProps: TechnologyProficiencyProps = {
     sectionTitle: 'Technology Proficiency',
     skills: [
@@ -26,7 +27,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
                     name: 'Ionic Framework',
                     percentage: 60
                 }
-            ]
+            ],
         },
         {
             category: 'Backend',

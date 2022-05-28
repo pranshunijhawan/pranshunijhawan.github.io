@@ -18,8 +18,8 @@ const certificationsContent: CertificationsProps = {
             },
             {
                 imageProps: {
-                    height: 270,
-                    width: 270,
+                    height: 200,
+                    width: 200,
                     source: process.env.PUBLIC_URL + '/img/AWS-Developer-Associate-2020.png'
                 },
                 buttonProps: {

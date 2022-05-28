@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { FaQuoteRight } from "react-icons/fa";
 import { CenterScreen } from "../../types/common-css";
+import { BsFillChatLeftQuoteFill } from "react-icons/bs";
 
 export const QuoteContainer = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -73,7 +73,7 @@ export const Source = styled.span`
     color: var(--first-color);
 `
 
-export const QuoteIcon = styled(FaQuoteRight)`
+export const QuoteIcon = styled(BsFillChatLeftQuoteFill)`
     font-size: 2rem;
     color: var(--first-color);
     margin-top: var(--mb-2);

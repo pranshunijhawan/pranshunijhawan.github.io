@@ -4,7 +4,7 @@ import Slide from "../../ui-components/animated/Slide";
 import Contact, { ContactProps } from "../../ui-components/contact/Contact";
 import { Section } from "../../ui-components/Section";
 import SectionTitle from "../../ui-components/SectionTitle";
-import { ContactMeContainer, CopyRightContainer, CopyRightMessage } from "./styles";
+import { ContactMeContainer, CopyRightContainer, CopyRightMessage, HeartIcon } from "./styles";
 
 export interface ContactMeProps extends BaseSectionProps {
     contactMetaData: ContactProps[]
@@ -23,7 +23,7 @@ const ContactMe = ({ sectionTitle, contactMetaData }: ContactMeProps) => {
                     ))}
                 </ContactMeContainer>
                 <CopyRightContainer>
-                    <Focus><CopyRightMessage>Built With ❤️ By Pranshu! © {new Date().getFullYear()}</CopyRightMessage></Focus>
+                    <Focus><CopyRightMessage>Designed & Built With <HeartIcon /> By Pranshu! © ${new Date().getFullYear()}</CopyRightMessage></Focus>
                 </CopyRightContainer>
         </Section>
     )

@@ -53,32 +53,30 @@ const Portfolio = () => {
     setTimeout(() => {
       setVisibility(true);
     }, 2950);
-
-    const page = <>
-                    <Header visibility={visibility} />
-                    <HomeSection name={homeSectionProps.name}
-                        designation={homeSectionProps.designation}
-                        headline={homeSectionProps.headline}
-                        buttonProps={homeSectionProps.buttonProps}
-                        imageProps={homeSectionProps.imageProps} />
-                    <AboutSection 
-                        sectionTitle={aboutSectionContent.sectionTitle} 
-                        content={aboutSectionContent.content}
-                        buttonProps={aboutSectionContent.buttonProps} />
-                    <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
-                        content={mostProudOfProps.content} />
-                    <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
-                      <EducationalQualifications title={educationalQualificationsContent.title} timeline={educationalQualificationsContent.timeline} />
-                    <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
-                    <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
-                    <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
-                    <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
-                  </>
     
     return (
       <>
         {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
-        {visibility && page}
+        {visibility && <>
+                        <Header visibility={visibility} />
+                        <HomeSection name={homeSectionProps.name}
+                            designation={homeSectionProps.designation}
+                            headline={homeSectionProps.headline}
+                            buttonProps={homeSectionProps.buttonProps}
+                            imageProps={homeSectionProps.imageProps} />
+                        <AboutSection 
+                            sectionTitle={aboutSectionContent.sectionTitle} 
+                            content={aboutSectionContent.content}
+                            buttonProps={aboutSectionContent.buttonProps} />
+                        <MostProudOf sectionTitle={mostProudOfProps.sectionTitle}
+                            content={mostProudOfProps.content} />
+                        <TechnologyProficiencyProps skills={technologyProficiencyProps.skills} sectionTitle={technologyProficiencyProps.sectionTitle} />
+                          <EducationalQualifications title={educationalQualificationsContent.title} timeline={educationalQualificationsContent.timeline} />
+                        <ProfessionalExperience title={professionalExperienceContent.title} timeline={professionalExperienceContent.timeline} />
+                        <Certifications sectionTitle={certificationsContent.sectionTitle} certificateProps={certificationsContent.certificateProps} />
+                        <Testimonials quoteProps={testimonialsContent.quoteProps} sectionTitle={testimonialsContent.sectionTitle} />
+                        <ContactMe sectionTitle={contactMeContent.sectionTitle} contactMetaData={contactMeContent.contactMetaData} />
+                      </>}
       </>
     )
   }

@@ -1,5 +1,5 @@
 import { AiTwotoneMail } from "react-icons/ai";
-import { BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs";
+import { BsFillTelephoneForwardFill, BsHeartFill, BsLinkedin } from "react-icons/bs";
 import styled, { css } from "styled-components";
 import { container, grid } from "../../types/common-css";
 import { FaLocationArrow } from "react-icons/fa";
@@ -52,4 +52,10 @@ export const CopyRightMessage = styled.p`
     text-align: center;
     font-size: var(--smaller-font-size);
     margin-bottom: 0;
+`
+
+export const HeartIcon = styled(BsHeartFill)`
+   font-size: 0.7rem;
+   color: var(--first-color);
+   margin-top: 0.1rem;
 `

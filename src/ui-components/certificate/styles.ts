@@ -5,33 +5,31 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 export const CertificateContainer = styled.div`
     position: relative;
     background-color: var(--container-color);
-    padding: 2rem 1rem 0.5rem 1.5rem;
     border-radius: 0.25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
+    display: flex;
 `
 
 export const LogoImageContainer = styled.div`
     ${CenterScreen}
+    margin-left: var(--mb-1);
+    margin-top: var(--mb-1);
+    margin-bottom: var(--mb-1);
 `
 
 export const CertificateDetailsContainer = styled.div`
     row-gap: 1.5rem;
     height: max-content;
-    margin-bottom: var(--mb-1-5);
-    margin-top: var(--mb-2-5);
-    margin-right: var(--mb-1);
-
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: var(--mb-1);
+    margin-bottom: var(--mb-1);
+    margin-left: var(--mb-2);
 `
 
 export const CertificateTitle = styled.h3`
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
-    width: 58%;
+    margin-bottom: var(--mb-1-5);
+    margin-right: var(--mb-1);
 `
 
 export const RightIcon = styled(AiOutlineArrowRight)`

@@ -7,7 +7,7 @@ import { DownIcon, SkillCategory, SkillsContainer, SkillsHeaderContainer } from 
 export interface SkillsProps {
     category: string;
     skills: SkillProps[];
-    icon?: JSX.Element;
+    icon?: React.ReactNode;
 }
 
 const Skills = ({ category, skills, icon }: SkillsProps) => {
