@@ -1,4 +1,4 @@
-import Slide from "../animated/Slide";
+import Focus from "../animated/Focus";
 import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
 import ViewRolesAndResponsibilities from "./ViewRolesAndResponsibilities";
 
@@ -16,7 +16,7 @@ const Timeline = ({ title, subTitle, date, description, last }: TimelineProps) =
         <TimelineContainer>
             <TimelineDataContainer>
                 <div>
-                    <Slide><TimelineRounder /></Slide>
+                    <Focus><TimelineRounder /></Focus>
                     {!last && <TimelineRounderLine />}
                 </div>
                 <TimelineContentContainer>
