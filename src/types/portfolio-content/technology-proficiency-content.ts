@@ -83,7 +83,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
             category: 'Data Engineering',
             skills: [
                 {
-                    name: 'Microsoft Azure Databricks',
+                    name: 'Azure Databricks (Apache Spark)',
                     percentage: 60
                 },
                 {

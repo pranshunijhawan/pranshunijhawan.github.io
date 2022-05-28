@@ -38,7 +38,6 @@ export const Designation = styled.div`
     font-size: var(--h3-font-size);
     color: var(--text-color);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
 `
 
 export const HomeIcon = styled(IoMdContact)`

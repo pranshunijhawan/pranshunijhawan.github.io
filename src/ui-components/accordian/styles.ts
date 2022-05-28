@@ -70,7 +70,7 @@ export const AccordianTitle = styled.h3`
 export const AccordianContent = styled.div<{
     isOpen: boolean
   }>`
-    margin-top: ${({ isOpen }) => isOpen ? '2rem': '0' };
+    margin-top: ${({ isOpen }) => isOpen ? '1.5rem': '0' };
     overflow: hidden;
     height: ${({ isOpen }) => isOpen ? 'max-content': '0' };
     transition: all 0.5s ease;
