@@ -105,4 +105,5 @@ export const DescriptionContentContainer = styled.div`
 
 export const TimelineContentContainer = styled.div`
     margin-top: 0;
+    cursor: pointer;
 `
