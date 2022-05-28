@@ -12,10 +12,10 @@ const RolesAndResponsibilities = ({ description, isOpenState }: RolesAndResponsi
     return (
         <DescriptionContainer isOpen={isOpenState}>
                 {description && description.length > 0 && description.map((item, index) => (
-                    <Focus>
+                    <Focus key={index}>
                         <DescriptionContentContainer>
                             <Bullet color='var(--first-color)' />
-                            <TimeLineDescription key={index}>{item}</TimeLineDescription>
+                            <TimeLineDescription>{item}</TimeLineDescription>
                         </DescriptionContentContainer>
                     </Focus>
                 ))}

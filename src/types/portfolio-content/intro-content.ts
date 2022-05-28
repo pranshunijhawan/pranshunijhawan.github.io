@@ -1,4 +1,4 @@
-import { IntroProps } from "../../sections/intro/Intro";
+import { IntroProps } from "../../sections/intro/IntroLogo";
 
 const introProps: IntroProps = {
     imageProps: {

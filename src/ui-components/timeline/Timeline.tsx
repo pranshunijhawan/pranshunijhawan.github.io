@@ -1,3 +1,4 @@
+import Slide from "../animated/Slide";
 import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineEndLine, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
 import ViewRolesAndResponsibilities from "./ViewRolesAndResponsibilities";
 
@@ -15,7 +16,7 @@ const Timeline = ({ title, subTitle, date, description, last }: TimelineProps) =
         <TimelineContainer>
             <TimelineDataContainer>
                 <div>
-                    <TimelineRounder />
+                    <Slide><TimelineRounder /></Slide>
                     {!last && <TimelineRounderLine />}
                 </div>
                 <TimelineContentContainer>
@@ -25,7 +26,6 @@ const Timeline = ({ title, subTitle, date, description, last }: TimelineProps) =
                     <ViewRolesAndResponsibilities description={description || []} />
                 </TimelineContentContainer>
             </TimelineDataContainer>
-            {/* <TimelineEndLine /> */}
         </TimelineContainer>
     )
 }

@@ -6,8 +6,7 @@ import { EmailIcon, LinkedInIcon, LocationIcon, PhoneIcon } from "./sections/con
 import EducationalQualifications from "./sections/educational-qualifications/EducationalQualifications";
 import Header from "./sections/header/Header";
 import HomeSection from "./sections/home/Home";
-import SubHomeSection from "./sections/home/SubHome";
-import Intro from "./sections/intro/Intro";
+import Intro from "./sections/intro/IntroLogo";
 import MostProudOf from "./sections/most-proud-of/MostProudOf";
 import ProfessionalExperience from "./sections/professional-experience/ProfessionalExperience";
 import { BackEndIcon, CloudIcon, DatabaseIcon, DataEngineeringIcon, FrontEndIcon } from "./sections/technology-proficiency/styles";
@@ -41,7 +40,6 @@ const Portfolio = () => {
 
     const [isEnter, setIsEnter] = useState(true);
     const [visibility, setVisibility] = useState(false);
-    const [showHome, setShowHome] = useState(false);
     const [hideIntro, setHideIntro] = useState(false);
 
     setTimeout(() => {
@@ -53,21 +51,12 @@ const Portfolio = () => {
     }, 2900);
 
     setTimeout(() => {
-        setShowHome(true);
-    }, 3100);
-
-    setTimeout(() => {
-        setVisibility(true);
-    }, 4000);
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setVisibility(true);
-    //     }, 2700);
-    // });
+      setVisibility(true);
+    }, 2950);
 
     const page = <>
-                    <SubHomeSection name={homeSectionProps.name}
+                    <Header visibility={visibility} />
+                    <HomeSection name={homeSectionProps.name}
                         designation={homeSectionProps.designation}
                         headline={homeSectionProps.headline}
                         buttonProps={homeSectionProps.buttonProps}
@@ -89,12 +78,6 @@ const Portfolio = () => {
     return (
       <>
         {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
-        {visibility && <Header visibility={visibility} />}
-        {showHome && <HomeSection name={homeSectionProps.name}
-                        designation={homeSectionProps.designation}
-                        headline={homeSectionProps.headline}
-                        buttonProps={homeSectionProps.buttonProps}
-                        imageProps={homeSectionProps.imageProps} />}
         {visibility && page}
       </>
     )

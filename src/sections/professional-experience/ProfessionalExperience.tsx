@@ -13,8 +13,8 @@ const ProfessionalExperience = ({ title, timeline }: ProfessionalExperienceProps
         <Section id="professionalexperience">
                 <SectionTitle content={title} />
                 {timeline.map((item, index) => (
-                    <Slide>
-                        <Timeline title={item.title} subTitle={item.subTitle} date={item.date} description={item.description} key={index} last={item.last} />
+                    <Slide key={index}>
+                        <Timeline title={item.title} subTitle={item.subTitle} date={item.date} description={item.description} last={item.last} />
                     </Slide>
                 ))}
         </Section>

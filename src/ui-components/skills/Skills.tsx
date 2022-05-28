@@ -26,9 +26,9 @@ const Skills = ({ category, skills, icon }: SkillsProps) => {
             </SkillsHeaderContainer>
             <SkillsContainer isOpen={isOpenState}>
                 {skills.map((item, index) => (
-                            <Focus>
+                            <Focus key={index}>
                                 <Skill name={item.name}
-                                    percentage={item.percentage} key={index} />
+                                    percentage={item.percentage} />
                             </Focus>
                 ))}
             </ SkillsContainer>

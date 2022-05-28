@@ -2,12 +2,18 @@ export interface ImageProps {
     height: number;
     width: number;
     source: string;
+    href?: string;
+    onClick?: any;
 }
 
-const Image = ({ height, width, source }: ImageProps) => {
+const Image = ({ height, width, source, href, onClick }: ImageProps) => {
+
+    const imageComponent = <img src={source} height={height} width={width} onClick={onClick} />
+
+    const anchorComponent = href ? <a href={href}>{imageComponent}</a> : imageComponent;
 
     return(
-        <img src={source} height={height} width={width} />
+        anchorComponent
     )
 }
 

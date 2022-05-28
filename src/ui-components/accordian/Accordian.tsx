@@ -11,7 +11,7 @@ const Accordian = ({ content }: AccordianProps) => {
     return (
         <AccordianContainer>
             {content.map((item, index) => (
-                <Scale><AccordianComponent id={item.id} content={item.content} title={item.title} key={index} /></Scale>
+                <Scale key={index}><AccordianComponent id={item.id} content={item.content} title={item.title} /></Scale>
             ))}
         </AccordianContainer>
     )

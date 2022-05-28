@@ -22,10 +22,10 @@ const AccordianComponent = ({ id, title, content }: AccordianComponentProps) => 
                     <AccordianTitle>{title}</AccordianTitle>
                     <AccordianContent isOpen={isOpenState}>
                         {content.map((desc, index) => (
-                                    <Focus>
+                                    <Focus key={index}>
                                         <AccordianDescriptionContent>
                                             <Bullet color='var(--first-color)' />
-                                            <AccordianDescription key={index}>{desc}</ AccordianDescription>
+                                            <AccordianDescription>{desc}</ AccordianDescription>
                                         </AccordianDescriptionContent>
                                     </Focus>
                         ))}

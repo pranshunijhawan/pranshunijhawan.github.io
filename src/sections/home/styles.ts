@@ -19,10 +19,6 @@ export const HomeContainer = styled.div`
     margin-bottom: -2rem;
 `
 
-export const SubHomeContainer = styled.div`
-    ${HomeCSS}
-`
-
 export const HomeContent = styled.div`
     column-gap: 2rem;
     grid-column: 1/3;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const FullScreenContainer = styled.div`
+const FullScreenContainer = styled.div<{
+    backgroundColor?: string
+}>`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,16 +10,18 @@ const FullScreenContainer = styled.div`
     text-align: center;
     min-height: 100vh;
     margin-top: -5rem;
+    background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : 'var(--body-color)' };
 `
 
 interface FullScreenProps {
     children: React.ReactNode;
+    backgroundColor?: string;
 }
 
-const FullScreen = ({ children }: FullScreenProps) => {
+const FullScreen = ({ children, backgroundColor }: FullScreenProps) => {
 
     return (
-        <FullScreenContainer>{children}</FullScreenContainer>
+        <FullScreenContainer backgroundColor={backgroundColor}>{children}</FullScreenContainer>
     )
 }
 

@@ -122,3 +122,29 @@ export const slideInBackExit = keyframes`
         opacity: 0;
     }
 `
+
+export const blockRevealInFromBottom = keyframes`
+    0% {
+        transform: scaleY(0);
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+`
+
+export const blockRevealOutToTop = keyframes`
+    0% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+`

@@ -19,7 +19,7 @@ export const ViewRandRContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    margin-top: var(--mb-1);    
+    margin-top: var(--mb-0-5);    
     margin-bottom: var(--mb-0-5);
     width: auto;
 `
@@ -80,12 +80,13 @@ export const TimelineRounderLine = styled.div`
 
 export const TimelineEndLine = styled.div`
     display: block;
-    width: 100%;
+    width: 90%;
     height: 1px;
     background-color: var(--container-color);
     transform: translate(6px, -7px);
     margin-top: var(--mb-1);
     margin-bottom: var(--mb-1);
+    margin-left: var(--mb-1);
 `
 
 export const TimelineTitle = styled.h3`
@@ -100,7 +101,7 @@ export const TimeLineSubTitle = styled.span`
 `
 
 export const TimeLineDate = styled.div`
-    margin-top: var(--mb-0-5);
+    margin-top: 0.25rem;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-bottom: var(--mb-0-5);
