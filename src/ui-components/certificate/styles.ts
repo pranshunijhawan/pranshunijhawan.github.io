@@ -23,7 +23,7 @@ export const CertificateDetailsContainer = styled.div`
     row-gap: 1.5rem;
     height: max-content;
     margin-top: var(--mb-1);
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-2);
     margin-left: var(--mb-2);
 `
 
