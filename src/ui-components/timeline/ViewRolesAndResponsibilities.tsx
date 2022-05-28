@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RolesAndResponsibilities from "./RolesAndResponsibilities";
-import { ViewRandR, ViewRandRContainer, DownIcon } from "./styles";
+import { ViewRandR, ViewRandRContainer } from "./styles";
 
 interface ViewRolesAndResponsibilitiesProps {
     description: string[];

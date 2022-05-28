@@ -1,8 +1,7 @@
 import Button, { ButtonProps } from "../../ui-components/Button";
-import Focus from "../../ui-components/animated/Focus";
 import { ImageProps } from "../../ui-components/Image";
 import { Section } from "../../ui-components/Section";
-import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline, LogoContainer } from "./styles";
+import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline } from "./styles";
 import Slide from "../../ui-components/animated/Slide";
 
 export interface HomeSectionProps {

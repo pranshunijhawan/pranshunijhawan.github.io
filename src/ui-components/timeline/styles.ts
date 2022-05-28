@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { container, grid } from "../../types/common-css";
-import { BsFillCalendar2DateFill } from 'react-icons/bs'
-import { AiOutlineArrowDown } from "react-icons/ai";
 
 export const DescriptionContainer = styled.div<{
     isOpen: boolean
@@ -78,17 +76,6 @@ export const TimelineRounderLine = styled.div`
     transform: translate(6px, -7px);
 `
 
-export const TimelineEndLine = styled.div`
-    display: block;
-    width: 90%;
-    height: 1px;
-    background-color: var(--container-color);
-    transform: translate(6px, -7px);
-    margin-top: var(--mb-1);
-    margin-bottom: var(--mb-1);
-    margin-left: var(--mb-1);
-`
-
 export const TimelineTitle = styled.h3`
     margin-top: 0;
     font-size: var(--normal-font-size);
@@ -107,28 +94,9 @@ export const TimeLineDate = styled.div`
     margin-bottom: var(--mb-0-5);
 `
 
-export const TimeLineDateContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`
-
-export const Calendar = styled(BsFillCalendar2DateFill)`
-`
-
 export const TimeLineDescription = styled.p`
     margin-bottom: var(--mb-1);
     margin-top: 0;
-`
-
-export const DownIcon = styled(AiOutlineArrowDown)<{
-    isOpen: boolean
-  }>`
-    font-size: 1.5rem;
-    color: var(--first-color);
-    margin-left: auto;
-    transition: 0.4s;
-    transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
 `
 
 export const DescriptionContentContainer = styled.div`

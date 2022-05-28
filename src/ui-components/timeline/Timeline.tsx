@@ -1,5 +1,5 @@
 import Slide from "../animated/Slide";
-import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineEndLine, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
+import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
 import ViewRolesAndResponsibilities from "./ViewRolesAndResponsibilities";
 
 export interface TimelineProps {

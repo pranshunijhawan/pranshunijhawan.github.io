@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { buttonIcon, CenterScreen, container, grid } from "../../types/common-css";
+import { buttonIcon, container, grid } from "../../types/common-css";
 import { IoMdContact } from 'react-icons/io';
 
 const HomeCSS = css`
@@ -46,20 +46,4 @@ export const HomeIcon = styled(IoMdContact)`
 
 export const Headline = styled.p`
     margin-bottom: var(--mb-2)
-`
-
-export const LogoContainer = styled.div`
-    ${CenterScreen}
-    margin-top: 7rem;
-    margin-bottom: var(--mb-3);
-`
-
-export const ChevronContainer = styled.div`
-    ${CenterScreen}
-    margin-top: 5rem;
-    margin-bottom: -2rem;
-    
-    @media screen and (min-width: 660px) {
-       margin-bottom: 2rem;
-    }
 `

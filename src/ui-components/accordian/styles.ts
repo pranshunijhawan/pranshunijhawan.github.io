@@ -42,19 +42,6 @@ export const AccordianItem = styled.div`
     }
 `
 
-export const AccordianHeader = styled.div`
-    display: flex;
-    column-gap: 0.5rem;
-    padding: 1.25rem 1.25rem 1.25rem 1rem;
-    cursor: pointer;
-
-    @media screen and (min-width: 576px) {
-        .accordion__header {
-          padding: 1.5rem;
-        }
-    }
-`
-
 export const AccordianTitle = styled.h3`
     font-size: var(--normal-font-size);
     color: var(--title-color);
@@ -74,12 +61,6 @@ export const AccordianContent = styled.div<{
     overflow: hidden;
     height: ${({ isOpen }) => isOpen ? 'max-content': '0' };
     transition: all 0.5s ease;
-`
-
-export const AccordianHeaderContainer = styled.div`
-    display: flex;
-    flex : flex-grow;
-    flex-shrink: flex-basis;
 `
 
 export const AccordianDescription = styled.p`

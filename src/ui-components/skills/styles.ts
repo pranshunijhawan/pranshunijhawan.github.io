@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import { percentageBar } from "../../types/keyframes";
 
