@@ -1,15 +1,17 @@
 import { TechnologyProficiencyProps } from "../../sections/technology-proficiency/TechnologyProficiency";
+import IconType from "../enums/IconTypes";
 
 
 const technologyProficiencyProps: TechnologyProficiencyProps = {
     sectionTitle: 'Technology Proficiency',
     skills: [
         {
+            icon: IconType.Frontend,
             category: 'Frontend',
             skills: [
                 {
                     name: 'React',
-                    percentage: 90
+                    percentage: 90,
                 },
                 {
                     name: 'Angular',
@@ -30,6 +32,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
             ],
         },
         {
+            icon: IconType.Backend,
             category: 'Backend',
             skills: [
                 {
@@ -55,6 +58,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
             ]
         },
         {
+            icon: IconType.Database,
             category: 'Database',
             skills: [
                 {
@@ -68,6 +72,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
             ]
         },
         {
+            icon: IconType.Cloud,
             category: 'Cloud',
             skills: [
                 {
@@ -81,6 +86,7 @@ const technologyProficiencyProps: TechnologyProficiencyProps = {
             ]
         },
         {
+            icon: IconType.DataEngineering,
             category: 'Data Engineering',
             skills: [
                 {

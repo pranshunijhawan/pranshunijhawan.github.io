@@ -1,8 +1,5 @@
-import { BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { container, grid } from "../../types/common-css";
-import { ImLocation } from "react-icons/im";
-import { AiTwotoneMail } from "react-icons/ai";
 
 
 export const ContactMeContainer = styled.div`
@@ -19,28 +16,6 @@ export const ContactMeContainer = styled.div`
 
         grid-template-columns: repeat(4, 1fr);
     }
-`
-
-export const IconCSS = css`
-    font-size: 1.5rem;
-    color: var(--first-color);
-    margin-right: var(--mb-0-75);
-`
-
-export const PhoneIcon = styled(BsFillTelephoneForwardFill)`
-    ${IconCSS}
-`
-
-export const EmailIcon = styled(AiTwotoneMail)`
-    ${IconCSS}
-`
-
-export const LocationIcon = styled(ImLocation)`
-    ${IconCSS}
-`
-
-export const LinkedInIcon = styled(BsLinkedin)`
-    ${IconCSS}
 `
 
 export const CopyRightContainer = styled.div`

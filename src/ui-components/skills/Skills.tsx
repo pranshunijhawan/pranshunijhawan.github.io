@@ -1,13 +1,15 @@
 import { useState } from "react";
+import IconType from "../../types/enums/IconTypes";
 import Focus from "../animated/Focus";
 import Slide from "../animated/Slide";
+import Icon from "../icon/Icon";
 import Skill, { SkillProps } from "./Skill";
 import { DownIcon, SkillCategory, SkillsContainer, SkillsHeaderContainer } from "./styles";
 
 export interface SkillsProps {
     category: string;
     skills: SkillProps[];
-    icon?: React.ReactNode;
+    icon: IconType;
 }
 
 const Skills = ({ category, skills, icon }: SkillsProps) => {
@@ -21,7 +23,7 @@ const Skills = ({ category, skills, icon }: SkillsProps) => {
     return (
         <div onClick={handleAccordianClickEvent}>
            <SkillsHeaderContainer>
-                {icon}
+                <Icon iconType={icon} />
                 <SkillCategory>{category}</SkillCategory>
                 <DownIcon isOpen={isOpenState} />
             </SkillsHeaderContainer>

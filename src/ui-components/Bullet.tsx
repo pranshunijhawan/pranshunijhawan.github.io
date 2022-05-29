@@ -14,7 +14,7 @@ interface BulletProps {
 const Bullet = ({ color }: BulletProps) => {
     
     return(
-        <BulletComponent color={color}>➡</BulletComponent>
+        <BulletComponent color={color}>➡️</BulletComponent>
     )
 }
 

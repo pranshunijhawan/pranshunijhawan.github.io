@@ -2,14 +2,12 @@ import { useState } from "react";
 import AboutSection from "./sections/about/About"
 import Certifications from "./sections/certifications/Certifications";
 import ContactMe from "./sections/contact-me/ContactMe";
-import { EmailIcon, LinkedInIcon, LocationIcon, PhoneIcon } from "./sections/contact-me/styles";
 import EducationalQualifications from "./sections/educational-qualifications/EducationalQualifications";
 import Header from "./sections/header/Header";
 import HomeSection from "./sections/home/Home";
 import Intro from "./sections/intro/IntroLogo";
 import MostProudOf from "./sections/most-proud-of/MostProudOf";
 import ProfessionalExperience from "./sections/professional-experience/ProfessionalExperience";
-import { BackEndIcon, CloudIcon, DatabaseIcon, DataEngineeringIcon, FrontEndIcon } from "./sections/technology-proficiency/styles";
 import TechnologyProficiencyProps from "./sections/technology-proficiency/TechnologyProficiency";
 import Testimonials from "./sections/testimonials/Testimonials";
 import aboutSectionContent from './types/portfolio-content/about-section-content';
@@ -26,18 +24,6 @@ import testimonialsContent from "./types/portfolio-content/testimonials-content"
 
 
 const Portfolio = () => {
-
-    technologyProficiencyProps.skills[0].icon = <FrontEndIcon />
-    technologyProficiencyProps.skills[1].icon = <BackEndIcon />
-    technologyProficiencyProps.skills[2].icon = <DatabaseIcon />
-    technologyProficiencyProps.skills[3].icon = <CloudIcon />
-    technologyProficiencyProps.skills[4].icon = <DataEngineeringIcon />
-
-    contactMeContent.contactMetaData[0].icon = <PhoneIcon />
-    contactMeContent.contactMetaData[1].icon = <EmailIcon />
-    contactMeContent.contactMetaData[2].icon = <LocationIcon />
-    contactMeContent.contactMetaData[3].icon = <LinkedInIcon />
-
     const [isEnter, setIsEnter] = useState(true);
     const [visibility, setVisibility] = useState(false);
     const [hideIntro, setHideIntro] = useState(false);
