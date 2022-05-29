@@ -1,8 +1,9 @@
 import Button, { ButtonProps } from "../../ui-components/Button";
 import { ImageProps } from "../../ui-components/Image";
 import { Section } from "../../ui-components/Section";
-import { HomeContainer, HomeContent, Name, Designation, HomeIcon, Headline } from "./styles";
+import { HomeContainer, HomeContent, Name, Designation, Headline } from "./styles";
 import Slide from "../../ui-components/animated/Slide";
+import IconType from "../../types/enums/IconTypes";
 
 export interface HomeSectionProps {
     name: string;
@@ -11,8 +12,6 @@ export interface HomeSectionProps {
     buttonProps: ButtonProps;
     imageProps: ImageProps;
 }
-
-const contactIcon = <HomeIcon />
 
 const HomeSection = ({
     name,
@@ -36,7 +35,7 @@ const HomeSection = ({
                             <Headline>{headline}</Headline>
                             <Button link={buttonProps.link}
                                     name={buttonProps.name} 
-                                    icon={contactIcon}
+                                    icon={IconType.Contact}
                                     target={buttonProps.target} />
                         </Slide>
                     </HomeContent>

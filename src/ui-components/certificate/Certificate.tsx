@@ -1,6 +1,7 @@
 import Button, { ButtonProps } from "../Button";
 import Image, { ImageProps } from "../../ui-components/Image";
-import { CertificateContainer, CertificateDetailsContainer, CertificateTitle, LogoImageContainer, RightIcon } from "./styles";
+import { CertificateContainer, CertificateDetailsContainer, CertificateTitle, LogoImageContainer } from "./styles";
+import IconType from "../../types/enums/IconTypes";
 
 interface CertificateMetaData {
     imageProps: ImageProps,
@@ -25,7 +26,7 @@ const Certificate = ({ certificateMetaData }: CertificateProps) => {
                     </LogoImageContainer>
                     <CertificateDetailsContainer>
                         <CertificateTitle>{item.title}</CertificateTitle>
-                        <Button link={item.buttonProps.link} name={item.buttonProps.name} icon={<RightIcon />} />
+                        <Button link={item.buttonProps.link} name={item.buttonProps.name} icon={IconType.CertificateRightIcon} />
                     </CertificateDetailsContainer>
                 </CertificateContainer>
             ))}

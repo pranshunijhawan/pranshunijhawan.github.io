@@ -1,10 +1,12 @@
 import styled from 'styled-components'
+import IconType from '../types/enums/IconTypes';
 import Focus from './animated/Focus';
+import Icon from './icon/Icon';
 
 export interface ButtonProps {
     link: string;
     name: string;
-    icon?: JSX.Element;
+    icon?: IconType
     target?: string;
 }
 
@@ -27,7 +29,7 @@ const Button = ({ link, name, icon, target }: ButtonProps) => {
     const buttonTarget = target && target === 'none' ? '' : '_blank';
 
     return (
-        <Focus><ButtonComponent target={buttonTarget} href={link}>{name} {icon}</ButtonComponent></Focus>
+        <Focus><ButtonComponent target={buttonTarget} href={link}>{name} {icon && <Icon iconType={icon} />}</ButtonComponent></Focus>
     )
 }
 

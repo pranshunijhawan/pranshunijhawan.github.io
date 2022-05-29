@@ -1,9 +1,11 @@
-import { AiTwotoneMail } from "react-icons/ai"
-import { BsFillCloudFill, BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs"
+import { AiOutlineArrowRight, AiTwotoneMail } from "react-icons/ai"
+import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs"
 import { FaDatabase } from "react-icons/fa"
 import { ImLocation } from "react-icons/im"
+import { MdContactPhone } from "react-icons/md"
 import { SiDatabricks, SiGraphql, SiJavascript } from "react-icons/si"
 import styled, { css } from "styled-components"
+import { buttonIcon } from "../../types/common-css"
 
 export const SkillHeaderIconBaseCSS = css`
     font-size: 2rem;
@@ -51,4 +53,18 @@ export const LocationIcon = styled(ImLocation)`
 
 export const LinkedInIcon = styled(BsLinkedin)`
     ${IconCSS}
+`
+
+export const ContactIcon = styled(MdContactPhone)`
+    margin-left: var(--mb-0-5);
+`
+
+export const CertificateRightIcon = styled(AiOutlineArrowRight)`
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+`
+
+export const DownloadIcon = styled(BsDownload)`
+    ${buttonIcon}
 `

@@ -1,16 +1,15 @@
 import BaseSectionProps from '../../types/base-section-props';
 import { Section } from '../../ui-components/Section';
 import SectionTitle from '../../ui-components/SectionTitle';
-import { AboutContainer, AboutButtons, AboutDescription, DownloadIcon } from './styles';
+import { AboutContainer, AboutButtons, AboutDescription } from './styles';
 import Button, { ButtonProps } from '../../ui-components/Button';
 import Slide from '../../ui-components/animated/Slide';
+import IconType from '../../types/enums/IconTypes';
 
 export interface AboutSectionProps extends BaseSectionProps {
     content: string[];
     buttonProps: ButtonProps
 }
-
-const downloadIcon = <DownloadIcon />
 
 const AboutSection = ({
     sectionTitle,
@@ -32,7 +31,7 @@ const AboutSection = ({
                     <Button
                         link={buttonProps.link} 
                         name={buttonProps.name}
-                        icon={downloadIcon}
+                        icon={IconType.Download}
                     />
                 </AboutButtons>
         </Section>

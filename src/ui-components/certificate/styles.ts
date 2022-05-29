@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { CenterScreen } from "../../types/common-css";
-import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const CertificateContainer = styled.div`
     position: relative;
@@ -31,10 +30,4 @@ export const CertificateTitle = styled.h3`
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1-5);
     margin-right: var(--mb-1);
-`
-
-export const RightIcon = styled(AiOutlineArrowRight)`
-    font-size: 1.25rem;
-    margin-left: var(--mb-0-5);
-    transition: 0.3s;
 `

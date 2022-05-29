@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
-import { buttonIcon, container } from '../../types/common-css'
-import { BsDownload } from 'react-icons/bs';
+import { container } from '../../types/common-css'
 
 
 const commonMediaQuery = css`
@@ -24,8 +23,4 @@ export const AboutDescription = styled.p`
 export const AboutButtons = styled.div`
     display: flex;
     justify-content: center;
-`
-
-export const DownloadIcon = styled(BsDownload)`
-    ${buttonIcon}
 `

@@ -4,10 +4,13 @@ enum IconType {
     Database = 3,
     Cloud = 4,
     DataEngineering = 5,
-    Phone,
-    Email,
-    Location,
-    LinkedIn
+    Phone = 6,
+    Email = 7,
+    Location = 8,
+    LinkedIn = 9,
+    Contact = 10,
+    CertificateRightIcon = 11,
+    Download = 12
 }
 
 export default IconType
