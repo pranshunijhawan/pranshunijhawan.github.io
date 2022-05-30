@@ -93,6 +93,8 @@ const baseCSS = css`
 
 			p {
 				font-family: var(--body-font);
+				margin-top: 0;
+				margin-bottom: 0;
 			}
 		}
 	}
