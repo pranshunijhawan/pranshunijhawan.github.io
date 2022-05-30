@@ -1,3 +1,4 @@
+import { AiOutlineArrowDown } from "react-icons/ai";
 import styled from "styled-components";
 import { container, grid } from "../../types/common-css";
 
@@ -106,4 +107,15 @@ export const DescriptionContentContainer = styled.div`
 export const TimelineContentContainer = styled.div`
     margin-top: 0;
     cursor: pointer;
+    width: 100%;
+`
+
+export const DownIcon = styled(AiOutlineArrowDown)<{
+    isOpen: boolean
+  }>`
+    font-size: 1.4rem;
+    color: var(--first-color);
+    margin-left: auto;
+    transition: 0.4s;
+    transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
 `

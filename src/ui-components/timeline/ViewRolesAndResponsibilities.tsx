@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DownIcon } from "./styles";
 import RolesAndResponsibilities from "./RolesAndResponsibilities";
 import { ViewRandR, ViewRandRContainer } from "./styles";
 
@@ -26,6 +27,7 @@ const ViewRolesAndResponsibilities = ({ description }: ViewRolesAndResponsibilit
             <>
                 <ViewRandRContainer onClick={handleAccordianClickEvent}>
                     <ViewRandR>{rolesAndResponsibilitiesMessage}</ViewRandR>
+                    <DownIcon isOpen={isOpenState} />
                 </ViewRandRContainer>
                 <RolesAndResponsibilities description={description} isOpenState={isOpenState} />
             </>}
