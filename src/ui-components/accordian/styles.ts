@@ -70,4 +70,5 @@ export const AccordianDescription = styled.p`
 export const AccordianDescriptionContent = styled.div`
     display: flex;
     margin-left: var(--mb-1);
+    margin-top: var(--mb-1);
 `
