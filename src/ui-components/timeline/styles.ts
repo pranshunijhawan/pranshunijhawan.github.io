@@ -118,4 +118,5 @@ export const DownIcon = styled(AiOutlineArrowDown)<{
     margin-left: auto;
     transition: 0.4s;
     transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
+    margin-top: 0.8rem;
 `
