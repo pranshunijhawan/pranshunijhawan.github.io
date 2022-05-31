@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { container, grid } from "../../types/common-css";
+import { CenterScreen, container, grid } from "../../types/common-css";
 
 
 export const ContactMeContainer = styled.div`
@@ -19,6 +19,7 @@ export const ContactMeContainer = styled.div`
 `
 
 export const CopyRightContainer = styled.div`
+    ${CenterScreen}
     margin-top: 5rem;
     align-items: center;
 `
@@ -27,4 +28,13 @@ export const CopyRightMessage = styled.p`
     text-align: center;
     font-size: var(--smaller-font-size);
     margin-bottom: 0;
+`
+
+export const FlexContainer = styled.div`
+    display: flex;
+    text-align: center;
+`
+
+export const HeartIconContainer = styled.div`
+    margin-top: -0.15rem;
 `

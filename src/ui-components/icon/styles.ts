@@ -1,5 +1,5 @@
 import { AiOutlineArrowRight, AiOutlineCalendar, AiTwotoneMail } from "react-icons/ai"
-import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs"
+import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsHeartFill, BsLinkedin } from "react-icons/bs"
 import { FaDatabase } from "react-icons/fa"
 import { ImLocation } from "react-icons/im"
 import { MdContactPhone } from "react-icons/md"
@@ -74,4 +74,11 @@ export const CalendarIcon = styled(AiOutlineCalendar)`
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-bottom: var(--mb-0-5);
+`
+
+export const HeartIcon = styled(BsHeartFill)`
+    font-size: var(--smaller-font-size);
+    color: var(--first-color);
+    margin-left: var(--mb-0-25);
+    margin-right: 0.35rem;
 `

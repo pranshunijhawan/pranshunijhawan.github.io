@@ -24,7 +24,7 @@ const Skills = ({ category, skills, icon }: SkillsProps) => {
         <div onClick={handleAccordianClickEvent}>
            <SkillsHeaderContainer>
                 <Icon iconType={icon} />
-                <SkillCategory>{category}</SkillCategory>
+                <SkillCategory isOpen={isOpenState}>{category}</SkillCategory>
                 <DownIcon isOpen={isOpenState} />
             </SkillsHeaderContainer>
             <SkillsContainer isOpen={isOpenState}>

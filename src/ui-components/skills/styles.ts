@@ -51,12 +51,16 @@ export const SkillsHeaderContainer = styled.div`
     cursor: pointer;
 `
 
-export const SkillCategory = styled.h1`
+export const SkillCategory = styled.h1<{
+    isOpen: boolean;
+}>`
     margin-top: 0.5rem;
     font-size: var(--h3-font-size);
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
+    transition: 0.2s;
+    color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
     
     @media screen and (max-width: 349px) {
         font-size: var(--normal-font-size);

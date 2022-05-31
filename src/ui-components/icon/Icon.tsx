@@ -1,5 +1,5 @@
 import IconType from "../../types/enums/IconTypes"
-import { BackEndIcon, CalendarIcon, CertificateRightIcon, CloudIcon, ContactIcon, DatabaseIcon, DataEngineeringIcon, DownloadIcon, EmailIcon, FrontEndIcon, LinkedInIcon, LocationIcon, PhoneIcon } from "./styles"
+import { BackEndIcon, CalendarIcon, CertificateRightIcon, CloudIcon, ContactIcon, DatabaseIcon, DataEngineeringIcon, DownloadIcon, EmailIcon, FrontEndIcon, HeartIcon, LinkedInIcon, LocationIcon, PhoneIcon } from "./styles"
 
 interface IconProps {
     iconType: IconType
@@ -34,6 +34,8 @@ const Icon = ({ iconType }: IconProps) => {
             return <DownloadIcon />
         case IconType.Calendar:
             return <CalendarIcon />
+        case IconType.Heart:
+            return <HeartIcon />
     }
 
     return null;
