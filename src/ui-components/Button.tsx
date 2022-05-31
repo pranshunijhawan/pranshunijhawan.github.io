@@ -4,10 +4,11 @@ import Focus from './animated/Focus';
 import Icon from './icon/Icon';
 
 export interface ButtonProps {
-    link: string;
+    link?: string;
     name: string;
     icon?: IconType
     target?: string;
+    clickHandler?: any;
 }
 
 const ButtonComponent = styled.a`
@@ -18,18 +19,19 @@ const ButtonComponent = styled.a`
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
+    cursor: pointer;
 
     &:hover {
         background-color: var(--first-color-alt);
     }
 `
 
-const Button = ({ link, name, icon, target }: ButtonProps) => {
+const Button = ({ link, name, icon, target, clickHandler }: ButtonProps) => {
 
     const buttonTarget = target && target === 'none' ? '' : '_blank';
 
     return (
-        <Focus><ButtonComponent target={buttonTarget} href={link}>{name} {icon && <Icon iconType={icon} />}</ButtonComponent></Focus>
+        <Focus><ButtonComponent onClick={clickHandler} target={buttonTarget} href={link}>{name} {icon && <Icon iconType={icon} />}</ButtonComponent></Focus>
     )
 }
 

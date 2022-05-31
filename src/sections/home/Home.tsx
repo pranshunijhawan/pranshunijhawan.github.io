@@ -20,6 +20,10 @@ const HomeSection = ({
     buttonProps,
     imageProps,
   }: HomeSectionProps) => {
+
+    const scrollToBottom = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
     
     return (
         <Section id="home">
@@ -33,7 +37,7 @@ const HomeSection = ({
                     <HomeContent>
                         <Slide>
                             <Headline>{headline}</Headline>
-                            <Button link={buttonProps.link}
+                            <Button clickHandler={scrollToBottom}
                                     name={buttonProps.name} 
                                     icon={IconType.Contact}
                                     target={buttonProps.target} />

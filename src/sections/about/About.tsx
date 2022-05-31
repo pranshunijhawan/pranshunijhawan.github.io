@@ -20,13 +20,13 @@ const AboutSection = ({
     return (
         <Section id='about'>
                 <SectionTitle content={sectionTitle} />
-                <Slide>
-                    <AboutContainer>
+                <AboutContainer>
                         {content.map((item, index) => (
-                            <AboutDescription key={index}>{item}</AboutDescription>
+                            <Slide key={index}>
+                                <AboutDescription>{item}</AboutDescription>
+                            </Slide>
                         ))}
                     </AboutContainer>
-                </Slide>
                 <AboutButtons>
                     <Button
                         link={buttonProps.link} 
