@@ -1,4 +1,4 @@
-import { AiOutlineArrowRight, AiTwotoneMail } from "react-icons/ai"
+import { AiOutlineArrowRight, AiOutlineCalendar, AiTwotoneMail } from "react-icons/ai"
 import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsLinkedin } from "react-icons/bs"
 import { FaDatabase } from "react-icons/fa"
 import { ImLocation } from "react-icons/im"
@@ -67,4 +67,11 @@ export const CertificateRightIcon = styled(AiOutlineArrowRight)`
 
 export const DownloadIcon = styled(BsDownload)`
     ${buttonIcon}
+`
+
+export const CalendarIcon = styled(AiOutlineCalendar)`
+    margin-top: 0.2rem;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-0-5);
 `

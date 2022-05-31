@@ -18,7 +18,6 @@ export const ViewRandRContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    margin-top: var(--mb-0-5);    
     margin-bottom: var(--mb-0-5);
     width: auto;
 `
@@ -60,6 +59,11 @@ export const TimelineDataContainer = styled.div`
     }
 `
 
+export const TimelineDateContainer = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 export const TimelineRounder = styled.div`
     display: inline-block;
     width: 13px;
@@ -93,6 +97,7 @@ export const TimeLineDate = styled.div`
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-bottom: var(--mb-0-5);
+    margin-left: var(--mb-0-5);
 `
 
 export const TimeLineDescription = styled.p`

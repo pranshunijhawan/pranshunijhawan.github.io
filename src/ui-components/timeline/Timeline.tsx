@@ -1,5 +1,7 @@
+import IconType from "../../types/enums/IconTypes";
 import Focus from "../animated/Focus";
-import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
+import Icon from "../icon/Icon";
+import { TimelineContainer, TimelineContentContainer, TimelineDataContainer, TimeLineDate, TimelineDateContainer, TimelineRounder, TimelineRounderLine, TimeLineSubTitle, TimelineTitle } from "./styles";
 import ViewRolesAndResponsibilities from "./ViewRolesAndResponsibilities";
 
 export interface TimelineProps {
@@ -22,7 +24,10 @@ const Timeline = ({ title, subTitle, date, description, last }: TimelineProps) =
                 <TimelineContentContainer>
                     <TimelineTitle>{title}</TimelineTitle>
                     <TimeLineSubTitle>{subTitle}</TimeLineSubTitle>
-                    <TimeLineDate>📅 {'\u00A0'} {date}</TimeLineDate>
+                    <TimelineDateContainer>
+                        <Icon iconType={IconType.Calendar} />
+                        <TimeLineDate>{date}</TimeLineDate>
+                    </TimelineDateContainer>
                     <ViewRolesAndResponsibilities description={description || []} />
                 </TimelineContentContainer>
             </TimelineDataContainer>
