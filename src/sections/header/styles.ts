@@ -22,4 +22,5 @@ export const HeaderContainer = styled.div<{
 export const HeaderLogoContainer = styled.div`
     align-items: center;
     margin-top: 0.75rem;
+    cursor: pointer;
 `
