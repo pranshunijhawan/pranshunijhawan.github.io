@@ -1,3 +1,4 @@
+import { AiOutlineArrowDown } from "react-icons/ai";
 import styled, { css } from "styled-components";
 
 
@@ -53,6 +54,7 @@ export const AccordianTitle = styled.h3<{
     ${TitleStyle}
     color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
     margin-bottom: 0;
+    margin-left: var(--mb-0-75);
 `
 
 export const PlusIcon = styled.span<{
@@ -80,4 +82,21 @@ export const AccordianDescriptionContent = styled.div`
     display: flex;
     margin-left: var(--mb-1);
     margin-top: var(--mb-1);
+    margin-right: var(--mb-1-5);
+`
+
+export const DownIcon = styled(AiOutlineArrowDown)<{
+    isOpen: boolean
+  }>`
+    font-size: 1.4rem;
+    color: var(--first-color);
+    margin-left: auto;
+    margin-right: var(--mb-0-75);
+    transition: 0.4s;
+    transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
+`
+
+export const DownArrowContainer = styled.div`
+    margin-left: auto;
+    margin-top: 0.2rem;
 `
