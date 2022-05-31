@@ -21,6 +21,7 @@ export const AccordianItem = styled.div<{
     background-color: var(--body-color);
     padding-top: var(--mb-1);
     padding-left: var(--mb-1);
+    padding-right: var(--mb-1);
     padding-bottom: ${({ isOpen }) => isOpen ? 'var(--mb-1-5)' : 'var(--mb-1)' };
     cursor: pointer;
 
