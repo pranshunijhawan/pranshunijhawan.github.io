@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { slideInEnter, slideInExit } from "../../types/common-css";
+import { slideInEnter, slideOutBackExit } from "../../types/common-css";
 
 export const IntroContainer = styled.div<{
     enter: boolean
 }>`
-    ${({ enter }) => enter ? slideInEnter : slideInExit }
+    ${({ enter }) => enter ? slideInEnter : slideOutBackExit }
+    opacity: ${({ enter }) => enter ? 0 : 1 };
 `

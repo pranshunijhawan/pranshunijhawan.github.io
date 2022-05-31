@@ -148,3 +148,16 @@ export const blockRevealOutToTop = keyframes`
         opacity: 1;
     }
 `
+
+export const slideOutBackTop = keyframes`
+    0% {
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5) translateY(-800px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+`

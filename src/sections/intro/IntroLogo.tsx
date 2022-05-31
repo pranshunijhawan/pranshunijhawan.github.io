@@ -15,7 +15,7 @@ const Intro = ({ imageProps, isEnter }: IntroProps) => {
                 <Image source={imageProps.source}
                     height={imageProps.height}
                     width={imageProps.width} />
-                </IntroContainer>
+            </IntroContainer>
         </FullScreen>
     )
 }

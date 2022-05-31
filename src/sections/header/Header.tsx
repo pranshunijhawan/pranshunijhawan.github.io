@@ -1,7 +1,7 @@
 import { HeaderLogoContainer } from "./styles";
 import { HeaderContainer } from "./styles";
 import Image from '../../ui-components/Image';
-import Slide from "../../ui-components/animated/Slide";
+import Scale from "../../ui-components/animated/Scale";
 
 interface HeaderProps {
     visibility: boolean;
@@ -17,7 +17,7 @@ const Header = ({ visibility }: HeaderProps) => {
         <>
             <HeaderContainer show={visibility}>
                 <HeaderLogoContainer>
-                    <Slide><Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={60} height={60} onClick={scrollToTop} /></Slide>
+                    <Scale><Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={60} height={60} onClick={scrollToTop} /></Scale>
                 </HeaderLogoContainer>
             </HeaderContainer>
         </>

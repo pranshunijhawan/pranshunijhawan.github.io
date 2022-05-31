@@ -25,26 +25,31 @@ import testimonialsContent from "./types/portfolio-content/testimonials-content"
 
 const Portfolio = () => {
     const [isEnter, setIsEnter] = useState(true);
-    const [visibility, setVisibility] = useState(false);
     const [hideIntro, setHideIntro] = useState(false);
+    const [headerVisibility, setHeaderVisibility] = useState(false);
+    const [visibility, setVisibility] = useState(false);
 
     setTimeout(() => {
         setIsEnter(false);
-    }, 2000);
+    }, 1500);
 
     setTimeout(() => {
       setHideIntro(true);
-    }, 2900);
+    }, 2400);
+
+    setTimeout(() => {
+      setHeaderVisibility(true);
+    }, 2500);
 
     setTimeout(() => {
       setVisibility(true);
-    }, 2950);
+    }, 2900);
     
     return (
       <>
         {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
+        {headerVisibility && <Header visibility={headerVisibility} />}
         {visibility && <>
-                        <Header visibility={visibility} />
                         <HomeSection name={homeSectionProps.name}
                             designation={homeSectionProps.designation}
                             headline={homeSectionProps.headline}
