@@ -44,10 +44,6 @@ export const TitleStyle = css`
     font-size: var(--normal-font-size);
 `
 
-export const AccordianTitleContainer = styled.div`
-    display: flex;
-`
-
 export const AccordianTitle = styled.h3<{
     isOpen: boolean;
 }>`
@@ -72,20 +68,4 @@ export const AccordianDescriptionContent = styled.div`
     margin-left: var(--mb-1);
     margin-top: var(--mb-1);
     margin-right: var(--mb-1-5);
-`
-
-export const DownIcon = styled(AiOutlineArrowDown)<{
-    isOpen: boolean
-  }>`
-    font-size: 1.4rem;
-    color: var(--first-color);
-    margin-left: auto;
-    margin-right: var(--mb-0-75);
-    transition: 0.4s;
-    transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
-`
-
-export const DownArrowContainer = styled.div`
-    margin-left: auto;
-    margin-top: 0.2rem;
 `
