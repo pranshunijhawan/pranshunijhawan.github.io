@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Focus from "../animated/Focus";
 import Bullet from "../Bullet";
-import { AccordianContent, AccordianDescription, AccordianDescriptionContent, AccordianItem, AccordianTitle, PlusIcon } from "./styles";
+import { AccordianContent, AccordianDescription, AccordianDescriptionContent, AccordianItem, AccordianTitle, AccordianTitleContainer, PlusIcon } from "./styles";
 
 export interface AccordianComponentProps {
     id: number;
@@ -18,8 +18,11 @@ const AccordianComponent = ({ id, title, content }: AccordianComponentProps) => 
     }
     
     return (
-        <AccordianItem key={id} onClick={handleAccordianClickEvent}>
-                    <AccordianTitle isOpen={isOpenState}><PlusIcon isOpen={isOpenState}>+</PlusIcon>{title}</AccordianTitle>
+        <AccordianItem key={id} onClick={handleAccordianClickEvent} isOpen={isOpenState}>
+                    <AccordianTitleContainer>
+                        <PlusIcon isOpen={isOpenState}>+</PlusIcon>
+                        <AccordianTitle isOpen={isOpenState}>{title}</AccordianTitle>
+                    </AccordianTitleContainer>
                     {isOpenState && <AccordianContent>
                         {content.map((desc, index) => (
                                     <Focus key={index}>

@@ -11,7 +11,7 @@ enum IconType {
     Contact = 10,
     CertificateRightIcon = 11,
     Download = 12,
-    Calendar = 13
+    Calendar = 13,
 }
 
 export default IconType

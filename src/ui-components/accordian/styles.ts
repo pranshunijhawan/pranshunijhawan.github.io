@@ -10,14 +10,18 @@ export const AccordianContainer = styled.div`
     box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
 `
 
-export const AccordianItem = styled.div`
+export const AccordianItem = styled.div<{
+    isOpen: boolean;
+}>`
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     background-color: var(--container-color);
     border-radius: 0.25rem;
     position: relative;
     transition: all 0.25s ease;
     background-color: var(--body-color);
-    padding: 1rem 1rem;
+    padding-top: var(--mb-1);
+    padding-left: var(--mb-1);
+    padding-bottom: ${({ isOpen }) => isOpen ? 'var(--mb-1-5)' : 'var(--mb-1)' };
     cursor: pointer;
 
     &::after {
@@ -39,6 +43,10 @@ export const TitleStyle = css`
     font-size: var(--normal-font-size);
 `
 
+export const AccordianTitleContainer = styled.div`
+    display: flex;
+`
+
 export const AccordianTitle = styled.h3<{
     isOpen: boolean;
 }>`
@@ -55,6 +63,7 @@ export const PlusIcon = styled.span<{
     transition: all 0.25s ease;
     transform: ${({ isOpen }) => isOpen ? 'rotate(45deg)' : 'rotate(0deg)' };
     color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
+    margin-top: 0.1rem;
 `
 
 export const AccordianContent = styled.div`
