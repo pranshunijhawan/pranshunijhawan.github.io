@@ -70,7 +70,7 @@ export const DownloadIcon = styled(BsDownload)`
 `
 
 export const CalendarIcon = styled(AiOutlineCalendar)`
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-bottom: var(--mb-0-5);
