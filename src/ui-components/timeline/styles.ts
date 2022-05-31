@@ -84,6 +84,7 @@ export const TimelineRounderLine = styled.div`
 
 export const TimelineTitle = styled.h3`
     margin-top: 0;
+    margin-bottom: 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 `
@@ -91,6 +92,8 @@ export const TimelineTitle = styled.h3`
 export const TimeLineSubTitle = styled.span`
     display: inline-block;
     font-size: var(--small-font-size);
+    margin-top: var(--mb-0-5);
+    margin-bottom: var(--mb-0-5);
 `
 
 export const TimeLineDate = styled.div`
