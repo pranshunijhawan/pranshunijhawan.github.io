@@ -54,18 +54,7 @@ export const AccordianTitle = styled.h3<{
     ${TitleStyle}
     color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
     margin-bottom: 0;
-    margin-left: var(--mb-0-75);
-`
-
-export const PlusIcon = styled.span<{
-    isOpen: boolean;
-}>`
-    display: inline-block;
-    margin-right: var(--mb-0-5);
-    transition: all 0.25s ease;
-    transform: ${({ isOpen }) => isOpen ? 'rotate(45deg)' : 'rotate(0deg)' };
-    color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
-    margin-top: 0.1rem;
+    margin-left: var(--mb-0-5);
 `
 
 export const AccordianContent = styled.div`
