@@ -18,7 +18,8 @@ export const ViewRandRContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-0-75);
+    margin-top: var(--mb-0-5);
     width: auto;
 `
 
@@ -123,5 +124,4 @@ export const DownIcon = styled(AiOutlineArrowDown)<{
     margin-left: auto;
     transition: 0.4s;
     transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
-    margin-top: 0.85rem;
 `
