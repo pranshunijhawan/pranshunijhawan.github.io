@@ -39,11 +39,11 @@ const Portfolio = () => {
 
     setTimeout(() => {
       setHeaderVisibility(true);
-    }, 2500);
+    }, 2400);
 
     setTimeout(() => {
       setVisibility(true);
-    }, 2900);
+    }, 2800);
     
     return (
       <>
