@@ -7,7 +7,7 @@ export const DescriptionContainer = styled.div<{
   }>`
     row-gap: 1.5rem;
     margin-bottom: var(--mb-1);
-    margin-top: var(--mb-1);
+    margin-top: var(--mb-1-5);
     display: ${({ isOpen }) => isOpen ? '': 'none' };
     overflow: ${({ isOpen }) => isOpen ? '': 'hidden' };
     transition: max-height 2s ease-out;
