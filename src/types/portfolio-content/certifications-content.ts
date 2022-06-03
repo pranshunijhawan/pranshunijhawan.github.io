@@ -14,7 +14,7 @@ const certificationsContent: CertificationsProps = {
                     link: process.env.PUBLIC_URL + '/pdf/Microsoft Certified - Azure Data Engineer Associate.pdf',
                     name: 'Credential'
                 },
-                title: 'Microsoft Certified - Azure Data Engineer Associate'
+                title: 'Microsoft Certified: Azure Data Engineer Associate'
             },
             {
                 imageProps: {
@@ -26,7 +26,7 @@ const certificationsContent: CertificationsProps = {
                     link: process.env.PUBLIC_URL + '/pdf/Microsoft Azure Certified Developer - Associate.pdf',
                     name: 'Credential'
                 },
-                title: 'Microsoft Certified - Azure Developer Associate'
+                title: 'Microsoft Certified: Azure Developer Associate'
             },
             {
                 imageProps: {
@@ -38,7 +38,7 @@ const certificationsContent: CertificationsProps = {
                     link: process.env.PUBLIC_URL + '/pdf/AWS Certified Developer - Associate certificate.pdf',
                     name: 'Credential'
                 },
-                title: 'AWS Certified Developer - Associate'
+                title: 'AWS Certified: Developer Associate'
             }
         ]
     }
