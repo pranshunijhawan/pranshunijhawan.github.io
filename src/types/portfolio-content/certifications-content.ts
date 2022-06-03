@@ -8,6 +8,18 @@ const certificationsContent: CertificationsProps = {
                 imageProps: {
                     height: 270,
                     width: 270,
+                    source: process.env.PUBLIC_URL + '/img/azure-data-engineer-associate-600x600.png'
+                },
+                buttonProps: {
+                    link: process.env.PUBLIC_URL + '/pdf/Microsoft Certified - Azure Data Engineer Associate.pdf',
+                    name: 'Credential'
+                },
+                title: 'Microsoft Certified - Azure Data Engineer Associate'
+            },
+            {
+                imageProps: {
+                    height: 270,
+                    width: 270,
                     source: process.env.PUBLIC_URL + '/img/azure-developer-associate-600x600.png'
                 },
                 buttonProps: {
