@@ -26,7 +26,7 @@ const certificationsContent: CertificationsProps = {
                     link: process.env.PUBLIC_URL + '/pdf/Microsoft Azure Certified Developer - Associate.pdf',
                     name: 'Credential'
                 },
-                title: 'Microsoft Azure Certified Developer - Associate'
+                title: 'Microsoft Certified - Azure Developer Associate'
             },
             {
                 imageProps: {
