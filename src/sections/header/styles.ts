@@ -33,14 +33,14 @@ export const NavigationContainer = styled.div`
     border-style: solid;
     border-color: var(--first-color);
     border-width: 0.2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     display: flex;
     z-index: 100;
 `
 
 export const NavigationItemContainer = styled.div`
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    border-radius: 20%;
+    border-radius: 2rem;
     background-color: var(--container-color);
     margin-left: 0.3rem;
     margin-right: 0.3rem;
