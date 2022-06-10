@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CenterScreen } from "../../types/common-css";
+import { CenterScreen, slideInFromBottom } from "../../types/common-css";
 
 export const HeaderContainer = styled.div<{
     show: boolean;
@@ -26,6 +26,7 @@ export const HeaderLogoContainer = styled.div`
 `
 
 export const NavigationContainer = styled.div`
+    ${slideInFromBottom}
     position: fixed;
     bottom: var(--mb-1);
     background-color: var(--body-color);

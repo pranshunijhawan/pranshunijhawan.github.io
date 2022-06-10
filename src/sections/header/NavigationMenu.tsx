@@ -18,9 +18,11 @@ const NavigationMenu = ({ navigationMenus }: NavigationMenuProps) => {
         <Center>
             <NavigationContainer>
                 {navigationMenus && navigationMenus.map((item, index) => (
-                    <NavigationItemContainer key={index}>
-                        <a href={item.href}><Icon iconType={item.iconType} /></a>
-                    </NavigationItemContainer>
+                    <a href={item.href} key={index}>
+                        <NavigationItemContainer>
+                            <Icon iconType={item.iconType} />
+                        </NavigationItemContainer>
+                    </a>
                 ))}
             </NavigationContainer>
         </Center>

@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { blockRevealInFromBottom, blockRevealOutToTop, fadeInBottom, fadeOutTop, scaleIn, scaleOut, slideInBackEnter, slideInBackExit, slideOutBackTop, textFocusIn, textFocusOut, trackingIn, trackingOut } from './keyframes';
+import { blockRevealInFromBottom, blockRevealOutToTop, fadeInBottom, fadeOutTop, scaleIn, scaleOut, slideInBackEnter, slideInBackExit, slideInBottom, slideOutBackTop, textFocusIn, textFocusOut, trackingIn, trackingOut } from './keyframes';
 
 export const bdGrid = css`
     display: grid;
@@ -92,4 +92,8 @@ export const blockRevealToTopExit = css`
 
 export const slideOutBackExit = css`
     animation: ${slideOutBackTop} 0.6s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+`
+
+export const slideInFromBottom = css`
+    animation: ${slideInBottom} 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 `
