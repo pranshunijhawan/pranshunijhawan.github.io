@@ -4,6 +4,7 @@ import Certifications from "./sections/certifications/Certifications";
 import ContactMe from "./sections/contact-me/ContactMe";
 import EducationalQualifications from "./sections/educational-qualifications/EducationalQualifications";
 import Header from "./sections/header/Header";
+import NavigationMenu from "./sections/header/NavigationMenu";
 import HomeSection from "./sections/home/Home";
 import Intro from "./sections/intro/IntroLogo";
 import MostProudOf from "./sections/most-proud-of/MostProudOf";
@@ -17,6 +18,7 @@ import educationalQualificationsContent from "./types/portfolio-content/educatio
 import homeSectionProps from './types/portfolio-content/home-section-content';
 import introProps from "./types/portfolio-content/intro-content";
 import mostProudOfProps from './types/portfolio-content/most-proud-of-section-content';
+import navigationMenuContent from "./types/portfolio-content/navigation-menu-content";
 import professionalExperienceContent from "./types/portfolio-content/professional-experience-content";
 import technologyProficiencyProps from "./types/portfolio-content/technology-proficiency-content";
 import testimonialsContent from "./types/portfolio-content/testimonials-content";
@@ -50,6 +52,7 @@ const Portfolio = () => {
         {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
         {headerVisibility && <Header visibility={headerVisibility} />}
         {visibility && <>
+                        <NavigationMenu navigationMenus={navigationMenuContent.navigationMenus} />
                         <HomeSection name={homeSectionProps.name}
                             designation={homeSectionProps.designation}
                             headline={homeSectionProps.headline}

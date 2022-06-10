@@ -69,6 +69,9 @@ const baseCSS = css`
 			}
 		}
 
+		scroll-behavior: smooth;
+  		overflow-x: hidden;
+
 		body {
 			h1,
 			h2,

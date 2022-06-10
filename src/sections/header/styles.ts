@@ -24,3 +24,24 @@ export const HeaderLogoContainer = styled.div`
     margin-top: 0.75rem;
     cursor: pointer;
 `
+
+export const NavigationContainer = styled.div`
+    position: fixed;
+    bottom: var(--mb-1);
+    background-color: var(--body-color);
+    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+    border-style: solid;
+    border-color: var(--first-color);
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    display: flex;
+    z-index: 100;
+`
+
+export const NavigationItemContainer = styled.div`
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 20%;
+    background-color: var(--container-color);
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+`

@@ -22,6 +22,7 @@ export const CopyRightContainer = styled.div`
     ${CenterScreen}
     margin-top: 5rem;
     align-items: center;
+    margin-bottom: 4rem;
 `
 
 export const CopyRightMessage = styled.p`

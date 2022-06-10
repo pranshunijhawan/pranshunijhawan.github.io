@@ -12,7 +12,14 @@ enum IconType {
     CertificateRightIcon = 11,
     Download = 12,
     Calendar = 13,
-    Heart = 14
+    Heart = 14,
+    NavigationAbout = 15,
+    NavigationTechnologyProficiency = 16,
+    NavigationEducationalQualifications = 17,
+    NavigationProfessionalExperience = 18,
+    NavigationCertifications = 19,
+    NavigationTestimonials = 20,
+    NavigationContact = 21
 }
 
 export default IconType

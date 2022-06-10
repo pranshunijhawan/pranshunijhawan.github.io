@@ -1,8 +1,11 @@
-import { AiOutlineArrowRight, AiOutlineCalendar, AiTwotoneMail } from "react-icons/ai"
+import { AiOutlineArrowRight, AiOutlineCalendar, AiOutlineSafetyCertificate, AiOutlineUser, AiTwotoneMail } from "react-icons/ai"
 import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsHeartFill, BsLinkedin } from "react-icons/bs"
-import { FaDatabase } from "react-icons/fa"
+import { FaDatabase, FaLaptopCode } from "react-icons/fa"
 import { ImLocation } from "react-icons/im"
-import { MdContactPhone } from "react-icons/md"
+import { BiBriefcase } from "react-icons/bi"
+import { VscFeedback } from "react-icons/vsc"
+import { TiContacts } from "react-icons/ti"
+import { MdContactPhone, MdOutlineSchool } from "react-icons/md"
 import { SiDatabricks, SiGraphql, SiJavascript } from "react-icons/si"
 import styled, { css } from "styled-components"
 import { buttonIcon } from "../../types/common-css"
@@ -81,4 +84,38 @@ export const HeartIcon = styled(BsHeartFill)`
     color: var(--first-color);
     margin-left: var(--mb-0-25);
     margin-right: 0.35rem;
+`
+
+export const navigationIconCSS = css`
+    font-size: 1.3rem;
+    color: var(--first-color);
+    margin-top: 0.25rem;
+`
+
+export const NavigationAbout = styled(AiOutlineUser)`
+    ${navigationIconCSS}
+`
+
+export const NavigationTechnologyProficiency = styled(FaLaptopCode)`
+    ${navigationIconCSS}
+`
+
+export const NavigationEducationalQualifications = styled(MdOutlineSchool)`
+    ${navigationIconCSS}
+`
+
+export const NavigationProfessionalExperience = styled(BiBriefcase)`
+    ${navigationIconCSS}
+`
+
+export const NavigationCertifications = styled(AiOutlineSafetyCertificate)`
+    ${navigationIconCSS}
+`
+
+export const NavigationTestimonials = styled(VscFeedback)`
+    ${navigationIconCSS}
+`
+
+export const NavigationContact = styled(TiContacts)`
+    ${navigationIconCSS}
 `
