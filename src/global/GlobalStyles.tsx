@@ -69,8 +69,6 @@ const baseCSS = css`
 			}
 		}
 
-		
-
 		body {
 			h1,
 			h2,

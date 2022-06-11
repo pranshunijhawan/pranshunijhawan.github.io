@@ -19,7 +19,7 @@ const NavigationMenu = ({ navigationMenus }: NavigationMenuProps) => {
         <Center>
             <NavigationContainer>
                 {navigationMenus && navigationMenus.map((item, index) => (
-                    <Link to={item.href} smooth duration={700} key={index} offset={-40} activeClass='active'>
+                    <Link to={item.href} smooth duration={500} key={index} offset={-40} activeClass='active'>
                         <NavigationItemContainer>
                             <Icon iconType={item.iconType} />
                         </NavigationItemContainer>
