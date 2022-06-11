@@ -1,7 +1,7 @@
 import IconType from "../../types/enums/IconTypes";
 import Center from "../../ui-components/Center";
-import Icon from "../../ui-components/icon/Icon";
-import { NavigationContainer, NavigationItemContainer } from "./styles";
+import NavigationItem from "./NavigationItem";
+import { NavigationContainer } from "./styles";
 
 interface NavigationMenuMetaData {
     iconType: IconType;
@@ -14,21 +14,11 @@ export interface NavigationMenuProps {
 
 const NavigationMenu = ({ navigationMenus }: NavigationMenuProps) => {
 
-    const clearHash = () => {
-        setTimeout(() => {
-            window.history.replaceState("", document.title, window.location.pathname);
-        }, 1);
-    }
-
     return(
         <Center>
             <NavigationContainer>
                 {navigationMenus && navigationMenus.map((item, index) => (
-                    <a href={item.href} key={index} onClick={clearHash}>
-                        <NavigationItemContainer>
-                            <Icon iconType={item.iconType} />
-                        </NavigationItemContainer>
-                    </a>
+                    <NavigationItem href={item.href} iconType={item.iconType} key={index} />
                 ))}
             </NavigationContainer>
         </Center>
