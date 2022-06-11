@@ -2,6 +2,7 @@ import { HeaderLogoContainer } from "./styles";
 import { HeaderContainer } from "./styles";
 import Image from '../../ui-components/Image';
 import Scale from "../../ui-components/animated/Scale";
+import { useState } from "react";
 
 interface HeaderProps {
     visibility: boolean;
@@ -9,14 +10,22 @@ interface HeaderProps {
 
 const Header = ({ visibility }: HeaderProps) => {
 
+    const [toggle, setToggle] = useState(false);
+
     const scrollToTop = () => {
         window.scrollTo(0, 0)
+
+        setToggle(true)
+
+        setTimeout(() => {
+            setToggle(false);
+        }, 500);
     }
                         
     return (
         <>
             <HeaderContainer show={visibility}>
-                <HeaderLogoContainer>
+                <HeaderLogoContainer toggle={toggle}>
                     <Scale><Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={60} height={60} onClick={scrollToTop} /></Scale>
                 </HeaderLogoContainer>
             </HeaderContainer>

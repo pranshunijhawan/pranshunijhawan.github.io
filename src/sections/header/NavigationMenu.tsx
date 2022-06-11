@@ -1,7 +1,7 @@
 import IconType from "../../types/enums/IconTypes";
 import Center from "../../ui-components/Center";
 import NavigationItem from "./NavigationItem";
-import { NavigationContainer } from "./styles";
+import { NavigationContainer, NavigationItemOutlineContainer } from "./styles";
 
 interface NavigationMenuMetaData {
     iconType: IconType;
@@ -18,7 +18,9 @@ const NavigationMenu = ({ navigationMenus }: NavigationMenuProps) => {
         <Center>
             <NavigationContainer>
                 {navigationMenus && navigationMenus.map((item, index) => (
-                    <NavigationItem href={item.href} iconType={item.iconType} key={index} />
+                    <NavigationItemOutlineContainer key={index}>
+                        <NavigationItem href={item.href} iconType={item.iconType} />
+                    </NavigationItemOutlineContainer>
                 ))}
             </NavigationContainer>
         </Center>

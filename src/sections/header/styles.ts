@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CenterScreen, slideInFromBottom } from "../../types/common-css";
+import { CenterScreen, scaleInElement, slideInFromBottom } from "../../types/common-css";
 
 export const HeaderContainer = styled.div<{
     show: boolean;
@@ -19,10 +19,14 @@ export const HeaderContainer = styled.div<{
     transition: opacity 1s, visibility 1s;
 `
 
-export const HeaderLogoContainer = styled.div`
+export const HeaderLogoContainer = styled.div<{
+    toggle: boolean
+}>`
     align-items: center;
     margin-top: 0.75rem;
     cursor: pointer;
+    transform: ${({ toggle }) => toggle ? 'scale(1.1)' : 'scale(1)' };
+    transition: 0.5s;
 `
 
 export const NavigationContainer = styled.div`
@@ -39,6 +43,11 @@ export const NavigationContainer = styled.div`
     z-index: 100;
 `
 
+export const NavigationItemOutlineContainer = styled.div`
+    ${scaleInElement}
+    animation-delay: 0.85s;
+`
+
 export const NavigationItemContainer = styled.div<{
     toggle: boolean
 }>`
@@ -49,5 +58,5 @@ export const NavigationItemContainer = styled.div<{
     margin-right: 0.3rem;
     transform: ${({ toggle }) => toggle ? 'scale(1.2)' : 'scale(1)' };
     transition: 0.5s;
-    cursor: pointer;
+    cursor: pointer;    
 `
