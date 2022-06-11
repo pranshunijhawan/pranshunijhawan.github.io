@@ -8,7 +8,7 @@ export interface ImageProps {
 
 const Image = ({ height, width, source, href, onClick }: ImageProps) => {
 
-    const imageComponent = <img src={source} height={height} width={width} onClick={onClick} />
+    const imageComponent = <img src={source} height={height} width={width} onClick={onClick} alt='Portfolio, Pranshu Nijhawan' />
 
     const anchorComponent = href ? <a href={href}>{imageComponent}</a> : imageComponent;
 

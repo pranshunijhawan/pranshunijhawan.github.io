@@ -9,7 +9,7 @@ export interface TechnologyProficiencyProps extends BaseSectionProps {
     skills: SkillsProps[];
 }
 
-const TechnologyProficiencyProps = ({ sectionTitle, skills }: TechnologyProficiencyProps) => {
+const TechnologyProficiency = ({ sectionTitle, skills }: TechnologyProficiencyProps) => {
     return (
         <Section id='technologyproficiency'>
                 <SectionTitle content={sectionTitle} />
@@ -22,4 +22,4 @@ const TechnologyProficiencyProps = ({ sectionTitle, skills }: TechnologyProficie
     )
 }
 
-export default TechnologyProficiencyProps;
+export default TechnologyProficiency;
