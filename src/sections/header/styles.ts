@@ -39,14 +39,11 @@ export const NavigationContainer = styled.div`
     z-index: 100;
 `
 
-export const NavigationItemContainer = styled.div<{
-    toggle: boolean
-}>`
+export const NavigationItemContainer = styled.div`
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     border-radius: 2rem;
     background-color: var(--container-color);
     margin-left: 0.3rem;
     margin-right: 0.3rem;
-    transform: ${({ toggle }) => toggle ? 'scale(1.2)' : 'scale(1)' };
     transition: 0.5s;
 `
