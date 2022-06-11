@@ -15,7 +15,7 @@ const Header = ({ visibility }: HeaderProps) => {
             <HeaderContainer show={visibility}>
                 <HeaderLogoContainer>
                     <Scale>
-                        <Link to='home' smooth={true} duration={500} offset={-100}>
+                        <Link to='home' smooth={true} duration={700} offset={-100}>
                             <Image source={process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'} width={60} height={60} />
                         </Link>
                     </Scale>
