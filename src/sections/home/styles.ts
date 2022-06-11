@@ -16,7 +16,6 @@ const HomeCSS = css`
 
 export const HomeContainer = styled.div`
     ${HomeCSS}
-    margin-bottom: -2rem;
 `
 
 export const HomeContent = styled.div`
