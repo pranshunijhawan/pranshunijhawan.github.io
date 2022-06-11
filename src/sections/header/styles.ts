@@ -45,5 +45,4 @@ export const NavigationItemContainer = styled.div`
     background-color: var(--container-color);
     margin-left: 0.3rem;
     margin-right: 0.3rem;
-    cursor: pointer;
 `

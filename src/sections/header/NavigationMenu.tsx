@@ -2,7 +2,6 @@ import IconType from "../../types/enums/IconTypes";
 import Center from "../../ui-components/Center";
 import Icon from "../../ui-components/icon/Icon";
 import { NavigationContainer, NavigationItemContainer } from "./styles";
-import { Link } from "react-scroll";
 
 interface NavigationMenuMetaData {
     iconType: IconType;
@@ -19,11 +18,11 @@ const NavigationMenu = ({ navigationMenus }: NavigationMenuProps) => {
         <Center>
             <NavigationContainer>
                 {navigationMenus && navigationMenus.map((item, index) => (
-                    <Link to={item.href} smooth duration={700} key={index} offset={-40} activeClass='active'>
+                    <a href={item.href} key={index}>
                         <NavigationItemContainer>
                             <Icon iconType={item.iconType} />
                         </NavigationItemContainer>
-                    </Link>
+                    </a>
                 ))}
             </NavigationContainer>
         </Center>

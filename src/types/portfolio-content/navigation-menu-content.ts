@@ -5,31 +5,31 @@ const navigationMenuContent: NavigationMenuProps = {
     navigationMenus: [
         {
             iconType: IconType.NavigationAbout,
-            href: 'about'
+            href: '#about'
         },
         {
             iconType: IconType.NavigationTechnologyProficiency,
-            href: 'technologyproficiency'
+            href: '#technologyproficiency'
         },
         {
             iconType: IconType.NavigationEducationalQualifications,
-            href: 'educationalqualifications'
+            href: '#educationalqualifications'
         },
         {
             iconType: IconType.NavigationProfessionalExperience,
-            href: 'professionalexperience'
+            href: '#professionalexperience'
         },
         {
             iconType: IconType.NavigationCertifications,
-            href: 'certifications'
+            href: '#certifications'
         },
         {
             iconType: IconType.NavigationTestimonials,
-            href: 'testimonials'
+            href: '#testimonials'
         },
         {
             iconType: IconType.NavigationContact,
-            href: 'contactme'
+            href: '#contactme'
         }
     ]
 }
