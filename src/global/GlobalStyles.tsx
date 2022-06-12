@@ -98,8 +98,6 @@ const baseCSS = css`
 				margin-top: 0;
 				margin-bottom: 0;
 			}
-
-			transition: background-color 200ms linear;
 		}
 	}
 `
