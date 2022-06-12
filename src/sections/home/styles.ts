@@ -65,7 +65,7 @@ export const ToggleContainer = styled.div`
     border-radius: 2rem;
     width: 4.5rem;
     height: 2.5rem;
-    margin-right: var(--mb-1);
+    margin-right: var(--mb-1-5);
     cursor: pointer;
 `
 
