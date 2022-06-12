@@ -19,7 +19,9 @@ enum IconType {
     NavigationProfessionalExperience = 18,
     NavigationCertifications = 19,
     NavigationTestimonials = 20,
-    NavigationContact = 21
+    NavigationContact = 21,
+    Moon = 22,
+    Sun = 23
 }
 
 export default IconType

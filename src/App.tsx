@@ -1,14 +1,19 @@
+import { useState } from "react";
 import { GlobalStylesDark, GlobalStylesLight } from "./global/GlobalStyles";
 import Portfolio from './Portfolio';
 
 function App() {
 
-  const darkTheme: boolean = true;
+  const [darkMode, setDarkMode] = useState(true)
+
+  const themeHandler = () => {
+    setDarkMode(!darkMode);
+  }
 
   return (
     <div>
-      { darkTheme ? <GlobalStylesDark /> : <GlobalStylesLight /> }
-      <Portfolio />
+      { darkMode ? <GlobalStylesDark /> : <GlobalStylesLight /> }
+      <Portfolio themeHandler={themeHandler} />
     </div>
   );
 }

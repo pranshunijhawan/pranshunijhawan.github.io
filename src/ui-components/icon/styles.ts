@@ -1,5 +1,5 @@
 import { AiOutlineArrowRight, AiOutlineCalendar, AiOutlineSafetyCertificate, AiOutlineUser, AiTwotoneMail } from "react-icons/ai"
-import { BsDownload, BsFillCloudFill, BsFillTelephoneForwardFill, BsHeartFill, BsLinkedin } from "react-icons/bs"
+import { BsDownload, BsFillCloudFill, BsFillMoonFill, BsFillSunFill, BsFillTelephoneForwardFill, BsHeartFill, BsLinkedin } from "react-icons/bs"
 import { FaDatabase, FaLaptopCode } from "react-icons/fa"
 import { ImLocation } from "react-icons/im"
 import { BiBriefcase } from "react-icons/bi"
@@ -118,4 +118,12 @@ export const NavigationTestimonials = styled(VscFeedback)`
 
 export const NavigationContact = styled(TiContacts)`
     ${navigationIconCSS}
+`
+
+export const Moon = styled(BsFillMoonFill)`
+    color: var(--first-color);
+`
+
+export const Sun = styled(BsFillSunFill)`
+    color: var(--first-color);
 `

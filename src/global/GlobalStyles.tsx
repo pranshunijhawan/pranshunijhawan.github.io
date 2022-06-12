@@ -2,7 +2,6 @@ import { createGlobalStyle, css } from 'styled-components';
 
 const baseCSS = css`
 	* {
-		@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 		box-sizing: border-box;
 		padding: 0;
 		margin: 0;
@@ -24,7 +23,7 @@ const baseCSS = css`
 			--text-color-light: hsl(var(--hue-color), 8%, 65%);
 			--input-color: hsl(var(--hue-color), 70%, 96%);
 			--body-color: hsl(var(--hue-color), 60%, 99%);
-			--container-color: #fff;
+			--container-color: hsl(var(--hue-color), 0%, 90%);
 			--menu-item-color: black;
 			--scroll-background-color: hsl(var(--hue-color), 12%, 90%);
 			--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -99,6 +98,8 @@ const baseCSS = css`
 				margin-top: 0;
 				margin-bottom: 0;
 			}
+
+			transition: background-color 200ms linear;
 		}
 	}
 `

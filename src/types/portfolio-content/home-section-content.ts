@@ -8,11 +8,6 @@ const homeSectionProps: HomeSectionProps = {
         link: '#contactme',
         name: 'Contact Me',
         target: 'none'
-    },
-    imageProps: {
-        height: 150,
-        width: 150,
-        source: process.env.PUBLIC_URL + '/img/PN-logo-Fav-Icon.png'
     }
 }
 

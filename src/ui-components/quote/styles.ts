@@ -53,17 +53,19 @@ export const QuoteText = styled.p`
 `
 
 export const GivenBy = styled.h3`
-    color: white;
+    color: var(--title-color);
     font-size: var(--h3-font-size);
     font-weight: 300;
     line-height: 24px;
     margin: 10px 0 5px;
+    margin-left: 0.8rem;
 `
 
 export const GivenBySubTitle = styled.h4`
     font-weight: 400;
     margin: 0;
     opacity: 0.5;
+    margin-left: 0.8rem;
 `
 export const Source = styled.span`
     font-size: var(--smaller-font-size);
@@ -71,6 +73,8 @@ export const Source = styled.span`
     word-break: break-all;
     float: right;
     color: var(--first-color);
+    margin-right: 0.8rem;
+    padding-bottom: 1.5rem;
 `
 
 export const QuoteIcon = styled(FaQuoteLeft)`

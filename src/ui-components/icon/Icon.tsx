@@ -1,5 +1,5 @@
 import IconType from "../../types/enums/IconTypes"
-import { BackEndIcon, CalendarIcon, CertificateRightIcon, CloudIcon, ContactIcon, DatabaseIcon, DataEngineeringIcon, DownloadIcon, EmailIcon, FrontEndIcon, HeartIcon, LinkedInIcon, LocationIcon, NavigationAbout, NavigationCertifications, NavigationContact, NavigationEducationalQualifications, NavigationProfessionalExperience, NavigationTechnologyProficiency, NavigationTestimonials, PhoneIcon } from "./styles"
+import { BackEndIcon, CalendarIcon, CertificateRightIcon, CloudIcon, ContactIcon, DatabaseIcon, DataEngineeringIcon, DownloadIcon, EmailIcon, FrontEndIcon, HeartIcon, LinkedInIcon, LocationIcon, Moon, NavigationAbout, NavigationCertifications, NavigationContact, NavigationEducationalQualifications, NavigationProfessionalExperience, NavigationTechnologyProficiency, NavigationTestimonials, PhoneIcon, Sun } from "./styles"
 
 interface IconProps {
     iconType: IconType
@@ -50,6 +50,10 @@ const Icon = ({ iconType }: IconProps) => {
             return <NavigationTestimonials />
         case IconType.NavigationContact:
             return <NavigationContact />
+        case IconType.Moon:
+            return <Moon />
+        case IconType.Sun:
+            return <Sun />
     }
 
     return null;

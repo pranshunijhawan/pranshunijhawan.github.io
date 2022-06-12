@@ -1,16 +1,16 @@
 import Button, { ButtonProps } from "../../ui-components/Button";
-import { ImageProps } from "../../ui-components/Image";
 import { Section } from "../../ui-components/Section";
 import { HomeContainer, HomeContent, Name, Designation, Headline } from "./styles";
 import Slide from "../../ui-components/animated/Slide";
 import IconType from "../../types/enums/IconTypes";
+import Toggle from "./Toggle";
 
 export interface HomeSectionProps {
     name: string;
     designation: string;
     headline: string;
     buttonProps: ButtonProps;
-    imageProps: ImageProps;
+    themeHandler?: any;
 }
 
 const HomeSection = ({
@@ -18,7 +18,7 @@ const HomeSection = ({
     designation,
     headline,
     buttonProps,
-    imageProps,
+    themeHandler,
   }: HomeSectionProps) => {
 
     const scrollToBottom = () => {
@@ -27,23 +27,22 @@ const HomeSection = ({
     
     return (
         <Section id="home">
-                <HomeContainer>
-                    <HomeContent>
-                        <Slide>
+                <Slide>
+                    <Toggle themeHandler={themeHandler}></Toggle>
+                    <HomeContainer>
+                        <HomeContent>
                             <Name>Hi, I'm {name}</Name>
                             <Designation>{designation}</Designation>
-                        </Slide>
-                    </HomeContent>
-                    <HomeContent>
-                        <Slide>
+                        </HomeContent>
+                        <HomeContent>
                             <Headline>{headline}</Headline>
                             <Button clickHandler={scrollToBottom}
                                     name={buttonProps.name} 
                                     icon={IconType.Contact}
                                     target={buttonProps.target} />
-                        </Slide>
-                    </HomeContent>
-                </HomeContainer>
+                        </HomeContent>
+                    </HomeContainer>
+                </Slide>
         </Section>
     )
   }

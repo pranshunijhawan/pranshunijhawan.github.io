@@ -23,9 +23,11 @@ import professionalExperienceContent from "./types/portfolio-content/professiona
 import technologyProficiencyProps from "./types/portfolio-content/technology-proficiency-content";
 import testimonialsContent from "./types/portfolio-content/testimonials-content";
 
+interface PortfolioProps {
+  themeHandler: any
+}
 
-
-const Portfolio = () => {
+const Portfolio = ({ themeHandler }: PortfolioProps) => {
     const [isEnter, setIsEnter] = useState(true);
     const [hideIntro, setHideIntro] = useState(false);
     const [headerVisibility, setHeaderVisibility] = useState(false);
@@ -57,7 +59,7 @@ const Portfolio = () => {
                             designation={homeSectionProps.designation}
                             headline={homeSectionProps.headline}
                             buttonProps={homeSectionProps.buttonProps}
-                            imageProps={homeSectionProps.imageProps} />
+                            themeHandler={themeHandler} />
                         <AboutSection 
                             sectionTitle={aboutSectionContent.sectionTitle} 
                             content={aboutSectionContent.content}
