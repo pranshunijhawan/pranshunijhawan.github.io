@@ -78,8 +78,6 @@ export const ToggleButtonContainer = styled.div<{
     isDarkMode: boolean
 }>`
     transform: ${({ isDarkMode }) => isDarkMode ? '' : 'translateX(1.8rem)' };
-    padding-top: 0.15rem;
-    padding-left: 0.25rem;
     border-radius: 2rem;
     background-color: var(--container-color);
     transition: 0.5s;
@@ -87,4 +85,7 @@ export const ToggleButtonContainer = styled.div<{
     width: 1.5rem;
     cursor: pointer;
     margin-top: -0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
