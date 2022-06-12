@@ -15,7 +15,6 @@ export const CertificateContainer = styled.div`
 export const LogoImageContainer = styled.div`
     ${CenterScreen}
     margin-left: var(--mb-1);
-    margin-top: var(--mb-1);
     margin-bottom: var(--mb-1);
 `
 
