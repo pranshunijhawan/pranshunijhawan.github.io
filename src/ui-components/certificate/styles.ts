@@ -9,6 +9,7 @@ export const CertificateContainer = styled.div`
     transition: 0.3s;
     display: flex;
     align-items: center;
+    padding-top: 0.9rem;
 `
 
 export const LogoImageContainer = styled.div`
