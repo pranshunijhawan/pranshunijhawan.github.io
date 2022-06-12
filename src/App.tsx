@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       { darkMode ? <GlobalStylesDark /> : <GlobalStylesLight /> }
-      <Portfolio themeHandler={themeHandler} />
+      <Portfolio themeHandler={themeHandler} isDarkModeEnabled={darkMode} />
     </div>
   );
 }
