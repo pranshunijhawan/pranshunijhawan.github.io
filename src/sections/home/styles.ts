@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { buttonIcon, container, grid } from "../../types/common-css";
+import { buttonIcon, container, grid, scaleInElement, slideInFromTop } from "../../types/common-css";
 import { IoMdContact } from 'react-icons/io';
 
 const HomeCSS = css`
@@ -55,6 +55,7 @@ export const ToggleOutline = styled.div`
 `
 
 export const ToggleContainer = styled.div`
+    ${slideInFromTop}
     margin-left: auto;
     background-color: var(--body-color);
     padding: 0.5rem 0.4rem 0.5rem 0.4rem;
@@ -66,6 +67,11 @@ export const ToggleContainer = styled.div`
     height: 2.5rem;
     margin-right: var(--mb-1);
     cursor: pointer;
+`
+
+export const ToggleButtonOutlineContainer = styled.div`
+    ${scaleInElement}
+    animation-delay: 0.85s;
 `
 
 export const ToggleButtonContainer = styled.div<{

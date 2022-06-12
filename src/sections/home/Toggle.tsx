@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IconType from "../../types/enums/IconTypes";
 import Icon from "../../ui-components/icon/Icon";
-import { ToggleOutline, ToggleContainer, ToggleButtonContainer } from "./styles";
+import { ToggleOutline, ToggleContainer, ToggleButtonContainer, ToggleButtonOutlineContainer } from "./styles";
 
 interface ToggleProps {
     themeHandler: any;
@@ -22,9 +22,11 @@ const Toggle = ({ themeHandler }: ToggleProps) => {
     return (
         <ToggleOutline>
             <ToggleContainer onClick={toggleClickHandler}>
-                <ToggleButtonContainer isDarkMode={darkMode}>
-                    <Icon iconType={icon} />
-                </ToggleButtonContainer>
+                <ToggleButtonOutlineContainer>
+                    <ToggleButtonContainer isDarkMode={darkMode}>
+                        <Icon iconType={icon} />
+                    </ToggleButtonContainer>
+                </ToggleButtonOutlineContainer>
             </ToggleContainer>
         </ToggleOutline>
     )
