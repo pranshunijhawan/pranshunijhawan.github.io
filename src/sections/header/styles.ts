@@ -51,12 +51,15 @@ export const NavigationItemOutlineContainer = styled.div`
 export const NavigationItemContainer = styled.div<{
     toggle: boolean
 }>`
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 2rem;
     background-color: var(--container-color);
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     transform: ${({ toggle }) => toggle ? 'scale(1.2)' : 'scale(1)' };
     transition: 0.5s;
-    cursor: pointer;    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 `

@@ -89,7 +89,6 @@ export const HeartIcon = styled(BsHeartFill)`
 export const navigationIconCSS = css`
     font-size: 1.4rem;
     color: var(--first-color);
-    margin-top: 0.25rem;
 `
 
 export const NavigationAbout = styled(AiOutlineUser)`
