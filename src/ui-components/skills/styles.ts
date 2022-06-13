@@ -3,7 +3,7 @@ import { AiOutlineArrowDown } from 'react-icons/ai';
 import { percentageBar } from "../../types/keyframes";
 
 export const SkillContent = styled.div`
-    margin-top: var(--mb-1-5);
+    margin-top: var(--mb-2);
     font-size: var(--h3-font-size);
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ export const SkillsContainer = styled.div<{
   }>`
     row-gap: 1.5rem;
     padding-left: 2.7rem;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1-5);
     display: ${({ isOpen }) => isOpen ? '': 'none' };
     overflow: ${({ isOpen }) => isOpen ? '': 'hidden' };
     transition: max-height 2s ease-out;
