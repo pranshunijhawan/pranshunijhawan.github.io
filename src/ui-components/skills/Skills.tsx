@@ -24,10 +24,10 @@ const Skills = ({ category, skills, icon }: SkillsProps) => {
         <div onClick={handleAccordianClickEvent}>
            <SkillsHeaderContainer>
                 <Icon iconType={icon} />
-                <SkillCategory isOpen={isOpenState}>{category}</SkillCategory>
-                <DownIcon isOpen={isOpenState} />
+                <SkillCategory isopen={isOpenState}>{category}</SkillCategory>
+                <DownIcon isopen={isOpenState} />
             </SkillsHeaderContainer>
-            <SkillsContainer isOpen={isOpenState}>
+            <SkillsContainer isopen={isOpenState}>
                 {skills.map((item, index) => (
                             <Focus key={index}>
                                 <Slide>

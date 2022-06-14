@@ -22,24 +22,24 @@ export const SkillBar = styled.div`
 `
 
 export const SkillsContainer = styled.div<{
-    isOpen: boolean
+    isopen: boolean
   }>`
     row-gap: 1.5rem;
     padding-left: 2.7rem;
     margin-bottom: var(--mb-1-5);
-    display: ${({ isOpen }) => isOpen ? '': 'none' };
-    overflow: ${({ isOpen }) => isOpen ? '': 'hidden' };
+    display: ${({ isopen }) => isopen ? '': 'none' };
+    overflow: ${({ isopen }) => isopen ? '': 'hidden' };
     transition: max-height 2s ease-out;
 `
 
 export const DownIcon = styled(AiOutlineArrowDown)<{
-    isOpen: boolean
+    isopen: boolean
   }>`
     font-size: 2rem;
     color: var(--first-color);
     margin-left: auto;
     transition: 0.4s;
-    transform: ${({ isOpen }) => isOpen ? 'rotate(-180deg);': '' };
+    transform: ${({ isopen }) => isopen ? 'rotate(-180deg);': '' };
 `
 
 export const SkillsHeaderContainer = styled.div`
@@ -52,7 +52,7 @@ export const SkillsHeaderContainer = styled.div`
 `
 
 export const SkillCategory = styled.h1<{
-    isOpen: boolean;
+    isopen: boolean;
 }>`
     margin-top: 0.5rem;
     font-size: var(--h3-font-size);
@@ -60,7 +60,7 @@ export const SkillCategory = styled.h1<{
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
     transition: 0.2s;
-    color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
+    color: ${({ isopen }) => isopen ? 'var(--first-color)' : 'var(--title-color)' };
     
     @media screen and (max-width: 349px) {
         font-size: var(--normal-font-size);

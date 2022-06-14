@@ -11,7 +11,7 @@ export const AccordianContainer = styled.div`
 `
 
 export const AccordianItem = styled.div<{
-    isOpen: boolean;
+    isopen: boolean;
 }>`
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     background-color: var(--container-color);
@@ -22,7 +22,7 @@ export const AccordianItem = styled.div<{
     padding-top: var(--mb-1);
     padding-left: var(--mb-1);
     padding-right: var(--mb-1);
-    padding-bottom: ${({ isOpen }) => isOpen ? 'var(--mb-1-5)' : 'var(--mb-1)' };
+    padding-bottom: ${({ isopen }) => isopen ? 'var(--mb-1-5)' : 'var(--mb-1)' };
     cursor: pointer;
 
     &::after {
@@ -45,10 +45,10 @@ export const TitleStyle = css`
 `
 
 export const AccordianTitle = styled.h3<{
-    isOpen: boolean;
+    isopen: boolean;
 }>`
     ${TitleStyle}
-    color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
+    color: ${({ isopen }) => isopen ? 'var(--first-color)' : 'var(--title-color)' };
     margin-bottom: 0;
     margin-left: var(--mb-0-5);
 `
@@ -78,7 +78,7 @@ export const CrossIconContainer = styled.div`
 `
 
 export const PlusIcon = styled.span<{
-    isOpen: boolean;
+    isopen: boolean;
 }>`
     font-weight: 400;
     transition: 0.2s;
@@ -86,7 +86,7 @@ export const PlusIcon = styled.span<{
     display: inline-block;
     margin-right: var(--mb-0-5);
     transition: all 0.25s ease;
-    transform: ${({ isOpen }) => isOpen ? 'rotate(45deg)' : 'rotate(0deg)' };
-    color: ${({ isOpen }) => isOpen ? 'var(--first-color)' : 'var(--title-color)' };
+    transform: ${({ isopen }) => isopen ? 'rotate(45deg)' : 'rotate(0deg)' };
+    color: ${({ isopen }) => isopen ? 'var(--first-color)' : 'var(--title-color)' };
     margin-left: var(--mb-0-5);
 `
