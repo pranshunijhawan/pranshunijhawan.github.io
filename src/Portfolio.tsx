@@ -17,11 +17,13 @@ import contactMeContent from "./types/portfolio-content/contact-me-content";
 import educationalQualificationsContent from "./types/portfolio-content/educational-qualifications-content";
 import homeSectionProps from './types/portfolio-content/home-section-content';
 import introProps from "./types/portfolio-content/intro-content";
+import metaContent from "./types/portfolio-content/meta-content";
 import mostProudOfProps from './types/portfolio-content/most-proud-of-section-content';
 import navigationMenuContent from "./types/portfolio-content/navigation-menu-content";
 import professionalExperienceContent from "./types/portfolio-content/professional-experience-content";
 import technologyProficiencyProps from "./types/portfolio-content/technology-proficiency-content";
 import testimonialsContent from "./types/portfolio-content/testimonials-content";
+import MetaTag from "./ui-components/MetaTag";
 
 interface PortfolioProps {
   themeHandler: any;
@@ -50,14 +52,13 @@ const Portfolio = ({ themeHandler, isDarkModeEnabled }: PortfolioProps) => {
       setVisibility(true);
     }, 2800);
 
-    const appleStatusBar: string = isDarkModeEnabled ? 'black-translucent' : 'default';
-    const themeStatusBar: string = isDarkModeEnabled ? 'hsl(0, 0%, 0%)' : 'hsl(220, 60%, 99%)';
-
-    document.querySelectorAll('meta[name="apple-mobile-web-app-status-bar-style"]')[0].setAttribute('content', appleStatusBar);
-    document.querySelectorAll('meta[name="theme"]')[0].setAttribute('content', themeStatusBar);
+    const metaDetails = metaContent;
+    metaDetails.metaDetails[0].metaContent = isDarkModeEnabled ? 'black-translucent' : 'default';
+    metaDetails.metaDetails[1].metaContent = isDarkModeEnabled ? 'hsl(0, 0%, 0%)' : 'hsl(220, 60%, 99%)';
     
     return (
       <>
+        <MetaTag metaDetails={metaContent.metaDetails} />
         {!hideIntro && <Intro imageProps={introProps.imageProps} isEnter={isEnter} />}
         {headerVisibility && <Header visibility={headerVisibility} />}
         {visibility && <>

@@ -27,7 +27,7 @@ const ViewRolesAndResponsibilities = ({ description }: ViewRolesAndResponsibilit
             <>
                 <ViewRandRContainer onClick={handleAccordianClickEvent}>
                     <ViewRandR>{rolesAndResponsibilitiesMessage}</ViewRandR>
-                    <DownIcon isopen={isOpenState} />
+                    <DownIcon isOpen={isOpenState} />
                 </ViewRandRContainer>
                 <RolesAndResponsibilities description={description} isOpenState={isOpenState} />
             </>}

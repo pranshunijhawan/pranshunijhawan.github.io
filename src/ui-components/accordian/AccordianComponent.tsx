@@ -18,13 +18,13 @@ const AccordianComponent = ({ id, title, content }: AccordianComponentProps) => 
     }
     
     return (
-        <AccordianItem key={id} onClick={handleAccordianClickEvent} isopen={isOpenState}>
+        <AccordianItem key={id} onClick={handleAccordianClickEvent} isOpen={isOpenState}>
                     <AccordianTitleContainer>
                         <CrossIconContainer>
-                            <PlusIcon isopen={isOpenState}>+</PlusIcon>
+                            <PlusIcon isOpen={isOpenState}>+</PlusIcon>
                         </CrossIconContainer>
                         <div>
-                            <AccordianTitle isopen={isOpenState}>{title}</AccordianTitle>
+                            <AccordianTitle isOpen={isOpenState}>{title}</AccordianTitle>
                         </div>
                     </AccordianTitleContainer>
                     {isOpenState && <AccordianContent>

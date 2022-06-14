@@ -11,7 +11,7 @@ interface RolesAndResponsibilitiesProps {
 const RolesAndResponsibilities = ({ description, isOpenState }: RolesAndResponsibilitiesProps) => {
 
     return (
-        <DescriptionContainer isopen={isOpenState}>
+        <DescriptionContainer isOpen={isOpenState}>
                 {description && description.length > 0 && description.map((item, index) => (
                     <Focus key={index}>
                         <Slide>
