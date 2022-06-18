@@ -485,8 +485,8 @@ Error generating stack: `+i.message+`
     margin-left: var(--mb-0-25);
     margin-right: 0.35rem;
 `,_n=G`
-    font-size: 1.4rem;
-    color: var(--first-color);
+    font-size: 1.3rem;
+    color: var(--body-color);
 `,Kh=C(uh)`
     ${_n}
 `,Xh=C(wh)`
@@ -502,11 +502,9 @@ Error generating stack: `+i.message+`
 `,t2=C(Eh)`
     ${_n}
 `,n2=C(dh)`
-    color: var(--first-color);
-    font-size: 1.2rem;
+    color: var(--body-color);
 `,r2=C(ph)`
-    color: var(--first-color);
-    font-size: 1.2rem;
+    color: var(--body-color);
 `,eo=G`
     font-size: var(--smaller-font-size);
     color: var(--first-color);
@@ -767,7 +765,7 @@ Error generating stack: `+i.message+`
 `,Z2=C.div`
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 2rem;
-    background-color: var(--container-color);
+    background-color: var(--first-color);
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     transform: ${({toggle:e})=>e?"scale(1.2)":"scale(1)"};
@@ -822,26 +820,28 @@ Error generating stack: `+i.message+`
 `,fg=C.div`
     ${Fm}
     margin-left: auto;
-    background-color: var(--first-color);
-    padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+    background-color: var(--body-color);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-style: solid;
+    border-color: var(--first-color);
+    border-width: 0.2rem;
     border-radius: 2rem;
-    width: 4.2rem;
-    height: 2.2rem;
+    width: 4.5rem;
+    height: 2.5rem;
     margin-right: var(--mb-1-5);
     cursor: pointer;
-    display: flex;
-    align-items: center;
 `,dg=C.div`
     ${zs}
     animation-delay: 0.85s;
 `,pg=C.div`
-    transform: ${({isDarkMode:e})=>e?"":"translateX(1.72rem)"};
+    transform: ${({isDarkMode:e})=>e?"":"translateX(1.7rem)"};
     border-radius: 2rem;
-    background-color: var(--body-color);
+    background-color: var(--first-color);
     transition: 0.5s;
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 1.5rem;
+    width: 1.5rem;
     cursor: pointer;
+    margin-top: -0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
