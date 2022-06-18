@@ -503,8 +503,10 @@ Error generating stack: `+i.message+`
     ${_n}
 `,n2=C(dh)`
     color: var(--first-color);
+    font-size: 1.2rem;
 `,r2=C(ph)`
     color: var(--first-color);
+    font-size: 1.2rem;
 `,eo=G`
     font-size: var(--smaller-font-size);
     color: var(--first-color);
@@ -820,28 +822,26 @@ Error generating stack: `+i.message+`
 `,fg=C.div`
     ${Fm}
     margin-left: auto;
-    background-color: var(--body-color);
+    background-color: var(--first-color);
     padding: 0.5rem 0.4rem 0.5rem 0.4rem;
-    border-style: solid;
-    border-color: var(--first-color);
-    border-width: 0.2rem;
     border-radius: 2rem;
-    width: 4.5rem;
-    height: 2.5rem;
+    width: 4.2rem;
+    height: 2.2rem;
     margin-right: var(--mb-1-5);
     cursor: pointer;
+    display: flex;
+    align-items: center;
 `,dg=C.div`
     ${zs}
     animation-delay: 0.85s;
 `,pg=C.div`
-    transform: ${({isDarkMode:e})=>e?"":"translateX(1.8rem)"};
+    transform: ${({isDarkMode:e})=>e?"":"translateX(1.72rem)"};
     border-radius: 2rem;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     transition: 0.5s;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
     cursor: pointer;
-    margin-top: -0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
