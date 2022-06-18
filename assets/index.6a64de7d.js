@@ -485,7 +485,7 @@ Error generating stack: `+i.message+`
     margin-left: var(--mb-0-25);
     margin-right: 0.35rem;
 `,_n=G`
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--body-color);
 `,Kh=C(uh)`
     ${_n}
