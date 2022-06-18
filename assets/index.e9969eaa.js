@@ -524,7 +524,7 @@ Error generating stack: `+i.message+`
     display: inline-flex;
     align-items: center;
     background-color: var(--first-color);
-    color: #fff;
+    color: var(--body-color);
     padding: 0.8rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
