@@ -821,20 +821,19 @@ Error generating stack: `+i.message+`
     ${Um}
     margin-left: auto;
     background-color: var(--body-color);
-    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
     border-style: solid;
     border-color: var(--first-color);
     border-width: 0.2rem;
     border-radius: 2rem;
-    width: 4.3rem;
-    height: 2.5rem;
+    width: 4rem;
     margin-right: var(--mb-1-5);
     cursor: pointer;
 `,pg=C.div`
     ${Bi}
     animation-delay: 0.85s;
 `,mg=C.div`
-    transform: ${({isDarkMode:e})=>e?"":"translateX(1.69rem)"};
+    transform: ${({isDarkMode:e})=>e?"":"translateX(1.55rem)"};
     border-radius: 2rem;
     background-color: var(--first-color);
     transition: 0.5s;
