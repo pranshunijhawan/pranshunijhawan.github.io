@@ -58,6 +58,7 @@ Error generating stack: `+i.message+`
 			font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
 			background-color: ${({theme:e})=>e.bodyColor};
 			color: ${({theme:e})=>e.textColor};
+			transition: background-color	 0.2s linear;
 
 			h1,
 			h2,
@@ -65,6 +66,7 @@ Error generating stack: `+i.message+`
 			h4 {
 				color: ${({theme:e})=>e.titleColor};
 				font-weight: ${({theme:e})=>e.common.fontWeight.semiBold};
+				transition: color 0.2s linear;
 			}
 
 			ul {
@@ -84,6 +86,7 @@ Error generating stack: `+i.message+`
 				font-family: ${({theme:e})=>e.common.fontName};
 				margin-top: 0;
 				margin-bottom: 0;
+				transition: color 0.2s linear;
 			}
 	}
 `,hm=e=>Ae`
@@ -413,6 +416,7 @@ Error generating stack: `+i.message+`
 `,zn=b`
     font-size: 1.4rem;
     color: ${({theme:e})=>e.bodyColor};
+    transition: color 0.2s linear;
 `,Zh=C(fh)`
     ${zn}
 `,Jh=C(Ch)`
@@ -692,7 +696,6 @@ Error generating stack: `+i.message+`
     position: fixed;
     top: 0;
     left: 0;
-    background-color: ${({theme:e})=>e.bodyColor};
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -717,6 +720,7 @@ Error generating stack: `+i.message+`
     border-radius: 2rem;
     display: flex;
     z-index: 100;
+    transition: background-color 0.2s linear;
 `,J2=C.div`
     ${Hi}
     animation-delay: 0.85s;
@@ -909,11 +913,11 @@ Error generating stack: `+i.message+`
         margin-right: auto;
     }
 `,Ug=({sectionTitle:e,content:t})=>V(It,{id:"mostproudof",children:[p(fn,{content:e}),p(Ct,{children:p(Ig,{children:p(Rg,{content:t})})})]}),Bg=({title:e,timeline:t})=>V(It,{id:"professionalexperience",children:[p(fn,{content:e}),t.map((n,r)=>p(Ct,{children:p(Wd,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),jg=C.div`
-    margin-top: ${({theme:e})=>e.common.spacing.space20};
+    margin-top: ${({theme:e})=>e.common.spacing.space125};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
     display: flex;
     justify-content: space-between;
-    margin-bottom: ${({theme:e})=>e.common.spacing.space20};
+    margin-bottom: ${({theme:e})=>e.common.spacing.space125};
 
     @media screen and (max-width: 349px) {
         font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
