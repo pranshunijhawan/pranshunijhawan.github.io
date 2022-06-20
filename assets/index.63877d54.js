@@ -58,7 +58,7 @@ Error generating stack: `+i.message+`
 			font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
 			background-color: ${({theme:e})=>e.bodyColor};
 			color: ${({theme:e})=>e.textColor};
-			transition: background-color	 0.2s linear;
+			transition: background-color 0.2s linear;
 
 			h1,
 			h2,
