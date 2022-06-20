@@ -692,6 +692,7 @@ Error generating stack: `+i.message+`
 `,Vd=()=>p(Q2,{children:"\u2192"}),G2=({description:e,isOpenState:t})=>p(T2,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>p(Ve,{children:p(Ct,{children:V(H2,{children:[p(Vd,{}),p(j2,{children:n})]})})},r))}),Y2=({description:e})=>{const[t,n]=j.exports.useState(!1),[r,o]=j.exports.useState("View Roles and Responsibilities"),i=()=>{n(!t),o(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return p(ln,{children:e&&e.length>0&&V(ln,{children:[V(A2,{onClick:i,children:[p(N2,{children:r}),p(W2,{isopen:t})]}),p(G2,{description:e,isOpenState:t})]})})},Wd=({title:e,subTitle:t,date:n,description:r,last:o})=>p(D2,{children:V(O2,{children:[V("div",{children:[p(Ve,{children:p(L2,{})}),!o&&p(R2,{})]}),V(V2,{children:[p(I2,{children:e}),p(U2,{children:t}),V(F2,{children:[p(lt,{iconType:F.Calendar}),p(B2,{children:n})]}),p(Y2,{description:r||[]})]})]})}),b2=({title:e,timeline:t})=>V(It,{id:"educationalqualifications",children:[p(fn,{content:e}),t.map((n,r)=>p(Ct,{children:p(Wd,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),K2=C.div`
     ${$s}
     width: 100%;
+    background-color: ${({theme:e})=>e.bodyColor};
     height: ${({theme:e})=>e.common.headerHeight};
     position: fixed;
     top: 0;
@@ -702,6 +703,7 @@ Error generating stack: `+i.message+`
     align-items: center;
     opacity: ${({show:e})=>e?"1":"0"};
     transition: opacity 1s, visibility 1s;
+    transition: background-color 0.2s linear;
 `,X2=C.div`
     align-items: center;
     margin-top: 0.75rem;
