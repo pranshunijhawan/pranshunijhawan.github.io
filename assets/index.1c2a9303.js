@@ -48,6 +48,7 @@ Error generating stack: `+i.message+`
 
 	html {
 		scroll-behavior: smooth;
+		overflow-x: hidden;
 	}
 
 	body {
