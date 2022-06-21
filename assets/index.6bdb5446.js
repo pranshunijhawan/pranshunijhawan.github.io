@@ -887,7 +887,7 @@ Error generating stack: `+i.message+`
     display: flex;
 `,Ig=C.div`
 `,Ug=C(fh)`
-    margin-top: 0.2rem;
+    margin-top: 0.25rem;
     font-weight: 400;
     transition: 0.2s;
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
