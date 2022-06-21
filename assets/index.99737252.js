@@ -703,7 +703,7 @@ Error generating stack: `+i.message+`
     ${Wm}
     color: ${({theme:e})=>e.common.firstColor};
     margin-right: ${({theme:e})=>e.common.spacing.space05};
-`,Wd=()=>p(Z2,{children:"\u2192"}),q2=({description:e,isOpenState:t})=>p(L2,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>p(Ve,{children:V(Y2,{children:[p(Wd,{}),p(G2,{children:n})]})},r))}),J2=({description:e})=>{const[t,n]=j.exports.useState(!1),[r,o]=j.exports.useState("View Roles and Responsibilities"),i=()=>{n(!t),o(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return p(ln,{children:e&&e.length>0&&V(ln,{children:[V(R2,{onClick:i,children:[p(I2,{children:r}),p(X2,{isopen:t})]}),p(q2,{description:e,isOpenState:t})]})})},Qd=({title:e,subTitle:t,date:n,description:r,last:o})=>p(U2,{children:V(B2,{children:[V("div",{children:[p(Ve,{children:p(H2,{})}),!o&&p(V2,{})]}),V(K2,{children:[p(W2,{children:e}),p(Q2,{children:t}),V(j2,{children:[p(lt,{iconType:F.Calendar}),p(b2,{children:n})]}),p(J2,{description:r||[]})]})]})}),eg=({title:e,timeline:t})=>V(It,{id:"educationalqualifications",children:[p(fn,{content:e}),t.map((n,r)=>p(Pt,{children:p(Qd,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),tg=C.div`
+`,Wd=()=>p(Z2,{children:"\u2192"}),q2=({description:e,isOpenState:t})=>p(L2,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>p(Ve,{delay:.1,children:V(Y2,{children:[p(Wd,{}),p(G2,{children:n})]})},r))}),J2=({description:e})=>{const[t,n]=j.exports.useState(!1),[r,o]=j.exports.useState("View Roles and Responsibilities"),i=()=>{n(!t),o(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return p(ln,{children:e&&e.length>0&&V(ln,{children:[V(R2,{onClick:i,children:[p(I2,{children:r}),p(X2,{isopen:t})]}),p(q2,{description:e,isOpenState:t})]})})},Qd=({title:e,subTitle:t,date:n,description:r,last:o})=>p(U2,{children:V(B2,{children:[V("div",{children:[p(Ve,{children:p(H2,{})}),!o&&p(V2,{})]}),V(K2,{children:[p(W2,{children:e}),p(Q2,{children:t}),V(j2,{children:[p(lt,{iconType:F.Calendar}),p(b2,{children:n})]}),p(J2,{description:r||[]})]})]})}),eg=({title:e,timeline:t})=>V(It,{id:"educationalqualifications",children:[p(fn,{content:e}),t.map((n,r)=>p(Pt,{children:p(Qd,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),tg=C.div`
     ${_s}
     width: 100%;
     background-color: ${({theme:e})=>e.bodyColor};
@@ -918,7 +918,7 @@ Error generating stack: `+i.message+`
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
     margin-top: 0.2rem;
-`,Hg=({id:e,title:t,content:n})=>{const[r,o]=j.exports.useState(!1);return V(Dg,{onClick:()=>{o(!r)},isopen:r,children:[V(Ug,{children:[p(Bg,{children:p(jg,{isopen:r})}),p("div",{children:p(Fg,{isopen:r,children:t})})]}),r&&p(Lg,{children:n.map((l,a)=>p(Ve,{children:V(Ig,{children:[p(Wd,{}),p(Rg,{children:l})]})},a))})]},e)},Vg=({content:e})=>p(Ng,{children:e.map((t,n)=>p(bd,{children:p(Hg,{id:t.id,content:t.content,title:t.title})},n))}),Wg=C.div`
+`,Hg=({id:e,title:t,content:n})=>{const[r,o]=j.exports.useState(!1);return V(Dg,{onClick:()=>{o(!r)},isopen:r,children:[V(Ug,{children:[p(Bg,{children:p(jg,{isopen:r})}),p("div",{children:p(Fg,{isopen:r,children:t})})]}),r&&p(Lg,{children:n.map((l,a)=>p(Ve,{delay:.1,children:V(Ig,{children:[p(Wd,{}),p(Rg,{children:l})]})},a))})]},e)},Vg=({content:e})=>p(Ng,{children:e.map((t,n)=>p(bd,{children:p(Hg,{id:t.id,content:t.content,title:t.title})},n))}),Wg=C.div`
     ${cn}
     row-gap: 0;
 
