@@ -468,7 +468,7 @@ Error generating stack: `+i.message+`
     ${({slideInView:e})=>e?Lm:"opacity: 0"}
     animation-delay: ${({delay:e})=>e||0}s;
     opacity: 0;
-`,Ct=({children:e,delay:t})=>{const[n,r]=Vi(),[o,i]=j.exports.useState(!1);return j.exports.useEffect(()=>{i(!!r)},[r]),p(p2,{slideInView:o,delay:t,ref:n,children:e})},Vd=e=>{console.log("test"),window.open(e,"_blank")},m2=()=>{window.scrollTo(0,document.body.scrollHeight)},h2=()=>{window.scrollTo(0,0)},g2=({sectionTitle:e,content:t,buttonProps:n})=>V(It,{id:"about",children:[p(fn,{content:e}),p(Ct,{children:p(rh,{children:t.map((r,o)=>p(oh,{children:r},o))})}),p(ih,{children:p(Ps,{clickHandler:()=>Vd(n.link||""),name:n.name,icon:F.Download})})]}),zs=({height:e,width:t,source:n,href:r,onClick:o})=>{const i=p("img",{src:n,height:e,width:t,onClick:o,alt:"Portfolio, Pranshu Nijhawan"});return r?p("a",{href:r,children:i}):i},v2=C.div`
+`,Ct=({children:e,delay:t})=>{const[n,r]=Vi(),[o,i]=j.exports.useState(!1);return j.exports.useEffect(()=>{i(!!r)},[r]),p(p2,{slideInView:o,delay:t,ref:n,children:e})},Vd=e=>{window.open(e,"_blank")},m2=()=>{window.scrollTo(0,document.body.scrollHeight)},h2=()=>{window.scrollTo(0,0)},g2=({sectionTitle:e,content:t,buttonProps:n})=>V(It,{id:"about",children:[p(fn,{content:e}),p(Ct,{children:p(rh,{children:t.map((r,o)=>p(oh,{children:r},o))})}),p(ih,{children:p(Ps,{clickHandler:()=>Vd(n.link||""),name:n.name,icon:F.Download})})]}),zs=({height:e,width:t,source:n,href:r,onClick:o})=>{const i=p("img",{src:n,height:e,width:t,onClick:o,alt:"Portfolio, Pranshu Nijhawan"});return r?p("a",{href:r,children:i}):i},v2=C.div`
     position: relative;
     background-color: ${({theme:e})=>e.containerColor};
     border-radius: ${({theme:e})=>e.common.spacing.space05};
