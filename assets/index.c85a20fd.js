@@ -458,7 +458,7 @@ Error generating stack: `+i.message+`
     align-items: center;
     background-color: ${({theme:e})=>e.common.firstColor};
     color: #fff;
-    padding: 0.8rem;
+    padding: ${({small:e})=>e?"0.5rem":"0.8rem"};
     border-radius: 0.5rem;
     font-weight: ${({theme:e})=>e.common.fontWeight.medium};
     cursor: pointer;
@@ -466,7 +466,7 @@ Error generating stack: `+i.message+`
     &:hover {
         background-color: ${({theme:e})=>e.common.firstColorAlt};
     }
-`,Ms=({name:e,icon:t,clickHandler:n})=>p(De,{children:H(d2,{onClick:n,children:[e," ",t&&p(lt,{iconType:t})]})}),p2=C.div`
+`,Ms=({name:e,icon:t,clickHandler:n,small:r})=>p(De,{children:H(d2,{small:r||!1,onClick:n,children:[e," ",t&&p(lt,{iconType:t})]})}),p2=C.div`
     ${({slideInView:e})=>e?Rm:"opacity: 0"}
     animation-delay: ${({delay:e})=>e||0}s;
     opacity: 0;
@@ -479,6 +479,7 @@ Error generating stack: `+i.message+`
     display: flex;
     flex: 1;
     border-left: 0.4rem solid ${({theme:e})=>e.common.firstColor};
+    border-right: 0.4rem solid ${({theme:e})=>e.common.firstColor};
     padding: ${({theme:e})=>e.common.spacing.space10};
 `,y2=C.div`
     ${zs}
@@ -486,15 +487,19 @@ Error generating stack: `+i.message+`
 `,w2=C.div`
     padding-top: ${({theme:e})=>e.common.spacing.space05};
 `,S2=C.h3`
-    font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
+    font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
     margin-bottom: ${({theme:e})=>e.common.spacing.space20};
 
     @media screen and (min-width: 968px) {
-        font-size: ${({theme:e})=>e.common.fontMinWidth968.h3Font};
+        font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
 `,C2=C.div`
     padding-bottom: ${({theme:e})=>e.common.spacing.space10};
-`,k2=({certificateMetaData:e})=>p(Rt,{children:e&&e.map((t,n)=>H(v2,{children:[p(y2,{children:p(bd,{source:t.imageProps.source,height:t.imageProps.height,width:t.imageProps.width})}),H(w2,{children:[p(S2,{children:t.title}),p(C2,{children:p(Ms,{clickHandler:()=>Qd(t.buttonProps.link||""),name:t.buttonProps.name,icon:D.CertificateRightIcon})})]})]},n))}),x2=C.div`
+
+    @media screen and (min-width: 968px) {
+        padding-top: ${({theme:e})=>e.common.spacing.space15};
+    }
+`,k2=({certificateMetaData:e})=>p(Rt,{children:e&&e.map((t,n)=>H(v2,{children:[p(y2,{children:p(bd,{source:t.imageProps.source,height:t.imageProps.height,width:t.imageProps.width})}),H(w2,{children:[p(S2,{children:t.title}),p(C2,{children:p(Ms,{clickHandler:()=>Qd(t.buttonProps.link||""),name:t.buttonProps.name,icon:D.CertificateRightIcon,small:!0})})]})]},n))}),x2=C.div`
     ${cn}
     ${lr}
     gap: 1.5rem;
@@ -882,17 +887,8 @@ Error generating stack: `+i.message+`
     padding-right: ${({theme:e})=>e.common.spacing.space10};
     padding-bottom: ${({isopen:e,theme:t})=>e?t.common.spacing.space15:t.common.spacing.space10};
     cursor: pointer;
-
-    &::after {
-        content: "";
-        background-color: ${({theme:e})=>e.common.firstColor};
-        width: 5px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 0.25rem 0 0 0.25rem;
-    }
+    border-left: 0.4rem solid ${({theme:e})=>e.common.firstColor};
+    border-right: 0.4rem solid ${({theme:e})=>e.common.firstColor};
 `,Bg=G`
     font-weight: 400;
     transition: 0.2s;
@@ -1038,6 +1034,7 @@ Error generating stack: `+i.message+`
     color: ${({theme:e})=>e.titleColor};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
     border-left: 0.4rem solid ${({theme:e})=>e.common.firstColor};
+    border-right: 0.4rem solid ${({theme:e})=>e.common.firstColor};
     margin-top: ${({theme:e})=>e.common.spacing.space10};
     padding: 1.25rem;
     background-color: ${({theme:e})=>e.containerColor};
