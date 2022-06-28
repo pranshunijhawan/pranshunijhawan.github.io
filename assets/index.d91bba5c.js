@@ -862,8 +862,9 @@ Error generating stack: `+i.message+`
     border-radius: 0 8rem 8rem 0;
 `,Lg=C.div`
     width: 1rem;
-    height: 2rem;
+    height: 2.1rem;
     background-color: white;
+    margin-top: -0.1rem;
 `,Rg=C.h1`
     font-size: 7rem;
     color: white;
