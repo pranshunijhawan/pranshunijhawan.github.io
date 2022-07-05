@@ -846,6 +846,8 @@ Error generating stack: `+i.message+`
 `,Ng=C.div`
     ${Yi}
     ${Wm}
+    transform: scale(0);
+    opacity: 1;
     background-color: hsl(202, 57%, 52%);
 `,Fg=C.div`
     ${Yi}
