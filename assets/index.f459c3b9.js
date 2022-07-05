@@ -110,12 +110,14 @@ Error generating stack: `+i.message+`
     }
 `,km=_e`
     0% {
-        transform: translateY(50px);
+        transform: translateY(8rem);
         opacity: 0;
+        filter: blur(2rem);
     }
     100% {
         transform: translateY(0);
         opacity: 1;
+        filter: blur(0);
     }
 `,xm=_e`
     0% {
@@ -604,7 +606,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,ic=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,R2="1",I2="0",U2="5";var _l={major:R2,minor:I2,build:U2};const B2=({sectionTitle:e,contactMetaData:t})=>B(Ut,{id:"contactme",children:[p(fn,{content:e}),p(F2,{children:t&&t.map((n,r)=>p(dt,{children:p(N2,{icon:n.icon,content:n.content,href:n.href})},r))}),B(O2,{children:[B($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(L2,{children:p(Je,{iconType:D.Heart})})}),p(xe,{children:B(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:B($l,{children:[p(xe,{children:p(D2,{children:"Built Using"})}),p(xe,{children:p(Je,{iconType:D.React})}),p(xe,{children:p(Je,{iconType:D.TypeScript})}),p(xe,{children:p(Je,{iconType:D.StyledComponents})}),p(xe,{children:p(Je,{iconType:D.Vite})}),p(xe,{children:p(Je,{iconType:D.GitHub})})]})}),p(ic,{children:B($l,{children:[p(xe,{children:p(Je,{iconType:D.Version})}),p(xe,{children:B(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),j2=C.div`
+`,R2="1",I2="0",U2="6";var _l={major:R2,minor:I2,build:U2};const B2=({sectionTitle:e,contactMetaData:t})=>B(Ut,{id:"contactme",children:[p(fn,{content:e}),p(F2,{children:t&&t.map((n,r)=>p(dt,{children:p(N2,{icon:n.icon,content:n.content,href:n.href})},r))}),B(O2,{children:[B($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(L2,{children:p(Je,{iconType:D.Heart})})}),p(xe,{children:B(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:B($l,{children:[p(xe,{children:p(D2,{children:"Built Using"})}),p(xe,{children:p(Je,{iconType:D.React})}),p(xe,{children:p(Je,{iconType:D.TypeScript})}),p(xe,{children:p(Je,{iconType:D.StyledComponents})}),p(xe,{children:p(Je,{iconType:D.Vite})}),p(xe,{children:p(Je,{iconType:D.GitHub})})]})}),p(ic,{children:B($l,{children:[p(xe,{children:p(Je,{iconType:D.Version})}),p(xe,{children:B(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),j2=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
