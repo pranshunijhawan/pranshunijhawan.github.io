@@ -260,11 +260,12 @@ Error generating stack: `+i.message+`
     }
 `,Om=$e`
     0% {
-        transform: scale(0);
-        opacity: 1;
+        filter: blur(5rem);
+        opacity: 0;
     }
     100% {
-        transform: scale(1) rotate(-45deg);
+        filter: blur(0px);
+        transform: rotate(-45deg);
         opacity: 1;
     }
 `;b`
