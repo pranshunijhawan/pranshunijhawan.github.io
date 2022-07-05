@@ -110,14 +110,12 @@ Error generating stack: `+i.message+`
     }
 `,km=_e`
     0% {
-        transform: translateY(8rem);
+        transform: translateY(50px);
         opacity: 0;
-        filter: blur(2rem);
     }
     100% {
         transform: translateY(0);
         opacity: 1;
-        filter: blur(0);
     }
 `,xm=_e`
     0% {
