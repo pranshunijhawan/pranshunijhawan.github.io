@@ -618,6 +618,7 @@ Error generating stack: `+i.message+`
 `,bd=()=>p(b2,{children:"\u2192"}),K2=({description:e,isOpenState:t})=>p(F2,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>p(xe,{children:p(ft,{children:B(Q2,{children:[p(bd,{}),p(W2,{children:n})]})})},r))}),X2=({description:e})=>{const[t,n]=I.exports.useState(!1),[r,o]=I.exports.useState("View Roles and Responsibilities"),i=()=>{n(!t),o(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return p(Rt,{children:e&&e.length>0&&B(Rt,{children:[B(O2,{onClick:i,children:[p(D2,{children:r}),p(Y2,{isopen:t})]}),p(K2,{description:e,isOpenState:t})]})})},Kd=({title:e,subTitle:t,date:n,description:r,last:o})=>p(L2,{children:B(R2,{children:[B("div",{children:[p(xe,{children:p(U2,{})}),!o&&p(B2,{})]}),B(G2,{children:[p(j2,{children:e}),p(H2,{children:t}),B(I2,{children:[p(Ze,{iconType:D.Calendar}),p(V2,{children:n})]}),p(X2,{description:r||[]})]})]})}),q2=({title:e,timeline:t})=>B(Ut,{id:"educationalqualifications",children:[p(fn,{content:e}),t.map((n,r)=>p(ft,{children:p(Kd,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),Z2=C.div`
     ${As}
     width: 100%;
+    background-color: ${({theme:e})=>e.bodyColor};
     position: fixed;
     top: 0;
     left: 0;
@@ -629,7 +630,6 @@ Error generating stack: `+i.message+`
     padding-bottom: ${({theme:e})=>e.common.spacing.space05};
     opacity: ${({show:e})=>e?"1":"0"};
     transition: opacity 1s, visibility 1s;
-    backdrop-filter: blur(2rem);
 `,J2=C.div`
     align-items: center;
     cursor: pointer;
@@ -639,6 +639,7 @@ Error generating stack: `+i.message+`
     ${Lm}
     position: fixed;
     bottom: ${({theme:e})=>e.common.spacing.space10};
+    background-color: ${({theme:e})=>e.bodyColor};
     padding: 0.5rem 0.4rem 0.5rem 0.4rem;
     border-style: solid;
     border-color: ${({theme:e})=>e.common.firstColor};
@@ -646,7 +647,6 @@ Error generating stack: `+i.message+`
     border-radius: 2rem;
     display: flex;
     z-index: 100;
-    backdrop-filter: blur(2rem);
 `,tg=C.div`
     ${Vi}
     animation-delay: 0.85s;
