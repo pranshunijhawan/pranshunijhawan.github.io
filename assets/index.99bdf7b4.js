@@ -508,7 +508,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,ic=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,M2="1",T2="0",A2="17";var _l={major:M2,minor:T2,build:A2};const N2=({sectionTitle:e,contactMetaData:t})=>B(Ut,{id:"contactme",children:[p(fn,{content:e}),p($2,{children:t&&t.map((n,r)=>p(ft,{children:p(E2,{icon:n.icon,content:n.content,href:n.href})},r))}),B(_2,{children:[B($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(z2,{children:p(Ze,{iconType:D.Heart})})}),p(xe,{children:B(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:B($l,{children:[p(xe,{children:p(P2,{children:"Built Using"})}),p(xe,{children:p(Ze,{iconType:D.React})}),p(xe,{children:p(Ze,{iconType:D.TypeScript})}),p(xe,{children:p(Ze,{iconType:D.StyledComponents})}),p(xe,{children:p(Ze,{iconType:D.Vite})}),p(xe,{children:p(Ze,{iconType:D.GitHub})})]})}),p(ic,{children:B($l,{children:[p(xe,{children:p(Ze,{iconType:D.Version})}),p(xe,{children:B(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),F2=C.div`
+`,M2="1",T2="0",A2="18";var _l={major:M2,minor:T2,build:A2};const N2=({sectionTitle:e,contactMetaData:t})=>B(Ut,{id:"contactme",children:[p(fn,{content:e}),p($2,{children:t&&t.map((n,r)=>p(ft,{children:p(E2,{icon:n.icon,content:n.content,href:n.href})},r))}),B(_2,{children:[B($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(z2,{children:p(Ze,{iconType:D.Heart})})}),p(xe,{children:B(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:B($l,{children:[p(xe,{children:p(P2,{children:"Built Using"})}),p(xe,{children:p(Ze,{iconType:D.React})}),p(xe,{children:p(Ze,{iconType:D.TypeScript})}),p(xe,{children:p(Ze,{iconType:D.StyledComponents})}),p(xe,{children:p(Ze,{iconType:D.Vite})}),p(xe,{children:p(Ze,{iconType:D.GitHub})})]})}),p(ic,{children:B($l,{children:[p(xe,{children:p(Ze,{iconType:D.Version})}),p(xe,{children:B(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),F2=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -610,7 +610,7 @@ Error generating stack: `+i.message+`
     font-size: 1.4rem;
     color: ${({theme:e})=>e.common.firstColor};
     margin-left: auto;
-    transition: 0.4s;
+    transition: 0.8s;
     transform: ${({isopen:e})=>e?"rotate(-180deg);":""};
 `,b2=C.span`
     color: ${({theme:e})=>e.common.firstColor};
@@ -899,7 +899,7 @@ Error generating stack: `+i.message+`
     font-size: 2rem;
     color: ${({theme:e})=>e.common.firstColor};
     margin-left: auto;
-    transition: 0.4s;
+    transition: 0.8s;
     transform: ${({isopen:e})=>e?"rotate(-180deg);":""};
 `,tv=C.div`
     display: flex;
