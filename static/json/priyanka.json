@@ -1,0 +1,192 @@
+{
+  "header": {
+    "name": "Priyanka Nijhawan",
+    "designation": "Technical Program/Database Administrator Manager",
+    "certifications": [
+      {
+        "source": "https://www.pranshunijhawan.dev/static/img/oracle.png",
+        "height": 90,
+        "width": 90
+      },
+      {
+        "source": "https://www.pranshunijhawan.dev/static/img/PSM.png",
+        "height": 100,
+        "width": 100
+      },
+      {
+        "source": "https://www.pranshunijhawan.dev/static/img/AWS-Certified-Solutions-Architect.png",
+        "height": 100,
+        "width": 100
+      },
+      {
+        "source": "https://www.pranshunijhawan.dev/static/img/AWS-Certified-Cloud-Practitioner.png",
+        "height": 100,
+        "width": 100
+      }
+    ],
+    "email": {
+      "icon": 2,
+      "content": "nijhawanrinky1987@yahoo.co.in",
+      "href": "mailto:mail@nijhawanrinky1987@yahoo.co.in"
+    },
+    "linkedIn": {
+      "icon": 4,
+      "content": "https://www.linkedin.com/in/priyanka-nijhawan-29075618/",
+      "href": "https://www.linkedin.com/in/priyanka-nijhawan-29075618/"
+    },
+    "address": {
+      "icon": 5,
+      "content": "Dubai, United Arab Emirates",
+      "href": "http://maps.google.com/?q=Dubai, United Arab Emirates"
+    },
+    "intro": "Meticulously,Dedicated and Value Driven Product Manager with a total of 14+ years of experience successfully uniting internal and external forces to acheive peak efficiency. Covering Project and Product Management and working with different departments, practiced at maintaining harmonious operations while meeting frequently discordant needs of internal personnel, business channel partners and customers."
+  },
+  "leftSection": {
+    "skills": {
+      "title": "Technology Proficiency",
+      "skills": [
+        "Oracle",
+        "SQL",
+        "MySQL",
+        "Postgres",
+        "Agile",
+        "Chatbot",
+        "Mobile Apps",
+        "Scrum",
+        "AWS",
+        "Product Owner",
+        "Product Management"
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "marginTop": true,
+      "certifications": [
+        {
+          "name": "Oracle Certified Professional ",
+          "date": "January 2014"
+        },
+        {
+          "name": "Professional Scrum Master",
+          "date": "October 2021"
+        },
+        {
+          "name": "AWS Certified Solutions Architect – Associate",
+          "date": "August 2021 - August 2024"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "date": "January 2021 - January 2024"
+        }
+      ]
+    },
+    "educationalQualifications": {
+      "title": "Educational Qualifications",
+      "marginTop": true,
+      "timelineProps": [
+        {
+          "title": "Post Graduate Diploma in Business Analytics (PGDBA)",
+          "subTitle": "Symbiosis International University",
+          "date": "2010 - 2011",
+          "color": "var(--second-color)"
+        },
+        {
+          "title": "Bachelor of Engineering",
+          "subTitle": "Dronacharya College of Engineering",
+          "date": "2004 - 2008",
+          "color": "var(--second-color)",
+          "last": true
+        }
+      ]
+    }
+  },
+  "rightSection": {
+    "professionalExperience": {
+      "title": "Professional Experience",
+      "timelineProps": [
+        {
+          "title": "Database Administration/Technical Program Manager",
+          "subTitle": "Finesse Global",
+          "date": "November 2015 - Present",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Leading the projects by providing end to end support for the databases on DEV, PROD environments (Oracle , MS SQL, Postgres, MySQL).",
+              "Supervising the DBA resources in order to achieve highest customer satisfaction and aligning them to the specific projects.",
+              "Handling multiple clients 24x7 across the globe.",
+              "TUNING the databases to improve the overall performance of the system by using various reporting tools, AWR, ADDM, Database Control, Grid control.",
+              "Handling performance issues alone with minimum time on production databases.",
+              "Applying security patches every quarter released by Oracle (CPU, PSU).",
+              "Handling the onsite delivery of multiple digital projects."
+            ]
+          }
+        },
+        {
+          "title": "Database Administrator",
+          "subTitle": "Al Zahra",
+          "date": "October 2014 – November 2015",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Providing support for Sharjah and Dubai databases.",
+              "Working on Oracle, SQL, single instance , RAC and Standby databases.",
+              "Applying CPU, PSU patches on database, Standby databases and troubleshooting the patching issues.",
+              "Working with the HIS application team to solve the user related queries.",
+              "Applying bug fix patches on Oracle Home."
+            ]
+          }
+        },
+        {
+          "title": "IT Analyst",
+          "subTitle": "Tata Consultancy Services",
+          "date": "December 2011 – October 2014",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Working on Golden Gate , RAC, Data Guard, OEM.",
+              "Patching , upgrade of databases.",
+              "Working on 24x7 shift as shift lead managing the on-shift resources.",
+              "Troubleshooting database related issues."
+            ]
+          }
+        },
+        {
+          "title": "Database Administrator",
+          "subTitle": "Sunguard",
+          "date": "August 2011 – December 2011",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Providing support for internal clients of database on multiple platforms.",
+              "Handling database related queries.",
+              "Oracle installation, creation of new database on windows and UNIX.",
+              "Managing table spaces."
+            ]
+          }
+        },
+        {
+          "title": "Technical Support Engineer",
+          "subTitle": "Oracle Financial Support Software Ltd.",
+          "date": "September 2008 - August 2011",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Monitoring the database growth.",
+              "Installation and configuration of Database.",
+              "Manage table spaces.",
+              "Patching and upgrading databases.",
+              "Backup of database using various tools like Export, RMAN.",
+              "Installation and configuration of Oracle Identity Management, Oracle Fusion Middleware SOA."
+            ]
+          },
+          "last": true
+        }
+      ]
+    }
+  }
+}

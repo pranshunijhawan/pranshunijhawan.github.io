@@ -1,0 +1,142 @@
+{
+  "header": {
+    "name": "Riya Bhat",
+    "designation": "Digital Marketing | E-Commerce | Analytics",
+    "phoneNumber": {
+      "icon": 1,
+      "content": "+91-9582670423",
+      "href": "tel:+91-9582670423"
+    },
+    "email": {
+      "icon": 2,
+      "content": "riyabhat7@gmail.com",
+      "href": "mailto:mail@riyabhat7@gmail.com"
+    },
+    "address": {
+      "icon": 5,
+      "content": "New Delhi",
+      "href": "http://maps.google.com/?q=New Delhi"
+    },
+    "intro": "Competent Digital Marketer with Experience in Building and Implementing strategies focused on SEO, Social Media Content Building and AdWords, seasoned in eCommerce marketing and brand building."
+  },
+  "leftSection": {
+    "trainings": {
+      "title": "Trainings",
+      "trainings": {
+        "color": "white",
+        "details": [
+          "SFMC Bootcamp",
+          "Braze Marketing"
+        ]
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "skills": [
+        "Google Analytics",
+        "Google AdWords",
+        "Project Management",
+        "Team Management",
+        "SEO/SEM",
+        "SMO/SMM",
+        "E-Commerce",
+        "Content Strategy",
+        "Google Webmaster"
+      ]
+    },
+    "tools": {
+      "title": "Tools/Platforms",
+      "skills": [
+        "Trello",
+        "Hootsuite",
+        "Jira",
+        "SEMRush",
+        "Ahref",
+        "Wordpress",
+        "Magento",
+        "Shopify",
+        "Kartmax",
+        "Woocommerce",
+        "Sprinklr"
+      ]
+    },
+    "educationalQualifications": {
+      "title": "Educational Qualifications",
+      "marginTop": true,
+      "timelineProps": [
+        {
+          "title": "B.Tech, Electronics & Communications",
+          "subTitle": "Maharshi Dayanand University",
+          "date": "2012 - 2016",
+          "color": "var(--second-color)"
+        },
+        {
+          "title": "Senior Secondary 12th",
+          "subTitle": "G.S. Convent, New Delhi",
+          "date": "2012",
+          "color": "var(--second-color)"
+        },
+        {
+          "title": "Higher Secondary 10th",
+          "subTitle": "G.S. Convent, New Delhi",
+          "date": "2010",
+          "color": "var(--second-color)",
+          "last": true
+        }
+      ]
+    }
+  },
+  "rightSection": {
+    "professionalExperience": {
+      "title": "Professional Experience",
+      "timelineProps": [
+        {
+          "title": "GreenHonchos",
+          "subTitle": "SEO Manager",
+          "date": "January 2022 - Present",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Responsible for managing a Team of 7+ Associates ranging from Associates to Leads, involving Work Allocations, Feedbacks and Reviews.",
+              "Setting up of E-Commerce Business Processes/Best Practices for Organic revenue and conversion.",
+              "Analyzing Marketing data - Impression/Clicks/CTR/ Sales & deciding on the new strategies.",
+              "Online Product Management ensure that products are merchandised while ensuring that products are simple to find and maximizing sale opportunities."
+            ]
+          }
+        },
+        {
+          "title": "Hogarth India",
+          "subTitle": "Senior SEO Associate",
+          "date": "June 2021 – January 2022",
+          "color": "var(--first-color)"
+        },
+        {
+          "title": "Hogarth India",
+          "subTitle": "SEO Associate",
+          "date": "July 2017 – June 2021",
+          "color": "var(--first-color)"
+        },
+        {
+          "title": "Hogarth India",
+          "subTitle": "Intern",
+          "date": "February 2017 – June 2017",
+          "color": "var(--first-color)",
+          "rolesAndResponsibilities": {
+            "color": "black",
+            "details": [
+              "Strategizing, Planning, and Implementation of Content Strategy Models involving End-To-End deliverables using best practices and various Marketing and Analytics tools.",
+              "Brainstorm innovative growth strategies by collaborating with various teams marketing, promotions, and sales departments.",
+              "Responsible for creating marketing and social media campaigns and strategies, including budget planning, content ideation, and implementation schedules for our clients in Pharma and FnB industry.",
+              "Deeply analyzing data of interactions and visits on the brand pages as well as on the posts. Used this collective information to create comprehensive reports internally as well as for the client to improve future marketing strategies and campaigns.",
+              "Responsible for handling SMM for clients by running ads on Instagram, Facebook and YouTube using FB Ads Manager and Google AdWords where the KPI was to increase the page likes and reach on the brand pages and published posts.",
+              "Other responsibilities include – setting up organic search optimization, ROI maximization, perform thorough keywords research, identify key SEO KPIs, monitor redirects, click rate, bounce rate, and other KPIs etc.",
+              "Did search engine optimization for well-established and popular e-commerce websites along with more websites in multiple domains like QSR, Healthcare and Jewelry."
+            ]
+          },
+          "last": true
+        }
+      ]
+    }
+  }
+}
