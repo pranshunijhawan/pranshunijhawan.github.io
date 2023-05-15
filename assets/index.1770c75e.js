@@ -200,8 +200,8 @@ Error generating stack: `+i.message+`
     }
 `,Ut=ie`
     max-width: 1000px;
-    margin-left: ${({theme:e})=>e.common.spacing.space20};
-    margin-right: ${({theme:e})=>e.common.spacing.space20};
+    margin-left: ${({theme:e})=>e.common.spacing.space15};
+    margin-right: ${({theme:e})=>e.common.spacing.space15};
 `,lr=ie`
     display: grid;
     gap: 1.5rem;
@@ -508,7 +508,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,ic=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,M2="1",T2="0",A2="20";var _l={major:M2,minor:T2,build:A2};const N2=({sectionTitle:e,contactMetaData:t})=>j(jt,{id:"contactme",children:[p(fn,{content:e}),p($2,{children:t&&t.map((n,r)=>p(ft,{children:p(E2,{icon:n.icon,content:n.content,href:n.href})},r))}),j(_2,{children:[j($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(z2,{children:p(Ze,{iconType:D.Heart})})}),p(xe,{children:j(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:j($l,{children:[p(xe,{children:p(P2,{children:"Built Using"})}),p(xe,{children:p(Ze,{iconType:D.React})}),p(xe,{children:p(Ze,{iconType:D.TypeScript})}),p(xe,{children:p(Ze,{iconType:D.StyledComponents})}),p(xe,{children:p(Ze,{iconType:D.Vite})}),p(xe,{children:p(Ze,{iconType:D.GitHub})})]})}),p(ic,{children:j($l,{children:[p(xe,{children:p(Ze,{iconType:D.Version})}),p(xe,{children:j(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),F2=C.div`
+`,M2="1",T2="0",A2="21";var _l={major:M2,minor:T2,build:A2};const N2=({sectionTitle:e,contactMetaData:t})=>j(jt,{id:"contactme",children:[p(fn,{content:e}),p($2,{children:t&&t.map((n,r)=>p(ft,{children:p(E2,{icon:n.icon,content:n.content,href:n.href})},r))}),j(_2,{children:[j($l,{children:[p(xe,{children:p(El,{children:"Designed & Built With "})}),p(xe,{children:p(z2,{children:p(Ze,{iconType:D.Heart})})}),p(xe,{children:j(El,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})})]}),p(ic,{children:j($l,{children:[p(xe,{children:p(P2,{children:"Built Using"})}),p(xe,{children:p(Ze,{iconType:D.React})}),p(xe,{children:p(Ze,{iconType:D.TypeScript})}),p(xe,{children:p(Ze,{iconType:D.StyledComponents})}),p(xe,{children:p(Ze,{iconType:D.Vite})}),p(xe,{children:p(Ze,{iconType:D.GitHub})})]})}),p(ic,{children:j($l,{children:[p(xe,{children:p(Ze,{iconType:D.Version})}),p(xe,{children:j(El,{children:["v ",_l.major,".",_l.minor,".",_l.build]})})]})})]})]}),F2=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
