@@ -553,7 +553,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,ac=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,I2="1",U2="0",j2="31";var zl={major:I2,minor:U2,build:j2};const B2=({sectionTitle:e,contactMetaData:t})=>j(It,{id:"contactme",children:[p(un,{content:e}),p(D2,{children:t&&t.map((n,r)=>p(io,{children:p(F2,{icon:n.icon,content:n.content,href:n.href})},r))}),j(O2,{children:[p(gn,{children:j(Pl,{children:[p(_l,{children:"Designed & Built With "}),p(R2,{children:p(qe,{iconType:O.Heart})}),j(_l,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})]})}),p(gn,{children:p(ac,{children:j(Pl,{children:[p(L2,{children:"Built Using"}),p(qe,{iconType:O.React}),p(qe,{iconType:O.TypeScript}),p(qe,{iconType:O.StyledComponents}),p(qe,{iconType:O.Vite}),p(qe,{iconType:O.GitHub})]})})}),p(gn,{children:p(ac,{children:j(Pl,{children:[p(qe,{iconType:O.Version}),j(_l,{children:["v ",zl.major,".",zl.minor,".",zl.build]})]})})})]})]}),V2=C.div`
+`,I2="1",U2="0",j2="32";var zl={major:I2,minor:U2,build:j2};const B2=({sectionTitle:e,contactMetaData:t})=>j(It,{id:"contactme",children:[p(un,{content:e}),p(D2,{children:t&&t.map((n,r)=>p(io,{children:p(F2,{icon:n.icon,content:n.content,href:n.href})},r))}),j(O2,{children:[p(gn,{children:j(Pl,{children:[p(_l,{children:"Designed & Built With "}),p(R2,{children:p(qe,{iconType:O.Heart})}),j(_l,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})]})}),p(gn,{children:p(ac,{children:j(Pl,{children:[p(L2,{children:"Built Using"}),p(qe,{iconType:O.React}),p(qe,{iconType:O.TypeScript}),p(qe,{iconType:O.StyledComponents}),p(qe,{iconType:O.Vite}),p(qe,{iconType:O.GitHub})]})})}),p(gn,{children:p(ac,{children:j(Pl,{children:[p(qe,{iconType:O.Version}),j(_l,{children:["v ",zl.major,".",zl.minor,".",zl.build]})]})})})]})]}),V2=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -680,7 +680,7 @@ Error generating stack: `+i.message+`
     transform: ${({toggle:e})=>e?"scale(1.1)":"scale(1)"};
     transition: 0.5s;
 
-    @media (hover: hover) and (pointer: fine) {
+    @media (hover: hover) and (any-pointer: fine) {
         &:hover {
             transform: scale(1.2);
         }
