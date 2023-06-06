@@ -574,7 +574,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,ac=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,Ug="1",jg="1",Vg="7";var $l={major:Ug,minor:jg,build:Vg};const Hg=({sectionTitle:e,contactMetaData:t})=>U(It,{id:"contactme",children:[p(un,{content:e}),p(Lg,{children:t&&t.map((n,r)=>p(io,{children:p(Dg,{icon:n.icon,content:n.content,href:n.href})},r))}),U(Rg,{children:[p(gn,{children:U(zl,{children:[p(Pl,{children:"Designed & Built With "}),p(Bg,{children:p(Ze,{iconType:D.Heart})}),U(Pl,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})]})}),p(gn,{children:p(ac,{children:U(zl,{children:[p(Ig,{children:"Built Using"}),p(Ze,{iconType:D.React}),p(Ze,{iconType:D.TypeScript}),p(Ze,{iconType:D.StyledComponents}),p(Ze,{iconType:D.Vite}),p(Ze,{iconType:D.GitHub})]})})}),p(gn,{children:p(ac,{children:U(zl,{children:[p(Ze,{iconType:D.Version}),U(Pl,{children:["v ",$l.major,".",$l.minor,".",$l.build]})]})})})]})]}),Wg=C.div`
+`,Ug="1",jg="1",Vg="8";var $l={major:Ug,minor:jg,build:Vg};const Hg=({sectionTitle:e,contactMetaData:t})=>U(It,{id:"contactme",children:[p(un,{content:e}),p(Lg,{children:t&&t.map((n,r)=>p(io,{children:p(Dg,{icon:n.icon,content:n.content,href:n.href})},r))}),U(Rg,{children:[p(gn,{children:U(zl,{children:[p(Pl,{children:"Designed & Built With "}),p(Bg,{children:p(Ze,{iconType:D.Heart})}),U(Pl,{children:[" By Pranshu! \xA9 ",new Date().getFullYear()]})]})}),p(gn,{children:p(ac,{children:U(zl,{children:[p(Ig,{children:"Built Using"}),p(Ze,{iconType:D.React}),p(Ze,{iconType:D.TypeScript}),p(Ze,{iconType:D.StyledComponents}),p(Ze,{iconType:D.Vite}),p(Ze,{iconType:D.GitHub})]})})}),p(gn,{children:p(ac,{children:U(zl,{children:[p(Ze,{iconType:D.Version}),U(Pl,{children:["v ",$l.major,".",$l.minor,".",$l.build]})]})})})]})]}),Wg=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -718,6 +718,14 @@ Error generating stack: `+i.message+`
     ${bi}
     animation-delay: 0.85s;
     cursor: none;
+
+    @supports not (-webkit-overflow-scrolling: touch) {
+        :hover {
+            div {
+                transform: scale(1.2);
+            }
+        }
+    }
 `,p2=C.div`
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 2rem;
@@ -729,12 +737,6 @@ Error generating stack: `+i.message+`
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
-            transform: scale(1.2);
-        }
-    }
 `,m2=C.div`
     ${({scaleIn:e})=>e?bi:""}
     animation-delay: ${({delay:e})=>e||0}s;
