@@ -4,6 +4,11 @@
     "designation": "Technical Program/Database Administrator Manager",
     "certifications": [
       {
+        "source": "https://www.pranshunijhawan.dev/static/img/oracle-cloud-associate.png",
+        "height": 90,
+        "width": 90
+      },
+      {
         "source": "https://www.pranshunijhawan.dev/static/img/oracle.png",
         "height": 90,
         "width": 90
