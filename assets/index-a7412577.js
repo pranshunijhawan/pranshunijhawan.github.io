@@ -578,7 +578,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,oc=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,X2="1",K2="1",Z2="21",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
+`,X2="1",K2="1",Z2="22",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -921,7 +921,6 @@ Error generating stack: `+i.message+`
     border-radius: ${({theme:e})=>e.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     position: relative;
-    transition: all 0.5s ease;
     background-color: ${({theme:e})=>e.containerColor};
     padding-top: ${({theme:e})=>e.common.spacing.space10};
     padding-left: ${({theme:e})=>e.common.spacing.space10};
