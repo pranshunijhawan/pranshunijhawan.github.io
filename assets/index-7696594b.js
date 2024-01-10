@@ -271,8 +271,8 @@ Error generating stack: `+i.message+`
     animation: ${Hm} 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 `,Ot=x.section`
     ${Um}
-    transition: opacity 1s, visibility 1s;
-    scroll-margin-top: 5rem;
+    transition: 1s;
+    scroll-margin-top: 4rem;
 `;var Ea=new Map,$o=new WeakMap,nc=0,rh=void 0;function oh(e){return e?($o.has(e)||(nc+=1,$o.set(e,nc.toString())),$o.get(e)):"0"}function ih(e){return Object.keys(e).sort().filter(t=>e[t]!==void 0).map(t=>`${t}_${t==="root"?oh(e.root):e[t]}`).toString()}function lh(e){let t=ih(e),n=Ea.get(t);if(!n){const r=new Map;let o;const i=new IntersectionObserver(l=>{l.forEach(a=>{var s;const f=a.isIntersecting&&o.some(h=>a.intersectionRatio>=h);e.trackVisibility&&typeof a.isVisible>"u"&&(a.isVisible=f),(s=r.get(a.target))==null||s.forEach(h=>{h(f,a)})})},e);o=i.thresholds||(Array.isArray(e.threshold)?e.threshold:[e.threshold||0]),n={id:t,observer:i,elements:r},Ea.set(t,n)}return n}function ah(e,t,n={},r=rh){if(typeof window.IntersectionObserver>"u"&&r!==void 0){const s=e.getBoundingClientRect();return t(r,{isIntersecting:r,target:e,intersectionRatio:typeof n.threshold=="number"?n.threshold:0,time:0,boundingClientRect:s,intersectionRect:s,rootBounds:s}),()=>{}}const{id:o,observer:i,elements:l}=lh(n);let a=l.get(e)||[];return l.has(e)||l.set(e,a),a.push(t),i.observe(e),function(){a.splice(a.indexOf(t),1),a.length===0&&(l.delete(e),i.unobserve(e)),l.size===0&&(i.disconnect(),Ea.delete(o))}}function ar({threshold:e,delay:t,trackVisibility:n,rootMargin:r,root:o,triggerOnce:i,skip:l,initialInView:a,fallbackInView:s,onChange:f}={}){var h;const[g,v]=I.useState(null),C=I.useRef(),[S,k]=I.useState({inView:!!a,entry:void 0});C.current=f,I.useEffect(()=>{if(l||!g)return;let p;return p=ah(g,(m,w)=>{k({inView:m,entry:w}),C.current&&C.current(m,w),w.isIntersecting&&i&&p&&(p(),p=void 0)},{root:o,rootMargin:r,threshold:e,trackVisibility:n,delay:t},s),()=>{p&&p()}},[Array.isArray(e)?e.toString():e,g,o,r,i,l,n,s,t]);const M=(h=S.entry)==null?void 0:h.target,d=I.useRef();!g&&M&&!i&&!l&&d.current!==M&&(d.current=M,k({inView:!!a,entry:void 0}));const u=[v,S.inView,S.entry];return u.ref=u[0],u.inView=u[1],u.entry=u[2],u}const sh=x.div`
     ${({focus:e})=>e?nh:"opacity: 0"}
     animation-delay: ${({delay:e})=>e||0}s;
@@ -280,12 +280,13 @@ Error generating stack: `+i.message+`
 `,uh=({children:e,delay:t})=>{const[n,r]=ar(),[o,i]=I.useState(!1);return I.useEffect(()=>{i(!!r)},[r]),c.jsx(sh,{focus:o,delay:t,ref:n,children:e})},ch=x.h2`
     ${Qm}
     display: inline-block;
-    transition: text-shadow 0.5s ease;
+    transition: all 0.5s ease;
     cursor: none;
 
     @supports not (-webkit-overflow-scrolling: touch) {
         :hover {
             ${({theme:e})=>`text-shadow: 0 0 20px ${e.titleColor}`};
+            letter-spacing: 0.025rem;
         }
     }
 `,dh=x.div`
@@ -439,6 +440,7 @@ Error generating stack: `+i.message+`
         :hover {
             transform: scale(1.1);
             letter-spacing: 0.5px;
+            ${({theme:e})=>`box-shadow: 0 0 10px ${e.titleColor}`};
         }
     }
 `,Ns=({name:e,icon:t,clickHandler:n,small:r})=>c.jsx(no,{children:c.jsxs(z2,{small:r||!1,onClick:n,children:[e," ",t&&c.jsx(Re,{iconType:t})]})}),qf=e=>{window.open(e,"_blank")},$2=()=>{window.scrollTo(0,document.body.scrollHeight)},P2=()=>{window.scrollTo(0,0)},j2=x.div`
@@ -530,6 +532,7 @@ Error generating stack: `+i.message+`
         :hover {
             a {
                 color: ${({theme:e})=>e.common.firstColor};
+                letter-spacing: 0.01rem;
             }
         }
     }
@@ -578,7 +581,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,oc=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,X2="1",K2="1",Z2="24",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
+`,X2="1",K2="1",Z2="25",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -595,6 +598,7 @@ Error generating stack: `+i.message+`
     @supports not (-webkit-overflow-scrolling: touch) {
         :hover {
             ${({theme:e})=>`text-shadow: 0 0 10px ${e.titleColor}`};
+            letter-spacing: 0.025rem;
         }
     }
 `,tg=x.p`
@@ -698,7 +702,6 @@ Error generating stack: `+i.message+`
     justify-content: space-between;
     align-items: center;
     padding-top: ${({theme:e})=>e.common.spacing.space075};
-    padding-bottom: ${({theme:e})=>e.common.spacing.space05};
     opacity: ${({show:e})=>e?"1":"0"};
     transition: opacity 1s, visibility 1s;
     align-items: center;
@@ -790,7 +793,7 @@ Error generating stack: `+i.message+`
 `,Ng=x.div`
     display: flex;
     width: 100%;
-    margin-bottom: ${({theme:e})=>e.common.spacing.space05};
+    margin-bottom: ${({theme:e})=>e.common.spacing.space10};
 `,Og=x.div`
     ${th}
     margin-left: auto;
@@ -803,6 +806,7 @@ Error generating stack: `+i.message+`
     width: 4rem;
     margin-right: ${({theme:e})=>e.common.spacing.space15};
     transition: box-shadow 0.5s;
+    cursor: none;
     @supports not (-webkit-overflow-scrolling: touch) {
         :hover {
             ${({theme:e})=>`box-shadow: 0 0 10px ${e.titleColor}`};
@@ -832,9 +836,11 @@ Error generating stack: `+i.message+`
     height: 15rem;
     width: 15rem;
     transition: 0.5s;
+    cursor: none;
     @supports not (-webkit-overflow-scrolling: touch) {
         :hover {
             ${({theme:e})=>`box-shadow: 0 0 10px ${e.titleColor}`};
+            transform: scale(1.1);
         }
     }
 `,Bg=x.div`
@@ -933,6 +939,7 @@ Error generating stack: `+i.message+`
         :hover {
             h3, svg {
                 color: ${({theme:e})=>e.common.firstColor};
+                letter-spacing: 0.025rem;
             }
         }
     }
@@ -1036,6 +1043,7 @@ Error generating stack: `+i.message+`
         :hover {
             h1 {
                 color: ${({theme:e})=>e.common.firstColor};
+                letter-spacing: 0.025rem;
             }
         }
     }
