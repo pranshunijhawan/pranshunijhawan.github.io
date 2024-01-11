@@ -426,7 +426,7 @@ Error generating stack: `+i.message+`
 `,A2=x(Yh)`
     ${$n}
 `,z2=x(bh)`
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: ${({theme:e})=>e.bodyColor};
 `,Ie=({iconType:e})=>{switch(e){case O.Frontend:return c.jsx(Xh,{});case O.Backend:return c.jsx(Kh,{});case O.Database:return c.jsx(Zh,{});case O.Cloud:return c.jsx(qh,{});case O.DataEngineering:return c.jsx(Jh,{});case O.Phone:return c.jsx(e2,{});case O.Email:return c.jsx(t2,{});case O.Location:return c.jsx(n2,{});case O.LinkedIn:return c.jsx(r2,{});case O.Contact:return c.jsx(o2,{});case O.CertificateRightIcon:return c.jsx(i2,{});case O.Download:return c.jsx(l2,{});case O.Calendar:return c.jsx(a2,{});case O.Heart:return c.jsx(s2,{});case O.NavigationAbout:return c.jsx(c2,{});case O.NavigationTechnologyProficiency:return c.jsx(d2,{});case O.NavigationEducationalQualifications:return c.jsx(f2,{});case O.NavigationProfessionalExperience:return c.jsx(p2,{});case O.NavigationCertifications:return c.jsx(m2,{});case O.NavigationTestimonials:return c.jsx(h2,{});case O.NavigationContact:return c.jsx(g2,{});case O.Moon:return c.jsx(v2,{});case O.Sun:return c.jsx(y2,{});case O.Vite:return c.jsx(w2,{});case O.React:return c.jsx(x2,{});case O.StyledComponents:return c.jsx(S2,{});case O.TypeScript:return c.jsx(C2,{});case O.GitHub:return c.jsx(k2,{});case O.Version:return c.jsx(u2,{});case O.NodeJS:return c.jsx(E2,{});case O.VSCode:return c.jsx(A2,{});case O.DarkMode:return c.jsx(z2,{})}},$2=x.div`
     display: inline-flex;
@@ -599,7 +599,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,rc=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,K2="1",Z2="1",q2="30",kl={major:K2,minor:Z2,build:q2},J2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Y2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(Q2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(G2,{children:[c.jsx(hn,{children:c.jsxs(Cl,{children:[c.jsx(Sl,{children:"Designed & Built With "}),c.jsx(X2,{children:c.jsx(Ie,{iconType:O.Heart})}),c.jsxs(Sl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(rc,{children:c.jsxs(Cl,{children:[c.jsx(b2,{children:"Built Using"}),c.jsx(Ie,{iconType:O.React}),c.jsx(Ie,{iconType:O.TypeScript}),c.jsx(Ie,{iconType:O.NodeJS}),c.jsx(Ie,{iconType:O.StyledComponents}),c.jsx(Ie,{iconType:O.Vite}),c.jsx(Ie,{iconType:O.GitHub}),c.jsx(Ie,{iconType:O.VSCode})]})})}),c.jsx(hn,{children:c.jsx(rc,{children:c.jsxs(Cl,{children:[c.jsx(Ie,{iconType:O.Version}),c.jsxs(Sl,{children:["v ",kl.major,".",kl.minor,".",kl.build]})]})})})]})]}),eg=x.div`
+`,K2="1",Z2="1",q2="31",kl={major:K2,minor:Z2,build:q2},J2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Y2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(Q2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(G2,{children:[c.jsx(hn,{children:c.jsxs(Cl,{children:[c.jsx(Sl,{children:"Designed & Built With "}),c.jsx(X2,{children:c.jsx(Ie,{iconType:O.Heart})}),c.jsxs(Sl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(rc,{children:c.jsxs(Cl,{children:[c.jsx(b2,{children:"Built Using"}),c.jsx(Ie,{iconType:O.React}),c.jsx(Ie,{iconType:O.TypeScript}),c.jsx(Ie,{iconType:O.NodeJS}),c.jsx(Ie,{iconType:O.StyledComponents}),c.jsx(Ie,{iconType:O.Vite}),c.jsx(Ie,{iconType:O.GitHub}),c.jsx(Ie,{iconType:O.VSCode})]})})}),c.jsx(hn,{children:c.jsx(rc,{children:c.jsxs(Cl,{children:[c.jsx(Ie,{iconType:O.Version}),c.jsxs(Sl,{children:["v ",kl.major,".",kl.minor,".",kl.build]})]})})})]})]}),eg=x.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -720,19 +720,20 @@ Error generating stack: `+i.message+`
     justify-content: space-between;
     align-items: center;
     padding-top: ${({theme:e})=>e.common.spacing.space075};
-    opacity: ${({show:e})=>e?"1":"0"};
     transition: opacity 1s, visibility 1s;
     align-items: center;
+`,Sg=x.div`
     transform: ${({toggle:e})=>e?"scale(1.1)":"scale(1)"};
     transition: 0.5s;
     cursor: none;
+    opacity: ${({show:e})=>e?"1":"0"};
 
     @supports not (-webkit-overflow-scrolling: touch) {
         :hover {
             transform: scale(1.1);
         }
     }
-`,Sg=x.div`
+`,Cg=x.div`
     ${Jm}
     position: fixed;
     bottom: ${({theme:e})=>e.common.spacing.space10};
@@ -744,7 +745,7 @@ Error generating stack: `+i.message+`
     border-radius: 2rem;
     display: flex;
     z-index: 100;
-`,Cg=x.div`
+`,kg=x.div`
     ${Yf}
     animation-delay: 0.85s;
     cursor: none;
@@ -757,7 +758,7 @@ Error generating stack: `+i.message+`
             }
         }
     }
-`,kg=x.div`
+`,Eg=x.div`
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 2rem;
     background-color: ${({theme:e})=>e.common.firstColor};
@@ -768,15 +769,15 @@ Error generating stack: `+i.message+`
     display: flex;
     align-items: center;
     justify-content: center;
-`,Eg=x.div`
+`,Ag=x.div`
     ${({scaleIn:e})=>e?Yf:""}
     animation-delay: ${({delay:e})=>e||0}s;
     transform: scale(0);
-`,Ag=({children:e,delay:t})=>{const[n,r]=ar(),[o,i]=I.useState(!1);return I.useEffect(()=>{i(!!r)},[r]),c.jsx(Eg,{scaleIn:o,delay:t,ref:n,children:e})},zg=""+new URL("logo-6345f9cf.png",import.meta.url).href,$g=e=>window.localStorage.getItem(e),n1=(e,t)=>window.localStorage.setItem(e,t),Ns="isDarkThemeEnabled",r1="true",Pg=()=>{n1(Ns,r1)},o1=()=>{const e=$g(Ns);return e===null?(Pg(),r1==="true"):e==="true"},jg=e=>{n1(Ns,e.toString())},_g=ee`
+`,zg=({children:e,delay:t})=>{const[n,r]=ar(),[o,i]=I.useState(!1);return I.useEffect(()=>{i(!!r)},[r]),c.jsx(Ag,{scaleIn:o,delay:t,ref:n,children:e})},$g=""+new URL("logo-6345f9cf.png",import.meta.url).href,Pg=e=>window.localStorage.getItem(e),n1=(e,t)=>window.localStorage.setItem(e,t),Ns="isDarkThemeEnabled",r1="true",jg=()=>{n1(Ns,r1)},o1=()=>{const e=Pg(Ns);return e===null?(jg(),r1==="true"):e==="true"},_g=e=>{n1(Ns,e.toString())},Mg=ee`
     ${Nt}
     align-items: center;
-`,Mg=x.div`
-    ${_g}
+`,Tg=x.div`
+    ${Mg}
 `,oc=x.div`
     column-gap: 2rem;
     grid-column: 1/3;
@@ -785,7 +786,7 @@ Error generating stack: `+i.message+`
         grid-template-columns: 0.25fr 3fr;
     }
     margin: 1rem 0 1rem 0;
-`,Tg=x.div`
+`,Lg=x.div`
     color: ${({theme:e})=>e.common.firstColor};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.bigFont};
     font-weight: ${({theme:e})=>e.common.fontWeight.semiBold};
@@ -793,7 +794,7 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.bigFont};
     }
-`,Lg=x.div`
+`,Ng=x.div`
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
     color: ${({theme:e})=>e.textColor};
     font-weight: ${({theme:e})=>e.common.fontWeight.medium};
@@ -801,18 +802,18 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.h3Font};
     }
-`,Ng=x.p`
+`,Og=x.p`
     margin-bottom: ${({theme:e})=>e.common.spacing.space20};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
 
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,Og=x.div`
+`,Rg=x.div`
     display: flex;
     width: 100%;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};
-`,Rg=x.div`
+`,Ig=x.div`
     ${eh}
     margin-left: auto;
     background-color: ${({theme:e})=>e.bodyColor};
@@ -831,7 +832,7 @@ Error generating stack: `+i.message+`
     border-color: ${({theme:e})=>e.common.firstColor};
     border-width: 0.2rem;
     border-radius: 2rem;
-`,Ig=x.div`
+`,Dg=x.div`
     transform: ${({isDarkMode:e})=>e?"":"translateX(1.65rem) rotate(180deg);"};
     border-radius: 5rem;
     background-color: ${({theme:e})=>e.common.firstColor};
@@ -841,7 +842,7 @@ Error generating stack: `+i.message+`
     display: flex;
     align-items: center;
     justify-content: center;
-`,Dg=x.img`
+`,Fg=x.img`
     border-radius: 50%;
     border: 0.3rem solid ${({theme:e})=>e.common.firstColor};
     height: 15rem;
@@ -854,7 +855,7 @@ Error generating stack: `+i.message+`
             transform: scale(1.1);
         }
     }
-`,Fg=x.div`
+`,Bg=x.div`
     display: grid;    
     gap: 0.75rem;
     @media screen and (min-width: 568px) {
@@ -862,7 +863,7 @@ Error generating stack: `+i.message+`
         margin: 5rem 0rem 3rem 0rem;
     }
     padding-top: 5.5rem;
-`,Bg=x.div`
+`,Vg=x.div`
     ${Nt}
     display: flex;
     align-items: center;
@@ -873,17 +874,17 @@ Error generating stack: `+i.message+`
         justify-content: flex-end;
         margin-top: 0;
     }
-`,Vg=({themeHandler:e})=>{const t=o1(),[n,r]=I.useState(t),o=()=>{r(!n),e()};return c.jsx(Og,{children:c.jsx(Rg,{onClick:o,children:c.jsx(Ig,{isDarkMode:n,children:c.jsx(Ie,{iconType:O.DarkMode})})})})},Hg=({visibility:e,themeHandler:t})=>{const[n,r]=I.useState(!1),o=()=>{j2(),r(!0),setTimeout(()=>{r(!1)},500)};return c.jsx(c.Fragment,{children:c.jsx(wg,{children:e&&c.jsxs(c.Fragment,{children:[c.jsx(xg,{toggle:n,show:e,onClick:o,children:c.jsx(Ag,{delay:.5,children:c.jsx(Jf,{source:zg,width:60,height:60})})}),c.jsx(hn,{children:c.jsx(Vg,{themeHandler:t})})]})})})},Wg=x.div`
+`,Hg=({themeHandler:e})=>{const t=o1(),[n,r]=I.useState(t),o=()=>{r(!n),e()};return c.jsx(Rg,{children:c.jsx(Ig,{onClick:o,children:c.jsx(Dg,{isDarkMode:n,children:c.jsx(Ie,{iconType:O.DarkMode})})})})},Wg=({visibility:e,themeHandler:t})=>{const[n,r]=I.useState(!1),o=()=>{j2(),r(!0),setTimeout(()=>{r(!1)},500)};return c.jsx(c.Fragment,{children:c.jsx(wg,{children:e&&c.jsxs(c.Fragment,{children:[c.jsx(xg,{children:c.jsx(Sg,{toggle:n,show:e,onClick:o,children:c.jsx(zg,{delay:.5,children:c.jsx(Jf,{source:$g,width:60,height:60})})})}),c.jsx(hn,{children:c.jsx(Hg,{themeHandler:t})})]})})})},Ug=x.div`
     display: flex;
     justify-content: center;
-`,Ug=({children:e})=>c.jsx(Wg,{children:e}),Qg=({iconType:e,href:t})=>{const[n,r]=I.useState(!1),o=i=>{const l=document.getElementById(i);l!==null&&(l.scrollIntoView(),r(!0)),setTimeout(()=>{r(!1)},500)};return c.jsx(kg,{toggle:n,onClick:()=>o(t),children:c.jsx(Ie,{iconType:e})})},Yg=({navigationMenus:e})=>c.jsx(Ug,{children:c.jsx(Sg,{children:e&&e.map((t,n)=>c.jsx(Cg,{children:c.jsx(Qg,{href:t.href,iconType:t.iconType})},n))})}),Gg=({name:e,designation:t,headline:n,buttonProps:r,selfImageLightSource:o,selfImageDarkSource:i,isDarkModeEnabled:l})=>{const a=l?i:o;return c.jsx(Ot,{id:"home",children:c.jsx(c.Fragment,{children:c.jsxs(Fg,{children:[c.jsx(io,{children:c.jsxs(Mg,{children:[c.jsxs(oc,{children:[c.jsxs(Tg,{children:["Hi, I'm ",e]}),c.jsx(Lg,{children:t})]}),c.jsxs(oc,{children:[c.jsx(Ng,{children:n}),c.jsx(Ls,{clickHandler:()=>P2(),name:r.name,icon:O.Contact,target:r.target})]})]})}),c.jsx(Bg,{children:c.jsx(oo,{children:c.jsx(Dg,{src:a})})})]})})})},bg=x.div`
+`,Qg=({children:e})=>c.jsx(Ug,{children:e}),Yg=({iconType:e,href:t})=>{const[n,r]=I.useState(!1),o=i=>{const l=document.getElementById(i);l!==null&&(l.scrollIntoView(),r(!0)),setTimeout(()=>{r(!1)},500)};return c.jsx(Eg,{toggle:n,onClick:()=>o(t),children:c.jsx(Ie,{iconType:e})})},Gg=({navigationMenus:e})=>c.jsx(Qg,{children:c.jsx(Cg,{children:e&&e.map((t,n)=>c.jsx(kg,{children:c.jsx(Yg,{href:t.href,iconType:t.iconType})},n))})}),bg=({name:e,designation:t,headline:n,buttonProps:r,selfImageLightSource:o,selfImageDarkSource:i,isDarkModeEnabled:l})=>{const a=l?i:o;return c.jsx(Ot,{id:"home",children:c.jsx(c.Fragment,{children:c.jsxs(Bg,{children:[c.jsx(io,{children:c.jsxs(Tg,{children:[c.jsxs(oc,{children:[c.jsxs(Lg,{children:["Hi, I'm ",e]}),c.jsx(Ng,{children:t})]}),c.jsxs(oc,{children:[c.jsx(Og,{children:n}),c.jsx(Ls,{clickHandler:()=>P2(),name:r.name,icon:O.Contact,target:r.target})]})]})}),c.jsx(Vg,{children:c.jsx(oo,{children:c.jsx(Fg,{src:a})})})]})})})},Xg=x.div`
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
     background-color: ${({backgroundColor:e,theme:t})=>e||t.bodyColor};
-`,Xg=({children:e,backgroundColor:t})=>c.jsx(bg,{backgroundColor:t,children:e}),Kg=x.div`
+`,Kg=({children:e,backgroundColor:t})=>c.jsx(Xg,{backgroundColor:t,children:e}),Zg=x.div`
     ${({exit:e})=>e?qm:""}
     margin-left: 1rem;
     display: grid;
@@ -895,22 +896,22 @@ Error generating stack: `+i.message+`
     height: 12rem;
     width: 12rem;
     transition: all 1s ease;
-`,Zg=x.div`
+`,qg=x.div`
     ${Ui}
     ${Zm}
     background-color: hsl(202, 57%, 52%);
     transform: rotate(45deg);
-`,qg=x.div`
+`,Jg=x.div`
     ${Ui}
     background-color: hsl(220, 56%, 35%);
     transform: ${({rotate:e})=>e?"rotate(30deg)":"rotate(45deg)"};
     opacity: ${({show:e})=>e?"0.9":"0"}
-`,Jg=x.div`
+`,ev=x.div`
     ${Ui}
     background-color: hsl(190, 83%, 33%);
     transform: ${({rotate:e})=>e?"rotate(15deg)":"rotate(30deg)"};
     opacity: ${({show:e})=>e?"0.9":"0"}
-`,ev=x.div`
+`,tv=x.div`
     ${Ui}
     margin-left: 0.2rem;
     border-radius: 2rem;
@@ -919,21 +920,21 @@ Error generating stack: `+i.message+`
     align-items: center;
     justify-content: center;
     opacity: ${({show:e})=>e?"0.9":"0"}
-`,tv=x.div`
+`,nv=x.div`
     height: 3rem;
     width: 4.5rem;
     border: 1rem solid white;
     border-left: 0px;
     border-radius: 0 8rem 8rem 0;
-`,nv=x.div`
+`,rv=x.div`
     width: 1rem;
     height: 2.1rem;
     background-color: white;
     margin-top: -0.1rem;
-`,rv=x.h1`
+`,ov=x.h1`
     font-size: 7rem;
     color: white;
-`,ov=({exit:e})=>{const[t,n]=I.useState(!1),[r,o]=I.useState(!1),[i,l]=I.useState(!1),[a,s]=I.useState(!1),[f,h]=I.useState(!1);return setTimeout(()=>{n(!0)},1500),setTimeout(()=>{o(!0)},2150),setTimeout(()=>{l(!0)},2800),setTimeout(()=>{s(!0)},3350),setTimeout(()=>{h(!0)},3900),c.jsx(Xg,{children:c.jsxs(Kg,{exit:e,children:[c.jsx(Po,{children:c.jsx(Zg,{})}),c.jsx(Po,{children:c.jsx(qg,{show:t,rotate:r})}),c.jsx(Po,{children:c.jsx(Jg,{show:i,rotate:a})}),c.jsx(Po,{children:c.jsxs(ev,{show:f,children:[c.jsxs("div",{children:[c.jsx(tv,{}),c.jsx(nv,{})]}),c.jsx("div",{children:c.jsx(rv,{children:"N"})})]})})]})})},iv=x.div`
+`,iv=({exit:e})=>{const[t,n]=I.useState(!1),[r,o]=I.useState(!1),[i,l]=I.useState(!1),[a,s]=I.useState(!1),[f,h]=I.useState(!1);return setTimeout(()=>{n(!0)},1500),setTimeout(()=>{o(!0)},2150),setTimeout(()=>{l(!0)},2800),setTimeout(()=>{s(!0)},3350),setTimeout(()=>{h(!0)},3900),c.jsx(Kg,{children:c.jsxs(Zg,{exit:e,children:[c.jsx(Po,{children:c.jsx(qg,{})}),c.jsx(Po,{children:c.jsx(Jg,{show:t,rotate:r})}),c.jsx(Po,{children:c.jsx(ev,{show:i,rotate:a})}),c.jsx(Po,{children:c.jsxs(tv,{show:f,children:[c.jsxs("div",{children:[c.jsx(nv,{}),c.jsx(rv,{})]}),c.jsx("div",{children:c.jsx(ov,{children:"N"})})]})})]})})},lv=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space075};
     border-radius: ${({theme:e})=>e.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
@@ -954,7 +955,7 @@ Error generating stack: `+i.message+`
             }
         }
     }
-`,lv=ee`
+`,av=ee`
     font-weight: 400;
     transition: 0.5s;
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
@@ -962,8 +963,8 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,av=x.h3`
-    ${lv}
+`,sv=x.h3`
+    ${av}
     color: ${({isopen:e,theme:t})=>e?t.common.firstColor:t.titleColor};
     margin-bottom: 0;
     margin-left: ${({theme:e})=>e.common.spacing.space05};
@@ -973,24 +974,24 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,sv=x.div`
+`,uv=x.div`
     transition: all 0.5s ease;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
-`,uv=x.p`
+`,cv=x.p`
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.smallFont};
     margin-top: 0;
 
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.smallFont};
     }
-`,cv=x.div`
+`,dv=x.div`
     display: flex;
     margin-top: ${({theme:e})=>e.common.spacing.space10};
     margin-right: ${({theme:e})=>e.common.spacing.space15};
-`,dv=x.div`
-    display: flex;
 `,fv=x.div`
-`,pv=x(vh)`
+    display: flex;
+`,pv=x.div`
+`,mv=x(vh)`
     margin-top: 0.25rem;
     font-weight: 400;
     transition: 0.5s;
@@ -1003,7 +1004,7 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,mv=({id:e,title:t,content:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(iv,{isopen:r,children:[c.jsxs(dv,{onClick:i,children:[c.jsx(fv,{children:c.jsx(pv,{isopen:r,children:"+"})}),c.jsx("div",{children:c.jsx(av,{isopen:r,children:t})})]}),r&&c.jsx(sv,{children:n.map((l,a)=>c.jsx(no,{children:c.jsxs(cv,{children:[c.jsx(e1,{}),c.jsx(uv,{children:l})]})},a))})]},e)},hv=({content:e})=>c.jsx(c.Fragment,{children:e.map((t,n)=>c.jsx(mv,{id:t.id,content:t.content,title:t.title},n))}),gv=x.div`
+`,hv=({id:e,title:t,content:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(lv,{isopen:r,children:[c.jsxs(fv,{onClick:i,children:[c.jsx(pv,{children:c.jsx(mv,{isopen:r,children:"+"})}),c.jsx("div",{children:c.jsx(sv,{isopen:r,children:t})})]}),r&&c.jsx(uv,{children:n.map((l,a)=>c.jsx(no,{children:c.jsxs(dv,{children:[c.jsx(e1,{}),c.jsx(cv,{children:l})]})},a))})]},e)},gv=({content:e})=>c.jsx(c.Fragment,{children:e.map((t,n)=>c.jsx(hv,{id:t.id,content:t.content,title:t.title},n))}),vv=x.div`
     ${Nt}
     row-gap: 0;
 
@@ -1011,7 +1012,7 @@ Error generating stack: `+i.message+`
         margin-left: auto;
         margin-right: auto;
     }
-`,vv=({sectionTitle:e,content:t})=>c.jsxs(Ot,{id:"mostproudof",children:[c.jsx(an,{content:e}),c.jsx(oo,{children:c.jsx(gv,{children:c.jsx(hv,{content:t})})})]}),yv=({title:e,timeline:t})=>c.jsxs(Ot,{id:"professionalexperience",children:[c.jsx(an,{content:e}),t.map((n,r)=>c.jsx(hn,{children:c.jsx(t1,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),wv=x.div`
+`,yv=({sectionTitle:e,content:t})=>c.jsxs(Ot,{id:"mostproudof",children:[c.jsx(an,{content:e}),c.jsx(oo,{children:c.jsx(vv,{children:c.jsx(gv,{content:t})})})]}),wv=({title:e,timeline:t})=>c.jsxs(Ot,{id:"professionalexperience",children:[c.jsx(an,{content:e}),t.map((n,r)=>c.jsx(hn,{children:c.jsx(t1,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),xv=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space125};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
     display: flex;
@@ -1025,25 +1026,25 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.h3Font};
     }
-`,xv=x.div`
+`,Sv=x.div`
     height: 5px;
     border-radius: 0.25rem;
     background-color: ${({theme:e})=>e.common.firstColorLighter};
     width: 100%;
-`,Sv=x.div`
+`,Cv=x.div`
     row-gap: 1.5rem;
     padding-left: 2.7rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space15};
     display: ${({isopen:e})=>e?"":"none"};
     overflow: ${({isopen:e})=>e?"":"hidden"};
     transition: max-height 2s ease-out;
-`,Cv=x(Kf)`
+`,kv=x(Kf)`
     font-size: 2rem;
     color: ${({theme:e})=>e.common.firstColor};
     margin-left: auto;
     transition: 0.8s;
     transform: ${({isopen:e})=>e?"rotate(-180deg);":""};
-`,kv=x.div`
+`,Ev=x.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1058,7 +1059,7 @@ Error generating stack: `+i.message+`
             }
         }
     }
-`,Ev=x.h1`
+`,Av=x.h1`
     margin-top: 0.5rem;
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
     display: flex;
@@ -1075,24 +1076,24 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.h3Font};
     }
-`,Av=x.h3`
+`,zv=x.h3`
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
     font-weight: ${({theme:e})=>e.common.fontWeight.medium}
-`,zv=x.h3`
+`,$v=x.h3`
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.normalFont};
     font-weight: ${({theme:e})=>e.common.fontWeight.medium};
 
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,$v=x.span`
+`,Pv=x.span`
     height: 5px;
     border-radius: 0.25rem;
     width: ${({width:e})=>e}%;
     display: block;
     background-color: ${({theme:e})=>e.common.firstColor};
     animation: ${({width:e})=>Tm(e)} 3s normal forwards;
-`,Pv=({name:e,percentage:t})=>c.jsxs(c.Fragment,{children:[c.jsxs(wv,{children:[c.jsx(Av,{children:e}),c.jsxs(zv,{children:[t," %"]})]}),c.jsx(xv,{children:c.jsx($v,{width:t})})]}),jv=({category:e,skills:t,icon:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(c.Fragment,{children:[c.jsxs(kv,{onClick:i,children:[c.jsx(Ie,{iconType:n}),c.jsx(Ev,{isopen:r,children:e}),c.jsx(Cv,{isopen:r})]}),c.jsx(Sv,{isopen:r,children:t.map((l,a)=>c.jsx(no,{children:c.jsx(io,{children:c.jsx(Pv,{name:l.name,percentage:l.percentage})})},a))})]})},_v=x.div`
+`,jv=({name:e,percentage:t})=>c.jsxs(c.Fragment,{children:[c.jsxs(xv,{children:[c.jsx(zv,{children:e}),c.jsxs($v,{children:[t," %"]})]}),c.jsx(Sv,{children:c.jsx(Pv,{width:t})})]}),_v=({category:e,skills:t,icon:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(c.Fragment,{children:[c.jsxs(Ev,{onClick:i,children:[c.jsx(Ie,{iconType:n}),c.jsx(Av,{isopen:r,children:e}),c.jsx(kv,{isopen:r})]}),c.jsx(Cv,{isopen:r,children:t.map((l,a)=>c.jsx(no,{children:c.jsx(io,{children:c.jsx(jv,{name:l.name,percentage:l.percentage})})},a))})]})},Mv=x.div`
     ${Nt}
     ${to}
     row-gap: 0;
@@ -1105,7 +1106,7 @@ Error generating stack: `+i.message+`
         margin-left: auto;
         margin-right: auto;
     }
-`,Mv=({sectionTitle:e,skills:t})=>c.jsxs(Ot,{id:"technologyproficiency",children:[c.jsx(an,{content:e}),c.jsx(_v,{children:t.map((n,r)=>c.jsx(io,{children:c.jsx(jv,{category:n.category,skills:n.skills,icon:n.icon})},r))})]}),Tv=x.div`
+`,Tv=({sectionTitle:e,skills:t})=>c.jsxs(Ot,{id:"technologyproficiency",children:[c.jsx(an,{content:e}),c.jsx(Mv,{children:t.map((n,r)=>c.jsx(io,{children:c.jsx(_v,{category:n.category,skills:n.skills,icon:n.icon})},r))})]}),Lv=x.div`
     border-radius: ${({theme:e})=>e.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     color: ${({theme:e})=>e.titleColor};
@@ -1119,18 +1120,18 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,Lv=x.div`
+`,Nv=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space10};
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};
-`,Nv=x.p`
+`,Ov=x.p`
     font-style: italic;
-`,Ov=x.h3`
+`,Rv=x.h3`
     color: ${({theme:e})=>e.titleColor};
-`,Rv=x.h4`
+`,Iv=x.h4`
     font-weight: 400;
     opacity: 0.5;
     font-size: 0.75rem;
-`,Iv=x.span`
+`,Dv=x.span`
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.smallerFont};
     color: ${({theme:e})=>e.textColor};
     float: right;
@@ -1139,10 +1140,10 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.smallerFont};
     }
-`,Dv=x(Mh)`
+`,Fv=x(Mh)`
     font-size: 2rem;
     color: ${({theme:e})=>e.common.firstColor};
-`,Fv=({quoteMetaData:e})=>c.jsx(c.Fragment,{children:e&&e.map((t,n)=>c.jsxs(Tv,{children:[c.jsx(Dv,{}),c.jsx(Lv,{children:c.jsx(Nv,{children:t.quote})}),c.jsx(Ov,{children:t.givenBy}),c.jsx(Rv,{children:t.subTitleGivenBy}),c.jsxs(Iv,{children:["Source: ",t.source]})]},n))}),Bv=x.div`
+`,Bv=({quoteMetaData:e})=>c.jsx(c.Fragment,{children:e&&e.map((t,n)=>c.jsxs(Lv,{children:[c.jsx(Fv,{}),c.jsx(Nv,{children:c.jsx(Ov,{children:t.quote})}),c.jsx(Rv,{children:t.givenBy}),c.jsx(Iv,{children:t.subTitleGivenBy}),c.jsxs(Dv,{children:["Source: ",t.source]})]},n))}),Vv=x.div`
     ${Nt}
     ${to}
     gap: 1.5rem;
@@ -1165,4 +1166,4 @@ Error generating stack: `+i.message+`
         margin-left: auto;
         margin-right: auto;
     }
-`,Vv=({sectionTitle:e,quoteProps:t})=>c.jsxs(Ot,{id:"testimonials",children:[c.jsx(an,{content:e}),c.jsx(io,{children:c.jsx(Bv,{children:c.jsx(Fv,{quoteMetaData:t.quoteMetaData})})})]}),El={sectionTitle:"About Me",content:["A Dynamic and highly diversified IT Professional responsible for assisting in the establishment of an IT Architecture practice, and the adoption of an architecture and standard methodology.","Passionate about designing highly stable and scalable Software Solutions that transcend high performance ranging from traditional Mobile, Web to IoT Management System.","If you stick till the end, you can have a glimpse of what I'm most proud of, the experience I hold and the skills I possess (Best of them being, I can centre a Div without Googling 😆).","Note: This is just a glimpse, I'm constantly improving and evolving! 👨‍💻"],buttonProps:{link:"https://www.pranshunijhawan.dev/static/pdf/Resume,%20Pranshu%20Nijhawan.pdf",name:"Download Resume"}},Hv=""+new URL("azure-data-engineer-associate-43e6d281.png",import.meta.url).href,Wv=""+new URL("azure-developer-associate-de893379.png",import.meta.url).href,Uv=""+new URL("AWS-Developer-Associate-a9d55494.png",import.meta.url).href,ic={sectionTitle:"Licenses & Certifications",certificateProps:{certificateMetaData:[{imageProps:{height:240,width:240,source:Hv},buttonProps:{link:"https://learn.microsoft.com/en-us/users/pranshunijhawan-8334/credentials/e874a171d923b2a0",name:"Credential"},title:"Microsoft Certified: Azure Data Engineer Associate"},{imageProps:{height:240,width:240,source:Wv},buttonProps:{link:"https://learn.microsoft.com/en-us/users/pranshunijhawan-8334/credentials/d0e6186a5d8110bb",name:"Credential"},title:"Microsoft Certified: Azure Developer Associate"},{imageProps:{height:170,width:170,source:Uv},buttonProps:{link:"https://www.pranshunijhawan.dev/static/pdf/AWS%20Certified%20Developer%20-%20Associate%20certificate.pdf",name:"Credential"},title:"AWS Certified: Developer Associate"}]}},lc={sectionTitle:"Contact Me",contactMetaData:[{icon:O.Phone,content:"+91-9999966272",href:"tel:+91-9999966272"},{icon:O.Email,content:"mail@pranshunijhawan.dev",href:"mailto:mail@pranshunijhawan.dev"},{icon:O.Location,content:"Gurgaon, Haryana. India",href:"http://maps.google.com/?q=Gurgaon, Haryana. India"},{icon:O.LinkedIn,content:"@pranshunijhawan",href:"https://www.linkedin.com/in/pranshunijhawan/"}]},ac={title:"Educational Qualifications",timeline:[{title:"B.Tech, Computer Science and Engineering",subTitle:"Gurgaon Institute of Technology & Management",date:"2012 - 2016"},{title:"Senior Secondary 12th",subTitle:"St PBN Public School, Gurgaon",date:"2012"},{title:"Higher Secondary 10th",subTitle:"Blue Bells Model School, Gurgaon",date:"2010",last:!0}]},Qv=""+new URL("self-light-24a15c28.jpg",import.meta.url).href,Yv=""+new URL("self-dark-e8795020.jpg",import.meta.url).href,jn={name:"Pranshu",designation:"Full Stack Developer & Cloud SME",headline:"I am an Experienced Full-Stack Developer and Cloud SME with High-Level Proficiency and Experience in Spearheading the Planning, Design, Development, Implementation and Management of complex software solutions.",buttonProps:{link:"#contactme",name:"Contact Me",target:"none"},selfImageLightSource:Qv,selfImageDarkSource:Yv},sc={sectionTitle:"Most Proud Of",content:[{id:1,title:"Polymorphic Self-Mutating Encryption Algorithm",content:["Created a highly secured Hybrid Encryption Algorithm, a combination of hashing and dynamic key-based Encryption Algorithm.","Solve the drawback of traditional Hashing technique to always create a unique hash value with an “Always Unique” based mechanism ignoring the need to store a key as followed in Key Based Encryption technique."]},{id:2,title:"Global Dependency Tracer",content:["Created a highly optimized Dependency Trace writer, based on Aspect-Oriented-Programming (AOP) Paradigm.","Architected using .NET Core’s built-in Dependency Injection (DI) Containers by injecting dynamic proxies acting as a Middleware for all service calls."]},{id:3,title:"Dynamic Result Library for IQueryable & IEnumerable Collections",content:["Created a highly customizable library for Non-Generic collections IQueryable & IEnumerable based on concepts of Reflection for transforming Custom Data objects into LINQ compatible Lambda Expressions.","Dynamic Filter: Generate lambda expressions for LINQ’s where extension method to filter data based on defined properties and values.","Dynamic Sort: Generate LINQ’s ordering extensions with lambda expressions to sort the object in any direction (Ascending & Descending).","Dynamic Select: Generate lambda expressions for LINQ’s select extension to fetch only the provided properties and filter the response using Custom Middleware Injection in .NET Core’s request cycle.","Fully Compatible for EF Core’s Translations."]}]},Gv={navigationMenus:[{iconType:O.NavigationAbout,href:"about"},{iconType:O.NavigationTechnologyProficiency,href:"technologyproficiency"},{iconType:O.NavigationEducationalQualifications,href:"educationalqualifications"},{iconType:O.NavigationProfessionalExperience,href:"professionalexperience"},{iconType:O.NavigationCertifications,href:"certifications"},{iconType:O.NavigationTestimonials,href:"testimonials"},{iconType:O.NavigationContact,href:"contactme"}]},uc={title:"Professional Experience",timeline:[{title:"Senior Software Engineer 2",subTitle:"McKinsey & Company",date:"January 2024 - Present"},{title:"Senior Engineer",subTitle:"McKinsey & Company",date:"March 2022 - December 2023",description:["Drive the design and development of innovative Marketing & Sales products for global Retail and CPG clients, focusing on Enterprise Pricing Strategy and Promotion Optimization.","Leading a team of Nine Engineers, including Full Stack, Data, Test, and DevOps Engineers, developing high-performance GraphQL Microservices with Node.JS, Typescript, and React for UI components within a Micro-Frontends Architecture.","Manage the creation of complex Data Processing Pipelines for Batch/Stream Processes, utilizing Azure Databricks and Azure Stream Analytics, ensuring efficiency and reliability in data processing."]},{title:"Principal Engineer",subTitle:"Condeco",date:"April 2021 - March 2022",description:["Develop high-impact technical solutions for robust applications, ensuring performance, stability, and scalability. Prototype and create proof of concepts (POCs) following best practices and clean code architecture.","Manage the entire application lifecycle, including requirement analysis, development, testing, and deployment. Provide estimates with end-to-end delivery timelines, release phases, and supporting information. Oversee post-release improvements and maintenance."]},{title:"Senior Engineer",subTitle:"Nagarro",date:"December 2019 – April 2021",description:["Develop diverse web and cloud applications for Nagarro clients across domains such as E-Commerce, Employee Management, and Inventory Systems, utilizing expertise in Angular, Ionic, and .NET Core, while adhering to Microservices Design Architecture and SOLID Principles.","Establish comprehensive CI/CD pipelines in alignment with modern Cloud Computing concepts, incorporating PaaS Ideology for Resource Provisioning, Automated Scaling, Monitoring, and Alert Systems. Implement Database Architecture using Code-First/DB-First Approach, employing EF Core and SQL Scripts for schema creation and stored procedures."]},{title:"Software Engineer",subTitle:"Condeco",date:"September 2018 – December 2019",description:["Lead the design, development, and enhancement of Condeco's Workspace Management Platform, Condeco Enterprise, integrating meeting room and desk booking software with touch screen solutions for an innovative workplace transformation.","Develop highly scalable and extendable microservices using both serverless and traditional paradigms, while managing DevOps infrastructure creation/maintenance, including CI/CD pipelines (YAML, ARM Templates, PowerShell, and Azure CLI), and documenting application-level changes with Data-Flow-Diagrams. Additionally, contribute to SQL architecture design by writing stored procedures and building SQL agent jobs."]},{title:"Associate Software Engineer",subTitle:"Gartner",date:"May 2017 – August 2018",description:["Spearheaded the design and development of ClearForce, Gartner’s Survey Platform, a cutting-edge employee engagement SaaS product suite utilizing Microsoft Technologies, encompassing UI/Functional enhancements and bug fixes.","Established SQL architecture by crafting Stored Procedures (SPs) and implementing SQL agent jobs for automated interactions between the tool and database."],last:!0}]},cc={sectionTitle:"Technology Proficiency",skills:[{icon:O.Frontend,category:"Frontend",skills:[{name:"React",percentage:90},{name:"Angular",percentage:100},{name:"JavaScript",percentage:100},{name:"TypeScript",percentage:90},{name:"Ionic Framework",percentage:60}]},{icon:O.Backend,category:"Backend",skills:[{name:"C#",percentage:100},{name:".NET Core",percentage:100},{name:"Node.Js",percentage:80},{name:"Python",percentage:80},{name:"Microservices",percentage:100},{name:"GraphQL",percentage:80}]},{icon:O.Database,category:"Database",skills:[{name:"SQL",percentage:100},{name:"NoSQL",percentage:90}]},{icon:O.Cloud,category:"Cloud",skills:[{name:"Microsoft Azure",percentage:90},{name:"Amazon Web Services (AWS)",percentage:80}]},{icon:O.DataEngineering,category:"Data Engineering",skills:[{name:"Azure Databricks (Apache Spark)",percentage:80},{name:"Azure Datafactory",percentage:70},{name:"Azure Stream Analytics",percentage:70}]}]},dc={sectionTitle:"Testimonials",quoteProps:{quoteMetaData:[{quote:"Pranshu is a standout performer and has demonstrated great sense of ownership while working on any project. His biggest strength is his up-to-date technical skills and his ability to manage conflicts gracefully. It was a pleasure to have him in my team.",givenBy:"Ambica Jain",subTitleGivenBy:"Director, Delivery",source:"LinkedIn"}]}},fc={metaDetails:[{metaName:"apple-mobile-web-app-status-bar-style",metaContent:""},{metaName:"theme-color",metaContent:""}]};var i1={},kn={};Object.defineProperty(kn,"__esModule",{value:!0});kn.default=kn.MetaContext=void 0;var Ho=bv(I);function bv(e){if(e&&e.__esModule)return e;var t={};if(e!=null){for(var n in e)if(Object.prototype.hasOwnProperty.call(e,n)){var r=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(e,n):{};r.get||r.set?Object.defineProperty(t,n,r):t[n]=e[n]}}return t.default=e,t}function Wo(e){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?Wo=function(n){return typeof n}:Wo=function(n){return n&&typeof Symbol=="function"&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n},Wo(e)}function Xv(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function pc(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function Kv(e,t,n){return t&&pc(e.prototype,t),n&&pc(e,n),e}function Zv(e,t){return t&&(Wo(t)==="object"||typeof t=="function")?t:qv(e)}function qv(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function Ea(e){return Ea=Object.setPrototypeOf?Object.getPrototypeOf:function(n){return n.__proto__||Object.getPrototypeOf(n)},Ea(e)}function Jv(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&Aa(e,t)}function Aa(e,t){return Aa=Object.setPrototypeOf||function(r,o){return r.__proto__=o,r},Aa(e,t)}var l1=(0,Ho.createContext)({});kn.MetaContext=l1;var e3=function(e){Jv(t,e);function t(){return Xv(this,t),Zv(this,Ea(t).apply(this,arguments))}return Kv(t,[{key:"render",value:function(){return Ho.default.createElement(l1.Provider,{value:{extract:this.props.extract}},Ho.Children.only(this.props.children))}}]),t}(Ho.Component),t3=e3;kn.default=t3;var za={exports:{}},Rt={};Object.defineProperty(Rt,"__esModule",{value:!0});Rt.filterAndArrangeTags=s3;Rt.getDuplicateTitle=c3;Rt.getDuplicateCanonical=d3;Rt.getDuplicateElementById=f3;Rt.getDuplicateMeta=p3;Rt.appendChild=m3;Rt.removeChild=h3;function n3(e){return i3(e)||o3(e)||r3()}function r3(){throw new TypeError("Invalid attempt to spread non-iterable instance")}function o3(e){if(Symbol.iterator in Object(e)||Object.prototype.toString.call(e)==="[object Arguments]")return Array.from(e)}function i3(e){if(Array.isArray(e)){for(var t=0,n=new Array(e.length);t<e.length;t++)n[t]=e[t];return n}}var l3=["itemProp"],a1=["property","name","itemprop"],s1=a1.concat(l3),mc=s1.concat(["id"]);function a3(e){return e=Array.prototype.slice.call(e||[]),e.filter(function(t){return!t.id})}function s3(e){var t=null,n=null,r=[],o=[];return e.forEach(function(i){var l=i.type,a=i.props;l==="title"?t=i:l==="link"&&a.rel==="canonical"?n=i:l==="meta"?r.push(i):o.push(i)}),[t].concat(n3(u3(r)),[n],o)}function u3(e){var t={};mc.forEach(function(i){t[i]=[]});for(var n=[],r=function(l){var a=e[l],s=a.props.id,f=!1;s?f=!t.id[s]:f=s1.filter(function(h){var g=a.props[h],v=t[h][g];return v&&!v.props.id}).length===0,f&&(n.unshift(a),mc.forEach(function(h){var g=a.props[h];g&&(t[h][g]=a)}))},o=e.length-1;o>=0;o--)r(o);return n}function c3(){return document.head.querySelectorAll("title")}function d3(){return document.head.querySelectorAll('link[rel="canonical"]')}function f3(e){var t=e.id;return t&&document.head.querySelector("#".concat(t))}function p3(e){var t=document.head;return a1.reduce(function(n,r){var o=e.getAttribute(r);return o?n.concat(a3(t.querySelectorAll("[".concat(r,' = "').concat(o,'"]')))):n},[])}function m3(e,t){t.length===void 0&&(t=[t]);for(var n=document.createDocumentFragment(),r=0,o=t.length;r<o;r++)n.appendChild(t[r]);e.appendChild(n)}function h3(e,t){t.length===void 0&&(t=[t]);for(var n=0,r=t.length;n<r;n++)e.removeChild(t[n])}(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=a(I),r=l(jf),o=Rt,i=kn;function l(m){return m&&m.__esModule?m:{default:m}}function a(m){if(m&&m.__esModule)return m;var w={};if(m!=null){for(var E in m)if(Object.prototype.hasOwnProperty.call(m,E)){var z=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(m,E):{};z.get||z.set?Object.defineProperty(w,E,z):w[E]=m[E]}}return w.default=m,w}function s(m){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?s=function(E){return typeof E}:s=function(E){return E&&typeof Symbol=="function"&&E.constructor===Symbol&&E!==Symbol.prototype?"symbol":typeof E},s(m)}function f(m,w){if(!(m instanceof w))throw new TypeError("Cannot call a class as a function")}function h(m,w){for(var E=0;E<w.length;E++){var z=w[E];z.enumerable=z.enumerable||!1,z.configurable=!0,"value"in z&&(z.writable=!0),Object.defineProperty(m,z.key,z)}}function g(m,w,E){return w&&h(m.prototype,w),E&&h(m,E),m}function v(m,w){return w&&(s(w)==="object"||typeof w=="function")?w:C(m)}function C(m){if(m===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return m}function S(m){return S=Object.setPrototypeOf?Object.getPrototypeOf:function(E){return E.__proto__||Object.getPrototypeOf(E)},S(m)}function k(m,w){if(typeof w!="function"&&w!==null)throw new TypeError("Super expression must either be null or a function");m.prototype=Object.create(w&&w.prototype,{constructor:{value:m,writable:!0,configurable:!0}}),w&&M(m,w)}function M(m,w){return M=Object.setPrototypeOf||function(z,_){return z.__proto__=_,z},M(m,w)}function d(m,w,E){return w in m?Object.defineProperty(m,w,{value:E,enumerable:!0,configurable:!0,writable:!0}):m[w]=E,m}var u=function(m){k(w,m);function w(){return f(this,w),v(this,S(w).apply(this,arguments))}return g(w,[{key:"componentDidMount",value:function(){this.temporaryElement=document.createElement("div"),this.handleChildrens()}},{key:"componentDidUpdate",value:function(z){z.children!==this.props.children&&this.handleChildrens()}},{key:"componentWillUnmount",value:function(){this.temporaryElement&&r.default.unmountComponentAtNode(this.temporaryElement)}},{key:"extractChildren",value:function(){var z=this.context.extract,_=this.props.children;_&&z&&z(_)}},{key:"handleChildrens",value:function(){var z=this,_=this.props.children;if(!(this.context.extract||!_)){var Q=n.default.createElement("div",{className:"react-head-temp"},_);r.default.render(Q,this.temporaryElement,function(){var F=z.temporaryElement.innerHTML;if(z.lastChildStr!==F){z.lastChildStr=F;var me=z.temporaryElement.querySelector(".react-head-temp");if(me!==null){var re=Array.prototype.slice.call(me.children),se=document.head,Oe=se.innerHTML;re=re.filter(function(te){return Oe.indexOf(te.outerHTML)===-1}),re=re.map(function(te){return te.cloneNode(!0)}),re.forEach(function(te){var be=te.tagName.toLowerCase();if(be==="title"){var xe=(0,o.getDuplicateTitle)();xe&&(0,o.removeChild)(se,xe)}else if(te.id){var $=(0,o.getDuplicateElementById)(te);$&&(0,o.removeChild)(se,$)}else if(be==="meta"){var R=(0,o.getDuplicateMeta)(te);R&&(0,o.removeChild)(se,R)}else if(be==="link"&&te.rel==="canonical"){var D=(0,o.getDuplicateCanonical)(te);D&&(0,o.removeChild)(se,D)}}),(0,o.appendChild)(document.head,re)}}})}}},{key:"render",value:function(){return this.extractChildren(),null}}]),w}(n.Component);d(u,"contextType",i.MetaContext);var p=u;t.default=p,e.exports=t.default})(za,za.exports);var u1=za.exports,$a={exports:{}};(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(I),r=o(u1);function o(d){return d&&d.__esModule?d:{default:d}}function i(d){if(d&&d.__esModule)return d;var u={};if(d!=null){for(var p in d)if(Object.prototype.hasOwnProperty.call(d,p)){var m=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(d,p):{};m.get||m.set?Object.defineProperty(u,p,m):u[p]=d[p]}}return u.default=d,u}function l(d){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?l=function(p){return typeof p}:l=function(p){return p&&typeof Symbol=="function"&&p.constructor===Symbol&&p!==Symbol.prototype?"symbol":typeof p},l(d)}function a(d,u){if(!(d instanceof u))throw new TypeError("Cannot call a class as a function")}function s(d,u){for(var p=0;p<u.length;p++){var m=u[p];m.enumerable=m.enumerable||!1,m.configurable=!0,"value"in m&&(m.writable=!0),Object.defineProperty(d,m.key,m)}}function f(d,u,p){return u&&s(d.prototype,u),p&&s(d,p),d}function h(d,u){return u&&(l(u)==="object"||typeof u=="function")?u:g(d)}function g(d){if(d===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return d}function v(d){return v=Object.setPrototypeOf?Object.getPrototypeOf:function(p){return p.__proto__||Object.getPrototypeOf(p)},v(d)}function C(d,u){if(typeof u!="function"&&u!==null)throw new TypeError("Super expression must either be null or a function");d.prototype=Object.create(u&&u.prototype,{constructor:{value:d,writable:!0,configurable:!0}}),u&&S(d,u)}function S(d,u){return S=Object.setPrototypeOf||function(m,w){return m.__proto__=w,m},S(d,u)}var k=function(d){C(u,d);function u(){return a(this,u),h(this,v(u).apply(this,arguments))}return f(u,[{key:"render",value:function(){return n.default.createElement(r.default,null,n.default.createElement("title",null,this.props.title))}}]),u}(n.Component),M=k;t.default=M,e.exports=t.default})($a,$a.exports);var g3=$a.exports;(function(e){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"MetaTagsContext",{enumerable:!0,get:function(){return t.default}}),Object.defineProperty(e,"MetaTags",{enumerable:!0,get:function(){return n.default}}),Object.defineProperty(e,"ReactTitle",{enumerable:!0,get:function(){return r.default}}),e.default=void 0;var t=o(kn),n=o(u1),r=o(g3);function o(l){return l&&l.__esModule?l:{default:l}}var i=n.default;e.default=i})(i1);const v3=Pa(i1),y3=({metaDetails:e})=>c.jsx(v3,{children:e&&e.map(t=>c.jsx("meta",{name:t.metaName,content:t.metaContent}))}),w3=({themeHandler:e,isDarkModeEnabled:t})=>{const[n,r]=I.useState(!1),[o,i]=I.useState(!1),[l,a]=I.useState(!1),[s,f]=I.useState(!1);setTimeout(()=>{r(!0)},4400),setTimeout(()=>{i(!0)},5e3),setTimeout(()=>{a(!0)},4700),setTimeout(()=>{f(!0)},5200);const h=fc;return h.metaDetails[0].metaContent=t?"black-translucent":"default",h.metaDetails[1].metaContent=t?"hsl(0, 0%, 0%)":"hsl(220, 60%, 99%)",c.jsxs(c.Fragment,{children:[c.jsx(y3,{metaDetails:fc.metaDetails}),!o&&c.jsx(ov,{exit:n}),c.jsx(Hg,{visibility:l,themeHandler:e}),s&&c.jsxs(c.Fragment,{children:[c.jsx(Yg,{navigationMenus:Gv.navigationMenus}),c.jsx(Gg,{name:jn.name,designation:jn.designation,headline:jn.headline,buttonProps:jn.buttonProps,selfImageLightSource:jn.selfImageLightSource,selfImageDarkSource:jn.selfImageDarkSource,isDarkModeEnabled:t}),c.jsx(T2,{sectionTitle:El.sectionTitle,content:El.content,buttonProps:El.buttonProps}),c.jsx(vv,{sectionTitle:sc.sectionTitle,content:sc.content}),c.jsx(Mv,{skills:cc.skills,sectionTitle:cc.sectionTitle}),c.jsx(yg,{title:ac.title,timeline:ac.timeline}),c.jsx(yv,{title:uc.title,timeline:uc.timeline}),c.jsx(B2,{sectionTitle:ic.sectionTitle,certificateProps:ic.certificateProps}),c.jsx(Vv,{quoteProps:dc.quoteProps,sectionTitle:dc.sectionTitle}),c.jsx(J2,{sectionTitle:lc.sectionTitle,contactMetaData:lc.contactMetaData})]})]})},St=220,c1={firstColor:`hsl(${St}, 99%, 49%)`,firstColorAlt:`hsl(${St}, 57%, 53%)`,firstColorLighter:`hsl(${St}, 92%, 85%)`,headerHeight:"5.2rem",fontName:"Poppins",spacing:{space025:"0.25rem",space05:"0.5rem",space075:"0.75rem",space10:"1.0rem",space125:"1.25rem",space15:"1.5rem",space175:"1.75rem",space20:"2.0rem",space225:"2.25rem",space25:"2.5rem",space275:"2.75rem",space30:"3rem"},fontWeight:{medium:"500",semiBold:"600"},fontMaxWidth967:{bigFont:"2rem",h1Font:"1.5rem",h2Font:"1.25rem",h3Font:"1.125rem",normalFont:"0.938rem",smallFont:"0.813rem",smallerFont:"0.75rem"},fontMinWidth968:{bigFont:"3rem",h1Font:"2.25rem",h2Font:"1.5rem",h3Font:"1.25rem",normalFont:"1rem",smallFont:"0.875rem",smallerFont:"0.813rem"}},x3={common:c1,bodyColor:"hsl(0, 0%, 0%)",titleColor:`hsl(${St}, 8%, 95%)`,textColor:`hsl(${St}, 8%, 75%)`,containerColor:`hsl(${St}, 29%, 9%)`},S3={common:c1,bodyColor:`hsl(${St}, 60%, 99%)`,titleColor:`hsl(${St}, 8%, 15%)`,textColor:`hsl(${St}, 8%, 45%)`,containerColor:`hsl(${St}, 0%, 98%)`};function C3(){const e=o1(),[t,n]=I.useState(e),r=()=>{n(!t),jg(!t)};return c.jsxs(Pm,{theme:t?x3:S3,children:[c.jsx(Mm,{}),c.jsx(w3,{themeHandler:r,isDarkModeEnabled:t})]})}const k3=Al.createRoot(document.getElementById("root"));k3.render(c.jsx(Ue.StrictMode,{children:c.jsx(C3,{})}));
+`,Hv=({sectionTitle:e,quoteProps:t})=>c.jsxs(Ot,{id:"testimonials",children:[c.jsx(an,{content:e}),c.jsx(io,{children:c.jsx(Vv,{children:c.jsx(Bv,{quoteMetaData:t.quoteMetaData})})})]}),El={sectionTitle:"About Me",content:["A Dynamic and highly diversified IT Professional responsible for assisting in the establishment of an IT Architecture practice, and the adoption of an architecture and standard methodology.","Passionate about designing highly stable and scalable Software Solutions that transcend high performance ranging from traditional Mobile, Web to IoT Management System.","If you stick till the end, you can have a glimpse of what I'm most proud of, the experience I hold and the skills I possess (Best of them being, I can centre a Div without Googling 😆).","Note: This is just a glimpse, I'm constantly improving and evolving! 👨‍💻"],buttonProps:{link:"https://www.pranshunijhawan.dev/static/pdf/Resume,%20Pranshu%20Nijhawan.pdf",name:"Download Resume"}},Wv=""+new URL("azure-data-engineer-associate-43e6d281.png",import.meta.url).href,Uv=""+new URL("azure-developer-associate-de893379.png",import.meta.url).href,Qv=""+new URL("AWS-Developer-Associate-a9d55494.png",import.meta.url).href,ic={sectionTitle:"Licenses & Certifications",certificateProps:{certificateMetaData:[{imageProps:{height:240,width:240,source:Wv},buttonProps:{link:"https://learn.microsoft.com/en-us/users/pranshunijhawan-8334/credentials/e874a171d923b2a0",name:"Credential"},title:"Microsoft Certified: Azure Data Engineer Associate"},{imageProps:{height:240,width:240,source:Uv},buttonProps:{link:"https://learn.microsoft.com/en-us/users/pranshunijhawan-8334/credentials/d0e6186a5d8110bb",name:"Credential"},title:"Microsoft Certified: Azure Developer Associate"},{imageProps:{height:170,width:170,source:Qv},buttonProps:{link:"https://www.pranshunijhawan.dev/static/pdf/AWS%20Certified%20Developer%20-%20Associate%20certificate.pdf",name:"Credential"},title:"AWS Certified: Developer Associate"}]}},lc={sectionTitle:"Contact Me",contactMetaData:[{icon:O.Phone,content:"+91-9999966272",href:"tel:+91-9999966272"},{icon:O.Email,content:"mail@pranshunijhawan.dev",href:"mailto:mail@pranshunijhawan.dev"},{icon:O.Location,content:"Gurgaon, Haryana. India",href:"http://maps.google.com/?q=Gurgaon, Haryana. India"},{icon:O.LinkedIn,content:"@pranshunijhawan",href:"https://www.linkedin.com/in/pranshunijhawan/"}]},ac={title:"Educational Qualifications",timeline:[{title:"B.Tech, Computer Science and Engineering",subTitle:"Gurgaon Institute of Technology & Management",date:"2012 - 2016"},{title:"Senior Secondary 12th",subTitle:"St PBN Public School, Gurgaon",date:"2012"},{title:"Higher Secondary 10th",subTitle:"Blue Bells Model School, Gurgaon",date:"2010",last:!0}]},Yv=""+new URL("self-light-24a15c28.jpg",import.meta.url).href,Gv=""+new URL("self-dark-e8795020.jpg",import.meta.url).href,jn={name:"Pranshu",designation:"Full Stack Developer & Cloud SME",headline:"I am an Experienced Full-Stack Developer and Cloud SME with High-Level Proficiency and Experience in Spearheading the Planning, Design, Development, Implementation and Management of complex software solutions.",buttonProps:{link:"#contactme",name:"Contact Me",target:"none"},selfImageLightSource:Yv,selfImageDarkSource:Gv},sc={sectionTitle:"Most Proud Of",content:[{id:1,title:"Polymorphic Self-Mutating Encryption Algorithm",content:["Created a highly secured Hybrid Encryption Algorithm, a combination of hashing and dynamic key-based Encryption Algorithm.","Solve the drawback of traditional Hashing technique to always create a unique hash value with an “Always Unique” based mechanism ignoring the need to store a key as followed in Key Based Encryption technique."]},{id:2,title:"Global Dependency Tracer",content:["Created a highly optimized Dependency Trace writer, based on Aspect-Oriented-Programming (AOP) Paradigm.","Architected using .NET Core’s built-in Dependency Injection (DI) Containers by injecting dynamic proxies acting as a Middleware for all service calls."]},{id:3,title:"Dynamic Result Library for IQueryable & IEnumerable Collections",content:["Created a highly customizable library for Non-Generic collections IQueryable & IEnumerable based on concepts of Reflection for transforming Custom Data objects into LINQ compatible Lambda Expressions.","Dynamic Filter: Generate lambda expressions for LINQ’s where extension method to filter data based on defined properties and values.","Dynamic Sort: Generate LINQ’s ordering extensions with lambda expressions to sort the object in any direction (Ascending & Descending).","Dynamic Select: Generate lambda expressions for LINQ’s select extension to fetch only the provided properties and filter the response using Custom Middleware Injection in .NET Core’s request cycle.","Fully Compatible for EF Core’s Translations."]}]},bv={navigationMenus:[{iconType:O.NavigationAbout,href:"about"},{iconType:O.NavigationTechnologyProficiency,href:"technologyproficiency"},{iconType:O.NavigationEducationalQualifications,href:"educationalqualifications"},{iconType:O.NavigationProfessionalExperience,href:"professionalexperience"},{iconType:O.NavigationCertifications,href:"certifications"},{iconType:O.NavigationTestimonials,href:"testimonials"},{iconType:O.NavigationContact,href:"contactme"}]},uc={title:"Professional Experience",timeline:[{title:"Senior Software Engineer 2",subTitle:"McKinsey & Company",date:"January 2024 - Present"},{title:"Senior Engineer",subTitle:"McKinsey & Company",date:"March 2022 - December 2023",description:["Drive the design and development of innovative Marketing & Sales products for global Retail and CPG clients, focusing on Enterprise Pricing Strategy and Promotion Optimization.","Leading a team of Nine Engineers, including Full Stack, Data, Test, and DevOps Engineers, developing high-performance GraphQL Microservices with Node.JS, Typescript, and React for UI components within a Micro-Frontends Architecture.","Manage the creation of complex Data Processing Pipelines for Batch/Stream Processes, utilizing Azure Databricks and Azure Stream Analytics, ensuring efficiency and reliability in data processing."]},{title:"Principal Engineer",subTitle:"Condeco",date:"April 2021 - March 2022",description:["Develop high-impact technical solutions for robust applications, ensuring performance, stability, and scalability. Prototype and create proof of concepts (POCs) following best practices and clean code architecture.","Manage the entire application lifecycle, including requirement analysis, development, testing, and deployment. Provide estimates with end-to-end delivery timelines, release phases, and supporting information. Oversee post-release improvements and maintenance."]},{title:"Senior Engineer",subTitle:"Nagarro",date:"December 2019 – April 2021",description:["Develop diverse web and cloud applications for Nagarro clients across domains such as E-Commerce, Employee Management, and Inventory Systems, utilizing expertise in Angular, Ionic, and .NET Core, while adhering to Microservices Design Architecture and SOLID Principles.","Establish comprehensive CI/CD pipelines in alignment with modern Cloud Computing concepts, incorporating PaaS Ideology for Resource Provisioning, Automated Scaling, Monitoring, and Alert Systems. Implement Database Architecture using Code-First/DB-First Approach, employing EF Core and SQL Scripts for schema creation and stored procedures."]},{title:"Software Engineer",subTitle:"Condeco",date:"September 2018 – December 2019",description:["Lead the design, development, and enhancement of Condeco's Workspace Management Platform, Condeco Enterprise, integrating meeting room and desk booking software with touch screen solutions for an innovative workplace transformation.","Develop highly scalable and extendable microservices using both serverless and traditional paradigms, while managing DevOps infrastructure creation/maintenance, including CI/CD pipelines (YAML, ARM Templates, PowerShell, and Azure CLI), and documenting application-level changes with Data-Flow-Diagrams. Additionally, contribute to SQL architecture design by writing stored procedures and building SQL agent jobs."]},{title:"Associate Software Engineer",subTitle:"Gartner",date:"May 2017 – August 2018",description:["Spearheaded the design and development of ClearForce, Gartner’s Survey Platform, a cutting-edge employee engagement SaaS product suite utilizing Microsoft Technologies, encompassing UI/Functional enhancements and bug fixes.","Established SQL architecture by crafting Stored Procedures (SPs) and implementing SQL agent jobs for automated interactions between the tool and database."],last:!0}]},cc={sectionTitle:"Technology Proficiency",skills:[{icon:O.Frontend,category:"Frontend",skills:[{name:"React",percentage:90},{name:"Angular",percentage:100},{name:"JavaScript",percentage:100},{name:"TypeScript",percentage:90},{name:"Ionic Framework",percentage:60}]},{icon:O.Backend,category:"Backend",skills:[{name:"C#",percentage:100},{name:".NET Core",percentage:100},{name:"Node.Js",percentage:80},{name:"Python",percentage:80},{name:"Microservices",percentage:100},{name:"GraphQL",percentage:80}]},{icon:O.Database,category:"Database",skills:[{name:"SQL",percentage:100},{name:"NoSQL",percentage:90}]},{icon:O.Cloud,category:"Cloud",skills:[{name:"Microsoft Azure",percentage:90},{name:"Amazon Web Services (AWS)",percentage:80}]},{icon:O.DataEngineering,category:"Data Engineering",skills:[{name:"Azure Databricks (Apache Spark)",percentage:80},{name:"Azure Datafactory",percentage:70},{name:"Azure Stream Analytics",percentage:70}]}]},dc={sectionTitle:"Testimonials",quoteProps:{quoteMetaData:[{quote:"Pranshu is a standout performer and has demonstrated great sense of ownership while working on any project. His biggest strength is his up-to-date technical skills and his ability to manage conflicts gracefully. It was a pleasure to have him in my team.",givenBy:"Ambica Jain",subTitleGivenBy:"Director, Delivery",source:"LinkedIn"}]}},fc={metaDetails:[{metaName:"apple-mobile-web-app-status-bar-style",metaContent:""},{metaName:"theme-color",metaContent:""}]};var i1={},kn={};Object.defineProperty(kn,"__esModule",{value:!0});kn.default=kn.MetaContext=void 0;var Ho=Xv(I);function Xv(e){if(e&&e.__esModule)return e;var t={};if(e!=null){for(var n in e)if(Object.prototype.hasOwnProperty.call(e,n)){var r=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(e,n):{};r.get||r.set?Object.defineProperty(t,n,r):t[n]=e[n]}}return t.default=e,t}function Wo(e){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?Wo=function(n){return typeof n}:Wo=function(n){return n&&typeof Symbol=="function"&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n},Wo(e)}function Kv(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function pc(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function Zv(e,t,n){return t&&pc(e.prototype,t),n&&pc(e,n),e}function qv(e,t){return t&&(Wo(t)==="object"||typeof t=="function")?t:Jv(e)}function Jv(e){if(e===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}function Ea(e){return Ea=Object.setPrototypeOf?Object.getPrototypeOf:function(n){return n.__proto__||Object.getPrototypeOf(n)},Ea(e)}function e3(e,t){if(typeof t!="function"&&t!==null)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&Aa(e,t)}function Aa(e,t){return Aa=Object.setPrototypeOf||function(r,o){return r.__proto__=o,r},Aa(e,t)}var l1=(0,Ho.createContext)({});kn.MetaContext=l1;var t3=function(e){e3(t,e);function t(){return Kv(this,t),qv(this,Ea(t).apply(this,arguments))}return Zv(t,[{key:"render",value:function(){return Ho.default.createElement(l1.Provider,{value:{extract:this.props.extract}},Ho.Children.only(this.props.children))}}]),t}(Ho.Component),n3=t3;kn.default=n3;var za={exports:{}},Rt={};Object.defineProperty(Rt,"__esModule",{value:!0});Rt.filterAndArrangeTags=u3;Rt.getDuplicateTitle=d3;Rt.getDuplicateCanonical=f3;Rt.getDuplicateElementById=p3;Rt.getDuplicateMeta=m3;Rt.appendChild=h3;Rt.removeChild=g3;function r3(e){return l3(e)||i3(e)||o3()}function o3(){throw new TypeError("Invalid attempt to spread non-iterable instance")}function i3(e){if(Symbol.iterator in Object(e)||Object.prototype.toString.call(e)==="[object Arguments]")return Array.from(e)}function l3(e){if(Array.isArray(e)){for(var t=0,n=new Array(e.length);t<e.length;t++)n[t]=e[t];return n}}var a3=["itemProp"],a1=["property","name","itemprop"],s1=a1.concat(a3),mc=s1.concat(["id"]);function s3(e){return e=Array.prototype.slice.call(e||[]),e.filter(function(t){return!t.id})}function u3(e){var t=null,n=null,r=[],o=[];return e.forEach(function(i){var l=i.type,a=i.props;l==="title"?t=i:l==="link"&&a.rel==="canonical"?n=i:l==="meta"?r.push(i):o.push(i)}),[t].concat(r3(c3(r)),[n],o)}function c3(e){var t={};mc.forEach(function(i){t[i]=[]});for(var n=[],r=function(l){var a=e[l],s=a.props.id,f=!1;s?f=!t.id[s]:f=s1.filter(function(h){var g=a.props[h],v=t[h][g];return v&&!v.props.id}).length===0,f&&(n.unshift(a),mc.forEach(function(h){var g=a.props[h];g&&(t[h][g]=a)}))},o=e.length-1;o>=0;o--)r(o);return n}function d3(){return document.head.querySelectorAll("title")}function f3(){return document.head.querySelectorAll('link[rel="canonical"]')}function p3(e){var t=e.id;return t&&document.head.querySelector("#".concat(t))}function m3(e){var t=document.head;return a1.reduce(function(n,r){var o=e.getAttribute(r);return o?n.concat(s3(t.querySelectorAll("[".concat(r,' = "').concat(o,'"]')))):n},[])}function h3(e,t){t.length===void 0&&(t=[t]);for(var n=document.createDocumentFragment(),r=0,o=t.length;r<o;r++)n.appendChild(t[r]);e.appendChild(n)}function g3(e,t){t.length===void 0&&(t=[t]);for(var n=0,r=t.length;n<r;n++)e.removeChild(t[n])}(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=a(I),r=l(jf),o=Rt,i=kn;function l(m){return m&&m.__esModule?m:{default:m}}function a(m){if(m&&m.__esModule)return m;var w={};if(m!=null){for(var E in m)if(Object.prototype.hasOwnProperty.call(m,E)){var z=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(m,E):{};z.get||z.set?Object.defineProperty(w,E,z):w[E]=m[E]}}return w.default=m,w}function s(m){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?s=function(E){return typeof E}:s=function(E){return E&&typeof Symbol=="function"&&E.constructor===Symbol&&E!==Symbol.prototype?"symbol":typeof E},s(m)}function f(m,w){if(!(m instanceof w))throw new TypeError("Cannot call a class as a function")}function h(m,w){for(var E=0;E<w.length;E++){var z=w[E];z.enumerable=z.enumerable||!1,z.configurable=!0,"value"in z&&(z.writable=!0),Object.defineProperty(m,z.key,z)}}function g(m,w,E){return w&&h(m.prototype,w),E&&h(m,E),m}function v(m,w){return w&&(s(w)==="object"||typeof w=="function")?w:C(m)}function C(m){if(m===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return m}function S(m){return S=Object.setPrototypeOf?Object.getPrototypeOf:function(E){return E.__proto__||Object.getPrototypeOf(E)},S(m)}function k(m,w){if(typeof w!="function"&&w!==null)throw new TypeError("Super expression must either be null or a function");m.prototype=Object.create(w&&w.prototype,{constructor:{value:m,writable:!0,configurable:!0}}),w&&M(m,w)}function M(m,w){return M=Object.setPrototypeOf||function(z,_){return z.__proto__=_,z},M(m,w)}function d(m,w,E){return w in m?Object.defineProperty(m,w,{value:E,enumerable:!0,configurable:!0,writable:!0}):m[w]=E,m}var u=function(m){k(w,m);function w(){return f(this,w),v(this,S(w).apply(this,arguments))}return g(w,[{key:"componentDidMount",value:function(){this.temporaryElement=document.createElement("div"),this.handleChildrens()}},{key:"componentDidUpdate",value:function(z){z.children!==this.props.children&&this.handleChildrens()}},{key:"componentWillUnmount",value:function(){this.temporaryElement&&r.default.unmountComponentAtNode(this.temporaryElement)}},{key:"extractChildren",value:function(){var z=this.context.extract,_=this.props.children;_&&z&&z(_)}},{key:"handleChildrens",value:function(){var z=this,_=this.props.children;if(!(this.context.extract||!_)){var Q=n.default.createElement("div",{className:"react-head-temp"},_);r.default.render(Q,this.temporaryElement,function(){var F=z.temporaryElement.innerHTML;if(z.lastChildStr!==F){z.lastChildStr=F;var me=z.temporaryElement.querySelector(".react-head-temp");if(me!==null){var re=Array.prototype.slice.call(me.children),se=document.head,Oe=se.innerHTML;re=re.filter(function(te){return Oe.indexOf(te.outerHTML)===-1}),re=re.map(function(te){return te.cloneNode(!0)}),re.forEach(function(te){var be=te.tagName.toLowerCase();if(be==="title"){var xe=(0,o.getDuplicateTitle)();xe&&(0,o.removeChild)(se,xe)}else if(te.id){var $=(0,o.getDuplicateElementById)(te);$&&(0,o.removeChild)(se,$)}else if(be==="meta"){var R=(0,o.getDuplicateMeta)(te);R&&(0,o.removeChild)(se,R)}else if(be==="link"&&te.rel==="canonical"){var D=(0,o.getDuplicateCanonical)(te);D&&(0,o.removeChild)(se,D)}}),(0,o.appendChild)(document.head,re)}}})}}},{key:"render",value:function(){return this.extractChildren(),null}}]),w}(n.Component);d(u,"contextType",i.MetaContext);var p=u;t.default=p,e.exports=t.default})(za,za.exports);var u1=za.exports,$a={exports:{}};(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n=i(I),r=o(u1);function o(d){return d&&d.__esModule?d:{default:d}}function i(d){if(d&&d.__esModule)return d;var u={};if(d!=null){for(var p in d)if(Object.prototype.hasOwnProperty.call(d,p)){var m=Object.defineProperty&&Object.getOwnPropertyDescriptor?Object.getOwnPropertyDescriptor(d,p):{};m.get||m.set?Object.defineProperty(u,p,m):u[p]=d[p]}}return u.default=d,u}function l(d){return typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?l=function(p){return typeof p}:l=function(p){return p&&typeof Symbol=="function"&&p.constructor===Symbol&&p!==Symbol.prototype?"symbol":typeof p},l(d)}function a(d,u){if(!(d instanceof u))throw new TypeError("Cannot call a class as a function")}function s(d,u){for(var p=0;p<u.length;p++){var m=u[p];m.enumerable=m.enumerable||!1,m.configurable=!0,"value"in m&&(m.writable=!0),Object.defineProperty(d,m.key,m)}}function f(d,u,p){return u&&s(d.prototype,u),p&&s(d,p),d}function h(d,u){return u&&(l(u)==="object"||typeof u=="function")?u:g(d)}function g(d){if(d===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return d}function v(d){return v=Object.setPrototypeOf?Object.getPrototypeOf:function(p){return p.__proto__||Object.getPrototypeOf(p)},v(d)}function C(d,u){if(typeof u!="function"&&u!==null)throw new TypeError("Super expression must either be null or a function");d.prototype=Object.create(u&&u.prototype,{constructor:{value:d,writable:!0,configurable:!0}}),u&&S(d,u)}function S(d,u){return S=Object.setPrototypeOf||function(m,w){return m.__proto__=w,m},S(d,u)}var k=function(d){C(u,d);function u(){return a(this,u),h(this,v(u).apply(this,arguments))}return f(u,[{key:"render",value:function(){return n.default.createElement(r.default,null,n.default.createElement("title",null,this.props.title))}}]),u}(n.Component),M=k;t.default=M,e.exports=t.default})($a,$a.exports);var v3=$a.exports;(function(e){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"MetaTagsContext",{enumerable:!0,get:function(){return t.default}}),Object.defineProperty(e,"MetaTags",{enumerable:!0,get:function(){return n.default}}),Object.defineProperty(e,"ReactTitle",{enumerable:!0,get:function(){return r.default}}),e.default=void 0;var t=o(kn),n=o(u1),r=o(v3);function o(l){return l&&l.__esModule?l:{default:l}}var i=n.default;e.default=i})(i1);const y3=Pa(i1),w3=({metaDetails:e})=>c.jsx(y3,{children:e&&e.map(t=>c.jsx("meta",{name:t.metaName,content:t.metaContent}))}),x3=({themeHandler:e,isDarkModeEnabled:t})=>{const[n,r]=I.useState(!1),[o,i]=I.useState(!1),[l,a]=I.useState(!1),[s,f]=I.useState(!1);setTimeout(()=>{r(!0)},4400),setTimeout(()=>{i(!0)},5e3),setTimeout(()=>{a(!0)},4700),setTimeout(()=>{f(!0)},5200);const h=fc;return h.metaDetails[0].metaContent=t?"black-translucent":"default",h.metaDetails[1].metaContent=t?"hsl(0, 0%, 0%)":"hsl(220, 60%, 99%)",c.jsxs(c.Fragment,{children:[c.jsx(w3,{metaDetails:fc.metaDetails}),!o&&c.jsx(iv,{exit:n}),c.jsx(Wg,{visibility:l,themeHandler:e}),s&&c.jsxs(c.Fragment,{children:[c.jsx(Gg,{navigationMenus:bv.navigationMenus}),c.jsx(bg,{name:jn.name,designation:jn.designation,headline:jn.headline,buttonProps:jn.buttonProps,selfImageLightSource:jn.selfImageLightSource,selfImageDarkSource:jn.selfImageDarkSource,isDarkModeEnabled:t}),c.jsx(T2,{sectionTitle:El.sectionTitle,content:El.content,buttonProps:El.buttonProps}),c.jsx(yv,{sectionTitle:sc.sectionTitle,content:sc.content}),c.jsx(Tv,{skills:cc.skills,sectionTitle:cc.sectionTitle}),c.jsx(yg,{title:ac.title,timeline:ac.timeline}),c.jsx(wv,{title:uc.title,timeline:uc.timeline}),c.jsx(B2,{sectionTitle:ic.sectionTitle,certificateProps:ic.certificateProps}),c.jsx(Hv,{quoteProps:dc.quoteProps,sectionTitle:dc.sectionTitle}),c.jsx(J2,{sectionTitle:lc.sectionTitle,contactMetaData:lc.contactMetaData})]})]})},St=220,c1={firstColor:`hsl(${St}, 99%, 49%)`,firstColorAlt:`hsl(${St}, 57%, 53%)`,firstColorLighter:`hsl(${St}, 92%, 85%)`,headerHeight:"5.2rem",fontName:"Poppins",spacing:{space025:"0.25rem",space05:"0.5rem",space075:"0.75rem",space10:"1.0rem",space125:"1.25rem",space15:"1.5rem",space175:"1.75rem",space20:"2.0rem",space225:"2.25rem",space25:"2.5rem",space275:"2.75rem",space30:"3rem"},fontWeight:{medium:"500",semiBold:"600"},fontMaxWidth967:{bigFont:"2rem",h1Font:"1.5rem",h2Font:"1.25rem",h3Font:"1.125rem",normalFont:"0.938rem",smallFont:"0.813rem",smallerFont:"0.75rem"},fontMinWidth968:{bigFont:"3rem",h1Font:"2.25rem",h2Font:"1.5rem",h3Font:"1.25rem",normalFont:"1rem",smallFont:"0.875rem",smallerFont:"0.813rem"}},S3={common:c1,bodyColor:"hsl(0, 0%, 0%)",titleColor:`hsl(${St}, 8%, 95%)`,textColor:`hsl(${St}, 8%, 75%)`,containerColor:`hsl(${St}, 29%, 9%)`},C3={common:c1,bodyColor:`hsl(${St}, 60%, 99%)`,titleColor:`hsl(${St}, 8%, 15%)`,textColor:`hsl(${St}, 8%, 45%)`,containerColor:`hsl(${St}, 0%, 98%)`};function k3(){const e=o1(),[t,n]=I.useState(e),r=()=>{n(!t),_g(!t)};return c.jsxs(Pm,{theme:t?S3:C3,children:[c.jsx(Mm,{}),c.jsx(x3,{themeHandler:r,isDarkModeEnabled:t})]})}const E3=Al.createRoot(document.getElementById("root"));E3.render(c.jsx(Ue.StrictMode,{children:c.jsx(k3,{})}));
