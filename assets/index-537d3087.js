@@ -581,7 +581,7 @@ Error generating stack: `+i.message+`
     margin-top: -0.15rem;
 `,oc=x.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,X2="1",K2="1",Z2="25",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
+`,X2="1",K2="1",Z2="26",El={major:X2,minor:K2,build:Z2},q2=({sectionTitle:e,contactMetaData:t})=>c.jsxs(Ot,{id:"contactme",children:[c.jsx(an,{content:e}),c.jsx(Q2,{children:t&&t.map((n,r)=>c.jsx(oo,{children:c.jsx(U2,{icon:n.icon,content:n.content,href:n.href})},r))}),c.jsxs(Y2,{children:[c.jsx(hn,{children:c.jsxs(kl,{children:[c.jsx(Cl,{children:"Designed & Built With "}),c.jsx(b2,{children:c.jsx(Re,{iconType:N.Heart})}),c.jsxs(Cl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(G2,{children:"Built Using"}),c.jsx(Re,{iconType:N.React}),c.jsx(Re,{iconType:N.TypeScript}),c.jsx(Re,{iconType:N.NodeJS}),c.jsx(Re,{iconType:N.StyledComponents}),c.jsx(Re,{iconType:N.Vite}),c.jsx(Re,{iconType:N.GitHub}),c.jsx(Re,{iconType:N.VSCode})]})})}),c.jsx(hn,{children:c.jsx(oc,{children:c.jsxs(kl,{children:[c.jsx(Re,{iconType:N.Version}),c.jsxs(Cl,{children:["v ",El.major,".",El.minor,".",El.build]})]})})})]})]}),J2=x.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -992,7 +992,7 @@ Error generating stack: `+i.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,hv=({id:e,title:t,content:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(lv,{onClick:i,isopen:r,children:[c.jsxs(fv,{children:[c.jsx(pv,{children:c.jsx(mv,{isopen:r,children:"+"})}),c.jsx("div",{children:c.jsx(sv,{isopen:r,children:t})})]}),r&&c.jsx(uv,{children:n.map((l,a)=>c.jsx(no,{children:c.jsxs(dv,{children:[c.jsx(e1,{}),c.jsx(cv,{children:l})]})},a))})]},e)},gv=({content:e})=>c.jsx(c.Fragment,{children:e.map((t,n)=>c.jsx(hv,{id:t.id,content:t.content,title:t.title},n))}),vv=x.div`
+`,hv=({id:e,title:t,content:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(lv,{isopen:r,children:[c.jsxs(fv,{onClick:i,children:[c.jsx(pv,{children:c.jsx(mv,{isopen:r,children:"+"})}),c.jsx("div",{children:c.jsx(sv,{isopen:r,children:t})})]}),r&&c.jsx(uv,{children:n.map((l,a)=>c.jsx(no,{children:c.jsxs(dv,{children:[c.jsx(e1,{}),c.jsx(cv,{children:l})]})},a))})]},e)},gv=({content:e})=>c.jsx(c.Fragment,{children:e.map((t,n)=>c.jsx(hv,{id:t.id,content:t.content,title:t.title},n))}),vv=x.div`
     ${Nt}
     row-gap: 0;
 
@@ -1080,7 +1080,7 @@ Error generating stack: `+i.message+`
     display: block;
     background-color: ${({theme:e})=>e.common.firstColor};
     animation: ${({width:e})=>Tm(e)} 3s normal forwards;
-`,jv=({name:e,percentage:t})=>c.jsxs(c.Fragment,{children:[c.jsxs(xv,{children:[c.jsx(zv,{children:e}),c.jsxs($v,{children:[t," %"]})]}),c.jsx(Sv,{children:c.jsx(Pv,{width:t})})]}),_v=({category:e,skills:t,icon:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs("div",{onClick:i,children:[c.jsxs(Ev,{children:[c.jsx(Re,{iconType:n}),c.jsx(Av,{isopen:r,children:e}),c.jsx(kv,{isopen:r})]}),c.jsx(Cv,{isopen:r,children:t.map((l,a)=>c.jsx(no,{children:c.jsx(io,{children:c.jsx(jv,{name:l.name,percentage:l.percentage})})},a))})]})},Mv=x.div`
+`,jv=({name:e,percentage:t})=>c.jsxs(c.Fragment,{children:[c.jsxs(xv,{children:[c.jsx(zv,{children:e}),c.jsxs($v,{children:[t," %"]})]}),c.jsx(Sv,{children:c.jsx(Pv,{width:t})})]}),_v=({category:e,skills:t,icon:n})=>{const[r,o]=I.useState(!1),i=()=>{o(!r)};return c.jsxs(c.Fragment,{children:[c.jsxs(Ev,{onClick:i,children:[c.jsx(Re,{iconType:n}),c.jsx(Av,{isopen:r,children:e}),c.jsx(kv,{isopen:r})]}),c.jsx(Cv,{isopen:r,children:t.map((l,a)=>c.jsx(no,{children:c.jsx(io,{children:c.jsx(jv,{name:l.name,percentage:l.percentage})})},a))})]})},Mv=x.div`
     ${Nt}
     ${to}
     row-gap: 0;
