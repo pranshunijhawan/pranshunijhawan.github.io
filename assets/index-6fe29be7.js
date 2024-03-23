@@ -566,7 +566,7 @@ Error generating stack: `+o.message+`
     margin-top: -0.15rem;
 `,Vh=P.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,c8="1",f8="1",d8="41",Ja={major:c8,minor:f8,build:d8},h8=({sectionTitle:e,contactMetaData:t})=>g.jsxs(en,{id:"contactme",children:[g.jsx(_n,{content:e}),g.jsx(s8,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx(o8,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(a8,{children:[g.jsx(Gn,{children:g.jsxs(Za,{children:[g.jsx(qa,{children:"Designed & Built With "}),g.jsx(u8,{children:g.jsx(Ke,{iconType:F.Heart})}),g.jsxs(qa,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Gn,{children:g.jsx(Vh,{children:g.jsxs(Za,{children:[g.jsx(l8,{children:"Built Using"}),g.jsx(Ke,{iconType:F.React}),g.jsx(Ke,{iconType:F.TypeScript}),g.jsx(Ke,{iconType:F.StyledComponents}),g.jsx(Ke,{iconType:F.Framer}),g.jsx(Ke,{iconType:F.Vite}),g.jsx(Ke,{iconType:F.GitHub}),g.jsx(Ke,{iconType:F.VSCode})]})})}),g.jsx(Gn,{children:g.jsx(Vh,{children:g.jsxs(Za,{children:[g.jsx(Ke,{iconType:F.Version}),g.jsxs(qa,{children:["v ",Ja.major,".",Ja.minor,".",Ja.build]})]})})})]})]}),p8=P.div`
+`,c8="1",f8="1",d8="42",Ja={major:c8,minor:f8,build:d8},h8=({sectionTitle:e,contactMetaData:t})=>g.jsxs(en,{id:"contactme",children:[g.jsx(_n,{content:e}),g.jsx(s8,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx(o8,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(a8,{children:[g.jsx(Gn,{children:g.jsxs(Za,{children:[g.jsx(qa,{children:"Designed & Built With "}),g.jsx(u8,{children:g.jsx(Ke,{iconType:F.Heart})}),g.jsxs(qa,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Gn,{children:g.jsx(Vh,{children:g.jsxs(Za,{children:[g.jsx(l8,{children:"Built Using"}),g.jsx(Ke,{iconType:F.React}),g.jsx(Ke,{iconType:F.TypeScript}),g.jsx(Ke,{iconType:F.StyledComponents}),g.jsx(Ke,{iconType:F.Framer}),g.jsx(Ke,{iconType:F.Vite}),g.jsx(Ke,{iconType:F.GitHub}),g.jsx(Ke,{iconType:F.VSCode})]})})}),g.jsx(Gn,{children:g.jsx(Vh,{children:g.jsxs(Za,{children:[g.jsx(Ke,{iconType:F.Version}),g.jsxs(qa,{children:["v ",Ja.major,".",Ja.minor,".",Ja.build]})]})})})]})]}),p8=P.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -962,6 +962,7 @@ Error generating stack: `+o.message+`
 `,RS=P.div`
     row-gap: 1.5rem;
     padding-left: 2.7rem;
+    padding-right: 1rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space15};
     display: ${({isopen:e})=>e?"":"none"};
     overflow: ${({isopen:e})=>e?"":"hidden"};
