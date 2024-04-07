@@ -560,7 +560,7 @@ Error generating stack: `+o.message+`
     margin-top: -0.15rem;
 `,bh=k.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,Ow="2",Nw="0",Iw="10",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
+`,Ow="2",Nw="0",Iw="11",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -664,12 +664,12 @@ Error generating stack: `+o.message+`
     font-size: 1.4rem;
     color: ${({theme:e})=>e.common.firstColor};
     margin-left: auto;
-    transition: 0.8s;
+    transition: 0.5s;
     transform: ${({isopen:e})=>e?"rotate(-180deg);":""};
 `,rS=k.span`
     color: ${({theme:e})=>e.common.firstColor};
     margin-right: ${({theme:e})=>e.common.spacing.space05};
-`,Eg=()=>g.jsx(rS,{children:"→"}),iS=({description:e,isOpenState:t})=>g.jsx(bw,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>g.jsx(pe.div,{initial:{translateX:-20},whileInView:{translateX:0},viewport:{amount:"some"},transition:{duration:1.75,ease:[.22,1,.36,1]},children:g.jsxs(eS,{children:[g.jsx(Eg,{}),g.jsx(Jw,{children:n})]})},r))}),oS=({description:e})=>{const[t,n]=_.useState(!1),[r,i]=_.useState("View Roles and Responsibilities"),o=()=>{n(!t),i(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return g.jsx(g.Fragment,{children:e&&e.length>0&&g.jsxs(g.Fragment,{children:[g.jsxs(Ww,{onClick:o,children:[g.jsx(Uw,{children:r}),g.jsx(nS,{isopen:t})]}),g.jsx(iS,{description:e,isOpenState:t})]})})},Mg=({title:e,subTitle:t,date:n,description:r,last:i})=>g.jsx(Hw,{children:g.jsxs(Gw,{children:[g.jsxs("div",{children:[g.jsx(xg,{children:g.jsx(Qw,{})}),!i&&g.jsx(Yw,{})]}),g.jsxs(tS,{children:[g.jsx(Xw,{children:e}),g.jsx(qw,{children:t}),g.jsxs(Kw,{children:[g.jsx(ze,{iconType:D.Calendar}),g.jsx(Zw,{children:n})]}),g.jsx(oS,{description:r||[]})]})]})}),sS=({title:e,timeline:t})=>g.jsxs(Ht,{id:"educationalqualifications",children:[g.jsx(kn,{content:e}),t.map((n,r)=>g.jsx(Tr,{children:g.jsx(Mg,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),aS=k.div`
+`,Eg=()=>g.jsx(rS,{children:"→"}),iS=({description:e,isOpenState:t})=>g.jsx(bw,{isopen:t,children:e&&e.length>0&&e.map((n,r)=>g.jsx(pe.div,{initial:{translateX:-20},whileInView:{translateX:0},viewport:{amount:"some"},transition:{duration:1,ease:[.22,1,.36,1]},children:g.jsxs(eS,{children:[g.jsx(Eg,{}),g.jsx(Jw,{children:n})]})},r))}),oS=({description:e})=>{const[t,n]=_.useState(!1),[r,i]=_.useState("View Roles and Responsibilities"),o=()=>{n(!t),i(t?"View Roles and Responsibilities":"Hide Roles and Responsibilities")};return g.jsx(g.Fragment,{children:e&&e.length>0&&g.jsxs(g.Fragment,{children:[g.jsxs(Ww,{onClick:o,children:[g.jsx(Uw,{children:r}),g.jsx(nS,{isopen:t})]}),g.jsx(iS,{description:e,isOpenState:t})]})})},Mg=({title:e,subTitle:t,date:n,description:r,last:i})=>g.jsx(Hw,{children:g.jsxs(Gw,{children:[g.jsxs("div",{children:[g.jsx(xg,{children:g.jsx(Qw,{})}),!i&&g.jsx(Yw,{})]}),g.jsxs(tS,{children:[g.jsx(Xw,{children:e}),g.jsx(qw,{children:t}),g.jsxs(Kw,{children:[g.jsx(ze,{iconType:D.Calendar}),g.jsx(Zw,{children:n})]}),g.jsx(oS,{description:r||[]})]})]})}),sS=({title:e,timeline:t})=>g.jsxs(Ht,{id:"educationalqualifications",children:[g.jsx(kn,{content:e}),t.map((n,r)=>g.jsx(Tr,{children:g.jsx(Mg,{title:n.title,subTitle:n.subTitle,date:n.date,description:n.description,last:n.last})},r))]}),aS=k.div`
     width: 100%;
     background-color: ${({theme:e})=>e.bodyColor};
     position: fixed;
@@ -760,13 +760,6 @@ Error generating stack: `+o.message+`
     background-color: ${({theme:e})=>e.bodyColor};
     width: 4.5rem;
     margin-right: ${({theme:e})=>e.common.spacing.space15};
-    transition: box-shadow 0.5s;
-    @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
-            ${({theme:e})=>`box-shadow: 0 0 10px ${e.titleColor}`};
-        }
-    }
-
     padding: 0.2rem 0.25rem 0.2rem 0.25rem;
     border-style: solid;
     border-color: ${({theme:e})=>e.common.firstColor};
@@ -931,7 +924,7 @@ Error generating stack: `+o.message+`
     @media screen and (min-width: 968px) {
         font-size: ${({theme:e})=>e.common.fontMinWidth968.normalFont};
     }
-`,r7=({id:e,title:t,content:n})=>{const[r,i]=_.useState(!1),o=()=>{i(!r)};return g.jsxs(QS,{isopen:r,onClick:o,children:[g.jsxs(e7,{children:[g.jsx(t7,{children:g.jsx(n7,{isopen:r,children:"+"})}),g.jsx("div",{children:g.jsx(XS,{isopen:r,children:t})})]}),r&&g.jsx(qS,{children:n.map((s,a)=>g.jsx(pe.div,{initial:{translateX:-20},whileInView:{translateX:0},viewport:{amount:"some"},transition:{duration:1.75,ease:[.22,1,.36,1]},children:g.jsxs(JS,{children:[g.jsx(Eg,{}),g.jsx(ZS,{children:s})]})},a))})]},e)},i7=({content:e})=>g.jsx(g.Fragment,{children:e.map((t,n)=>g.jsx(r7,{id:t.id,content:t.content,title:t.title},n))}),o7=k.div`
+`,r7=({id:e,title:t,content:n})=>{const[r,i]=_.useState(!1),o=()=>{i(!r)};return g.jsxs(QS,{isopen:r,onClick:o,children:[g.jsxs(e7,{children:[g.jsx(t7,{children:g.jsx(n7,{isopen:r,children:"+"})}),g.jsx("div",{children:g.jsx(XS,{isopen:r,children:t})})]}),r&&g.jsx(qS,{children:n.map((s,a)=>g.jsx(pe.div,{initial:{translateX:-20},whileInView:{translateX:0},viewport:{amount:"some"},transition:{duration:1,ease:[.22,1,.36,1]},children:g.jsxs(JS,{children:[g.jsx(Eg,{}),g.jsx(ZS,{children:s})]})},a))})]},e)},i7=({content:e})=>g.jsx(g.Fragment,{children:e.map((t,n)=>g.jsx(r7,{id:t.id,content:t.content,title:t.title},n))}),o7=k.div`
     ${Ut}
     row-gap: 0;
 
