@@ -271,7 +271,7 @@ Error generating stack: `+o.message+`
     cursor: default;
 
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             ${({theme:e})=>`text-shadow: 0 0 20px ${e.titleColor}`};
             letter-spacing: 0.025rem;
         }
@@ -435,10 +435,11 @@ Error generating stack: `+o.message+`
 `,Pw=k.div`
     ${Lc}
     padding-right: ${({theme:e})=>e.common.spacing.space10};
-    transition: 0.5s ease;
+    transition: 0.5s;
+    cursor: pointer;
 
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             transform: scale(1.1);
         }
     }
@@ -454,7 +455,7 @@ Error generating stack: `+o.message+`
     }
 
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             ${({theme:e})=>`text-shadow: 0 0 20px ${e.titleColor}`};
         }
     }
@@ -509,7 +510,7 @@ Error generating stack: `+o.message+`
     
     /* Hover Support for Desktop and Stylus Systems */
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             a {
                 color: ${({theme:e})=>e.common.firstColor};
                 letter-spacing: 0.01rem;
@@ -560,7 +561,7 @@ Error generating stack: `+o.message+`
     margin-top: -0.15rem;
 `,bh=k.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,Ow="2",Nw="0",Iw="13",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
+`,Ow="2",Nw="0",Iw="14",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -576,8 +577,7 @@ Error generating stack: `+o.message+`
     cursor: pointer;
 
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
-            ${({theme:e})=>`text-shadow: 0 0 10px ${e.titleColor}`};
+        &:hover {
             letter-spacing: 0.025rem;
         }
     }
@@ -869,7 +869,7 @@ Error generating stack: `+o.message+`
     cursor: pointer;
     
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             h3, svg {
                 color: ${({theme:e})=>e.common.firstColor};
                 letter-spacing: 0.025rem;
@@ -974,7 +974,7 @@ Error generating stack: `+o.message+`
     cursor: pointer;
 
     @supports not (-webkit-overflow-scrolling: touch) {
-        :hover {
+        &:hover {
             h1 {
                 color: ${({theme:e})=>e.common.firstColor};
                 letter-spacing: 0.025rem;
