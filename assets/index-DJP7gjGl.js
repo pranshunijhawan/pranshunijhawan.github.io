@@ -47,7 +47,6 @@ Error generating stack: `+o.message+`
 
 	html {
 		overflow-x: hidden;
-		scroll-behavior: smooth;
 	}
 
 	body {
@@ -561,7 +560,7 @@ Error generating stack: `+o.message+`
     margin-top: -0.15rem;
 `,bh=k.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,Ow="2",Nw="0",Iw="15",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
+`,Ow="2",Nw="0",Iw="16",ol={major:Ow,minor:Nw,build:Iw},Bw=({sectionTitle:e,contactMetaData:t})=>g.jsxs(Ht,{id:"contactme",children:[g.jsx(kn,{content:e}),g.jsx(zw,{children:t&&t.map((n,r)=>g.jsx(to,{children:g.jsx($w,{icon:n.icon,content:n.content,href:n.href})},r))}),g.jsxs(Rw,{children:[g.jsx(Tr,{children:g.jsxs(il,{children:[g.jsx(rl,{children:"Designed & Built With "}),g.jsx(Fw,{children:g.jsx(ze,{iconType:D.Heart})}),g.jsxs(rl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(Vw,{children:"Built Using"}),g.jsx(ze,{iconType:D.React}),g.jsx(ze,{iconType:D.TypeScript}),g.jsx(ze,{iconType:D.StyledComponents}),g.jsx(ze,{iconType:D.Framer}),g.jsx(ze,{iconType:D.Vite}),g.jsx(ze,{iconType:D.GitHub}),g.jsx(ze,{iconType:D.VSCode})]})})}),g.jsx(Tr,{children:g.jsx(bh,{children:g.jsxs(il,{children:[g.jsx(ze,{iconType:D.Version}),g.jsxs(rl,{children:["v ",ol.major,".",ol.minor,".",ol.build]})]})})})]})]}),bw=k.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};;
     margin-top: ${({theme:e})=>e.common.spacing.space15};
