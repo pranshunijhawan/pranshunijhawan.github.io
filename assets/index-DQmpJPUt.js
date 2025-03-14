@@ -555,7 +555,7 @@ Error generating stack: `+o.message+`
     margin-top: -0.15rem;
 `,Jx=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space025};
-`,eS="2",tS=1,nS=3,nl={major:eS,minor:tS,build:nS},rS=()=>v.jsx(Jx,{children:v.jsxs(Su,{children:[v.jsx(qx,{children:"Built Using"}),[L.React,L.TypeScript,L.StyledComponents,L.Framer,L.Vite,L.GitHub].map((e,t)=>v.jsx(bt,{iconType:e},t))]})}),iS=({sectionTitle:e,contactMetaData:t=[]})=>v.jsxs(Ht,{id:"contactme",children:[v.jsx(Cn,{content:e}),v.jsx(Yx,{children:t==null?void 0:t.map((n,r)=>v.jsx(no,{children:v.jsx(Dg,{icon:n.icon,content:n.content,href:n.href})},r))}),v.jsx(Xx,{children:[v.jsxs(Su,{children:[v.jsx(tl,{children:"Designed & Built With "}),v.jsx(Zx,{children:v.jsx(bt,{iconType:L.Heart})}),v.jsxs(tl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),v.jsx(rS,{},"built-by"),v.jsxs(Su,{children:[v.jsx(bt,{iconType:L.Version}),v.jsxs(tl,{children:["v ",nl.major,".",nl.minor,".",nl.build]})]},"version")].map((n,r)=>v.jsx(ca,{children:n},r))})]}),oS=C.div`
+`,eS="2",tS=1,nS=4,nl={major:eS,minor:tS,build:nS},rS=()=>v.jsx(Jx,{children:v.jsxs(Su,{children:[v.jsx(qx,{children:"Built Using"}),[L.React,L.TypeScript,L.StyledComponents,L.Framer,L.Vite,L.GitHub].map((e,t)=>v.jsx(bt,{iconType:e},t))]})}),iS=({sectionTitle:e,contactMetaData:t=[]})=>v.jsxs(Ht,{id:"contactme",children:[v.jsx(Cn,{content:e}),v.jsx(Yx,{children:t==null?void 0:t.map((n,r)=>v.jsx(no,{children:v.jsx(Dg,{icon:n.icon,content:n.content,href:n.href})},r))}),v.jsx(Xx,{children:[v.jsxs(Su,{children:[v.jsx(tl,{children:"Designed & Built With "}),v.jsx(Zx,{children:v.jsx(bt,{iconType:L.Heart})}),v.jsxs(tl,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),v.jsx(rS,{},"built-by"),v.jsxs(Su,{children:[v.jsx(bt,{iconType:L.Version}),v.jsxs(tl,{children:["v ",nl.major,".",nl.minor,".",nl.build]})]},"version")].map((n,r)=>v.jsx(ca,{children:n},r))})]}),oS=C.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:e})=>e.common.spacing.space10};
     margin-top: ${({theme:e})=>e.common.spacing.space15};
@@ -910,7 +910,7 @@ Error generating stack: `+o.message+`
         margin-left: auto;
         margin-right: auto;
     }
-`,A7=({sectionTitle:e,content:t})=>v.jsxs(Ht,{id:"mostproudof",children:[v.jsx(Cn,{content:e}),v.jsx(M7,{children:v.jsx(no,{children:v.jsx(E7,{content:t})})})]}),D7=j.memo(A7),j7=({title:e,timeline:t})=>v.jsxs(Ht,{id:"professionalexperience",children:[v.jsx(Cn,{content:e}),t.map(n=>v.jsx(ca,{children:v.jsx(Lg,{...n})},n.title))]}),L7=C.div`
+`,A7=({sectionTitle:e,content:t})=>v.jsxs(Ht,{id:"mostproudof",children:[v.jsx(Cn,{content:e}),v.jsx(M7,{children:v.jsx(no,{children:v.jsx(E7,{content:t})})})]}),D7=j.memo(A7),j7=({title:e,timeline:t})=>v.jsxs(Ht,{id:"professionalexperience",children:[v.jsx(Cn,{content:e}),t.map((n,r)=>v.jsx(ca,{children:v.jsx(Lg,{...n})},r))]}),L7=C.div`
     margin-top: ${({theme:e})=>e.common.spacing.space125};
     font-size: ${({theme:e})=>e.common.fontMaxWidth967.h3Font};
     display: flex;
