@@ -421,7 +421,6 @@ Error generating stack: `+a.message+`
     justify-content: center;
     gap: ${({theme:c})=>c.common.spacing.space10}; // Added spacing for better alignment
 `,l3=({sectionTitle:c,content:p,buttonProps:A})=>s.jsxs(_l,{id:"about",children:[s.jsx(da,{content:c}),s.jsx(Im,{children:p.map((m,C)=>s.jsx(En,{children:s.jsx(Pm,{children:m})},C))}),s.jsx(t3,{children:s.jsx(Dn,{children:s.jsx(zo,{clickHandler:()=>Ts(A.link||""),name:A.name,icon:E.Download})})})]}),a3=b(ct.img)`
-    cursor: ${({onClick:c})=>c?"pointer":"default"};
     border-radius: 8px;
 `,Es=({height:c,width:p,source:A,href:m,onClick:C})=>{const N=s.jsx(a3,{src:A,height:c,width:p,onClick:C,alt:`Portfolio Image - ${A}`,animate:{opacity:1,scale:1},whileHover:{scale:1.05},transition:{duration:.5}});return m?s.jsx("a",{href:m,children:N}):N},e3=b.div`
     position: relative;
@@ -437,7 +436,7 @@ Error generating stack: `+a.message+`
     ${So}
     padding-right: ${({theme:c})=>c.common.spacing.space10};
     transition: transform 0.5s ease-in-out;
-    cursor: pointer;
+    cursor: default;
 
     @supports not (-webkit-overflow-scrolling: touch) {
         &:hover {
@@ -460,6 +459,7 @@ Error generating stack: `+a.message+`
             text-shadow: 0 0 20px ${({theme:c})=>c.titleColor};
         }
     }
+    cursor: default;
 `,u3=b.div`
     padding-bottom: ${({theme:c})=>c.common.spacing.space10};
     padding-top: ${({theme:c})=>c.common.spacing.space15};
@@ -559,7 +559,7 @@ Error generating stack: `+a.message+`
     margin-top: -0.15rem;
 `,b3=b.div`
     margin-top: ${({theme:c})=>c.common.spacing.space025};
-`,S3="2",z3=1,x3=34,yo={major:S3,minor:z3,build:x3},M3=()=>s.jsx(b3,{children:s.jsxs(bo,{children:[s.jsx(y3,{children:"Built Using"}),[E.React,E.TypeScript,E.StyledComponents,E.Framer,E.Vite,E.GitHub].map((c,p)=>s.jsx(ql,{iconType:c},p))]})}),A3=({sectionTitle:c,contactMetaData:p=[]})=>s.jsxs(_l,{id:"contactme",children:[s.jsx(da,{content:c}),s.jsx(g3,{children:p?.map((A,m)=>s.jsx(Dn,{children:s.jsx(h3,{icon:A.icon,content:A.content,href:A.href})},m))}),s.jsx(v3,{children:[s.jsxs(bo,{children:[s.jsx(vo,{children:"Designed & Built With "}),s.jsx(p3,{children:s.jsx(ql,{iconType:E.Heart})}),s.jsxs(vo,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),s.jsx(M3,{},"built-by"),s.jsxs(bo,{children:[s.jsx(ql,{iconType:E.Version}),s.jsxs(vo,{children:["v ",yo.major,".",yo.minor,".",yo.build]})]},"version")].map((A,m)=>s.jsx(ki,{children:A},m))})]}),T3=b.div`
+`,S3="2",z3=1,x3=35,yo={major:S3,minor:z3,build:x3},M3=()=>s.jsx(b3,{children:s.jsxs(bo,{children:[s.jsx(y3,{children:"Built Using"}),[E.React,E.TypeScript,E.StyledComponents,E.Framer,E.Vite,E.GitHub].map((c,p)=>s.jsx(ql,{iconType:c},p))]})}),A3=({sectionTitle:c,contactMetaData:p=[]})=>s.jsxs(_l,{id:"contactme",children:[s.jsx(da,{content:c}),s.jsx(g3,{children:p?.map((A,m)=>s.jsx(Dn,{children:s.jsx(h3,{icon:A.icon,content:A.content,href:A.href})},m))}),s.jsx(v3,{children:[s.jsxs(bo,{children:[s.jsx(vo,{children:"Designed & Built With "}),s.jsx(p3,{children:s.jsx(ql,{iconType:E.Heart})}),s.jsxs(vo,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),s.jsx(M3,{},"built-by"),s.jsxs(bo,{children:[s.jsx(ql,{iconType:E.Version}),s.jsxs(vo,{children:["v ",yo.major,".",yo.minor,".",yo.build]})]},"version")].map((A,m)=>s.jsx(ki,{children:A},m))})]}),T3=b.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:c})=>c.common.spacing.space05};
     margin-top: ${({theme:c})=>c.common.spacing.space10};
@@ -684,10 +684,10 @@ Error generating stack: `+a.message+`
     justify-content: space-between;
     padding-top: ${({theme:c})=>c.common.spacing.space075};
     transition: opacity 1s, visibility 1s;
-    cursor: pointer;
 `,K3=b.div`
     transition: opacity 0.5s ease-in-out;
     opacity: ${({$show:c})=>c?1:0};
+    cursor: pointer;
 `,J3=b.div`
     ${Nd}
     position: fixed;
