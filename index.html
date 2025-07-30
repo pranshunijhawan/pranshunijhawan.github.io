@@ -5,18 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- DNS prefetch for external resources -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    
-    <!-- Preconnect to critical external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Preload critical fonts (if using Google Fonts) -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
-    
     <!-- Favicon with multiple sizes for better performance -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/png/logo-CiWst14R.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/png/logo-CiWst14R.png" />
@@ -59,16 +47,25 @@
     
     <!-- Critical CSS will be inlined by Vite -->
     <style>
-      /* Critical CSS for initial paint */
+      /* Critical CSS for initial paint and loading state */
       #root {
         min-height: 100vh;
+        background-color: #000000; /* Prevent flash during theme load */
+      }
+      
+      /* Prevent layout shift during font loading */
+      body {
+        font-display: swap;
       }
     </style>
-    <script type="module" crossorigin src="./assets/js/index-Dlrdbzp5.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/js/vendor-CMu12TVr.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/animations-B7v-6URg.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/styling-DI3cIABS.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/icons-Dt4az8yb.js">
+    <script type="module" crossorigin src="./assets/js/index-rppRmxEJ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/js/react-vendor-CMu12TVr.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/framer-motion-DLV44IgS.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/styled-components-BG4sEAvZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/react-icons-CHM0bvk1.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-home-CK3_rX1Z.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-skills-B7ABMwsI.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-experience-UWG3Wya3.js">
     <link rel="stylesheet" crossorigin href="./assets/css/index-D2yLQNaz.css">
   </head>
   <body>
