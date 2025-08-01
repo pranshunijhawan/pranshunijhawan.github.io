@@ -1,4 +1,4 @@
-import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,F as w,I as g,a as b,S as f,b as x,p as y,d as u}from"./portfolio-home-CK3_rX1Z.js";import{d as i}from"./styled-components-BG4sEAvZ.js";const v=({children:n,delay:e=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(m.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:e,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},k=i.div`
+import{j as o,m,r as c}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,F as w,I as g,a as b,S as f,b as x,p as y,d as u}from"./portfolio-home-CK3_rX1Z.js";import{d as i}from"./styled-components-BG4sEAvZ.js";const v=({children:n,delay:e=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(m.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:e,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},k=i.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
     margin-top: ${({theme:n})=>n.common.spacing.space10};
@@ -9,7 +9,6 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
     display: flex;
     flex-wrap: wrap;
     margin-bottom: ${({theme:n})=>n.common.spacing.space075};
-    margin-top: ${({theme:n})=>n.common.spacing.space05};
     width: auto;
     cursor: pointer;
 
@@ -48,6 +47,7 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
     display: flex;
     align-items: center;
     margin-top: -0.5rem;
+    margin-bottom: ${({theme:n})=>n.common.spacing.space05};
 `,F=i.div`
     display: inline-block;
     width: 13px;
@@ -63,7 +63,7 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
     background-color: ${({theme:n})=>n.common.firstColor};
     transform: translate(6px, -7px);
 `,R=i.h3`
-    margin: 0;
+    margin: 0 0 ${({theme:n})=>n.common.spacing.space05} 0;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.normalFont};
     font-weight: ${({theme:n})=>n.common.fontWeight.medium};
 
@@ -73,7 +73,8 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
 `,O=i.span`
     display: inline-block;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.smallFont};
-    margin: ${({theme:n})=>n.common.spacing.space05} 0;
+    margin: 0 0 ${({theme:n})=>n.common.spacing.space05} 0;
+    color: ${({theme:n})=>n.common.firstColor};
 
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.smallFont};
@@ -95,6 +96,18 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
 `,_=i.div`
     width: 100%;
     margin-top: 0.04rem;
+    position: relative;
+    padding-bottom: ${({lineBreak:n,theme:e})=>n?e.common.spacing.space15:"0"};
+
+    &::after {
+        content: ${({lineBreak:n})=>n?'""':"none"};
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: ${({theme:n})=>n.common.firstColor};
+        margin-top: ${({theme:n})=>n.common.spacing.space10};
+        transition: background-color 0.3s ease;
+    }
 `,A=i.div`
     font-size: 1.4rem;
     color: ${({theme:n})=>n.common.firstColor};
@@ -110,7 +123,7 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
     color: ${({theme:n})=>n.common.firstColor};
     margin-right: ${({theme:n})=>n.common.spacing.space05};
     margin-top: ${({theme:n})=>n.common.spacing.space025};
-`,P=({symbol:n="→"})=>o.jsx(E,{children:n}),L=({description:n,isOpenState:e})=>o.jsx(k,{$isopen:e,children:!!n?.length&&n.map((t,s)=>o.jsx(m.div,{initial:{translateX:-20,opacity:0},whileInView:{translateX:0,opacity:1},viewport:{amount:"some"},transition:{type:"spring",stiffness:75,damping:15,mass:2},children:o.jsxs(B,{children:[o.jsx(P,{}),o.jsx(D,{children:t})]})},s))}),H=({description:n})=>{const[e,t]=r.useState(!1),s=()=>t(a=>!a);return n?.length?o.jsxs(o.Fragment,{children:[o.jsxs(C,{onClick:s,children:[o.jsx(S,{children:e?"Hide Roles and Responsibilities":"View Roles and Responsibilities"}),o.jsx(A,{$isopen:e,children:o.jsx(V,{})})]}),o.jsx(L,{description:n,isOpenState:e})]}):null},Q=({title:n,subTitle:e,date:t,description:s,last:a})=>o.jsx(T,{children:o.jsxs(W,{children:[o.jsxs("div",{children:[o.jsx(w,{children:o.jsx(F,{})}),!a&&o.jsx(M,{})]}),o.jsxs(_,{children:[o.jsx(R,{children:n}),o.jsx(O,{children:e}),o.jsxs(z,{children:[o.jsx(g,{iconType:b.Calendar}),o.jsx(I,{children:t})]}),s?.length?o.jsx(H,{description:s}):null]})]})}),X=({title:n,timeline:e})=>o.jsxs(f,{id:"educationalqualifications",children:[o.jsx(x,{content:n}),e.map(t=>o.jsx(v,{children:o.jsx(Q,{...t})},t.title))]}),dn=Object.freeze(Object.defineProperty({__proto__:null,default:X},Symbol.toStringTag,{value:"Module"})),q=i.div`
+`,P=({symbol:n="→"})=>o.jsx(E,{children:n}),L=({description:n,isOpenState:e})=>o.jsx(k,{$isopen:e,children:!!n?.length&&n.map((t,s)=>o.jsx(m.div,{initial:{translateX:-20,opacity:0},whileInView:{translateX:0,opacity:1},viewport:{amount:"some"},transition:{type:"spring",stiffness:75,damping:15,mass:2},children:o.jsxs(B,{children:[o.jsx(P,{}),o.jsx(D,{children:t})]})},s))}),H=({description:n})=>{const[e,t]=c.useState(!1),s=()=>t(a=>!a);return n?.length?o.jsxs(o.Fragment,{children:[o.jsxs(C,{onClick:s,children:[o.jsx(S,{children:e?"Hide Roles and Responsibilities":"View Roles and Responsibilities"}),o.jsx(A,{$isopen:e,children:o.jsx(V,{})})]}),o.jsx(L,{description:n,isOpenState:e})]}):null},Q=({title:n,subTitle:e,date:t,description:s,last:a,lineBreak:r})=>o.jsx(T,{children:o.jsxs(W,{children:[o.jsxs("div",{children:[o.jsx(w,{children:o.jsx(F,{})}),!a&&o.jsx(M,{})]}),o.jsxs(_,{lineBreak:r,children:[o.jsx(R,{children:n}),e&&o.jsx(O,{children:e}),o.jsxs(z,{children:[o.jsx(g,{iconType:b.Calendar}),o.jsx(I,{children:t})]}),s?.length?o.jsx(H,{description:s}):null]})]})}),X=({title:n,timeline:e})=>o.jsxs(f,{id:"educationalqualifications",children:[o.jsx(x,{content:n}),e.map(t=>o.jsx(v,{children:o.jsx(Q,{...t})},t.title))]}),dn=Object.freeze(Object.defineProperty({__proto__:null,default:X},Symbol.toStringTag,{value:"Module"})),q=i.div`
     margin-top: ${({theme:n})=>n.common.spacing.space125};
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     display: flex;
@@ -194,7 +207,7 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
     display: block;
     background-color: ${({theme:n})=>n.common.firstColor};
     animation: ${({$percentage:n})=>y(n)} 3s normal forwards;
-`,en=({name:n,percentage:e})=>o.jsxs(o.Fragment,{children:[o.jsxs(q,{children:[o.jsx(Z,{children:n}),o.jsxs(nn,{children:[e,"%"]})]}),o.jsx(N,{children:o.jsx(G,{role:"progressbar","aria-valuenow":e,"aria-valuemin":0,"aria-valuemax":100,children:o.jsx(on,{$percentage:e})})})]}),tn=r.memo(en),sn=({category:n,skills:e,icon:t})=>{const[s,a]=r.useState(!1),c=r.useCallback(()=>{a(l=>!l)},[]);return o.jsxs(o.Fragment,{children:[o.jsxs(U,{onClick:c,children:[o.jsx(g,{iconType:t}),o.jsx(Y,{$isOpen:s,children:n}),o.jsx(K,{$isOpen:s})]}),o.jsx(J,{$isOpen:s,children:e.map(({name:l,percentage:$},j)=>o.jsx(u,{children:o.jsx(tn,{name:l,percentage:$})},j))})]})},an=i.div`
+`,en=({name:n,percentage:e})=>o.jsxs(o.Fragment,{children:[o.jsxs(q,{children:[o.jsx(Z,{children:n}),o.jsxs(nn,{children:[e,"%"]})]}),o.jsx(N,{children:o.jsx(G,{role:"progressbar","aria-valuenow":e,"aria-valuemin":0,"aria-valuemax":100,children:o.jsx(on,{$percentage:e})})})]}),tn=c.memo(en),sn=({category:n,skills:e,icon:t})=>{const[s,a]=c.useState(!1),r=c.useCallback(()=>{a(l=>!l)},[]);return o.jsxs(o.Fragment,{children:[o.jsxs(U,{onClick:r,children:[o.jsx(g,{iconType:t}),o.jsx(Y,{$isOpen:s,children:n}),o.jsx(K,{$isOpen:s})]}),o.jsx(J,{$isOpen:s,children:e.map(({name:l,percentage:$},j)=>o.jsx(u,{children:o.jsx(tn,{name:l,percentage:$})},j))})]})},an=i.div`
     ${d}
     ${p}
     row-gap: 0;
@@ -207,4 +220,4 @@ import{j as o,m,r}from"./framer-motion-DLV44IgS.js";import{c as d,g as p,A as h,
         margin-left: auto;
         margin-right: auto;
     }
-`,rn=({sectionTitle:n,skills:e})=>o.jsxs(f,{id:"technologyproficiency",children:[o.jsx(x,{content:n}),o.jsx(an,{children:e.map(({category:t,skills:s,icon:a},c)=>o.jsx(u,{children:o.jsx(sn,{category:t,skills:s,icon:a})},c))})]}),pn=Object.freeze(Object.defineProperty({__proto__:null,default:rn},Symbol.toStringTag,{value:"Module"}));export{P as B,dn as E,v as S,Q as T,pn as a};
+`,rn=({sectionTitle:n,skills:e})=>o.jsxs(f,{id:"technologyproficiency",children:[o.jsx(x,{content:n}),o.jsx(an,{children:e.map(({category:t,skills:s,icon:a},r)=>o.jsx(u,{children:o.jsx(sn,{category:t,skills:s,icon:a})},r))})]}),pn=Object.freeze(Object.defineProperty({__proto__:null,default:rn},Symbol.toStringTag,{value:"Module"}));export{P as B,dn as E,v as S,Q as T,pn as a};
