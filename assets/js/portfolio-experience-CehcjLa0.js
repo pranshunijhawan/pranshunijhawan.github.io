@@ -1,4 +1,4 @@
-import{j as o,m}from"./framer-motion-DLV44IgS.js";import{C as d,B as p,a as g,o as f,c as x,g as u,S as s,b as c,e as h}from"./portfolio-home-CK3_rX1Z.js";import{d as n}from"./styled-components-BG4sEAvZ.js";import{S as j,T as b}from"./portfolio-skills-CZMKqyrB.js";const C=n(m.img)`
+import{j as o,m}from"./framer-motion-DLV44IgS.js";import{C as d,B as p,a as g,o as f,c as x,g as u,S as s,b as c,e as h}from"./portfolio-home-BiNLgEWC.js";import{d as n}from"./styled-components-BG4sEAvZ.js";import{S as j,T as b}from"./portfolio-skills-CfmPjsTJ.js";const C=n(m.img)`
     border-radius: 8px;
 `,$=({height:e,width:t,source:i,href:r,onClick:l})=>{const a=o.jsx(C,{src:i,height:e,width:t,onClick:l,alt:`Portfolio Image - ${i}`,animate:{opacity:1,scale:1},whileHover:{scale:1.05},transition:{duration:.5}});return r?o.jsx("a",{href:r,children:a}):a},w=n.div`
     position: relative;

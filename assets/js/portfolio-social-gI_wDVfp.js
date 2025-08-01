@@ -1,4 +1,4 @@
-import{j as o,r as p,m as $}from"./framer-motion-DLV44IgS.js";import{I as a,c as g,g as f,C,S as x,b as h,e as u,a as r,f as b,h as y,d as v}from"./portfolio-home-CK3_rX1Z.js";import{S as w,B as M}from"./portfolio-skills-CZMKqyrB.js";import{d as e,l as S}from"./styled-components-BG4sEAvZ.js";const T=e.div`
+import{j as o,r as p,m as $}from"./framer-motion-DLV44IgS.js";import{I as a,c as g,g as f,C,S as x,b as h,e as u,a as r,f as b,h as y,d as v}from"./portfolio-home-BiNLgEWC.js";import{S as w,B as M}from"./portfolio-skills-CfmPjsTJ.js";import{d as e,l as S}from"./styled-components-BG4sEAvZ.js";const T=e.div`
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -70,7 +70,7 @@ import{j as o,r as p,m as $}from"./framer-motion-DLV44IgS.js";import{I as a,c as
     margin-top: -0.15rem;
 `,A=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space025};
-`,P="2",k=1,D=41,m={major:P,minor:k,build:D},Q=()=>o.jsx(A,{children:o.jsxs(d,{children:[o.jsx(_,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),R=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(I,{children:t?.map((i,s)=>o.jsx(u,{children:o.jsx(F,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(O,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(W,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(Q,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(w,{children:i},s))})]}),jn=Object.freeze(Object.defineProperty({__proto__:null,default:R},Symbol.toStringTag,{value:"Module"})),q=e.div`
+`,P="2",k=1,D=42,m={major:P,minor:k,build:D},Q=()=>o.jsx(A,{children:o.jsxs(d,{children:[o.jsx(_,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),R=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(I,{children:t?.map((i,s)=>o.jsx(u,{children:o.jsx(F,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(O,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(W,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(Q,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(w,{children:i},s))})]}),jn=Object.freeze(Object.defineProperty({__proto__:null,default:R},Symbol.toStringTag,{value:"Module"})),q=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space075};
     border-radius: ${({theme:n})=>n.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);

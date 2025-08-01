@@ -134,7 +134,7 @@ import{j as n,m}from"./framer-motion-DLV44IgS.js";import{m as l,l as c,d as i}fr
         font-size: ${({theme:t})=>t.common.fontMinWidth968.h1Font};
     }
 `,p=c`
-    max-width: 1000px;
+    max-width: 1150px;
     margin-left: ${({theme:t})=>t.common.spacing.space15};
     margin-right: ${({theme:t})=>t.common.spacing.space15};
 `,B0=c`
