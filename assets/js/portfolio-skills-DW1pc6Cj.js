@@ -1,4 +1,4 @@
-import{j as o,m as p,r as d}from"./framer-motion-D14opXiI.js";import{c as h,g,A as f,F as w,I as x,a as b,S as $,b as u,p as y,d as j}from"./portfolio-home-CYzeeGiu.js";import{d as i}from"./styled-components-DyNG11jZ.js";const v=({children:n,delay:e=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:e,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},k=i.div`
+import{j as o,m as p,r as d}from"./framer-motion-D14opXiI.js";import{c as h,g,A as f,F as w,I as x,a as b,S as $,b as u,p as y,d as j}from"./portfolio-home-DNoVetHB.js";import{d as i}from"./styled-components-DyNG11jZ.js";const v=({children:n,delay:e=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:e,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},k=i.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
     margin-top: ${({theme:n})=>n.common.spacing.space10};
