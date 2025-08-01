@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Favicon with multiple sizes for better performance -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/png/logo-CiWst14R.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/png/logo-CiWst14R.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/png/logo-CiWst14R.png" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./pwa-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./pwa-512x512.png" />
     
     <!-- Page title -->
     <title>Pranshu Nijhawan - Digital Portfolio</title>
@@ -37,15 +45,48 @@
     <meta property="twitter:description" content="Explore the digital portfolio of Pranshu Nijhawan - showcasing innovative projects and technical expertise.">
     <meta property="twitter:image" content="https://www.pranshunijhawan.dev/static/img/Logo-Social.png">
     
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="background-color" content="#ffffff" />
+    <meta name="display" content="standalone" />
+    <meta name="orientation" content="portrait" />
+    
+    <!-- iOS Safari Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Pranshu Portfolio" />
+    
+    <!-- iOS Splash Screens -->
+    <!-- iPhone SE, 5s -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-320x568.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    
+    <!-- iPhone 8, 7, 6s, 6 -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-375x667.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    
+    <!-- iPhone X, XS, 11 Pro -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-375x812.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    
+    <!-- iPhone XR, 11 -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-414x896.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
+    
+    <!-- iPhone 12, 13, 14 -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-390x844.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    
+    <!-- iPhone 14 Pro Max, 13 Pro Max, 12 Pro Max -->
+    <link rel="apple-touch-startup-image" href="./apple-splash-430x932.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" />
+    
+    <!-- Android Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Pranshu Portfolio" />
+    
+    <!-- Microsoft Meta Tags -->
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="./pwa-192x192.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+    
     <!-- Performance optimizations -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    
-    <!-- Mobile status bar optimization -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- theme-color is dynamically set by React component -->
     
     <!-- Preload critical resources -->
     <link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JwppbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0IEFwcCBmcm9tICcuL0FwcCcKCmNvbnN0IHJvb3QgPSBSZWFjdERPTS5jcmVhdGVSb290KAogIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykgYXMgSFRNTEVsZW1lbnQKKTsKcm9vdC5yZW5kZXIoCiAgPFJlYWN0LlN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9SZWFjdC5TdHJpY3RNb2RlPgopOw==">
@@ -63,16 +104,16 @@
         font-display: swap;
       }
     </style>
-    <script type="module" crossorigin src="./assets/js/index-CfxxlMYW.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/js/react-vendor-CMu12TVr.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/framer-motion-DLV44IgS.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/styled-components-BG4sEAvZ.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/react-icons-CHM0bvk1.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-home-BiNLgEWC.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-skills-ZRefYelj.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-experience-Dy-Li3i4.js">
+    <script type="module" crossorigin src="./assets/js/index-BN_4JkWb.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/js/react-vendor-9sitkZcQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/framer-motion-D14opXiI.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/styled-components-DyNG11jZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/react-icons-D8sg9fMH.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-home-CYzeeGiu.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-skills-CiP572ez.js">
+    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-experience-36MNBfAF.js">
     <link rel="stylesheet" crossorigin href="./assets/css/index-D2yLQNaz.css">
-  </head>
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
   <body>
     <div id="root"></div>
   </body>
