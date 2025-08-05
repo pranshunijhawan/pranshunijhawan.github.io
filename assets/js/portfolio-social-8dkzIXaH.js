@@ -70,7 +70,7 @@ import{j as o,r as p,m as $}from"./framer-motion-D14opXiI.js";import{I as a,c as
     margin-top: -0.15rem;
 `,A=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space025};
-`,P="2",k=1,D=52,m={major:P,minor:k,build:D},Q=()=>o.jsx(A,{children:o.jsxs(d,{children:[o.jsx(_,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),R=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(I,{children:t?.map((i,s)=>o.jsx(u,{children:o.jsx(F,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(O,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(W,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(Q,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(w,{children:i},s))})]}),jn=Object.freeze(Object.defineProperty({__proto__:null,default:R},Symbol.toStringTag,{value:"Module"})),q=e.div`
+`,P="2",k=1,D=53,m={major:P,minor:k,build:D},Q=()=>o.jsx(A,{children:o.jsxs(d,{children:[o.jsx(_,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),R=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(I,{children:t?.map((i,s)=>o.jsx(u,{children:o.jsx(F,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(O,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(W,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(Q,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(w,{children:i},s))})]}),jn=Object.freeze(Object.defineProperty({__proto__:null,default:R},Symbol.toStringTag,{value:"Module"})),q=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space075};
     border-radius: ${({theme:n})=>n.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
@@ -132,7 +132,7 @@ import{j as o,r as p,m as $}from"./framer-motion-D14opXiI.js";import{I as a,c as
     align-items: center;
 `,U=e(b)`
     font-weight: 400;
-`,Y=({title:n,content:t})=>{const[i,s]=p.useState(!1);return o.jsxs(q,{$isopen:i,children:[o.jsxs(X,{onClick:()=>s(c=>!c),children:[o.jsx(J,{children:o.jsx(N,{$isopen:i,children:o.jsx(U,{children:"+"})})}),o.jsx("div",{children:o.jsx(V,{$isopen:i,children:n})})]}),i&&o.jsx(H,{children:t.map((c,j)=>o.jsx($.div,{initial:{translateX:-20,opacity:0},whileInView:{translateX:0,opacity:1},viewport:{amount:"some"},transition:{type:"spring",stiffness:75,damping:15,mass:2},children:o.jsxs(L,{children:[o.jsx(M,{}),o.jsx(E,{children:c})]})},j))})]})},K=({content:n})=>o.jsx(o.Fragment,{children:n.map(({id:t,title:i,content:s})=>o.jsx(Y,{id:t,title:i,content:s},t))}),Z=p.memo(K),nn=e.div`
+`,Y=({title:n,content:t})=>{const[i,s]=p.useState(!1);return o.jsxs(q,{$isopen:i,children:[o.jsxs(X,{onClick:()=>s(c=>!c),children:[o.jsx(J,{children:o.jsx(N,{$isopen:i,children:o.jsx(U,{children:"+"})})}),o.jsx("div",{children:o.jsx(V,{$isopen:i,children:n})})]}),i&&o.jsx(H,{children:t.map((c,j)=>o.jsx($.div,{initial:{translateX:-20,opacity:0},whileInView:{translateX:0,opacity:1},viewport:{amount:"some"},transition:{type:"spring",stiffness:75,damping:15,mass:2},children:o.jsxs(L,{children:[o.jsx(M,{}),o.jsx(E,{children:c})]})},j))})]})},K=({content:n})=>o.jsx(o.Fragment,{children:n.map(({id:t,title:i,content:s})=>o.jsx(u,{children:o.jsx(Y,{id:t,title:i,content:s})},t))}),Z=p.memo(K),nn=e.div`
     ${g}
     row-gap: 0;
 
@@ -140,7 +140,7 @@ import{j as o,r as p,m as $}from"./framer-motion-D14opXiI.js";import{I as a,c as
         margin-left: auto;
         margin-right: auto;
     }
-`,on=({sectionTitle:n,content:t})=>o.jsxs(x,{id:"mostproudof",children:[o.jsx(h,{content:n}),o.jsx(nn,{children:o.jsx(u,{children:o.jsx(Z,{content:t})})})]}),en=p.memo(on),$n=Object.freeze(Object.defineProperty({__proto__:null,default:en},Symbol.toStringTag,{value:"Module"})),tn=e.div`
+`,on=({sectionTitle:n,content:t})=>o.jsxs(x,{id:"mostproudof",children:[o.jsx(h,{content:n}),o.jsx(nn,{children:o.jsx(Z,{content:t})})]}),en=p.memo(on),$n=Object.freeze(Object.defineProperty({__proto__:null,default:en},Symbol.toStringTag,{value:"Module"})),tn=e.div`
     border-radius: ${({theme:n})=>n.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     color: ${({theme:n})=>n.titleColor};
