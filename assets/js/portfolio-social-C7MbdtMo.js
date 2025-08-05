@@ -70,7 +70,7 @@ import{j as o,r as p}from"./framer-motion-cumc6SSu.js";import{I as a,c as g,g as
     margin-top: -0.15rem;
 `,P=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space025};
-`,k="2",D=1,Q=56,m={major:k,minor:D,build:Q},R=()=>o.jsx(P,{children:o.jsxs(d,{children:[o.jsx(W,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),q=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(O,{children:t?.map((i,s)=>o.jsx(j,{children:o.jsx(I,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(_,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(A,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(R,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(v,{children:i},s))})]}),$n=Object.freeze(Object.defineProperty({__proto__:null,default:q},Symbol.toStringTag,{value:"Module"})),E=e.div`
+`,k="2",D=1,Q=57,m={major:k,minor:D,build:Q},R=()=>o.jsx(P,{children:o.jsxs(d,{children:[o.jsx(W,{children:"Built Using"}),[r.React,r.TypeScript,r.StyledComponents,r.Framer,r.Vite,r.GitHub].map((n,t)=>o.jsx(a,{iconType:n},t))]})}),q=({sectionTitle:n,contactMetaData:t=[]})=>o.jsxs(x,{id:"contactme",children:[o.jsx(h,{content:n}),o.jsx(O,{children:t?.map((i,s)=>o.jsx(j,{children:o.jsx(I,{icon:i.icon,content:i.content,href:i.href})},s))}),o.jsx(_,{children:[o.jsxs(d,{children:[o.jsx(l,{children:"Designed & Built With "}),o.jsx(A,{children:o.jsx(a,{iconType:r.Heart})}),o.jsxs(l,{children:[" By Pranshu! © ",new Date().getFullYear()]})]},"copyright"),o.jsx(R,{},"built-by"),o.jsxs(d,{children:[o.jsx(a,{iconType:r.Version}),o.jsxs(l,{children:["v ",m.major,".",m.minor,".",m.build]})]},"version")].map((i,s)=>o.jsx(v,{children:i},s))})]}),$n=Object.freeze(Object.defineProperty({__proto__:null,default:q},Symbol.toStringTag,{value:"Module"})),E=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space075};
     border-radius: ${({theme:n})=>n.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
@@ -118,13 +118,13 @@ import{j as o,r as p}from"./framer-motion-cumc6SSu.js";import{I as a,c as g,g as
     margin-right: ${({theme:n})=>n.common.spacing.space15};
 `,N=e.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
 `,U=e.div`
     display: flex;
     align-items: center;
 `,Y=e.div`
-    margin-top: 0.25rem;
+    margin-top: 0.22rem;
     transition: all 0.25s ease;
     transform: rotate(${({$isopen:n})=>n?"45deg":"0deg"});
     color: ${({theme:n,$isopen:t})=>t?n.common.firstColor:n.titleColor};
