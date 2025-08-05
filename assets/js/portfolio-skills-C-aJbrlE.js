@@ -1,8 +1,8 @@
-import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as h,g,A as f,F as b,I as x,a as v,S as $,b as u,p as C,d as k}from"./portfolio-home-D6Nu10WD.js";import{d as i}from"./styled-components-CFN5Od9r.js";const S=({children:n,delay:e=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:e,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},W=i.div`
+import{j as o,m as p,r as m,A as w}from"./framer-motion-cumc6SSu.js";import{c as h,g,A as f,F as b,I as x,a as v,S as u,b as $,p as C,d as k}from"./portfolio-home-D6Nu10WD.js";import{d as e}from"./styled-components-CFN5Od9r.js";const S=({children:n,delay:i=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:i,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},T=e.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
     margin-top: ${({theme:n})=>n.common.spacing.space10};
-`,z=i.div`
+`,W=e.div`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: ${({theme:n})=>n.common.spacing.space075};
@@ -14,7 +14,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
             letter-spacing: 0.025rem;
         }
     }
-`,F=i.p`
+`,z=e.p`
     padding: 0;
     background-color: transparent;
     color: ${({theme:n})=>n.common.firstColor};
@@ -28,7 +28,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     }
-`,T=i.div`
+`,F=e.div`
     ${h}
     ${g}
     row-gap: 0;
@@ -37,7 +37,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
         margin-left: auto;
         margin-right: auto;
     }
-`,M=i.div`
+`,M=e.div`
     display: flex;
     grid-template-columns: 1fr;
     column-gap: 0.75rem;
@@ -45,12 +45,12 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (max-width: 349px) {
         gap: 0.5rem;
     }
-`,I=i.div`
+`,R=e.div`
     display: flex;
     align-items: center;
     margin-top: -0.5rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
-`,O=i.div`
+`,D=e.div`
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -58,13 +58,13 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     border-radius: 50%;
     margin-top: 0.3rem;
     transition: 0.5s;
-`,D=i.div`
+`,I=e.div`
     display: block;
     width: 1px;
     height: 100%;
     background-color: ${({theme:n})=>n.common.firstColor};
     transform: translate(6px, -7px);
-`,R=i.h3`
+`,_=e.h3`
     margin: -0.1rem 0 ${({theme:n})=>n.common.spacing.space05} 0;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     font-weight: ${({theme:n})=>n.common.fontWeight.medium};
@@ -73,7 +73,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     }
-`,_=i.span`
+`,A=e.span`
     display: inline-block;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.normalFont};
     margin: 0 0 ${({theme:n})=>n.common.spacing.space05} 0;
@@ -81,7 +81,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.normalFont};
     }
-`,A=i.span`
+`,B=e.span`
     display: block;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.smallFont};
     font-style: italic;
@@ -90,7 +90,7 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.smallFont};
     }
-`,B=i.div`
+`,O=e.div`
     margin-top: 0.25rem;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.smallerFont};
     color: ${({theme:n})=>n.textColor};
@@ -99,10 +99,10 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.smallerFont};
     }
-`,P=i.p`
-    margin: 0 0 ${({theme:n})=>n.common.spacing.space10};
+`,P=e.p`
+    margin: -0.25rem 0 ${({theme:n})=>n.common.spacing.space10};
     line-height: ${({theme:n})=>n.common.spacing.space20};
-`,L=i.blockquote`
+`,E=e.blockquote`
     font-style: italic;
     margin: ${({theme:n})=>n.common.spacing.space10} 0;
     padding: 0 ${({theme:n})=>n.common.spacing.space10};
@@ -120,18 +120,18 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.normalFont};
     }
-`,E=i.div`
+`,L=e.div`
     display: flex;
     margin-right: ${({theme:n})=>n.common.spacing.space15};
     
     &:first-child {
         margin-top: 0;
     }
-`,V=i.div`
+`,H=e.div`
     width: 100%;
     margin-top: 0.04rem;
     position: relative;
-`,H=i.div`
+`,V=e.div`
     font-size: 1.4rem;
     color: ${({theme:n})=>n.common.firstColor};
     margin-left: auto;
@@ -139,14 +139,13 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     transform: ${({$isopen:n})=>n?"rotate(-180deg)":"rotate(0)"};
     display: flex;
     align-items: center;
-`,q=i(f)`
+`,q=e(f)`
     font-size: inherit;
     color: inherit;
-`,Q=i.span`
+`,Q=e.span`
     color: ${({theme:n})=>n.common.firstColor};
     margin-right: ${({theme:n})=>n.common.spacing.space05};
-    margin-top: ${({theme:n})=>n.common.spacing.space025};
-`,X=({symbol:n="→"})=>o.jsx(Q,{children:n}),j=({children:n,isOpen:e,duration:t=.3})=>o.jsx(y,{initial:!1,children:e&&o.jsx(p.div,{initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:t,ease:"easeInOut",opacity:{duration:t*.67}},children:n},"expand-collapse-content")}),w=({children:n,delay:e=0,direction:t="left"})=>{const s=t==="left"?-20:20;return o.jsx(p.div,{initial:{translateX:s,opacity:0},animate:{translateX:0,opacity:1},transition:{type:"spring",stiffness:75,damping:15,mass:2,delay:e},children:n})},K=({description:n,isOpenState:e})=>o.jsx(j,{isOpen:e,children:o.jsx(W,{$isopen:e,children:!!n?.length&&n.map((t,s)=>o.jsx(w,{delay:s*.1,direction:"left",children:o.jsxs(E,{children:[o.jsx(X,{}),o.jsx(P,{children:t})]})},s))})}),N=({description:n})=>{const[e,t]=d.useState(!1),s=()=>t(a=>!a);return n?.length?o.jsxs(o.Fragment,{children:[o.jsxs(z,{onClick:s,children:[o.jsxs(F,{children:[e?"Hide":"Show"," Key contributions"]}),o.jsx(H,{$isopen:e,children:o.jsx(q,{})})]}),o.jsx(K,{description:n,isOpenState:e})]}):null},G=({title:n,url:e,subTitle:t,date:s,description:a,last:r,lineBreak:c,previously:l,descriptionSummary:m})=>o.jsx(T,{children:o.jsxs(M,{children:[o.jsxs("div",{children:[o.jsx(b,{children:o.jsx(O,{})}),!r&&o.jsx(D,{})]}),o.jsxs(V,{lineBreak:c,children:[o.jsx(R,{children:e?o.jsx("a",{href:e,target:"_blank",rel:"noopener noreferrer",style:{textDecoration:"none",color:"inherit"},children:n}):n}),o.jsx(_,{children:t}),l&&o.jsx(A,{children:`Previously: ${l}`}),o.jsxs(I,{children:[o.jsx(x,{iconType:v.Calendar}),o.jsx(B,{children:s})]}),m&&o.jsx(L,{dangerouslySetInnerHTML:{__html:`"${m}"`}}),a?.length?o.jsx(N,{description:a}):null]})]})}),J=({title:n,timeline:e})=>o.jsxs($,{id:"educationalqualifications",children:[o.jsx(u,{content:n}),e.map(t=>o.jsx(S,{children:o.jsx(G,{...t})},t.title))]}),xn=Object.freeze(Object.defineProperty({__proto__:null,default:J},Symbol.toStringTag,{value:"Module"})),U=i.div`
+`,X=({symbol:n="→"})=>o.jsx(Q,{children:n}),j=({children:n,isOpen:i,duration:t=.3})=>{const s=m.useRef(null),[a,r]=m.useState(0);return m.useEffect(()=>{if(i&&s.current){const d=s.current.scrollHeight;r(d);const c=setTimeout(()=>{i&&r("auto")},t*1e3);return()=>clearTimeout(c)}},[i,n,t]),o.jsx(w,{children:i&&o.jsx(p.div,{initial:{height:0,opacity:0},animate:{height:a,opacity:1},exit:{height:0,opacity:0},transition:{type:"spring",stiffness:200,damping:40,mass:1,opacity:{duration:t*.1}},style:{overflow:"hidden"},children:o.jsx(p.div,{ref:s,initial:{opacity:0,y:10},animate:{opacity:1,y:0},exit:{opacity:0,y:10},transition:{duration:.3},children:n})},"expand-collapse")})},y=({children:n,delay:i=0,direction:t="left"})=>{const s=t==="left"?-20:20;return o.jsx(p.div,{initial:{translateX:s,opacity:0},animate:{translateX:0,opacity:1},transition:{type:"spring",stiffness:75,damping:15,mass:2,delay:i},children:n})},K=({description:n,isOpenState:i})=>o.jsx(j,{isOpen:i,children:o.jsx(T,{$isopen:i,children:!!n?.length&&n.map((t,s)=>o.jsx(y,{delay:s*.1,direction:"left",children:o.jsxs(L,{children:[o.jsx(X,{}),o.jsx(P,{children:t})]})},s))})}),N=({description:n})=>{const[i,t]=m.useState(!1),s=()=>t(a=>!a);return n?.length?o.jsxs(o.Fragment,{children:[o.jsxs(W,{onClick:s,children:[o.jsxs(z,{children:[i?"Hide":"Show"," Key contributions"]}),o.jsx(V,{$isopen:i,children:o.jsx(q,{})})]}),o.jsx(K,{description:n,isOpenState:i})]}):null},G=({title:n,url:i,subTitle:t,date:s,description:a,last:r,lineBreak:l,previously:d,descriptionSummary:c})=>o.jsx(F,{children:o.jsxs(M,{children:[o.jsxs("div",{children:[o.jsx(b,{children:o.jsx(D,{})}),!r&&o.jsx(I,{})]}),o.jsxs(H,{lineBreak:l,children:[o.jsx(_,{children:i?o.jsx("a",{href:i,target:"_blank",rel:"noopener noreferrer",style:{textDecoration:"none",color:"inherit"},children:n}):n}),o.jsx(A,{children:t}),d&&o.jsx(B,{children:`Previously: ${d}`}),o.jsxs(R,{children:[o.jsx(x,{iconType:v.Calendar}),o.jsx(O,{children:s})]}),c&&o.jsx(E,{dangerouslySetInnerHTML:{__html:`"${c}"`}}),a?.length?o.jsx(N,{description:a}):null]})]})}),J=({title:n,timeline:i})=>o.jsxs(u,{id:"educationalqualifications",children:[o.jsx($,{content:n}),i.map(t=>o.jsx(S,{children:o.jsx(G,{...t})},t.title))]}),xn=Object.freeze(Object.defineProperty({__proto__:null,default:J},Symbol.toStringTag,{value:"Module"})),U=e.div`
     margin-top: ${({theme:n})=>n.common.spacing.space125};
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     display: flex;
@@ -160,25 +159,25 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.h3Font};
     }
-`,Y=i.div`
+`,Y=e.div`
     height: 5px;
     border-radius: 0.25rem;
     background-color: ${({theme:n})=>n.common.firstColorLighter};
     width: 100%;
-`,Z=i.div`
+`,Z=e.div`
     width: 100%;
     height: 100%;
-`,nn=i.div`
+`,nn=e.div`
     row-gap: 1.5rem;
     padding: 0 1rem 0 2.7rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space15};
-`,on=i(f)`
+`,on=e(f)`
     font-size: 2rem;
     color: ${({theme:n})=>n.common.firstColor};
     margin-left: auto;
     transition: transform 0.8s ease;
     transform: ${({$isOpen:n})=>n?"rotate(-180deg)":"rotate(0)"};
-`,en=i.div`
+`,en=e.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,14 +192,14 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
             }
         }
     }
-`,tn=i.h1`
+`,tn=e.h1`
     margin-top: 0.5rem;
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.h3Font};
     display: flex;
     justify-content: space-between;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
     transition: color 0.5s, letter-spacing 0.5s;
-    color: ${({$isOpen:n,theme:e})=>n?e.common.firstColor:e.titleColor};
+    color: ${({$isOpen:n,theme:i})=>n?i.common.firstColor:i.titleColor};
     letter-spacing: ${({$isOpen:n})=>n?"0.025rem":"0"};
 
     @media screen and (max-width: 349px) {
@@ -210,24 +209,24 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.h3Font};
     }
-`,sn=i.h3`
+`,sn=e.h3`
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.normalFont};
     font-weight: ${({theme:n})=>n.common.fontWeight.medium};
-`,an=i.h3`
+`,an=e.h3`
     font-size: ${({theme:n})=>n.common.fontMaxWidth967.normalFont};
     font-weight: ${({theme:n})=>n.common.fontWeight.medium};
 
     @media screen and (min-width: 968px) {
         font-size: ${({theme:n})=>n.common.fontMinWidth968.normalFont};
     }
-`,rn=i.span`
+`,rn=e.span`
     height: 5px;
     border-radius: 0.25rem;
     width: ${({$percentage:n})=>n}%;
     display: block;
     background-color: ${({theme:n})=>n.common.firstColor};
     animation: ${({$percentage:n})=>C(n)} 3s normal forwards;
-`,cn=({name:n,percentage:e})=>o.jsxs(o.Fragment,{children:[o.jsxs(U,{children:[o.jsx(sn,{children:n}),o.jsxs(an,{children:[e,"%"]})]}),o.jsx(Y,{children:o.jsx(Z,{role:"progressbar","aria-valuenow":e,"aria-valuemin":0,"aria-valuemax":100,children:o.jsx(rn,{$percentage:e})})})]}),mn=d.memo(cn),ln=({category:n,skills:e,icon:t})=>{const[s,a]=d.useState(!1),r=d.useCallback(()=>{a(c=>!c)},[]);return o.jsxs(o.Fragment,{children:[o.jsxs(en,{onClick:r,children:[o.jsx(x,{iconType:t}),o.jsx(tn,{$isOpen:s,children:n}),o.jsx(on,{$isOpen:s})]}),o.jsx(j,{isOpen:s,children:o.jsx(nn,{$isOpen:s,children:e.map(({name:c,percentage:l},m)=>o.jsx(w,{delay:m*.1,direction:"left",children:o.jsx(mn,{name:c,percentage:l})},m))})})]})},dn=i.div`
+`,cn=({name:n,percentage:i})=>o.jsxs(o.Fragment,{children:[o.jsxs(U,{children:[o.jsx(sn,{children:n}),o.jsxs(an,{children:[i,"%"]})]}),o.jsx(Y,{children:o.jsx(Z,{role:"progressbar","aria-valuenow":i,"aria-valuemin":0,"aria-valuemax":100,children:o.jsx(rn,{$percentage:i})})})]}),mn=m.memo(cn),ln=({category:n,skills:i,icon:t})=>{const[s,a]=m.useState(!1),r=m.useCallback(()=>{a(l=>!l)},[]);return o.jsxs(o.Fragment,{children:[o.jsxs(en,{onClick:r,children:[o.jsx(x,{iconType:t}),o.jsx(tn,{$isOpen:s,children:n}),o.jsx(on,{$isOpen:s})]}),o.jsx(j,{isOpen:s,children:o.jsx(nn,{$isOpen:s,children:i.map(({name:l,percentage:d},c)=>o.jsx(y,{delay:c*.1,direction:"left",children:o.jsx(mn,{name:l,percentage:d})},c))})})]})},dn=e.div`
     ${h}
     ${g}
     row-gap: 0;
@@ -240,4 +239,4 @@ import{j as o,m as p,A as y,r as d}from"./framer-motion-cumc6SSu.js";import{c as
         margin-left: auto;
         margin-right: auto;
     }
-`,pn=({sectionTitle:n,skills:e})=>o.jsxs($,{id:"technologyproficiency",children:[o.jsx(u,{content:n}),o.jsx(dn,{children:e.map(({category:t,skills:s,icon:a},r)=>o.jsx(k,{children:o.jsx(ln,{category:t,skills:s,icon:a})},r))})]}),$n=Object.freeze(Object.defineProperty({__proto__:null,default:pn},Symbol.toStringTag,{value:"Module"}));export{X as B,j as E,S,G as T,w as a,xn as b,$n as c};
+`,pn=({sectionTitle:n,skills:i})=>o.jsxs(u,{id:"technologyproficiency",children:[o.jsx($,{content:n}),o.jsx(dn,{children:i.map(({category:t,skills:s,icon:a},r)=>o.jsx(k,{children:o.jsx(ln,{category:t,skills:s,icon:a})},r))})]}),un=Object.freeze(Object.defineProperty({__proto__:null,default:pn},Symbol.toStringTag,{value:"Module"}));export{X as B,j as E,S,G as T,y as a,xn as b,un as c};
