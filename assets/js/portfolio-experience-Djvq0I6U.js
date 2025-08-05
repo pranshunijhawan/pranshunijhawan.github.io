@@ -1,12 +1,15 @@
-import{j as o,m}from"./framer-motion-D14opXiI.js";import{C as d,B as p,a as g,o as f,c as x,g as u,S as s,b as c,e as h}from"./portfolio-home-DNoVetHB.js";import{d as n}from"./styled-components-DyNG11jZ.js";import{S as j,T as b}from"./portfolio-skills-DW1pc6Cj.js";const C=n(m.img)`
+import{j as t,m}from"./framer-motion-D14opXiI.js";import{C as d,e as p,B as g,a as f,o as x,c as u,g as h,S as s,b as c}from"./portfolio-home-DNoVetHB.js";import{d as n}from"./styled-components-DyNG11jZ.js";import{S as j,T as b}from"./portfolio-skills-DW1pc6Cj.js";const C=n(m.img)`
     border-radius: 8px;
-`,$=({height:e,width:t,source:i,href:r,onClick:l})=>{const a=o.jsx(C,{src:i,height:e,width:t,onClick:l,alt:`Portfolio Image - ${i}`,animate:{opacity:1,scale:1},whileHover:{scale:1.05},transition:{duration:.5}});return r?o.jsx("a",{href:r,children:a}):a},w=n.div`
+`,$=({height:e,width:o,source:i,href:r,onClick:l})=>{const a=t.jsx(C,{src:i,height:e,width:o,onClick:l,alt:`Portfolio Image - ${i}`,animate:{opacity:1,scale:1},whileHover:{scale:1.05},transition:{duration:.5}});return r?t.jsx("a",{href:r,children:a}):a},w=n.div`
     position: relative;
     background-color: ${({theme:e})=>e.containerColor};
     border-radius: ${({theme:e})=>e.common.spacing.space05};
     box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
+    height: 100%;
     border-left: 0.4rem solid ${({theme:e})=>e.common.firstColor};
     border-right: 0.4rem solid ${({theme:e})=>e.common.firstColor};
     padding: ${({theme:e})=>e.common.spacing.space10};
@@ -41,11 +44,12 @@ import{j as o,m}from"./framer-motion-D14opXiI.js";import{C as d,B as p,a as g,o 
 `,I=n.div`
     padding-bottom: ${({theme:e})=>e.common.spacing.space10};
     padding-top: ${({theme:e})=>e.common.spacing.space15};
-`,P=({certificateMetaData:e})=>o.jsx(o.Fragment,{children:e.map(t=>o.jsxs(w,{children:[o.jsx(v,{children:o.jsx($,{...t.imageProps})}),o.jsxs(S,{children:[o.jsx(y,{children:t.title}),o.jsx(I,{children:o.jsx(p,{...t.buttonProps,clickHandler:()=>f(t.buttonProps.link||""),icon:g.CertificateRightIcon,small:!0})})]})]},t.title))}),T=n.div`
-    ${x}
+`,P=({certificateMetaData:e})=>t.jsx(t.Fragment,{children:e.map(o=>t.jsx(p,{children:t.jsxs(w,{children:[t.jsx(v,{children:t.jsx($,{...o.imageProps})}),t.jsxs(S,{children:[t.jsx(y,{children:o.title}),t.jsx(I,{children:t.jsx(g,{...o.buttonProps,clickHandler:()=>x(o.buttonProps.link||""),icon:f.CertificateRightIcon,small:!0})})]})]},o.title)}))}),T=n.div`
     ${u}
+    ${h}
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     margin-bottom: ${({theme:e})=>e.common.spacing.space25};
 
     @media screen and (max-width: 349px) {
@@ -65,4 +69,4 @@ import{j as o,m}from"./framer-motion-D14opXiI.js";import{C as d,B as p,a as g,o 
         margin-left: auto;
         margin-right: auto;
     }
-`,_=({sectionTitle:e,certificateProps:t})=>{const{certificateMetaData:i=[]}=t||{};return o.jsxs(s,{id:"certifications",children:[o.jsx(c,{content:e}),o.jsx(h,{children:o.jsx(T,{children:o.jsx(P,{certificateMetaData:i})})})]})},F=Object.freeze(Object.defineProperty({__proto__:null,default:_},Symbol.toStringTag,{value:"Module"})),k=({title:e,timeline:t})=>o.jsxs(s,{id:"professionalexperience",children:[o.jsx(c,{content:e}),t.map((i,r)=>o.jsx(j,{children:o.jsx(b,{...i})},r))]}),L=Object.freeze(Object.defineProperty({__proto__:null,default:k},Symbol.toStringTag,{value:"Module"}));export{F as C,$ as I,L as P};
+`,_=({sectionTitle:e,certificateProps:o})=>{const{certificateMetaData:i=[]}=o||{};return t.jsxs(s,{id:"certifications",children:[t.jsx(c,{content:e}),t.jsx(T,{children:t.jsx(P,{certificateMetaData:i})})]})},F=Object.freeze(Object.defineProperty({__proto__:null,default:_},Symbol.toStringTag,{value:"Module"})),k=({title:e,timeline:o})=>t.jsxs(s,{id:"professionalexperience",children:[t.jsx(c,{content:e}),o.map((i,r)=>t.jsx(j,{children:t.jsx(b,{...i})},r))]}),L=Object.freeze(Object.defineProperty({__proto__:null,default:k},Symbol.toStringTag,{value:"Module"}));export{F as C,$ as I,L as P};
