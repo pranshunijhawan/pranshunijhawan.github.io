@@ -1,4 +1,4 @@
-import{j as o,m as p,r as m,A as w}from"./framer-motion-cumc6SSu.js";import{c as h,g,A as f,F as b,I as x,a as v,S as u,b as $,p as C,d as k}from"./portfolio-home-D6Nu10WD.js";import{d as e}from"./styled-components-CFN5Od9r.js";const S=({children:n,delay:i=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:i,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},T=e.div`
+import{j as o,m as p,r as m,A as w}from"./framer-motion-cumc6SSu.js";import{c as h,g,A as f,F as b,I as x,a as v,S as u,b as $,p as C,d as k}from"./portfolio-home-CXeKaE-g.js";import{d as e}from"./styled-components-CFN5Od9r.js";const S=({children:n,delay:i=0})=>{const t={hidden:{opacity:0,y:50},visible:{opacity:1,y:0}};return o.jsx(p.div,{initial:"hidden",whileInView:"visible",viewport:{amount:"some"},transition:{duration:1.25,delay:i,type:"spring",stiffness:30,damping:15,mass:2},variants:t,children:n})},T=e.div`
     row-gap: 1.5rem;
     margin-bottom: ${({theme:n})=>n.common.spacing.space05};
     margin-top: ${({theme:n})=>n.common.spacing.space10};
