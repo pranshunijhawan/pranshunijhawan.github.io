@@ -41,23 +41,41 @@
     
     <title>PN</title>
     
-    <!-- Critical CSS to prevent white flash -->
+    <!-- Critical CSS to prevent flash - theme aware -->
     <style>
       html, body, #root {
-        background-color: #0a0a0a;
         min-height: 100vh;
         margin: 0;
         padding: 0;
       }
-      /* Hide content until React loads to prevent layout shift */
+      /* Dark mode (default) */
+      html, body, #root {
+        background-color: #0a0a0a;
+      }
+      /* Light mode */
+      html[data-theme="light"], 
+      html[data-theme="light"] body, 
+      html[data-theme="light"] #root {
+        background-color: #fafafa;
+      }
+      /* Cover until React loads */
       #root:empty::before {
         content: '';
         position: fixed;
         inset: 0;
-        background-color: #0a0a0a;
+        background-color: inherit;
         z-index: 9999;
       }
     </style>
+    <!-- Set theme before paint to prevent flash -->
+    <script>
+      (function() {
+        var theme = localStorage.getItem('portfolio-theme-mode');
+        if (theme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
     
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://images.credly.com" />
