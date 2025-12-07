@@ -35,6 +35,24 @@
     
     <title>PN</title>
     
+    <!-- Critical CSS to prevent white flash -->
+    <style>
+      html, body, #root {
+        background-color: #0a0a0a;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      /* Hide content until React loads to prevent layout shift */
+      #root:empty::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background-color: #0a0a0a;
+        z-index: 9999;
+      }
+    </style>
+    
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://images.credly.com" />
     <script type="module" crossorigin src="/assets/index-DwSyEVLV.js"></script>
