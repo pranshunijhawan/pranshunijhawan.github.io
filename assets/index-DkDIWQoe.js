@@ -263,12 +263,12 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    gap: 1px;
-    padding: 4px;
-    border-radius: 16px;
+    gap: 2px;
+    padding: 5px;
+    border-radius: 18px;
     
     &::before {
-      border-radius: 16px;
+      border-radius: 18px;
     }
   }
 `,Jw=C(O.a)`
@@ -322,8 +322,8 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 10px;
   }
 `,Ww=C.img`
@@ -337,7 +337,7 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    height: 18px;
+    height: 20px;
   }
 `,Fw=C.div`
   display: flex;
@@ -400,9 +400,9 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    padding: 8px 8px;
-    font-size: 10px;
-    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 11px;
+    border-radius: 10px;
   }
 `,t3=C(O.div)`
   position: absolute;
@@ -505,8 +505,8 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 10px;
     
     svg {
