@@ -1,115 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Essential meta tags first -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects in software engineering and architecture." />
+    <meta name="keywords" content="Pranshu Nijhawan, Engineering Leader, Software Architect, SaaS, Cloud Architecture, Azure, AWS, React, TypeScript, Node.js" />
+    <meta name="author" content="Pranshu Nijhawan" />
     
-    <!-- Favicon with multiple sizes for better performance -->
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pranshu Nijhawan" />
+    <meta property="og:title" content="Pranshu Nijhawan | Digital Portfolio" />
+    <meta property="og:description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects in software engineering and architecture." />
+    <meta property="og:url" content="https://www.pranshunijhawan.dev/" />
+    <meta property="og:image" content="https://www.pranshunijhawan.dev/images/og-image.png" />
+    <meta property="og:image:secure_url" content="https://www.pranshunijhawan.dev/images/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pranshu Nijhawan - Digital Portfolio" />
+    <meta property="og:locale" content="en_US" />
     
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pranshu Nijhawan | Digital Portfolio" />
+    <meta name="twitter:description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects." />
+    <meta name="twitter:image" content="https://www.pranshunijhawan.dev/images/og-image.png" />
+    <meta name="twitter:image:alt" content="Pranshu Nijhawan - Digital Portfolio" />
     
-    <!-- PWA Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="./pwa-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./pwa-512x512.png" />
-    
-    <!-- Page title -->
-    <title>Pranshu Nijhawan - Digital Portfolio</title>
-    
-    <!-- Primary meta tags -->
-    <meta name="title" content="Pranshu Nijhawan - Digital Portfolio">
-    <meta name="description" content="Explore the digital portfolio of Pranshu Nijhawan - showcasing innovative projects, technical expertise, and creative solutions in web development.">
-    <meta name="keywords" content="Pranshu Nijhawan, Portfolio, Web Developer, React, TypeScript, Frontend Developer">
-    <meta name="author" content="Pranshu Nijhawan">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.pranshunijhawan.dev/">
-    <meta property="og:title" content="Pranshu Nijhawan - Digital Portfolio">
-    <meta property="og:description" content="Explore the digital portfolio of Pranshu Nijhawan - showcasing innovative projects, technical expertise, and creative solutions.">
-    <meta property="og:image" content="https://www.pranshunijhawan.dev/static/img/Logo-Social.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Pranshu Nijhawan Portfolio">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.pranshunijhawan.dev/">
-    <meta property="twitter:title" content="Pranshu Nijhawan - Digital Portfolio">
-    <meta property="twitter:description" content="Explore the digital portfolio of Pranshu Nijhawan - showcasing innovative projects and technical expertise.">
-    <meta property="twitter:image" content="https://www.pranshunijhawan.dev/static/img/Logo-Social.png">
-    
-    <!-- PWA Meta Tags -->
+    <!-- Theme Color -->
     <meta name="theme-color" content="#000000" />
-    <meta name="background-color" content="#ffffff" />
-    <meta name="display" content="standalone" />
-    <meta name="orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     
-    <!-- iOS Safari Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="PN" />
+    <title>PN</title>
     
-    <!-- iOS Splash Screens -->
-    <link rel="apple-touch-startup-image" href="./apple-splash-320x568.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-375x667.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-375x812.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-414x896.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-390x844.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-430x932.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)">
-    <link rel="apple-touch-startup-image" href="./apple-splash-768x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1)">
-    
-    <!-- Android Meta Tags for PWA Installability -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="PN" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="background-color" content="#ffffff" />
-    
-    <!-- Additional PWA Meta Tags for better installability -->
-    <meta name="msapplication-starturl" content="/" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    
-    <!-- Microsoft Meta Tags -->
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="msapplication-TileImage" content="./pwa-192x192.png" />
-    <meta name="msapplication-config" content="./browserconfig.xml" />
-    
-    <!-- Performance optimizations -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=no">
-    
-    <!-- Preload critical resources -->
-    <link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JwppbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0IEFwcCBmcm9tICcuL0FwcCcKCi8vIFJlZ2lzdGVyIHNlcnZpY2Ugd29ya2VyIGZvciBQV0EgZnVuY3Rpb25hbGl0eQppZiAoJ3NlcnZpY2VXb3JrZXInIGluIG5hdmlnYXRvcikgewogIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdsb2FkJywgKCkgPT4gewogICAgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIucmVnaXN0ZXIoJy9zdy5qcycpCiAgICAgIC50aGVuKChyZWdpc3RyYXRpb24pID0+IHsKICAgICAgICBjb25zb2xlLmxvZygnU1cgcmVnaXN0ZXJlZDogJywgcmVnaXN0cmF0aW9uKTsKICAgICAgICAKICAgICAgICAvLyBDaGVjayBmb3IgdXBkYXRlcyBwZXJpb2RpY2FsbHkKICAgICAgICBzZXRJbnRlcnZhbCgoKSA9PiB7CiAgICAgICAgICByZWdpc3RyYXRpb24udXBkYXRlKCk7CiAgICAgICAgfSwgNjAwMDApOyAvLyBDaGVjayBldmVyeSBtaW51dGUKCiAgICAgICAgLy8gSGFuZGxlIHNlcnZpY2Ugd29ya2VyIHVwZGF0ZXMKICAgICAgICByZWdpc3RyYXRpb24uYWRkRXZlbnRMaXN0ZW5lcigndXBkYXRlZm91bmQnLCAoKSA9PiB7CiAgICAgICAgICBjb25zdCBuZXdXb3JrZXIgPSByZWdpc3RyYXRpb24uaW5zdGFsbGluZzsKICAgICAgICAgIGlmIChuZXdXb3JrZXIpIHsKICAgICAgICAgICAgbmV3V29ya2VyLmFkZEV2ZW50TGlzdGVuZXIoJ3N0YXRlY2hhbmdlJywgKCkgPT4gewogICAgICAgICAgICAgIGlmIChuZXdXb3JrZXIuc3RhdGUgPT09ICdpbnN0YWxsZWQnICYmIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLmNvbnRyb2xsZXIpIHsKICAgICAgICAgICAgICAgIC8vIE5ldyB2ZXJzaW9uIGF2YWlsYWJsZSwgYXV0b21hdGljYWxseSByZWZyZXNoCiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnTmV3IHZlcnNpb24gYXZhaWxhYmxlLCByZWZyZXNoaW5nLi4uJyk7CiAgICAgICAgICAgICAgICB3aW5kb3cubG9jYXRpb24ucmVsb2FkKCk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9KTsKICAgICAgICAgIH0KICAgICAgICB9KTsKICAgICAgfSkKICAgICAgLmNhdGNoKChyZWdpc3RyYXRpb25FcnJvcikgPT4gewogICAgICAgIGNvbnNvbGUubG9nKCdTVyByZWdpc3RyYXRpb24gZmFpbGVkOiAnLCByZWdpc3RyYXRpb25FcnJvcik7CiAgICAgIH0pOwogIH0pOwoKICAvLyBMaXN0ZW4gZm9yIHNlcnZpY2Ugd29ya2VyIG1lc3NhZ2VzCiAgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIuYWRkRXZlbnRMaXN0ZW5lcignbWVzc2FnZScsIChldmVudCkgPT4gewogICAgaWYgKGV2ZW50LmRhdGEgJiYgZXZlbnQuZGF0YS50eXBlID09PSAnU0tJUF9XQUlUSU5HJykgewogICAgICB3aW5kb3cubG9jYXRpb24ucmVsb2FkKCk7CiAgICB9CiAgfSk7Cn0KCmNvbnN0IHJvb3QgPSBSZWFjdERPTS5jcmVhdGVSb290KAogIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykgYXMgSFRNTEVsZW1lbnQKKTsKcm9vdC5yZW5kZXIoCiAgPFJlYWN0LlN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9SZWFjdC5TdHJpY3RNb2RlPgopOw==">
-    
-    <!-- Critical CSS will be inlined by Vite -->
-    <style>
-      /* Critical CSS for initial paint and loading state */
-      #root {
-        min-height: 100vh;
-        /* Background will be set by theme */
-      }
-      
-      /* Prevent layout shift during font loading */
-      body {
-        font-display: swap;
-      }
-    </style>
-    <script type="module" crossorigin src="./assets/js/index-BVnpBb3L.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/js/react-vendor-9sitkZcQ.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/framer-motion-cumc6SSu.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/styled-components-CFN5Od9r.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/react-icons-B7f-YpR1.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-home-CXeKaE-g.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-skills-C_TQFJ8e.js">
-    <link rel="modulepreload" crossorigin href="./assets/js/portfolio-experience-Cyf9w2-y.js">
-    <link rel="stylesheet" crossorigin href="./assets/css/index-D2yLQNaz.css">
-  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://images.credly.com" />
+    <script type="module" crossorigin src="/assets/index-DSYRWPwv.js"></script>
+  </head>
   <body>
     <div id="root"></div>
   </body>
