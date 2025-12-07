@@ -1,4 +1,4 @@
-import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";import{d as n,l as $,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as s}from"./index-BNWJXSIr.js";import{S as C}from"./Section-cQKfNUuc.js";import"./vendor-react-DlBnNAMw.js";const y=v`
+import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";import{d as n,l as $,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as s}from"./index-B_riLmWu.js";import{S as C}from"./Section-BLglb4Xr.js";import"./vendor-react-DlBnNAMw.js";const y=v`
   0% {
     background-position: 0% 50%;
   }
