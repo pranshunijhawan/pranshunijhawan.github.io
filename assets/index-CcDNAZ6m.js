@@ -194,14 +194,17 @@ Error generating stack: `+s.message+`
   left: 50%;
   transform: translateX(-50%);
   z-index: ${V.zIndex.sticky};
+  max-width: calc(100vw - 48px);
   
   @media (max-width: ${V.breakpoints.tablet}) {
     top: auto;
     bottom: 24px;
+    max-width: calc(100vw - 48px);
   }
   
   @media (max-width: 480px) {
     bottom: 16px;
+    max-width: calc(100vw - 32px);
   }
 `,Pw=C(O.nav)`
   position: relative;
@@ -266,6 +269,7 @@ Error generating stack: `+s.message+`
     gap: 2px;
     padding: 5px;
     border-radius: 18px;
+    max-width: 100%;
     
     &::before {
       border-radius: 18px;
@@ -400,9 +404,16 @@ Error generating stack: `+s.message+`
   }
   
   @media (max-width: 480px) {
-    padding: 10px 12px;
+    padding: 10px 10px;
     font-size: 11px;
     border-radius: 10px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  
+  @media (max-width: 360px) {
+    padding: 8px 8px;
+    font-size: 10px;
   }
 `,t3=C(O.div)`
   position: absolute;
