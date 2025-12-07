@@ -1,4 +1,4 @@
-import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";import{d as n,l as $,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as s}from"./index-sDINhADT.js";import{S as C}from"./Section-CwT4PFr4.js";import"./vendor-react-DlBnNAMw.js";const y=v`
+import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";import{d as n,l as $,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as s}from"./index-BNWJXSIr.js";import{S as C}from"./Section-cQKfNUuc.js";import"./vendor-react-DlBnNAMw.js";const y=v`
   0% {
     background-position: 0% 50%;
   }
@@ -8,14 +8,14 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
   100% {
     background-position: 0% 50%;
   }
-`,T=v`
+`,E=v`
   0%, 100% {
     box-shadow: 0 0 20px rgba(42, 157, 143, 0.1);
   }
   50% {
     box-shadow: 0 0 40px rgba(42, 157, 143, 0.2);
   }
-`,E=n.section`
+`,T=n.section`
   padding: 64px 24px;
   overflow: hidden;
   background: var(--bg-primary);
@@ -28,17 +28,17 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
 `,z=n.div`
   max-width: 1200px;
   margin: 0 auto;
-`,H=n(a.div)`
+`,P=n(a.div)`
   position: relative;
-`,I=n.div`
+`,H=n.div`
   position: relative;
   perspective: 1000px;
-`,V=n(a.article)`
+`,I=n(a.article)`
   border-radius: 24px;
   will-change: transform, opacity;
   overflow: hidden;
   position: relative;
-  animation: ${T} 4s ease-in-out infinite;
+  animation: ${E} 4s ease-in-out infinite;
   
   /* Glass morphism */
   background: var(--glass-bg);
@@ -70,7 +70,7 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
       border-radius: 28px;
     }
   }
-`,M=n(a.div)`
+`,V=n(a.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +101,7 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
   @media (min-width: ${s.breakpoints.tablet}) {
     padding: 32px 40px;
   }
-`,P=n(a.h3)`
+`,M=n(a.h3)`
   font-size: 20px;
   font-weight: ${s.typography.fontWeight.semibold};
   color: var(--text-primary);
@@ -258,12 +258,12 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
     position: relative;
     z-index: 1;
   }
-`,R=n(a.div)`
+`,G=n(a.div)`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-`,G=n(a.button)`
+`,N=n(a.button)`
   width: ${({$isActive:t})=>t?"36px":"12px"};
   height: 12px;
   border-radius: 6px;
@@ -279,4 +279,4 @@ import{r as x,c as j,j as e,A as m,m as a}from"./vendor-motion-BoSVoJ0s.js";impo
   &:hover {
     background: ${({$isActive:t})=>t?"var(--gradient)":"var(--text-tertiary)"};
   }
-`,N={enter:t=>({x:t>0?100:-100,opacity:0,scale:.95,rotateY:t>0?5:-5,filter:"blur(10px)"}),center:{x:0,opacity:1,scale:1,rotateY:0,filter:"blur(0px)",transition:{type:"spring",stiffness:300,damping:30}},exit:t=>({x:t<0?100:-100,opacity:0,scale:.95,rotateY:t<0?5:-5,filter:"blur(10px)",transition:{type:"spring",stiffness:300,damping:30}})},X={collapsed:{height:0,opacity:0,filter:"blur(6px)"},expanded:{height:"auto",opacity:1,filter:"blur(0px)",transition:{height:{type:"spring",stiffness:400,damping:35},opacity:{duration:.25,delay:.05},filter:{duration:.3,delay:.05}}}},_={collapsed:{opacity:0,y:-15,filter:"blur(5px)"},expanded:{opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:300,damping:25,delay:.1}}},F={collapsed:{opacity:0},expanded:{opacity:1,transition:{staggerChildren:.05,delayChildren:.15}}},L={collapsed:{opacity:0,x:-20,scale:.97,filter:"blur(4px)"},expanded:{opacity:1,x:0,scale:1,filter:"blur(0px)",transition:{type:"spring",stiffness:350,damping:25}}},ee=({data:t})=>{const[[r,g],h]=x.useState([0,0]),[d,l]=x.useState(!1),f=x.useRef(null),c=j(f,{once:!0,margin:"-100px"}),p=o=>{const i=r+o;i>=0&&i<t.content.length&&(h([i,o]),l(!1))},w=o=>{const i=o>r?1:-1;h([o,i]),l(!1)},k=(o,i)=>{i.offset.x>50||i.velocity.x>500?r>0&&p(-1):(i.offset.x<-50||i.velocity.x<-500)&&r<t.content.length-1&&p(1)},b=t.content[r];return e.jsx(E,{id:"mostproudof",ref:f,children:e.jsxs(z,{children:[e.jsx(C,{number:"04",title:"Projects",inView:c}),e.jsxs(H,{initial:{opacity:0,y:40},animate:c?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:80,damping:20,delay:.2},children:[e.jsx(I,{children:e.jsx(m,{initial:!1,custom:g,mode:"wait",children:e.jsxs(V,{custom:g,variants:N,initial:"enter",animate:"center",exit:"exit",drag:"x",dragConstraints:{left:0,right:0},dragElastic:.2,onDragEnd:k,transition:{x:{type:"spring",stiffness:350,damping:30},opacity:{duration:.25},scale:{type:"spring",stiffness:350,damping:30},rotateY:{type:"spring",stiffness:350,damping:30},filter:{duration:.3}},style:{cursor:"grab",touchAction:"pan-y"},whileDrag:{cursor:"grabbing",scale:1.02},children:[e.jsxs(M,{$isExpanded:d,onClick:()=>l(!d),whileHover:{scale:1.01},transition:{type:"spring",stiffness:400,damping:25},children:[e.jsx(P,{children:b.title}),e.jsx(B,{$isExpanded:d,animate:{rotate:d?45:0,scale:d?1.1:1},transition:{type:"spring",stiffness:400,damping:20},whileHover:{scale:1.15},whileTap:{scale:.95},children:e.jsx(a.svg,{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:e.jsx("path",{d:"M12 5v14M5 12h14"})})})]}),e.jsx(m,{initial:!1,children:d&&e.jsx(S,{variants:X,initial:"collapsed",animate:"expanded",exit:"collapsed",children:e.jsx(W,{variants:_,children:e.jsx(A,{variants:F,initial:"collapsed",animate:"expanded",exit:"collapsed",children:b.content.map((o,i)=>e.jsx(Y,{variants:L,children:o},i))})})})})]},r)})}),e.jsxs(D,{initial:{opacity:0,y:20},animate:c?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.4},children:[e.jsx(u,{onClick:()=>p(-1),disabled:r===0,whileHover:{scale:1.1},whileTap:{scale:.95},transition:{type:"spring",stiffness:400,damping:25},children:e.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:e.jsx("path",{d:"M19 12H5M12 19l-7-7 7-7"})})}),e.jsx(R,{children:t.content.map((o,i)=>e.jsx(G,{$isActive:r===i,onClick:()=>w(i),whileHover:{scale:1.1},whileTap:{scale:.95},animate:{width:r===i?36:12},transition:{type:"spring",stiffness:400,damping:25}},i))}),e.jsx(u,{onClick:()=>p(1),disabled:r===t.content.length-1,whileHover:{scale:1.1},whileTap:{scale:.95},transition:{type:"spring",stiffness:400,damping:25},children:e.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:e.jsx("path",{d:"M5 12h14M12 5l7 7-7 7"})})})]})]})]})})};export{ee as MostProudOf};
+`,R={enter:t=>({x:t>0?100:-100,opacity:0,scale:.95,rotateY:t>0?5:-5,filter:"blur(10px)"}),center:{x:0,opacity:1,scale:1,rotateY:0,filter:"blur(0px)",transition:{type:"spring",stiffness:300,damping:30}},exit:t=>({x:t<0?100:-100,opacity:0,scale:.95,rotateY:t<0?5:-5,filter:"blur(10px)",transition:{type:"spring",stiffness:300,damping:30}})},X={collapsed:{height:0,opacity:0,filter:"blur(6px)"},expanded:{height:"auto",opacity:1,filter:"blur(0px)",transition:{height:{type:"spring",stiffness:400,damping:35},opacity:{duration:.25,delay:.05},filter:{duration:.3,delay:.05}}}},F={collapsed:{opacity:0,y:-15,filter:"blur(5px)"},expanded:{opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:300,damping:25,delay:.1}}},L={collapsed:{opacity:0},expanded:{opacity:1,transition:{staggerChildren:.05,delayChildren:.15}}},O={collapsed:{opacity:0,x:-20,scale:.97,filter:"blur(4px)"},expanded:{opacity:1,x:0,scale:1,filter:"blur(0px)",transition:{type:"spring",stiffness:350,damping:25}}},ee=({data:t})=>{const[[r,g],h]=x.useState([0,0]),[d,p]=x.useState(!1),f=x.useRef(null),c=j(f,{once:!0,margin:"-100px"}),l=o=>{const i=r+o;i>=0&&i<t.content.length&&(h([i,o]),p(!1))},w=o=>{const i=o>r?1:-1;h([o,i]),p(!1)},k=(o,i)=>{i.offset.x>50||i.velocity.x>500?r>0&&l(-1):(i.offset.x<-50||i.velocity.x<-500)&&r<t.content.length-1&&l(1)},b=t.content[r];return e.jsx(T,{id:"mostproudof",ref:f,children:e.jsxs(z,{children:[e.jsx(C,{number:"04",title:"Projects",inView:c}),e.jsxs(P,{initial:{opacity:0,y:40},animate:c?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:80,damping:20,delay:.2},children:[e.jsx(H,{children:e.jsx(m,{initial:!1,custom:g,mode:"wait",children:e.jsxs(I,{custom:g,variants:R,initial:"enter",animate:"center",exit:"exit",drag:"x",dragConstraints:{left:0,right:0},dragElastic:.2,onDragEnd:k,transition:{x:{type:"spring",stiffness:350,damping:30},opacity:{duration:.25},scale:{type:"spring",stiffness:350,damping:30},rotateY:{type:"spring",stiffness:350,damping:30},filter:{duration:.3}},style:{cursor:"grab",touchAction:"pan-y"},whileDrag:{cursor:"grabbing",scale:1.02},children:[e.jsxs(V,{$isExpanded:d,onClick:()=>p(!d),whileHover:{scale:1.01},transition:{type:"spring",stiffness:400,damping:25},children:[e.jsx(M,{children:b.title}),e.jsx(B,{$isExpanded:d,"aria-label":d?"Collapse project details":"Expand project details","aria-expanded":d,animate:{rotate:d?45:0,scale:d?1.1:1},transition:{type:"spring",stiffness:400,damping:20},whileHover:{scale:1.15},whileTap:{scale:.95},children:e.jsx(a.svg,{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2","aria-hidden":"true",children:e.jsx("path",{d:"M12 5v14M5 12h14"})})})]}),e.jsx(m,{initial:!1,children:d&&e.jsx(S,{variants:X,initial:"collapsed",animate:"expanded",exit:"collapsed",children:e.jsx(W,{variants:F,children:e.jsx(A,{variants:L,initial:"collapsed",animate:"expanded",exit:"collapsed",children:b.content.map((o,i)=>e.jsx(Y,{variants:O,children:o},i))})})})})]},r)})}),e.jsxs(D,{initial:{opacity:0,y:20},animate:c?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.4},children:[e.jsx(u,{onClick:()=>l(-1),disabled:r===0,"aria-label":"Previous project",whileHover:{scale:1.1},whileTap:{scale:.95},transition:{type:"spring",stiffness:400,damping:25},children:e.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2","aria-hidden":"true",children:e.jsx("path",{d:"M19 12H5M12 19l-7-7 7-7"})})}),e.jsx(G,{role:"tablist","aria-label":"Project navigation",children:t.content.map((o,i)=>e.jsx(N,{$isActive:r===i,onClick:()=>w(i),role:"tab","aria-selected":r===i,"aria-label":`Go to project ${i+1}: ${o.title}`,whileHover:{scale:1.1},whileTap:{scale:.95},animate:{width:r===i?36:12},transition:{type:"spring",stiffness:400,damping:25}},i))}),e.jsx(u,{onClick:()=>l(1),disabled:r===t.content.length-1,"aria-label":"Next project",whileHover:{scale:1.1},whileTap:{scale:.95},transition:{type:"spring",stiffness:400,damping:25},children:e.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2","aria-hidden":"true",children:e.jsx("path",{d:"M5 12h14M12 5l7 7-7 7"})})})]})]})]})})};export{ee as MostProudOf};
