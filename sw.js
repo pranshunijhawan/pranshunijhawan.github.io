@@ -28,3 +28,4 @@ self.addEventListener('activate', async () => {
   clients.forEach(client => client.navigate(client.url));
 });
 
+
