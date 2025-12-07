@@ -1,4 +1,4 @@
-import{r as d,c as g,j as t,m as i,A as y}from"./vendor-motion-BoSVoJ0s.js";import{d as e,l as b,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as o}from"./index-B86NyHU6.js";import{S as u}from"./Section-CyNfPXtW.js";import"./vendor-react-DlBnNAMw.js";const w=v`
+import{r as d,c as g,j as t,m as i,A as y}from"./vendor-motion-BoSVoJ0s.js";import{d as e,l as b,m as v}from"./vendor-styled-Du6AN5G6.js";import{t as o}from"./index-BVBQC4QY.js";import{S as u}from"./Section-Ozs3UCOt.js";import"./vendor-react-DlBnNAMw.js";const w=v`
   0%, 100% {
     box-shadow: 0 0 0 0 rgba(42, 157, 143, 0);
   }

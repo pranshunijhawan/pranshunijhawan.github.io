@@ -1,4 +1,4 @@
-import{r as d,c as l,j as t,m as e}from"./vendor-motion-BoSVoJ0s.js";import{d as i}from"./vendor-styled-Du6AN5G6.js";import{t as n}from"./index-B86NyHU6.js";import{S as c}from"./Section-CyNfPXtW.js";import"./vendor-react-DlBnNAMw.js";const m=i.section`
+import{r as d,c as l,j as t,m as e}from"./vendor-motion-BoSVoJ0s.js";import{d as i}from"./vendor-styled-Du6AN5G6.js";import{t as n}from"./index-BVBQC4QY.js";import{S as c}from"./Section-Ozs3UCOt.js";import"./vendor-react-DlBnNAMw.js";const m=i.section`
   padding: 64px 24px;
   background: var(--bg-secondary);
   transition: background-color 0.4s ease;
