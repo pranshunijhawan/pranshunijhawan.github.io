@@ -1,4 +1,4 @@
-import{d as t,m as p}from"./vendor-styled-Du6AN5G6.js";import{t as i}from"./index-naQFyp8r.js";import{j as e,m as n}from"./vendor-motion-BoSVoJ0s.js";t.div`
+import{d as t,m as p}from"./vendor-styled-Du6AN5G6.js";import{t as i}from"./index-9Y-dfYCa.js";import{j as e,m as n}from"./vendor-motion-BoSVoJ0s.js";t.div`
   width: 100%;
   max-width: ${({$wide:a})=>a?i.maxWidth.full:i.maxWidth.wide};
   margin: 0 auto;
