@@ -2300,8 +2300,10 @@ Error generating stack: `+i.message+`
   background: var(--bg-primary);
   padding: 36px;
   overflow: hidden;
-  transition: transform var(--timing-small) var(--ease-standard), 
-              background-color var(--timing-medium) var(--ease-standard);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: background-color var(--timing-medium) var(--ease-standard);
   
   /* Mobile: Individual glass cards */
   @media (max-width: ${A.breakpoints.mobile}) {
@@ -2348,10 +2350,6 @@ Error generating stack: `+i.message+`
     transition: opacity var(--timing-small) var(--ease-standard);
   }
   
-  &:hover {
-    transform: translateY(-6px);
-  }
-  
   &:hover::before {
     transform: scaleX(1);
   }
@@ -2363,10 +2361,6 @@ Error generating stack: `+i.message+`
   
   @media (min-width: ${A.breakpoints.mobile}) {
     padding: 48px 36px;
-    
-    &:hover {
-      transform: translateY(-4px);
-    }
   }
   
   @media (min-width: ${A.breakpoints.tablet}) {
@@ -2462,7 +2456,7 @@ Error generating stack: `+i.message+`
   &:hover svg {
     transform: translateX(5px);
   }
-`,Nh={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},Gh={hidden:{opacity:0,y:50,filter:"blur(10px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:80,damping:20,mass:1}}},qh={hidden:{scaleY:0},visible:{scaleY:1,transition:{type:"spring",stiffness:100,damping:20,delay:.2}}},Uf={hidden:{opacity:0,y:40,filter:"blur(8px)"},visible:g=>({opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:100,damping:20,delay:g*.15}})},_h={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.12,delayChildren:.1}}},Rh={hidden:{opacity:0,y:40,scale:.95,filter:"blur(6px)"},visible:{opacity:1,y:0,scale:1,filter:"blur(0px)",transition:{type:"spring",stiffness:100,damping:18}}},Yh=({data:g})=>{const T=R.useRef(null),H=xa(T,{once:!0,margin:"-100px"}),p=R.useRef(null),E=xa(p,{once:!0,margin:"-50px"}),C=R.useRef(null),M=xa(C,{once:!0,margin:"-50px"}),Y=R.useRef(null),G=xa(Y,{once:!0,margin:"-50px"}),Q=g.content.slice(0,3).map(k=>k.replace(/^🔹\s*/,"").trim()),At=[{title:"Product & Project Expertise",text:"Architected and launched 15+ SaaS products/modules, including McKinsey's Promotion Advisor and Condeco Connect, delivering measurable business impact through advanced analytics, ML, and IoT."},{title:"Technical Edge",text:"Deep experience leading global engineering teams to build MicroServices, ETL platforms, real-time analytics, secure APIs, and large-scale IoT solutions using Azure, Node.JS, C#, Python, Spark/Databricks, and DevOps automation."},{title:"Business Outcomes",text:"Consistently delivered $2M+ annual savings, 70% deployment risk reduction, 25%+ efficiency gains, and multi-region product launches by integrating architecture vision with hands-on execution."}];return u.jsx(xh,{id:"about",ref:T,children:u.jsxs(Sh,{children:[u.jsx(we,{number:"01",title:"About",inView:H}),u.jsx(zh,{ref:p,children:u.jsxs(wh,{initial:"hidden",animate:E?"visible":"hidden",variants:Nh,children:[u.jsx(Ah,{variants:qh}),u.jsx(Th,{variants:Gh,children:Q[0]})]})}),u.jsxs(Eh,{ref:C,children:[u.jsxs(Of,{variants:Uf,custom:0,initial:"hidden",animate:M?"visible":"hidden",children:[u.jsx(Hf,{initial:{opacity:0,x:-20},animate:M?{opacity:1,x:0}:{},transition:{type:"spring",stiffness:100,damping:20},children:"Transformation"}),u.jsx(Bf,{initial:{opacity:0,y:20},animate:M?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.1},children:Q[1]})]}),u.jsxs(Of,{variants:Uf,custom:1,initial:"hidden",animate:M?"visible":"hidden",children:[u.jsx(Hf,{initial:{opacity:0,x:-20},animate:M?{opacity:1,x:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.15},children:"Philosophy"}),u.jsx(Bf,{initial:{opacity:0,y:20},animate:M?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.25},children:Q[2]})]})]}),u.jsxs(jh,{ref:Y,children:[u.jsx(Mh,{initial:{opacity:0,y:20},animate:G?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20},children:"Key Highlights"}),u.jsx(kh,{variants:_h,initial:"hidden",animate:G?"visible":"hidden",children:At.map((k,K)=>u.jsxs(Dh,{variants:Rh,children:[u.jsx(Ch,{children:k.title}),u.jsx(Oh,{children:k.text})]},K))})]}),u.jsxs(Hh,{initial:{opacity:0,y:30},animate:H?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.4},children:[u.jsx(Bh,{children:"Want to know more?"}),u.jsxs(Uh,{href:g.buttonProps.link,target:"_blank",rel:"noopener noreferrer",whileHover:{scale:1.03},whileTap:{scale:.98},transition:{type:"spring",stiffness:400,damping:25},children:[u.jsx("span",{children:g.buttonProps.name}),u.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:u.jsx("path",{d:"M5 12h14M12 5l7 7-7 7"})})]})]})]})})},Xh=ut`
+`,Nh={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.15}}},Gh={hidden:{opacity:0,y:50,filter:"blur(10px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:80,damping:20,mass:1}}},qh={hidden:{scaleY:0},visible:{scaleY:1,transition:{type:"spring",stiffness:100,damping:20,delay:.2}}},Uf={hidden:{opacity:0,y:40,filter:"blur(8px)"},visible:g=>({opacity:1,y:0,filter:"blur(0px)",transition:{type:"spring",stiffness:100,damping:20,delay:g*.15}})},_h={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.08,delayChildren:.05}}},Rh={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.4,ease:[.25,.46,.45,.94]}}},Yh=({data:g})=>{const T=R.useRef(null),H=xa(T,{once:!0,margin:"-100px"}),p=R.useRef(null),E=xa(p,{once:!0,margin:"-50px"}),C=R.useRef(null),M=xa(C,{once:!0,margin:"-50px"}),Y=R.useRef(null),G=xa(Y,{once:!0,margin:"-50px"}),Q=g.content.slice(0,3).map(k=>k.replace(/^🔹\s*/,"").trim()),At=[{title:"Product & Project Expertise",text:"Architected and launched 15+ SaaS products/modules, including McKinsey's Promotion Advisor and Condeco Connect, delivering measurable business impact through advanced analytics, ML, and IoT."},{title:"Technical Edge",text:"Deep experience leading global engineering teams to build MicroServices, ETL platforms, real-time analytics, secure APIs, and large-scale IoT solutions using Azure, Node.JS, C#, Python, Spark/Databricks, and DevOps automation."},{title:"Business Outcomes",text:"Consistently delivered $2M+ annual savings, 70% deployment risk reduction, 25%+ efficiency gains, and multi-region product launches by integrating architecture vision with hands-on execution."}];return u.jsx(xh,{id:"about",ref:T,children:u.jsxs(Sh,{children:[u.jsx(we,{number:"01",title:"About",inView:H}),u.jsx(zh,{ref:p,children:u.jsxs(wh,{initial:"hidden",animate:E?"visible":"hidden",variants:Nh,children:[u.jsx(Ah,{variants:qh}),u.jsx(Th,{variants:Gh,children:Q[0]})]})}),u.jsxs(Eh,{ref:C,children:[u.jsxs(Of,{variants:Uf,custom:0,initial:"hidden",animate:M?"visible":"hidden",children:[u.jsx(Hf,{initial:{opacity:0,x:-20},animate:M?{opacity:1,x:0}:{},transition:{type:"spring",stiffness:100,damping:20},children:"Transformation"}),u.jsx(Bf,{initial:{opacity:0,y:20},animate:M?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.1},children:Q[1]})]}),u.jsxs(Of,{variants:Uf,custom:1,initial:"hidden",animate:M?"visible":"hidden",children:[u.jsx(Hf,{initial:{opacity:0,x:-20},animate:M?{opacity:1,x:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.15},children:"Philosophy"}),u.jsx(Bf,{initial:{opacity:0,y:20},animate:M?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.25},children:Q[2]})]})]}),u.jsxs(jh,{ref:Y,children:[u.jsx(Mh,{initial:{opacity:0,y:20},animate:G?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20},children:"Key Highlights"}),u.jsx(kh,{variants:_h,initial:"hidden",animate:G?"visible":"hidden",children:At.map((k,K)=>u.jsxs(Dh,{variants:Rh,children:[u.jsx(Ch,{children:k.title}),u.jsx(Oh,{children:k.text})]},K))})]}),u.jsxs(Hh,{initial:{opacity:0,y:30},animate:H?{opacity:1,y:0}:{},transition:{type:"spring",stiffness:100,damping:20,delay:.4},children:[u.jsx(Bh,{children:"Want to know more?"}),u.jsxs(Uh,{href:g.buttonProps.link,target:"_blank",rel:"noopener noreferrer",whileHover:{scale:1.03},whileTap:{scale:.98},transition:{type:"spring",stiffness:400,damping:25},children:[u.jsx("span",{children:g.buttonProps.name}),u.jsx("svg",{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",children:u.jsx("path",{d:"M5 12h14M12 5l7 7-7 7"})})]})]})]})})},Xh=ut`
   from {
     transform: scaleX(0);
   }
