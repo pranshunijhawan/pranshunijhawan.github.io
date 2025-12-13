@@ -50,8 +50,10 @@
         margin: 0;
         padding: 0;
       }
-      /* Dark mode (default) */
-      html, body, #root {
+      /* Dark mode */
+      html[data-theme="dark"], 
+      html[data-theme="dark"] body, 
+      html[data-theme="dark"] #root {
         background-color: #0a0a0a;
       }
       /* Light mode */
@@ -59,6 +61,17 @@
       html[data-theme="light"] body, 
       html[data-theme="light"] #root {
         background-color: #fafafa;
+      }
+      /* Fallback based on system preference (before JS runs) */
+      @media (prefers-color-scheme: dark) {
+        html:not([data-theme]), body, #root {
+          background-color: #0a0a0a;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        html:not([data-theme]), body, #root {
+          background-color: #fafafa;
+        }
       }
       /* Cover until React loads */
       #root:empty::before {
@@ -72,10 +85,23 @@
     <!-- Set theme before paint to prevent flash -->
     <script>
       (function() {
-        var theme = localStorage.getItem('portfolio-theme-mode');
-        if (theme === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
+        var savedTheme = localStorage.getItem('portfolio-theme-mode');
+        var theme;
+        var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        console.log('[Theme Init] Saved:', savedTheme, '| System prefers dark:', systemPrefersDark);
+        
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          // User has a saved preference
+          theme = savedTheme;
+          console.log('[Theme Init] Using saved preference:', theme);
+        } else {
+          // No saved preference - use system theme
+          theme = systemPrefersDark ? 'dark' : 'light';
+          console.log('[Theme Init] Using system preference:', theme);
         }
+        
+        document.documentElement.setAttribute('data-theme', theme);
       })();
     </script>
     
@@ -85,7 +111,7 @@
     
     <!-- DNS Prefetch for external resources (lazy loaded) -->
     <link rel="dns-prefetch" href="https://images.credly.com" />
-    <script type="module" crossorigin src="/assets/index-CsAbDOXu.js"></script>
+    <script type="module" crossorigin src="/assets/index-Dg8DpOwM.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-DlBnNAMw.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-motion-BoSVoJ0s.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-styled-Du6AN5G6.js">
