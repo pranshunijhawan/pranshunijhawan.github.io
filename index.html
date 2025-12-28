@@ -92,21 +92,10 @@
     <script>
       (function() {
         var savedTheme = localStorage.getItem('portfolio-theme-mode');
-        var theme;
         var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        console.log('[Theme Init] Saved:', savedTheme, '| System prefers dark:', systemPrefersDark);
-        
-        if (savedTheme === 'dark' || savedTheme === 'light') {
-          // User has a saved preference
-          theme = savedTheme;
-          console.log('[Theme Init] Using saved preference:', theme);
-        } else {
-          // No saved preference - use system theme
-          theme = systemPrefersDark ? 'dark' : 'light';
-          console.log('[Theme Init] Using system preference:', theme);
-        }
-        
+        var theme = (savedTheme === 'dark' || savedTheme === 'light') 
+          ? savedTheme 
+          : (systemPrefersDark ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
       })();
     </script>
@@ -117,7 +106,7 @@
     
     <!-- DNS Prefetch for external resources (lazy loaded) -->
     <link rel="dns-prefetch" href="https://images.credly.com" />
-    <script type="module" crossorigin src="/assets/index-DGlGHhm_.js"></script>
+    <script type="module" crossorigin src="/assets/index-BFk7facY.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-DlBnNAMw.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-motion-NN0UiyF0.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-styled-TQ_oEx1d.js">
@@ -128,23 +117,13 @@
     <!-- Unregister old PWA service workers and clear caches -->
     <script>
       if ('serviceWorker' in navigator) {
-        // Clear all caches
         if ('caches' in window) {
-          caches.keys().then(names => {
-            names.forEach(name => {
-              caches.delete(name);
-              console.log('Cache deleted:', name);
-            });
+          caches.keys().then(function(names) {
+            names.forEach(function(name) { caches.delete(name); });
           });
         }
-        
-        // Unregister all service workers
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-          registrations.forEach(registration => {
-            registration.unregister().then(() => {
-              console.log('Service worker unregistered');
-            });
-          });
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          registrations.forEach(function(registration) { registration.unregister(); });
         });
       }
     </script>
