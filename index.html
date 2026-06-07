@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "uinjfwsahj");
-  </script>
     <meta charset="UTF-8" />
     
     <!-- Favicons & App Icons - P Logo -->
@@ -101,16 +94,21 @@
     </script>
     
     <!-- Preload critical images - WebP preferred -->
-    <link rel="preload" href="/images/profile.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/images/profile.webp" as="image" type="image/webp" fetchpriority="high" />
     <link rel="preload" href="/images/logo-optimized.webp" as="image" type="image/webp" />
     
+    <!-- Preconnect to the (deferred) Clarity analytics origins so the handshake
+         is warm by the time it loads, without blocking initial render. -->
+    <link rel="preconnect" href="https://www.clarity.ms" crossorigin />
+    <link rel="preconnect" href="https://scripts.clarity.ms" crossorigin />
+    <link rel="dns-prefetch" href="https://r.clarity.ms" />
+
     <!-- DNS Prefetch for external resources (lazy loaded) -->
     <link rel="dns-prefetch" href="https://images.credly.com" />
-    <script type="module" crossorigin src="/assets/index-BmuUKzdR.js"></script>
+    <script type="module" crossorigin src="/assets/index-r1p0Uu9h.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-DlBnNAMw.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-motion-C8MGYtJI.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-styled-D8mjEXd4.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-DYVl74dH.css">
   </head>
   <body>
     <div id="root"></div>
@@ -129,5 +127,28 @@
       }
     </script>
     
+
+    <!-- Microsoft Clarity: loaded off the critical path (after load + idle) so
+         it never delays first paint / LCP. -->
+    <script>
+      (function () {
+        function loadClarity() {
+          (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+          })(window, document, 'clarity', 'script', 'uinjfwsahj');
+        }
+        var start = function () {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadClarity, { timeout: 4000 });
+          } else {
+            setTimeout(loadClarity, 2500);
+          }
+        };
+        if (document.readyState === 'complete') start();
+        else window.addEventListener('load', start, { once: true });
+      })();
+    </script>
   </body>
 </html>
