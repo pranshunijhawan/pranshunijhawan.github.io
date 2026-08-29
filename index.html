@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     
     <!-- Favicons & App Icons - P Logo -->
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
     <link rel="icon" type="image/webp" href="/images/logo-100.webp" />
     <link rel="icon" type="image/png" href="/images/logo-optimized.png" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
@@ -93,9 +94,9 @@
       })();
     </script>
     
-    <!-- Preload critical images - WebP preferred -->
+    <!-- Preload critical images - WebP preferred. The nav mark is inline SVG, so the
+         only image on the critical path is the portrait. -->
     <link rel="preload" href="/images/profile.webp" as="image" type="image/webp" fetchpriority="high" />
-    <link rel="preload" href="/images/logo-optimized.webp" as="image" type="image/webp" fetchpriority="high" />
 
     <!-- Theme cross-fade. Inlined, not in createGlobalStyle: runtime-injected globals go stale across hot reloads, and a .css file would cost a render-blocking request. -->
     <style>
@@ -113,7 +114,7 @@
         transition: none;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-9CvRftBL.js"></script>
+    <script type="module" crossorigin src="/assets/index-CpgvHizl.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-react-DlBnNAMw.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-motion-C8MGYtJI.js">
     <link rel="modulepreload" crossorigin href="/assets/vendor-styled-CTMXd9gs.js">
