@@ -1,140 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="bg-canvas" style="overflow: hidden">
   <head>
     <meta charset="UTF-8" />
-    
-    <!-- Favicons & App Icons - P Logo -->
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
-    <link rel="icon" type="image/webp" href="/images/logo-100.webp" />
-    <link rel="icon" type="image/png" href="/images/logo-optimized.png" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <link rel="shortcut icon" href="/images/logo-100.webp" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects in software engineering and architecture." />
-    <meta name="keywords" content="Pranshu Nijhawan, Engineering Leader, Software Architect, SaaS, Cloud Architecture, Azure, AWS, React, TypeScript, Node.js" />
-    <meta name="author" content="Pranshu Nijhawan" />
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Pranshu Nijhawan" />
-    <meta property="og:title" content="Pranshu Nijhawan | Digital Portfolio" />
-    <meta property="og:description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects in software engineering and architecture." />
-    <meta property="og:url" content="https://www.pranshunijhawan.dev/" />
-    <meta property="og:image" content="https://www.pranshunijhawan.dev/images/og-image.png" />
-    <meta property="og:image:secure_url" content="https://www.pranshunijhawan.dev/images/og-image.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Pranshu Nijhawan - Digital Portfolio" />
-    <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pranshu Nijhawan | Digital Portfolio" />
-    <meta name="twitter:description" content="Personal portfolio showcasing professional experience, technical expertise, certifications, and projects." />
-    <meta name="twitter:image" content="https://www.pranshunijhawan.dev/images/og-image.png" />
-    <meta name="twitter:image:alt" content="Pranshu Nijhawan - Digital Portfolio" />
-    
-    <!-- Theme Color -->
+    <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    
     <title>PN</title>
-    
-    <!-- Critical CSS to prevent flash - theme aware -->
-    <style>
-      html, body, #root {
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-      }
-      /* Dark mode */
-      html[data-theme="dark"], 
-      html[data-theme="dark"] body, 
-      html[data-theme="dark"] #root {
-        background-color: #000000;
-      }
-      /* Light mode */
-      html[data-theme="light"], 
-      html[data-theme="light"] body, 
-      html[data-theme="light"] #root {
-        background-color: #EBECEF;
-      }
-      /* Fallback based on system preference (before JS runs) */
-      @media (prefers-color-scheme: dark) {
-        html:not([data-theme]), body, #root {
-          background-color: #000000;
-        }
-      }
-      @media (prefers-color-scheme: light) {
-        html:not([data-theme]), body, #root {
-          background-color: #EBECEF;
-        }
-      }
-      /* Cover until React loads */
-      #root:empty::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background-color: inherit;
-        z-index: 9999;
-      }
-    </style>
-    <!-- Set theme before paint to prevent flash -->
-    <script>
-      (function() {
-        var savedTheme = localStorage.getItem('portfolio-theme-mode');
-        var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = (savedTheme === 'dark' || savedTheme === 'light') 
-          ? savedTheme 
-          : (systemPrefersDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-      })();
-    </script>
-    
-    <!-- Preload critical images - WebP preferred. The nav mark is inline SVG, so the
-         only image on the critical path is the portrait. -->
-    <link rel="preload" href="/images/profile.webp" as="image" type="image/webp" fetchpriority="high" />
-
-    <!-- Theme cross-fade. Inlined, not in createGlobalStyle: runtime-injected globals go stale across hot reloads, and a .css file would cost a render-blocking request. -->
-    <style>
-      /* Linear: plus-lighter blending needs complementary opacities, and a curved ramp makes brightness move unevenly. */
-      ::view-transition-old(root),
-      ::view-transition-new(root),
-      ::view-transition-group(root) {
-        animation-duration: 0.4s;
-        animation-timing-function: linear;
-      }
-
-      /* Otherwise links repaint their own colour on top of the cross-fade. */
-      html:active-view-transition a,
-      html:active-view-transition button {
-        transition: none;
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-95UOspdv.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-DlBnNAMw.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-C8MGYtJI.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-styled-CTMXd9gs.js">
+    <meta name="description" content="Pranshu Nijhawan, Principal Architect at McKinsey &amp; Company. Agentic AI and platform architecture." />
+    <link rel="canonical" href="https://pranshunijhawan.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pranshu Nijhawan" />
+    <meta property="og:description" content="Principal Architect at McKinsey &amp; Company. Agentic AI and platform architecture." />
+    <meta property="og:url" content="https://pranshunijhawan.dev/" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/geist-latin-wght-normal-BgDaEnEv.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/geist-mono-latin-wght-normal-XN7g48iV.woff2" />
+    <script type="module" crossorigin src="/assets/index-B1UgqkQt.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-Bfx28lbG.js">
+    <link rel="modulepreload" crossorigin href="/assets/gsap-CMVOkoZ6.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-CjY4fVYN.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-bJqQsnXu.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-dfrEAxlf.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-BM4vpLTZ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BF8lKwst.css">
   </head>
-  <body>
+  <body class="bg-canvas text-ink antialiased">
     <div id="root"></div>
-    
-    <!-- Unregister old PWA service workers and clear caches -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        if ('caches' in window) {
-          caches.keys().then(function(names) {
-            names.forEach(function(name) { caches.delete(name); });
-          });
-        }
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          registrations.forEach(function(registration) { registration.unregister(); });
-        });
-      }
-    </script>
-    
   </body>
 </html>
