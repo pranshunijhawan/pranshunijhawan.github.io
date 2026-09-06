@@ -361,9 +361,7 @@ Error generating stack: `+e.message+`
   right: calc(50% - 50vw);
   z-index: 0;
   pointer-events: none;
-  background: color-mix(in srgb, var(--bg) 78%, transparent);
-  backdrop-filter: blur(20px) saturate(120%);
-  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  background: var(--bg);
   will-change: opacity;
   &::after {
     content: '';
@@ -373,23 +371,6 @@ Error generating stack: `+e.message+`
     right: 0;
     height: 18px;
     background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 62%, transparent), transparent);
-  }
-  [data-theme='light'] & {
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(20px) saturate(112%);
-    -webkit-backdrop-filter: blur(20px) saturate(112%);
-  }
-  @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
-    background: var(--bg);
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-  }
-  @media (pointer: coarse) {
-    nav[data-open] & {
-      background: var(--bg);
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-    }
   }
   @media (prefers-contrast: more) {
     border-bottom: 1px solid var(--line-2);
