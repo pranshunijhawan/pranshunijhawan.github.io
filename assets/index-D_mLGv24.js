@@ -670,7 +670,7 @@ Error generating stack: `+e.message+`
   font-size: 16px;
   color: var(--ink-3);
   strong { color: var(--ink); font-weight: 600; }
-`,sv=({data:e,start:t})=>{let n=Nd(),r=(0,y.useRef)(null),i=(0,y.useRef)(null),a=(0,y.useRef)(null),[o]=(0,y.useState)(()=>!t&&!window.matchMedia(`(prefers-reduced-motion: reduce)`).matches),[s,c]=(0,y.useState)(!o),[l,u]=(0,y.useState)(!1);(0,y.useEffect)(()=>{if(!s)return window.scrollTo(0,0),Ih()},[s]),(0,y.useLayoutEffect)(()=>{let e=i.current,t=a.current;if(!e||!t)return;let n=0;return Nh(t,()=>{let r=Math.round(Math.min(t.offsetHeight,e.clientWidth*.45/zh));Math.abs(r-n)>=2&&(n=r,e.style.setProperty(`--logo-h`,`${r}px`)),u(!0)})},[]);let d=e=>({initial:n?{opacity:0}:{y:`110%`},animate:t?n?{opacity:1}:{y:`0%`}:n?{opacity:0}:{y:`110%`},transition:{duration:.9,delay:t?e:0,ease:Q.out}}),f=e=>({initial:{opacity:0,y:n?0:14},animate:t?{opacity:1,y:0}:{opacity:0,y:n?0:14},transition:{duration:$.enterLong,delay:t?e:0,ease:Q.out}});return(0,L.jsxs)(X_,{id:`home`,children:[(0,L.jsx)(Z_,{children:(0,L.jsxs)(Q_,{ref:i,children:[(0,L.jsx)($_,{ref:r,$ready:s,"aria-label":e.name,role:`img`,children:(0,L.jsx)(Sg,{})}),(0,L.jsxs)(ev,{ref:a,children:[(0,L.jsx)(rv,{as:`h1`,children:e.name}),(0,L.jsxs)(iv,{children:[(0,L.jsx)(rv,{children:e.headline.join(` `)}),(0,L.jsx)(av,{$dim:!0,"aria-hidden":!0,children:(0,L.jsx)(W.span,{style:{display:`block`},...d(.15),children:e.headline[0]})}),(0,L.jsx)(av,{"aria-hidden":!0,children:(0,L.jsx)(W.span,{style:{display:`block`},...d(.25),children:e.headline[1]})})]}),(0,L.jsxs)(ov,{...f(.36),children:[(0,L.jsx)(`strong`,{children:e.role}),` at `,e.company]}),(0,L.jsxs)(tv,{children:[(0,L.jsx)(nv,{...f(.46),children:e.architectureIntro}),(0,L.jsx)(Y_,{groups:e.architecture,principles:e.principles,start:t,reduce:!!n})]})]})]})}),o&&l&&!s&&(0,L.jsx)(A_,{target:r,fly:t,onLanded:()=>c(!0)})]})},cv=X.div`
+`,sv=740,cv=.45,lv=({data:e,start:t})=>{let n=Nd(),r=(0,y.useRef)(null),i=(0,y.useRef)(null),a=(0,y.useRef)(null),[o]=(0,y.useState)(()=>!t&&!window.matchMedia(`(prefers-reduced-motion: reduce)`).matches),[s,c]=(0,y.useState)(!o),[l,u]=(0,y.useState)(!1);(0,y.useEffect)(()=>{if(!s)return window.scrollTo(0,0),Ih()},[s]),(0,y.useLayoutEffect)(()=>{let e=i.current,t=a.current;if(!e||!t)return;let n=0;return Nh(t,()=>{let r=e.clientWidth,i=r*cv;if(window.matchMedia(_h.desktop).matches){let t=parseFloat(getComputedStyle(e).columnGap)||0;i=Math.min(i,r-t-sv)}let a=Math.round(Math.min(t.offsetHeight,i/zh));Math.abs(a-n)>=2&&(n=a,e.style.setProperty(`--logo-h`,`${a}px`)),u(!0)})},[]);let d=e=>({initial:n?{opacity:0}:{y:`110%`},animate:t?n?{opacity:1}:{y:`0%`}:n?{opacity:0}:{y:`110%`},transition:{duration:.9,delay:t?e:0,ease:Q.out}}),f=e=>({initial:{opacity:0,y:n?0:14},animate:t?{opacity:1,y:0}:{opacity:0,y:n?0:14},transition:{duration:$.enterLong,delay:t?e:0,ease:Q.out}});return(0,L.jsxs)(X_,{id:`home`,children:[(0,L.jsx)(Z_,{children:(0,L.jsxs)(Q_,{ref:i,children:[(0,L.jsx)($_,{ref:r,$ready:s,"aria-label":e.name,role:`img`,children:(0,L.jsx)(Sg,{})}),(0,L.jsxs)(ev,{ref:a,children:[(0,L.jsx)(rv,{as:`h1`,children:e.name}),(0,L.jsxs)(iv,{children:[(0,L.jsx)(rv,{children:e.headline.join(` `)}),(0,L.jsx)(av,{$dim:!0,"aria-hidden":!0,children:(0,L.jsx)(W.span,{style:{display:`block`},...d(.15),children:e.headline[0]})}),(0,L.jsx)(av,{"aria-hidden":!0,children:(0,L.jsx)(W.span,{style:{display:`block`},...d(.25),children:e.headline[1]})})]}),(0,L.jsxs)(ov,{...f(.36),children:[(0,L.jsx)(`strong`,{children:e.role}),` at `,e.company]}),(0,L.jsxs)(tv,{children:[(0,L.jsx)(nv,{...f(.46),children:e.architectureIntro}),(0,L.jsx)(Y_,{groups:e.architecture,principles:e.principles,start:t,reduce:!!n})]})]})]})}),o&&l&&!s&&(0,L.jsx)(A_,{target:r,fly:t,onLanded:()=>c(!0)})]})},uv=X.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
@@ -680,19 +680,19 @@ Error generating stack: `+e.message+`
     grid-template-rows: auto auto;
     gap: 16px;
   }
-`,lv=X(Dg)`
+`,dv=X(Dg)`
   display: flex;
   grid-column: ${({$mobile:e})=>e??`1 / -1`};
   ${Z.tablet} { grid-area: ${({$desk:e})=>e}; }
-`,uv=ch`
+`,fv=ch`
   position: relative;
   flex: 1;
   border-radius: var(--r-xl);
   border: 1px solid var(--line);
   background: var(--surface);
   overflow: hidden;
-`,dv=X.div`
-  ${uv}
+`,pv=X.div`
+  ${fv}
   padding: 26px 24px;
   display: flex;
   flex-direction: column;
@@ -701,32 +701,32 @@ Error generating stack: `+e.message+`
   align-items: flex-start;
   ${Z.tablet} { padding: 28px 26px; }
   p { font-size: clamp(15px, 1.5vw, 16px); line-height: 1.7; color: var(--ink); }
-`,fv={teal:`linear-gradient(160deg, rgba(9, 141, 157, 0.22), rgba(34, 55, 125, 0.08) 60%, transparent)`,green:`linear-gradient(160deg, rgba(9, 141, 157, 0.16), rgba(16, 105, 84, 0.1) 60%, transparent)`,violet:`linear-gradient(160deg, rgba(94, 70, 168, 0.22), rgba(34, 55, 125, 0.08) 60%, transparent)`},pv=X.span`
+`,mv={teal:`linear-gradient(160deg, rgba(9, 141, 157, 0.22), rgba(34, 55, 125, 0.08) 60%, transparent)`,green:`linear-gradient(160deg, rgba(9, 141, 157, 0.16), rgba(16, 105, 84, 0.1) 60%, transparent)`,violet:`linear-gradient(160deg, rgba(94, 70, 168, 0.22), rgba(34, 55, 125, 0.08) 60%, transparent)`},hv=X.span`
   font-size: clamp(34px, 3.4vw, 40px);
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1;
   color: var(--ink);
-`,mv=X.p`
+`,gv=X.p`
   font-size: 13px;
   line-height: 1.5;
   color: var(--ink-3);
-`,hv=X.div`
-  ${uv}
+`,_v=X.div`
+  ${fv}
   padding: 22px 20px 20px;
   min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 28px;
-  background-image: ${({$tone:e})=>fv[e]};
+  background-image: ${({$tone:e})=>mv[e]};
   ${({$wide:e})=>e&&ch`
     flex-direction: row;
     align-items: center;
     gap: 22px;
     min-height: 0;
-    ${pv} { flex: none; min-width: 3ch; }
-    ${mv} { max-width: 30ch; }
+    ${hv} { flex: none; min-width: 3ch; }
+    ${gv} { max-width: 30ch; }
   `}
   ${Z.tablet} {
     padding: 24px 22px 22px;
@@ -734,29 +734,29 @@ Error generating stack: `+e.message+`
     flex-direction: column;
     align-items: stretch;
     gap: 40px;
-    ${mv} { max-width: none; }
+    ${gv} { max-width: none; }
   }
   [data-theme='light'] & { background-image: none; }
-`,gv=X.div`
-  ${uv}
+`,vv=X.div`
+  ${fv}
   padding: 24px 22px 22px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   h3 { font-size: 15.5px; font-weight: 500; line-height: 1.35; letter-spacing: -0.01em; color: var(--ink); }
   p { font-size: 13px; line-height: 1.5; color: var(--ink-3); }
-`,_v=X.span`
+`,yv=X.span`
   font-size: 13px;
   color: var(--ink-3);
   margin-bottom: 10px;
-`,vv=X.span`
+`,bv=X.span`
   margin-top: auto;
   padding-top: 28px;
   font-size: 12px;
   letter-spacing: 0.12em;
   color: var(--ink-3);
-`,yv=X.div`
-  ${uv}
+`,xv=X.div`
+  ${fv}
   flex: none;
   width: min(100%, 520px);
   margin: 0 auto;
@@ -770,7 +770,7 @@ Error generating stack: `+e.message+`
     object-fit: cover;
     object-position: center top;
   }
-`,bv=X(W.a)`
+`,Sv=X(W.a)`
   position: relative;
   display: inline-grid;
   grid-template-columns: auto 1px 46px;
@@ -798,29 +798,29 @@ Error generating stack: `+e.message+`
     &::after { transform: scaleX(1); }
   }
   ${Z.hover} { &:hover svg { transform: translateY(2px); } }
-`,xv=X.span`
+`,Cv=X.span`
   padding: 13px 18px 13px 20px;
   font-size: 14.5px;
   font-weight: 600;
   letter-spacing: -0.005em;
   white-space: nowrap;
-`,Sv=X.span`
+`,wv=X.span`
   background: var(--line-2);
   transition: background var(--dur-surface) var(--ease-out);
-  ${bv}:hover & { background: var(--accent); }
-`,Cv=X.span`
+  ${Sv}:hover & { background: var(--accent); }
+`,Tv=X.span`
   display: grid;
   place-items: center;
   color: var(--accent-ink);
   svg { width: 16px; height: 16px; transition: transform var(--dur-surface) var(--ease-out); }
-`,wv=[`1 / 3 / 2 / 4`,`2 / 1 / 3 / 2`,`2 / 2 / 3 / 3`],Tv=({data:e})=>(0,L.jsx)(Mg,{id:`about`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`About`}),(0,L.jsxs)(cv,{children:[(0,L.jsx)(lv,{$desk:`1 / 1 / 2 / 3`,children:(0,L.jsxs)(dv,{children:[(0,L.jsx)(`p`,{children:e.content[0]}),(0,L.jsx)(jg,{strength:.3,style:{display:`inline-block`},children:(0,L.jsxs)(bv,{href:e.buttonProps.link,target:`_blank`,rel:`noopener noreferrer`,whileTap:{scale:.98},children:[(0,L.jsx)(xv,{children:e.buttonProps.name}),(0,L.jsx)(Sv,{"aria-hidden":`true`}),(0,L.jsx)(Cv,{"aria-hidden":`true`,children:(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,L.jsx)(`path`,{d:`M12 4v11M7.5 10.5 12 15l4.5-4.5M5 20h14`})})})]})})]})}),(0,L.jsx)(lv,{$desk:`1 / 4 / 3 / 5`,delay:.06,children:(0,L.jsx)(yv,{children:(0,L.jsx)(`img`,{src:`/images/profile.webp`,srcSet:`/images/profile-440.webp 440w, /images/profile.webp 880w`,sizes:`(min-width: 1024px) 30vw, min(100vw, 520px)`,alt:``,width:440,height:440,loading:`lazy`,decoding:`async`})})}),e.stats.slice(0,wv.length).map((e,t)=>(0,L.jsx)(lv,{$mobile:t===2?`1 / -1`:`auto`,$desk:wv[t],delay:.1+t*.06,children:(0,L.jsxs)(hv,{$tone:e.tone,$wide:t===2,children:[(0,L.jsx)(pv,{children:e.value}),(0,L.jsx)(mv,{children:e.label})]})},e.label)),(0,L.jsx)(lv,{$desk:`2 / 3 / 3 / 4`,delay:.28,children:(0,L.jsxs)(gv,{children:[(0,L.jsx)(_v,{children:`Education`}),(0,L.jsx)(`h3`,{children:e.education.degree}),(0,L.jsx)(`p`,{children:e.education.institution}),(0,L.jsx)(vv,{children:e.education.period})]})})]})]})}),Ev=X.div`
+`,Ev=[`1 / 3 / 2 / 4`,`2 / 1 / 3 / 2`,`2 / 2 / 3 / 3`],Dv=({data:e})=>(0,L.jsx)(Mg,{id:`about`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`About`}),(0,L.jsxs)(uv,{children:[(0,L.jsx)(dv,{$desk:`1 / 1 / 2 / 3`,children:(0,L.jsxs)(pv,{children:[(0,L.jsx)(`p`,{children:e.content[0]}),(0,L.jsx)(jg,{strength:.3,style:{display:`inline-block`},children:(0,L.jsxs)(Sv,{href:e.buttonProps.link,target:`_blank`,rel:`noopener noreferrer`,whileTap:{scale:.98},children:[(0,L.jsx)(Cv,{children:e.buttonProps.name}),(0,L.jsx)(wv,{"aria-hidden":`true`}),(0,L.jsx)(Tv,{"aria-hidden":`true`,children:(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.6`,strokeLinecap:`round`,strokeLinejoin:`round`,children:(0,L.jsx)(`path`,{d:`M12 4v11M7.5 10.5 12 15l4.5-4.5M5 20h14`})})})]})})]})}),(0,L.jsx)(dv,{$desk:`1 / 4 / 3 / 5`,delay:.06,children:(0,L.jsx)(xv,{children:(0,L.jsx)(`img`,{src:`/images/profile.webp`,srcSet:`/images/profile-440.webp 440w, /images/profile.webp 880w`,sizes:`(min-width: 1024px) 30vw, min(100vw, 520px)`,alt:``,width:440,height:440,loading:`lazy`,decoding:`async`})})}),e.stats.slice(0,Ev.length).map((e,t)=>(0,L.jsx)(dv,{$mobile:t===2?`1 / -1`:`auto`,$desk:Ev[t],delay:.1+t*.06,children:(0,L.jsxs)(_v,{$tone:e.tone,$wide:t===2,children:[(0,L.jsx)(hv,{children:e.value}),(0,L.jsx)(gv,{children:e.label})]})},e.label)),(0,L.jsx)(dv,{$desk:`2 / 3 / 3 / 4`,delay:.28,children:(0,L.jsxs)(vv,{children:[(0,L.jsx)(yv,{children:`Education`}),(0,L.jsx)(`h3`,{children:e.education.degree}),(0,L.jsx)(`p`,{children:e.education.institution}),(0,L.jsx)(bv,{children:e.education.period})]})})]})]})}),Ov=X.div`
   ${Z.tablet} {
     display: grid;
     grid-template-columns: minmax(0, 520px) minmax(0, 1fr);
     gap: 64px;
     align-items: start;
   }
-`,Dv=X.div`
+`,kv=X.div`
   display: none;
   ${Z.tablet} {
     display: flex;
@@ -828,7 +828,7 @@ Error generating stack: `+e.message+`
     position: sticky;
     top: calc(var(--nav-h) + 56px);
   }
-`,Ov=X.div`
+`,Av=X.div`
   position: sticky;
   top: var(--nav-h);
   z-index: 5;
@@ -840,14 +840,14 @@ Error generating stack: `+e.message+`
   background: var(--bg);
   border-bottom: 1px solid var(--line);
   ${Z.tablet} { display: none; }
-`,kv=X.p`
+`,jv=X.p`
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.25;
   color: var(--ink);
   min-width: 0;
-`,Av=X(W.div)`
+`,Mv=X(W.div)`
   --s: ${({$mini:e})=>e?`76px`:`clamp(190px, 17vw, 236px)`};
   --gap: ${({$mini:e})=>e?`8px`:`clamp(26px, 2.4vw, 34px)`};
   --lift: ${({$mini:e})=>e?`8px`:`28px`};
@@ -856,19 +856,19 @@ Error generating stack: `+e.message+`
   flex-shrink: 0;
   width: calc(var(--s) * 1.414 + var(--callout));
   height: calc(var(--gap) * (var(--n) - 1) + var(--s) * 0.707 + var(--lift) + 16px);
-`,jv=X(W.div)`
+`,Nv=X(W.div)`
   position: absolute;
   left: calc(var(--s) * 0.207);
   top: calc(var(--lift) + 8px + var(--s) * 0.354 - var(--s) / 2 + var(--i) * var(--gap));
   width: var(--s);
   height: var(--s);
   z-index: calc(var(--n) - var(--i));
-`,Mv=X.div`
+`,Pv=X.div`
   position: absolute;
   inset: 0;
   transition: transform var(--dur-scene) var(--ease-out);
   &[data-pos='above'], &[data-pos='active'] { transform: translateY(calc(var(--lift) * -1)); }
-`,Nv=X.div`
+`,Fv=X.div`
   --grid: var(--line);
   position: absolute;
   inset: 0;
@@ -892,7 +892,7 @@ Error generating stack: `+e.message+`
     box-shadow: 0 0 0 1px rgba(var(--accent-rgb), 0.3), 0 0 40px rgba(var(--accent-rgb), 0.32);
   }
   [data-pos='below'] & { opacity: 0.8; }
-`,Pv=X.span`
+`,Iv=X.span`
   position: absolute;
   top: 50%;
   left: calc(50% + var(--s) * 0.707 + 8px);
@@ -915,7 +915,7 @@ Error generating stack: `+e.message+`
   }
   [data-pos='active'] & { color: var(--ink); }
   [data-pos='active'] &::before { background: var(--accent); }
-`,Fv=X.article`
+`,Lv=X.article`
   padding: 34px 0 38px;
   border-bottom: 1px solid var(--line);
   &:last-child { border-bottom: 0; }
@@ -923,7 +923,7 @@ Error generating stack: `+e.message+`
     padding: 44px 0 52px;
     &:first-child { padding-top: 8px; }
   }
-`,Iv=X.h3`
+`,Rv=X.h3`
   font-size: clamp(22px, 2.4vw, 28px);
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -931,12 +931,12 @@ Error generating stack: `+e.message+`
   color: var(--ink-3);
   transition: color var(--dur-scene) var(--ease-out);
   [data-active='true'] & { color: var(--ink); }
-`,Lv=X(W.ul)`
+`,zv=X(W.ul)`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
-`,Rv=X(W.li)`
+`,Bv=X(W.li)`
   padding: 9px 14px;
   border-radius: var(--r-md);
   border: 1px solid var(--line);
@@ -953,14 +953,14 @@ Error generating stack: `+e.message+`
     border-color: color-mix(in srgb, var(--accent) 50%, var(--line-2));
     background: rgba(var(--accent-rgb), 0.07);
   }
-`,zv={hidden:{},visible:{transition:{staggerChildren:.07,delayChildren:.1}}},Bv={hidden:{opacity:0,y:-36},visible:{opacity:1,y:0,transition:{duration:$.enterLong,ease:Q.out}}},Vv={hidden:{},visible:{transition:{staggerChildren:.04,delayChildren:.1}}},Hv={hidden:{opacity:0,y:10},visible:{opacity:1,y:0,transition:{duration:$.frame,ease:Q.out}}},Uv=(e,t)=>e===t?`active`:e<t?`above`:`below`,Wv=({cats:e,active:t,mini:n,reduce:r})=>(0,L.jsx)(Av,{$mini:n,"aria-hidden":`true`,style:{"--n":e.length},initial:!r&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.4},variants:zv,children:e.map((e,i)=>(0,L.jsx)(jv,{style:{"--i":i},variants:r?void 0:Bv,children:(0,L.jsxs)(Mv,{"data-pos":Uv(i,t),children:[(0,L.jsx)(Nv,{}),!n&&(0,L.jsx)(Pv,{children:e.layer})]})},e.category))}),Gv=({data:e})=>{let t=Nd()??!1,n=e.skills,[r,i]=(0,y.useState)(0),a=(0,y.useRef)([]);return(0,y.useEffect)(()=>{let e=new IntersectionObserver(e=>{for(let t of e)t.isIntersecting&&i(Number(t.target.dataset.index))},{rootMargin:`-38% 0px -54% 0px`,threshold:0});return a.current.forEach(t=>t&&e.observe(t)),()=>e.disconnect()},[n.length]),(0,L.jsx)(Mg,{id:`technologyproficiency`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`Skills`,lead:`The stack behind agentic AI systems, billion-row analytics, and platforms that stay up while they scale.`}),(0,L.jsxs)(Ev,{children:[(0,L.jsx)(Dv,{children:(0,L.jsx)(Wv,{cats:n,active:r,reduce:t})}),(0,L.jsxs)(`div`,{children:[(0,L.jsxs)(Ov,{children:[(0,L.jsx)(Wv,{cats:n,active:r,mini:!0,reduce:t}),(0,L.jsx)(kv,{"aria-live":`polite`,children:n[r]?.category})]}),n.map((e,n)=>(0,L.jsxs)(Fv,{ref:e=>{a.current[n]=e},"data-index":n,"data-active":n===r,children:[(0,L.jsx)(Iv,{children:e.category}),(0,L.jsx)(Lv,{initial:!t&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.3},variants:Vv,children:e.skills.map(e=>(0,L.jsx)(Rv,{variants:t?void 0:Hv,children:e},e))})]},e.category))]})]})]})})},Kv=[`january`,`february`,`march`,`april`,`may`,`june`,`july`,`august`,`september`,`october`,`november`,`december`];function qv(e,t){let n=e.trim().toLowerCase();if(n===`present`||n===`now`)return t;let[r,i]=n.split(/\s+/),a=Kv.indexOf(r);return parseInt(i??r,10)+(a>=0?a/12:0)}function Jv(e){let t=e.trim();if(/^(present|now)$/i.test(t))return`Now`;let[n,r]=t.split(/\s+/);return r?`${n.slice(0,3)} ${r}`:n}var Yv=260,Xv=`font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; color: var(--ink-3);`,Zv=X.div`
+`,Vv={hidden:{},visible:{transition:{staggerChildren:.07,delayChildren:.1}}},Hv={hidden:{opacity:0,y:-36},visible:{opacity:1,y:0,transition:{duration:$.enterLong,ease:Q.out}}},Uv={hidden:{},visible:{transition:{staggerChildren:.04,delayChildren:.1}}},Wv={hidden:{opacity:0,y:10},visible:{opacity:1,y:0,transition:{duration:$.frame,ease:Q.out}}},Gv=(e,t)=>e===t?`active`:e<t?`above`:`below`,Kv=({cats:e,active:t,mini:n,reduce:r})=>(0,L.jsx)(Mv,{$mini:n,"aria-hidden":`true`,style:{"--n":e.length},initial:!r&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.4},variants:Vv,children:e.map((e,i)=>(0,L.jsx)(Nv,{style:{"--i":i},variants:r?void 0:Hv,children:(0,L.jsxs)(Pv,{"data-pos":Gv(i,t),children:[(0,L.jsx)(Fv,{}),!n&&(0,L.jsx)(Iv,{children:e.layer})]})},e.category))}),qv=({data:e})=>{let t=Nd()??!1,n=e.skills,[r,i]=(0,y.useState)(0),a=(0,y.useRef)([]);return(0,y.useEffect)(()=>{let e=new IntersectionObserver(e=>{for(let t of e)t.isIntersecting&&i(Number(t.target.dataset.index))},{rootMargin:`-38% 0px -54% 0px`,threshold:0});return a.current.forEach(t=>t&&e.observe(t)),()=>e.disconnect()},[n.length]),(0,L.jsx)(Mg,{id:`technologyproficiency`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`Skills`,lead:`The stack behind agentic AI systems, billion-row analytics, and platforms that stay up while they scale.`}),(0,L.jsxs)(Ov,{children:[(0,L.jsx)(kv,{children:(0,L.jsx)(Kv,{cats:n,active:r,reduce:t})}),(0,L.jsxs)(`div`,{children:[(0,L.jsxs)(Av,{children:[(0,L.jsx)(Kv,{cats:n,active:r,mini:!0,reduce:t}),(0,L.jsx)(jv,{"aria-live":`polite`,children:n[r]?.category})]}),n.map((e,n)=>(0,L.jsxs)(Lv,{ref:e=>{a.current[n]=e},"data-index":n,"data-active":n===r,children:[(0,L.jsx)(Rv,{children:e.category}),(0,L.jsx)(zv,{initial:!t&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.3},variants:Uv,children:e.skills.map(e=>(0,L.jsx)(Bv,{variants:t?void 0:Wv,children:e},e))})]},e.category))]})]})]})})},Jv=[`january`,`february`,`march`,`april`,`may`,`june`,`july`,`august`,`september`,`october`,`november`,`december`];function Yv(e,t){let n=e.trim().toLowerCase();if(n===`present`||n===`now`)return t;let[r,i]=n.split(/\s+/),a=Jv.indexOf(r);return parseInt(i??r,10)+(a>=0?a/12:0)}function Xv(e){let t=e.trim();if(/^(present|now)$/i.test(t))return`Now`;let[n,r]=t.split(/\s+/);return r?`${n.slice(0,3)} ${r}`:n}var Zv=260,Qv=`font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; color: var(--ink-3);`,$v=X.div`
   position: sticky;
   top: var(--nav-h);
   z-index: 5;
   background: var(--bg);
   padding-top: 8px;
   border-bottom: 1px solid var(--line);
-`,Qv=X.div`
+`,ey=X.div`
   position: relative;
   --rail-y: 34px;
   height: ${({$readout:e})=>e?90:54}px;
@@ -969,14 +969,14 @@ Error generating stack: `+e.message+`
     --rail-y: 44px;
     height: ${({$readout:e})=>e?104:78}px;
   }
-`,$v=X.span`
+`,ty=X.span`
   position: absolute;
   left: 0;
   right: 0;
   top: var(--rail-y);
   height: 2px;
   background: var(--line);
-`,ey=X(W.span)`
+`,ny=X(W.span)`
   position: absolute;
   left: 0;
   top: var(--rail-y);
@@ -984,7 +984,7 @@ Error generating stack: `+e.message+`
   width: 100%;
   background: var(--grad-brand);
   transform-origin: left;
-`,ty=X.span`
+`,ry=X.span`
   position: absolute;
   top: calc(var(--rail-y) - 8px);
   left: ${({$x:e})=>e*100}%;
@@ -993,12 +993,12 @@ Error generating stack: `+e.message+`
   background: ${({$lit:e})=>e?`var(--ink)`:`var(--line-2)`};
   transform: translateX(-50%);
   transition: background var(--dur-surface) var(--ease-out);
-`,ny=X(Pg)`
+`,iy=X(Pg)`
   position: absolute;
   top: calc(var(--rail-y) + 1px);
   left: ${({$x:e})=>e*100}%;
   transform: translate(-50%, -50%);
-`,ry=X(W.span)`
+`,ay=X(W.span)`
   position: absolute;
   top: calc(var(--rail-y) - 13px);
   left: 0;
@@ -1007,13 +1007,13 @@ Error generating stack: `+e.message+`
   background: var(--ink);
   box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.6);
   transform: translateX(-50%);
-`,iy=X.span`
+`,oy=X.span`
   position: absolute;
   top: 6px;
   left: 0;
   width: 100%;
   text-align: center;
-  ${Xv}
+  ${Qv}
   color: ${({$active:e})=>e?`var(--ink)`:`var(--ink-3)`};
   transition: color var(--dur-surface) var(--ease-out);
   display: ${({$active:e})=>e?`block`:`none`};
@@ -1026,7 +1026,7 @@ Error generating stack: `+e.message+`
     text-overflow: ellipsis;
     padding: 0 6px;
   }
-`,ay=X.span`
+`,sy=X.span`
   position: absolute;
   top: calc(var(--rail-y) + 16px);
   left: ${({$x:e})=>e*100}%;
@@ -1036,7 +1036,7 @@ Error generating stack: `+e.message+`
   color: var(--ink-3);
   display: none;
   ${Z.tablet} { display: block; }
-`,oy=X(W.div)`
+`,cy=X(W.div)`
   position: absolute;
   top: calc(var(--rail-y) + 16px);
   width: max-content;
@@ -1044,21 +1044,21 @@ Error generating stack: `+e.message+`
   text-align: center;
   pointer-events: none;
   ${Z.tablet} { top: calc(var(--rail-y) + 36px); }
-`,sy=X(W.span)`
+`,ly=X(W.span)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3px;
   ${Z.tablet} { flex-direction: row; gap: 10px; }
-`,cy=X.span`
-  ${Xv}
+`,uy=X.span`
+  ${Qv}
   font-size: 10.5px;
   letter-spacing: 0.1em;
   ${Z.tablet} {
     font-size: 11px;
     &::before { content: '·'; margin-right: 10px; }
   }
-`,ly=X.span`
+`,dy=X.span`
   font-size: 12.5px;
   font-weight: 500;
   letter-spacing: -0.005em;
@@ -1067,7 +1067,7 @@ Error generating stack: `+e.message+`
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-`,uy=X(W.div)`
+`,fy=X(W.div)`
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -1079,7 +1079,7 @@ Error generating stack: `+e.message+`
     gap: 24px;
     padding: 12px 0 22px;
   }
-`,dy=X.h3`
+`,py=X.h3`
   font-size: clamp(24px, 2.6vw, 30px);
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -1105,19 +1105,19 @@ Error generating stack: `+e.message+`
     &:hover { color: var(--accent-ink); }
     ${Z.hover} { &:hover::after { transform: scaleX(1); } }
   }
-`,fy=X.p`
+`,my=X.p`
   font-size: 16px;
   font-weight: 500;
   color: var(--accent-ink);
-`,py=X.p`
+`,hy=X.p`
   font-size: 14px;
   color: var(--ink-3);
   margin-top: 4px;
-`,my=X.span`
-  ${Xv}
+`,gy=X.span`
+  ${Qv}
   font-size: 12px;
   ${Z.tablet} { padding-bottom: 4px; }
-`,hy=X(W.article)`
+`,_y=X(W.article)`
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -1125,7 +1125,7 @@ Error generating stack: `+e.message+`
   border-bottom: 1px solid var(--line);
   &:last-child { border-bottom: 0; }
   ${Z.tablet} { padding: 56px 0 72px; }
-`,gy=X.p`
+`,vy=X.p`
   font-size: clamp(19px, 1.9vw, 23px);
   font-weight: 400;
   line-height: 1.5;
@@ -1134,23 +1134,23 @@ Error generating stack: `+e.message+`
   max-width: 62ch;
   a { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line-2); }
   a:hover { text-decoration-color: var(--accent); }
-`,_y=X.ol`
+`,yy=X.ol`
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px 40px;
   ${Z.tablet} { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-`,vy=X.li`
+`,by=X.li`
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 0 8px;
   h4 { font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 8px; }
   p { grid-column: 2; font-size: 15.5px; line-height: 1.7; color: var(--ink-2); }
-`,yy=X.span`
+`,xy=X.span`
   font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--accent-ink);
   padding-top: 5px;
-`,by=({data:e})=>{let t=Nd(),[n,r]=(0,y.useState)(0),[i,a]=(0,y.useState)(0),[o,s]=(0,y.useState)(0),c=(0,y.useRef)([]),l=(0,y.useMemo)(()=>{let t=new window.Date,n=t.getFullYear()+t.getMonth()/12,r=e.timeline.map(e=>{let[t,r]=e.date.split(/\s*[-–]\s*/);return{start:qv(t,n),end:qv(r??`present`,n)}}),i=Math.min(...r.map(e=>e.start)),a=e=>(n-e)/(n-i);return e.timeline.map((e,t)=>{let[i,o]=e.date.split(/\s*[-–]\s*/),s=(e.promotions?.length?e.promotions:[{title:e.subTitle,date:i}]).map(e=>({title:e.title,t:qv(e.date,n),from:e.date})).sort((e,t)=>t.t-e.t).map((e,t,n)=>({...e,xStart:a(e.t),to:t===0?o??`Present`:n[t-1].from}));return{x0:a(r[t].end),x1:a(r[t].start),startLabel:Jv(i),roles:s,promos:s.filter(e=>e.t>r[t].start+1/24&&e.t<r[t].end-1/24).map(e=>({x:e.xStart,label:Jv(e.from)}))}})},[e.timeline]),u=(0,y.useMemo)(()=>l.flatMap(e=>[e.x1,...e.promos.map(e=>e.x)]).sort((e,t)=>e-t),[l]),d=K(0),f=Md(d,Sh),p=t?d:f,m=Od(p,e=>`${e*100}%`),h=K(0),g=(0,y.useRef)(null),_=Od([p,h],([e,t])=>`clamp(0px, calc(${e*100}% - ${t/2}px), calc(100% - ${t}px))`);(0,y.useEffect)(()=>Ph(()=>{let e=Fh()+Yv,t=0,n=0;c.current.forEach((r,i)=>{if(!r)return;let a=r.getBoundingClientRect();a.top>e||(n=i,t=l[i].x0+(l[i].x1-l[i].x0)*Math.min(1,(e-a.top)/a.height))}),d.set(t),r(n);let i=l[n].roles.findIndex(e=>t<=e.xStart+5e-4);a(i<0?l[n].roles.length-1:i),s(u.filter(e=>e<=t+.002).length)}),[l,u,d]);let v=e.timeline[n],b=l[n].roles,x=b[Math.min(i,b.length-1)],S=b.length>1,C=l.length-1;(0,y.useLayoutEffect)(()=>{let e=g.current;if(e)return Nh(e,()=>h.set(e.offsetWidth))},[h,n,i]);let w=e=>u.indexOf(e)<o;return(0,L.jsx)(Mg,{id:`professionalexperience`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`Experience`,lead:`Over a decade across enterprise SaaS, from shipping features to owning platform architecture for global consulting clients.`}),(0,L.jsxs)(Zv,{children:[(0,L.jsxs)(Qv,{"aria-hidden":`true`,$readout:S,children:[(0,L.jsx)($v,{}),(0,L.jsx)(ey,{style:{scaleX:p}}),l.map((t,r)=>(0,L.jsx)(iy,{$x:t.x0,$w:t.x1-t.x0,$active:r===n,children:e.timeline[r].title.replace(/\s*\(.*\)\s*/,``)},r)),l.map((e,t)=>(0,L.jsx)(ty,{$x:e.x1,$lit:w(e.x1)},t)),l.flatMap((e,t)=>e.promos.map((e,n)=>(0,L.jsx)(ny,{$x:e.x,$lit:w(e.x)},`${t}-${n}`))),(0,L.jsx)(ay,{$x:0,$align:`left`,children:`Now`}),l.map((e,t)=>(0,L.jsx)(ay,{$x:e.x1,$align:t===C?`right`:void 0,children:e.startLabel},t)),l.flatMap((e,t)=>e.promos.map((e,n)=>(0,L.jsx)(ay,{$x:e.x,children:e.label},`p${t}-${n}`))),(0,L.jsx)(oy,{ref:g,style:{left:_},children:S&&(0,L.jsxs)(sy,{initial:!t&&{opacity:0,y:-3},animate:{opacity:1,y:0},transition:{duration:$.surface,ease:Q.out},children:[(0,L.jsx)(ly,{children:x.title}),(0,L.jsxs)(cy,{children:[Jv(x.from),` – `,Jv(x.to)]})]},`${n}-${i}`)}),(0,L.jsx)(ry,{style:{left:m}})]}),(0,L.jsxs)(uy,{initial:!t&&{opacity:0,y:6},animate:{opacity:1,y:0},transition:{duration:$.surface,ease:Q.out},children:[(0,L.jsxs)(`div`,{children:[(0,L.jsx)(dy,{children:(0,L.jsx)(`a`,{href:v.url,target:`_blank`,rel:`noopener noreferrer`,children:v.title})}),(0,L.jsx)(fy,{children:v.subTitle}),v.previously&&(0,L.jsxs)(py,{children:[`Previously `,v.previously]})]}),(0,L.jsx)(my,{children:v.date})]},n)]}),(0,L.jsx)(`div`,{children:e.timeline.map((e,n)=>(0,L.jsxs)(hy,{ref:e=>{c.current[n]=e},"aria-label":`${e.title}, ${e.subTitle}, ${e.date}`,initial:!t&&{opacity:0,y:24},whileInView:{opacity:1,y:0},viewport:{once:!0,amount:.15},transition:{duration:$.enter,ease:Q.out},children:[(0,L.jsx)(gy,{dangerouslySetInnerHTML:{__html:e.descriptionSummary}}),!!e.achievements?.length&&(0,L.jsx)(_y,{children:e.achievements.map((e,t)=>(0,L.jsxs)(vy,{children:[(0,L.jsx)(yy,{children:String(t+1).padStart(2,`0`)}),(0,L.jsx)(`h4`,{children:e.title}),(0,L.jsx)(`p`,{children:e.description})]},t))})]},n))})]})})},xy=X.div`
+`,Sy=({data:e})=>{let t=Nd(),[n,r]=(0,y.useState)(0),[i,a]=(0,y.useState)(0),[o,s]=(0,y.useState)(0),c=(0,y.useRef)([]),l=(0,y.useMemo)(()=>{let t=new window.Date,n=t.getFullYear()+t.getMonth()/12,r=e.timeline.map(e=>{let[t,r]=e.date.split(/\s*[-–]\s*/);return{start:Yv(t,n),end:Yv(r??`present`,n)}}),i=Math.min(...r.map(e=>e.start)),a=e=>(n-e)/(n-i);return e.timeline.map((e,t)=>{let[i,o]=e.date.split(/\s*[-–]\s*/),s=(e.promotions?.length?e.promotions:[{title:e.subTitle,date:i}]).map(e=>({title:e.title,t:Yv(e.date,n),from:e.date})).sort((e,t)=>t.t-e.t).map((e,t,n)=>({...e,xStart:a(e.t),to:t===0?o??`Present`:n[t-1].from}));return{x0:a(r[t].end),x1:a(r[t].start),startLabel:Xv(i),roles:s,promos:s.filter(e=>e.t>r[t].start+1/24&&e.t<r[t].end-1/24).map(e=>({x:e.xStart,label:Xv(e.from)}))}})},[e.timeline]),u=(0,y.useMemo)(()=>l.flatMap(e=>[e.x1,...e.promos.map(e=>e.x)]).sort((e,t)=>e-t),[l]),d=K(0),f=Md(d,Sh),p=t?d:f,m=Od(p,e=>`${e*100}%`),h=K(0),g=(0,y.useRef)(null),_=Od([p,h],([e,t])=>`clamp(0px, calc(${e*100}% - ${t/2}px), calc(100% - ${t}px))`);(0,y.useEffect)(()=>Ph(()=>{let e=Fh()+Zv,t=0,n=0;c.current.forEach((r,i)=>{if(!r)return;let a=r.getBoundingClientRect();a.top>e||(n=i,t=l[i].x0+(l[i].x1-l[i].x0)*Math.min(1,(e-a.top)/a.height))}),d.set(t),r(n);let i=l[n].roles.findIndex(e=>t<=e.xStart+5e-4);a(i<0?l[n].roles.length-1:i),s(u.filter(e=>e<=t+.002).length)}),[l,u,d]);let v=e.timeline[n],b=l[n].roles,x=b[Math.min(i,b.length-1)],S=b.length>1,C=l.length-1;(0,y.useLayoutEffect)(()=>{let e=g.current;if(e)return Nh(e,()=>h.set(e.offsetWidth))},[h,n,i]);let w=e=>u.indexOf(e)<o;return(0,L.jsx)(Mg,{id:`professionalexperience`,children:(0,L.jsxs)(Ng,{children:[(0,L.jsx)(zg,{title:`Experience`,lead:`Over a decade across enterprise SaaS, from shipping features to owning platform architecture for global consulting clients.`}),(0,L.jsxs)($v,{children:[(0,L.jsxs)(ey,{"aria-hidden":`true`,$readout:S,children:[(0,L.jsx)(ty,{}),(0,L.jsx)(ny,{style:{scaleX:p}}),l.map((t,r)=>(0,L.jsx)(oy,{$x:t.x0,$w:t.x1-t.x0,$active:r===n,children:e.timeline[r].title.replace(/\s*\(.*\)\s*/,``)},r)),l.map((e,t)=>(0,L.jsx)(ry,{$x:e.x1,$lit:w(e.x1)},t)),l.flatMap((e,t)=>e.promos.map((e,n)=>(0,L.jsx)(iy,{$x:e.x,$lit:w(e.x)},`${t}-${n}`))),(0,L.jsx)(sy,{$x:0,$align:`left`,children:`Now`}),l.map((e,t)=>(0,L.jsx)(sy,{$x:e.x1,$align:t===C?`right`:void 0,children:e.startLabel},t)),l.flatMap((e,t)=>e.promos.map((e,n)=>(0,L.jsx)(sy,{$x:e.x,children:e.label},`p${t}-${n}`))),(0,L.jsx)(cy,{ref:g,style:{left:_},children:S&&(0,L.jsxs)(ly,{initial:!t&&{opacity:0,y:-3},animate:{opacity:1,y:0},transition:{duration:$.surface,ease:Q.out},children:[(0,L.jsx)(dy,{children:x.title}),(0,L.jsxs)(uy,{children:[Xv(x.from),` – `,Xv(x.to)]})]},`${n}-${i}`)}),(0,L.jsx)(ay,{style:{left:m}})]}),(0,L.jsxs)(fy,{initial:!t&&{opacity:0,y:6},animate:{opacity:1,y:0},transition:{duration:$.surface,ease:Q.out},children:[(0,L.jsxs)(`div`,{children:[(0,L.jsx)(py,{children:(0,L.jsx)(`a`,{href:v.url,target:`_blank`,rel:`noopener noreferrer`,children:v.title})}),(0,L.jsx)(my,{children:v.subTitle}),v.previously&&(0,L.jsxs)(hy,{children:[`Previously `,v.previously]})]}),(0,L.jsx)(gy,{children:v.date})]},n)]}),(0,L.jsx)(`div`,{children:e.timeline.map((e,n)=>(0,L.jsxs)(_y,{ref:e=>{c.current[n]=e},"aria-label":`${e.title}, ${e.subTitle}, ${e.date}`,initial:!t&&{opacity:0,y:24},whileInView:{opacity:1,y:0},viewport:{once:!0,amount:.15},transition:{duration:$.enter,ease:Q.out},children:[(0,L.jsx)(vy,{dangerouslySetInnerHTML:{__html:e.descriptionSummary}}),!!e.achievements?.length&&(0,L.jsx)(yy,{children:e.achievements.map((e,t)=>(0,L.jsxs)(by,{children:[(0,L.jsx)(xy,{children:String(t+1).padStart(2,`0`)}),(0,L.jsx)(`h4`,{children:e.title}),(0,L.jsx)(`p`,{children:e.description})]},t))})]},n))})]})})},Cy=X.div`
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -1160,7 +1160,7 @@ Error generating stack: `+e.message+`
     gap: 72px;
     align-items: center;
   }
-`,Sy=X.h2`
+`,wy=X.h2`
   font-weight: 600;
   font-size: clamp(40px, 7.5vw, 88px);
   letter-spacing: -0.035em;
@@ -1168,12 +1168,12 @@ Error generating stack: `+e.message+`
   color: var(--ink);
   margin-bottom: 26px;
   em { font-style: normal; color: var(--accent-ink); }
-`,Cy=X.p`
+`,Ty=X.p`
   font-size: clamp(16px, 2vw, 19px);
   line-height: 1.6;
   color: var(--ink-2);
   max-width: 44ch;
-`,wy=X(W.div)`
+`,Ey=X(W.div)`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1183,7 +1183,7 @@ Error generating stack: `+e.message+`
     align-items: center;
     gap: clamp(72px, 8vw, 128px);
   }
-`,Ty=X(W.div)`
+`,Dy=X(W.div)`
   position: relative;
   width: 76px;
   height: 76px;
@@ -1197,13 +1197,13 @@ Error generating stack: `+e.message+`
     background: radial-gradient(circle, rgba(var(--accent-rgb), 0.22), transparent 62%);
     pointer-events: none;
   }
-`,Ey=X.div`
+`,Oy=X.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-left: 58px;
   ${Z.tablet} { flex: 1; min-width: 0; margin-left: 0; gap: 16px; }
-`,Dy=X(W.a)`
+`,ky=X(W.a)`
   position: relative;
   display: flex;
   align-items: center;
@@ -1217,7 +1217,7 @@ Error generating stack: `+e.message+`
     border-color: color-mix(in srgb, var(--accent) 55%, var(--line-2));
     background: rgba(var(--accent-rgb), 0.06);
   }
-`,Oy=X.span`
+`,Ay=X.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1228,18 +1228,18 @@ Error generating stack: `+e.message+`
   color: var(--accent-ink);
   flex-shrink: 0;
   svg { width: 22px; height: 22px; }
-`,ky=X.span`
+`,jy=X.span`
   display: flex;
   flex-direction: column;
   gap: 2px;
   min-width: 0;
   flex: 1;
-`,Ay=X.span`
+`,My=X.span`
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-3);
-`,jy=X.span`
+`,Ny=X.span`
   font-size: clamp(16px, 1.7vw, 19px);
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -1247,31 +1247,31 @@ Error generating stack: `+e.message+`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-`,My=X.span`
+`,Py=X.span`
   flex-shrink: 0;
   color: var(--ink-3);
   transition: transform var(--dur-surface) var(--ease-out), color var(--dur-surface) var(--ease-out);
   svg { width: 18px; height: 18px; }
-  ${Dy}:hover & { color: var(--accent-ink); }
-  ${Z.hover} { ${Dy}:hover & { transform: translate(3px, -3px); } }
-`,Ny=X(W.svg)`
+  ${ky}:hover & { color: var(--accent-ink); }
+  ${Z.hover} { ${ky}:hover & { transform: translate(3px, -3px); } }
+`,Fy=X(W.svg)`
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
   overflow: visible;
-`,Py=X.path`
+`,Iy=X.path`
   fill: none;
   stroke-width: 1.2;
   stroke-linecap: round;
   stroke: ${({$hot:e})=>e?`var(--accent)`:`var(--ink-3)`};
   stroke-opacity: ${({$hot:e})=>e?1:.42};
   transition: stroke var(--dur-surface) var(--ease-out), stroke-opacity var(--dur-surface) var(--ease-out);
-`,Fy=hh`
+`,Ly=hh`
   from { offset-distance: 0%; }
   to { offset-distance: 100%; }
-`,Iy=X.span`
+`,Ry=X.span`
   position: absolute;
   top: 0;
   left: 0;
@@ -1282,5 +1282,5 @@ Error generating stack: `+e.message+`
   box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.9);
   pointer-events: none;
   offset-rotate: 0deg;
-  animation: ${Fy} 1.1s var(--ease-out) infinite;
-`,Ly=e=>(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.3`,strokeLinecap:`round`,strokeLinejoin:`round`,children:e}),Ry={phone:Ly((0,L.jsx)(`path`,{d:`M21 16.5v2.6a1.9 1.9 0 01-2.1 1.9 18.9 18.9 0 01-8.2-2.9 18.6 18.6 0 01-5.7-5.7A18.9 18.9 0 012.1 4.1 1.9 1.9 0 014 2h2.6a1.9 1.9 0 011.9 1.6c.12.9.34 1.8.66 2.7a1.9 1.9 0 01-.43 2L7.6 9.4a15.2 15.2 0 005.7 5.7l1.1-1.1a1.9 1.9 0 012-.43c.87.32 1.77.54 2.7.66A1.9 1.9 0 0121 16.5z`})),email:Ly((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`rect`,{x:`2.5`,y:`5`,width:`19`,height:`14`,rx:`2.5`}),(0,L.jsx)(`path`,{d:`M3.5 7 12 13.2 20.5 7`})]})),linkedin:Ly((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`path`,{d:`M6.5 10v9.5`}),(0,L.jsx)(`circle`,{cx:`6.5`,cy:`5.6`,r:`1.1`,fill:`currentColor`,stroke:`none`}),(0,L.jsx)(`path`,{d:`M11.5 19.5V10M11.5 13.4a3.4 3.4 0 016.8 0v6.1`})]})),location:Ly((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`path`,{d:`M12 21.5s-7-6.1-7-11.4a7 7 0 0114 0c0 5.3-7 11.4-7 11.4z`}),(0,L.jsx)(`circle`,{cx:`12`,cy:`10`,r:`2.4`})]}))};function zy(e,t,n){let r=t.y+t.h/2;if(n){let n=e.x+e.w/2;return`M${n} ${e.y+e.h+6}V${r-12}Q${n} ${r} ${n+12} ${r}H${t.x-6}`}let i=e.x+e.w+8,a=e.y+e.h/2,o=t.x-8,s=(i+o)/2;return`M${i} ${a}C${s} ${a} ${s} ${r} ${o} ${r}`}var By={hidden:{},visible:{transition:{staggerChildren:.08,delayChildren:.1}}},Vy={hidden:{opacity:0,scale:.82},visible:{opacity:1,scale:1,transition:{duration:$.enterLong,ease:Q.out}}},Hy={hidden:{opacity:0,x:-16},visible:{opacity:1,x:0,transition:{duration:$.enter,ease:Q.out}}},Uy=({data:e})=>{let t=Nd()??!1,n=(0,y.useRef)(null),[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(-1),s=e.contactMetaData;return(0,y.useLayoutEffect)(()=>{let e=n.current;if(e)return Nh(e,()=>{let t=Mh(e,`hub`);if(!t)return;let n=!window.matchMedia(_h.tablet).matches;i(s.flatMap((r,i)=>{let a=Mh(e,`c${i}`);return a?[zy(t,a,n)]:[]}))})},[s]),(0,L.jsx)(Mg,{id:`contact`,children:(0,L.jsx)(Ng,{children:(0,L.jsxs)(xy,{children:[(0,L.jsxs)(`div`,{children:[(0,L.jsx)(Dg,{children:(0,L.jsxs)(Sy,{children:[(0,L.jsx)(Ag,{text:`Let's build something`}),(0,L.jsx)(`br`,{}),(0,L.jsx)(`em`,{children:(0,L.jsx)(Ag,{text:`that scales.`,delay:.15})})]})}),(0,L.jsx)(Dg,{delay:.1,children:(0,L.jsx)(Cy,{children:`Architecture, agentic AI, or platform performance. If it needs to work at scale, I want to hear about it.`})})]}),(0,L.jsxs)(wy,{ref:n,initial:!t&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.3},variants:By,children:[(0,L.jsx)(Ty,{"data-node":`hub`,variants:t?void 0:Vy,"aria-hidden":`true`,children:(0,L.jsx)(Sg,{})}),(0,L.jsx)(Ey,{children:s.map((e,n)=>{let r=e.icon.toLowerCase(),i=e.href.startsWith(`http`);return(0,L.jsxs)(Dy,{"data-node":`c${n}`,href:e.href,target:i?`_blank`:void 0,rel:i?`noopener noreferrer`:void 0,variants:t?void 0:Hy,whileTap:{scale:.985},onPointerEnter:()=>o(n),onPointerLeave:()=>o(-1),onFocus:()=>o(n),onBlur:()=>o(-1),children:[(0,L.jsx)(Oy,{children:Ry[r]}),(0,L.jsxs)(ky,{children:[(0,L.jsx)(Ay,{children:e.icon}),(0,L.jsx)(jy,{children:e.content})]}),(0,L.jsx)(My,{children:(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,children:(0,L.jsx)(`path`,{d:`M7 17L17 7M9 7h8v8`})})})]},e.href)})}),r.length>0&&(0,L.jsx)(Ny,{"aria-hidden":`true`,initial:!t&&{opacity:0},whileInView:{opacity:1},viewport:{once:!0,amount:.3},transition:{duration:$.enterLong,delay:.55,ease:Q.out},children:r.map((e,t)=>(0,L.jsx)(Py,{d:e,$hot:a===t},t))}),!t&&a>=0&&r[a]&&(0,L.jsx)(Iy,{"aria-hidden":`true`,style:{offsetPath:`path("${r[a]}")`}})]})]})})})},Wy={aboutSection:{content:[`I am a Principal Architect with over ten years in enterprise SaaS. I own the architecture of Promotion Advisor, a multi-tenant product in McKinsey's Periscope suite, from its planning application through the Analytics Engine to the agentic layer.`],buttonProps:{link:`https://www.pranshunijhawan.dev/static/pdf/resume_pn.pdf`,name:`Download Resume`},stats:[{value:`40%`,label:`less platform infrastructure spend under the cost standards I set`,tone:`teal`},{value:`37%`,label:`more team capacity from the AI-assisted engineering practice I coached`,tone:`green`},{value:`8`,label:`sibling products governed by the API and cost standards I wrote`,tone:`violet`}],education:{degree:`B.Tech, Computer Science & Engineering`,institution:`Gurgaon Institute of Technology & Management`,period:`2012 - 2016`}},contactMe:{contactMetaData:[{icon:`Phone`,content:`+91-9999966272`,href:`tel:+91-9999966272`},{icon:`Email`,content:`mail@pranshunijhawan.dev`,href:`mailto:mail@pranshunijhawan.dev`},{icon:`LinkedIn`,content:`@pranshunijhawan`,href:`https://www.linkedin.com/in/pranshunijhawan/`},{icon:`Location`,content:`India`,href:`http://maps.google.com/?q=India`}]},homeSection:{name:`Pranshu Nijhawan`,headline:[`Agents don't run themselves.`,`I build what they run on.`],role:`Principal Architect`,company:`McKinsey & Company`,architectureIntro:`The systems I design`,architecture:[{id:`data`,label:`Data`,nodes:[{title:`OLTP Store`},{title:`OLAP Store`},{title:`Lakehouse`}]},{id:`core`,label:`Core`,nodes:[{title:`Domain Services`,caption:`Polyglot microservices`},{title:`Data Services`,caption:`Governed data products`}]},{id:`intelligence`,label:`Intelligence`,nodes:[{title:`Analytical Engines`,caption:`Forecasting · Optimization`},{title:`Reasoning Engines`,caption:`Rules · Scenarios`}]},{id:`ai`,label:`AI Platform`,nodes:[{title:`Agentic Platform`,caption:`Orchestration · Tooling · Memory · Guardrails`,highlight:!0}]},{id:`experience`,label:`Experience`,nodes:[{title:`Domain Workspace`},{title:`Enterprise Reporting`},{title:`Agents`}]}],principles:[{name:`API First`,note:`Contracts before code`},{name:`Hub & Spoke`,note:`One data hub, every domain a spoke`},{name:`GitOps`,note:`Declarative, versioned delivery`}]},professionalExperience:{timeline:[{title:`McKinsey & Company`,subTitle:`Principal Architect`,previously:`Senior Software Engineer II, Senior Software Engineer I`,promotions:[{title:`Principal Architect`,date:`July 2025`},{title:`Senior Software Engineer II`,date:`December 2023`},{title:`Senior Software Engineer I`,date:`March 2022`}],url:`https://www.linkedin.com/company/mckinsey/`,date:`March 2022 - Present`,descriptionSummary:`At McKinsey I am the sole architecture owner of <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/solutions/b2c-pricing-solutions/promotion-performance" target="_blank">Promotion Advisor</a>, a flagship multi-tenant SaaS in the <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/overview" target="_blank">Periscope</a> suite for CPG and retail clients. I co-built Platform AI, Periscope's enterprise agent platform, and designed the agentic layer that runs on it. I lead 65+ engineers across five development squads and a core support squad, and partner with senior consulting leaders on high-stakes RFPs and enterprise implementations.`,achievements:[{title:`Platform Architecture Ownership`,description:`Own the architecture of Promotion Advisor end to end: the planning application (React, TypeScript, Node.js, GraphQL, C# / .NET microservices), the Analytics Engine (Databricks, PySpark, DBT, PostgreSQL), and the agentic layer. Accountable for the configuration framework (GitOps-based, zero-downtime configuration delivery), the security model, polyglot persistence (PostgreSQL, Redis, Databricks Delta tables, ClickHouse), ETL, the Periscope Reporting Engine, and the external API surface.`},{title:`Platform AI: Enterprise Agent Platform`,description:`Co-built Platform AI, Periscope's enterprise agent platform: a GitOps Agent Definition Manager that versions every agent as Git artifacts, not prompt text; a LangChain harness on Kubernetes running one agent loop for all product agents; and a Tenant MCP gateway owning authentication, tool discovery, and quota. Caller identity survives every hop.`},{title:`Cortex: Deterministic Business-Logic Engine`,description:`Built Cortex, a stateless engine that runs business logic written as configuration. Rules compose from three operations (acquire, derive, assert) into playbooks; a purpose-built TypeScript compiler parses the typed YAML into executable binaries. Business rules stay deterministic and unit-testable, so agent output is reproducible and auditable.`},{title:`Context-Scoped Catalog: Tool Selection at Fleet Scale`,description:`Solved context pollution: an agent cannot reach a large tool estate if every tool is bound up front. Designed the selection algorithm (pinned tools, a free BM25 shortlist, then a cheap router model for the near-duplicates) and scoped the catalog per tenant, which makes version gating exact and routing deterministic. Version-mismatch failures dropped to zero, and a new solution registers without per-tool wiring.`},{title:`Periscope Reporting Engine on ClickHouse & Real-Time Conflict Detection`,description:`Built the Periscope Reporting Engine on ClickHouse (Projections, Dictionaries, billion-row sub-second queries): users compose their own reports and every aggregation resolves at request time against a governed ontology through a dynamic Query Builder, which removes the batch-prep step and the analytics-team dependency for each new measure. Also designed the multi-dimensional promotion conflict detection algorithm, progressive candidate narrowing over sorted item arrays: sub-2s at 20 concurrent users across 2M promotions, 5,000x faster on large item groups.`},{title:`AI-Assisted Engineering & Agent Tooling`,description:`Drove org-wide adoption of Cursor and Spec-Driven Development (OpenSpec, SpecKit), which raised team capacity 37%. Built the agent library behind it: 10+ production agents for architecture diagrams, ADR and APR authorship, and technical communications, plus an SDD Agent that runs an 11-dimension anti-hallucination audit per spec. The Repo Mastery Agent replaced a heavy Graph RAG documentation system with a Registry Pattern over vector binaries and explicit dependency relations.`}]},{title:`Eptura (formerly Condeco)`,url:`https://www.linkedin.com/company/eptura/`,subTitle:`Principal Engineer`,date:`April 2021 - March 2022`,descriptionSummary:`At Eptura I re-architected a single-tenant workspace SaaS, <a href="https://www.condecosoftware.com/products/book/meeting-room-booking/meeting-room-screens/" target="_blank">Condeco Connect</a> (meeting room booking software), to cloud-native microservices on AKS and built a global IoT release orchestrator that pushes firmware to 300M+ devices. Directed 20 engineers across four squads.`,achievements:[{title:`Cloud-Native Re-Architecture`,description:`Migrated legacy single-tenant SaaS to cloud-native microservices on Azure Kubernetes Service (AKS): 60% faster incident recovery, and single-tenant scaling bottlenecks eliminated.`},{title:`Global IoT Release Orchestration`,description:`Built a release orchestration system (Azure IoT Hub, Azure Functions, Azure CosmosDB) that delivers firmware updates to 300M+ IoT devices worldwide with zero-downtime rollouts.`},{title:`Engineering Leadership`,description:`Directed 20 engineers (4 tech leads) across four squads. Established a structured mentorship program: +20% retention and faster engineering progression.`}]},{title:`Nagarro`,url:`https://www.linkedin.com/company/nagarro/`,subTitle:`Senior Engineer`,date:`December 2019 - April 2021`,descriptionSummary:`At Nagarro I shipped full-stack web and mobile applications for e-commerce and HR enterprise clients on Angular, .NET Core, PostgreSQL, and Ionic. CI/CD and IaC practices cut deployment failures by 70% across client projects.`,achievements:[{title:`Full-Stack Web + Mobile Delivery`,description:`Delivered production web and mobile apps on Angular, .NET Core, PostgreSQL, and Ionic Framework for e-commerce and HR clients at 99.5%+ uptime.`},{title:`CI/CD & Infrastructure as Code`,description:`Established CI/CD pipelines and IaC practices: 70% reduction in deployment failures across client projects.`}]},{title:`Eptura (formerly Condeco)`,url:`https://www.linkedin.com/company/eptura/`,subTitle:`Software Engineer`,date:`September 2018 - December 2019`,descriptionSummary:`At Condeco I built C# / .NET / React / SQL Server microservices for the <a href="https://www.condecosoftware.com/products/book/meeting-room-booking/meeting-room-screens/" target="_blank">Condeco Connect</a> workspace SaaS that carried 3x customer growth without reliability regressions. Cut build times 40% and core query latency 3x through data model refactoring.`,achievements:[{title:`Microservices for 3x Customer Scale`,description:`Designed and shipped C# / .NET / React / SQL Server microservices that carried 3x customer growth without reliability regressions.`},{title:`CI/CD & Data Model Optimization`,description:`Cut build times 40% and refactored core data models to reduce average query latency 3x.`}]},{title:`Gartner`,url:`https://www.linkedin.com/company/gartner/`,subTitle:`Associate Software Engineer`,previously:`Intern`,date:`February 2016 - August 2018`,descriptionSummary:`At Gartner I built backend features on C# / .NET Core / React for an HR analytics SaaS, which improved survey data accuracy 60% for consulting clients. Automated SQL workflows saved 240+ engineering hours annually.`,achievements:[{title:`SaaS Analytics Backend`,description:`Built backend features on C# / .NET Core / React for the HR analytics platform, which improved employee survey data accuracy 60% for consulting clients.`},{title:`SQL Workflow Automation`,description:`Automated SQL workflows (stored procedures, SQL Agent jobs): saved 240+ engineering hours annually.`}]}]},technologyProficiency:{skills:[{category:`AI & Agentic Engineering`,layer:`Agentic AI`,skills:[`Multi-Agent Orchestration`,`MCP (servers and clients)`,`Tool Discovery & Routing`,`Context Engineering`,`Cursor (Rules / Skills / Agents / Hooks / SDK)`,`Spec-Driven Development (OpenSpec, SpecKit)`]},{category:`Frontend`,layer:`Frontend`,skills:[`React`,`TypeScript`,`Angular`,`Micro-Frontends`]},{category:`Backend`,layer:`Backend`,skills:[`TypeScript / Node.js / Fastify`,`C# / .NET Core`,`GraphQL & REST APIs`,`Python`]},{category:`Architecture`,layer:`Architecture`,skills:[`Multi-Tenant SaaS Architecture`,`Microservices & Distributed Systems`,`Configuration-Driven Architecture`,`Domain-Driven Design (DDD)`,`Polyglot Persistence`,`ADR / APR Authorship`]},{category:`Data Engineering & Real-Time Analytics`,layer:`Data Engineering`,skills:[`ClickHouse Analytics (Projections, Dictionaries)`,`Real-Time Analytics & Query Engines`,`Databricks (PySpark)`,`DBT & Blue-Green ETL`]},{category:`Data & Storage`,layer:`Data & Storage`,skills:[`PostgreSQL`,`ClickHouse`,`SQL Server`,`Redis`]},{category:`Cloud & Infrastructure`,layer:`Cloud & Infra`,skills:[`Microsoft Azure`,`Kubernetes (AKS)`,`Terraform & GitOps`,`Amazon Web Services (AWS)`]},{category:`Security & Compliance`,layer:`Security`,skills:[`Two-Layer FAC + DAC Architecture`,`Casbin RBAC / ABAC`,`SOC2 / Secure SDLC`]}]}};function Gy(){let[e,t]=(0,y.useState)(!1);return(0,L.jsxs)(Ah,{children:[(0,L.jsx)(wh,{}),(0,L.jsx)(`a`,{href:`#main-content`,className:`skip-link`,children:`Skip to main content`}),(0,L.jsx)(g_,{revealed:e}),(0,L.jsxs)(`main`,{id:`main-content`,children:[(0,L.jsx)(sv,{data:Wy.homeSection,start:e}),(0,L.jsx)(Tv,{data:Wy.aboutSection}),(0,L.jsx)(Gv,{data:Wy.technologyProficiency}),(0,L.jsx)(by,{data:Wy.professionalExperience}),(0,L.jsx)(Uy,{data:Wy.contactMe})]}),(0,L.jsx)(w_,{}),(0,L.jsx)(Xc,{children:!e&&(0,L.jsx)(E_,{onComplete:()=>t(!0)},`intro`)})]})}`scrollRestoration`in history&&(history.scrollRestoration=`manual`),window.scrollTo(0,0),(0,fp.createRoot)(document.getElementById(`root`)).render((0,L.jsx)(y.StrictMode,{children:(0,L.jsx)(Gy,{})}));
+  animation: ${Ly} 1.1s var(--ease-out) infinite;
+`,zy=e=>(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`1.3`,strokeLinecap:`round`,strokeLinejoin:`round`,children:e}),By={phone:zy((0,L.jsx)(`path`,{d:`M21 16.5v2.6a1.9 1.9 0 01-2.1 1.9 18.9 18.9 0 01-8.2-2.9 18.6 18.6 0 01-5.7-5.7A18.9 18.9 0 012.1 4.1 1.9 1.9 0 014 2h2.6a1.9 1.9 0 011.9 1.6c.12.9.34 1.8.66 2.7a1.9 1.9 0 01-.43 2L7.6 9.4a15.2 15.2 0 005.7 5.7l1.1-1.1a1.9 1.9 0 012-.43c.87.32 1.77.54 2.7.66A1.9 1.9 0 0121 16.5z`})),email:zy((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`rect`,{x:`2.5`,y:`5`,width:`19`,height:`14`,rx:`2.5`}),(0,L.jsx)(`path`,{d:`M3.5 7 12 13.2 20.5 7`})]})),linkedin:zy((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`path`,{d:`M6.5 10v9.5`}),(0,L.jsx)(`circle`,{cx:`6.5`,cy:`5.6`,r:`1.1`,fill:`currentColor`,stroke:`none`}),(0,L.jsx)(`path`,{d:`M11.5 19.5V10M11.5 13.4a3.4 3.4 0 016.8 0v6.1`})]})),location:zy((0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(`path`,{d:`M12 21.5s-7-6.1-7-11.4a7 7 0 0114 0c0 5.3-7 11.4-7 11.4z`}),(0,L.jsx)(`circle`,{cx:`12`,cy:`10`,r:`2.4`})]}))};function Vy(e,t,n){let r=t.y+t.h/2;if(n){let n=e.x+e.w/2;return`M${n} ${e.y+e.h+6}V${r-12}Q${n} ${r} ${n+12} ${r}H${t.x-6}`}let i=e.x+e.w+8,a=e.y+e.h/2,o=t.x-8,s=(i+o)/2;return`M${i} ${a}C${s} ${a} ${s} ${r} ${o} ${r}`}var Hy={hidden:{},visible:{transition:{staggerChildren:.08,delayChildren:.1}}},Uy={hidden:{opacity:0,scale:.82},visible:{opacity:1,scale:1,transition:{duration:$.enterLong,ease:Q.out}}},Wy={hidden:{opacity:0,x:-16},visible:{opacity:1,x:0,transition:{duration:$.enter,ease:Q.out}}},Gy=({data:e})=>{let t=Nd()??!1,n=(0,y.useRef)(null),[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(-1),s=e.contactMetaData;return(0,y.useLayoutEffect)(()=>{let e=n.current;if(e)return Nh(e,()=>{let t=Mh(e,`hub`);if(!t)return;let n=!window.matchMedia(_h.tablet).matches;i(s.flatMap((r,i)=>{let a=Mh(e,`c${i}`);return a?[Vy(t,a,n)]:[]}))})},[s]),(0,L.jsx)(Mg,{id:`contact`,children:(0,L.jsx)(Ng,{children:(0,L.jsxs)(Cy,{children:[(0,L.jsxs)(`div`,{children:[(0,L.jsx)(Dg,{children:(0,L.jsxs)(wy,{children:[(0,L.jsx)(Ag,{text:`Let's build something`}),(0,L.jsx)(`br`,{}),(0,L.jsx)(`em`,{children:(0,L.jsx)(Ag,{text:`that scales.`,delay:.15})})]})}),(0,L.jsx)(Dg,{delay:.1,children:(0,L.jsx)(Ty,{children:`Architecture, agentic AI, or platform performance. If it needs to work at scale, I want to hear about it.`})})]}),(0,L.jsxs)(Ey,{ref:n,initial:!t&&`hidden`,whileInView:`visible`,viewport:{once:!0,amount:.3},variants:Hy,children:[(0,L.jsx)(Dy,{"data-node":`hub`,variants:t?void 0:Uy,"aria-hidden":`true`,children:(0,L.jsx)(Sg,{})}),(0,L.jsx)(Oy,{children:s.map((e,n)=>{let r=e.icon.toLowerCase(),i=e.href.startsWith(`http`);return(0,L.jsxs)(ky,{"data-node":`c${n}`,href:e.href,target:i?`_blank`:void 0,rel:i?`noopener noreferrer`:void 0,variants:t?void 0:Wy,whileTap:{scale:.985},onPointerEnter:()=>o(n),onPointerLeave:()=>o(-1),onFocus:()=>o(n),onBlur:()=>o(-1),children:[(0,L.jsx)(Ay,{children:By[r]}),(0,L.jsxs)(jy,{children:[(0,L.jsx)(My,{children:e.icon}),(0,L.jsx)(Ny,{children:e.content})]}),(0,L.jsx)(Py,{children:(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,children:(0,L.jsx)(`path`,{d:`M7 17L17 7M9 7h8v8`})})})]},e.href)})}),r.length>0&&(0,L.jsx)(Fy,{"aria-hidden":`true`,initial:!t&&{opacity:0},whileInView:{opacity:1},viewport:{once:!0,amount:.3},transition:{duration:$.enterLong,delay:.55,ease:Q.out},children:r.map((e,t)=>(0,L.jsx)(Iy,{d:e,$hot:a===t},t))}),!t&&a>=0&&r[a]&&(0,L.jsx)(Ry,{"aria-hidden":`true`,style:{offsetPath:`path("${r[a]}")`}})]})]})})})},Ky={aboutSection:{content:[`I am a Principal Architect with over ten years in enterprise SaaS. I own the architecture of Promotion Advisor, a multi-tenant product in McKinsey's Periscope suite, from its planning application through the Analytics Engine to the agentic layer.`],buttonProps:{link:`https://www.pranshunijhawan.dev/static/pdf/resume_pn.pdf`,name:`Download Resume`},stats:[{value:`40%`,label:`less platform infrastructure spend under the cost standards I set`,tone:`teal`},{value:`37%`,label:`more team capacity from the AI-assisted engineering practice I coached`,tone:`green`},{value:`8`,label:`sibling products governed by the API and cost standards I wrote`,tone:`violet`}],education:{degree:`B.Tech, Computer Science & Engineering`,institution:`Gurgaon Institute of Technology & Management`,period:`2012 - 2016`}},contactMe:{contactMetaData:[{icon:`Phone`,content:`+91-9999966272`,href:`tel:+91-9999966272`},{icon:`Email`,content:`mail@pranshunijhawan.dev`,href:`mailto:mail@pranshunijhawan.dev`},{icon:`LinkedIn`,content:`@pranshunijhawan`,href:`https://www.linkedin.com/in/pranshunijhawan/`},{icon:`Location`,content:`India`,href:`http://maps.google.com/?q=India`}]},homeSection:{name:`Pranshu Nijhawan`,headline:[`Agents don't run themselves.`,`I build what they run on.`],role:`Principal Architect`,company:`McKinsey & Company`,architectureIntro:`The systems I design`,architecture:[{id:`data`,label:`Data`,nodes:[{title:`OLTP Store`},{title:`OLAP Store`},{title:`Lakehouse`}]},{id:`core`,label:`Core`,nodes:[{title:`Domain Services`,caption:`Polyglot microservices`},{title:`Data Services`,caption:`Governed data products`}]},{id:`intelligence`,label:`Intelligence`,nodes:[{title:`Analytical Engines`,caption:`Forecasting · Optimization`},{title:`Reasoning Engines`,caption:`Rules · Scenarios`}]},{id:`ai`,label:`AI Platform`,nodes:[{title:`Agentic Platform`,caption:`Orchestration · Tooling · Memory · Guardrails`,highlight:!0}]},{id:`experience`,label:`Experience`,nodes:[{title:`Domain Workspace`},{title:`Enterprise Reporting`},{title:`Agents`}]}],principles:[{name:`API First`,note:`Contracts before code`},{name:`Hub & Spoke`,note:`One data hub, every domain a spoke`},{name:`GitOps`,note:`Declarative, versioned delivery`}]},professionalExperience:{timeline:[{title:`McKinsey & Company`,subTitle:`Principal Architect`,previously:`Senior Software Engineer II, Senior Software Engineer I`,promotions:[{title:`Principal Architect`,date:`July 2025`},{title:`Senior Software Engineer II`,date:`December 2023`},{title:`Senior Software Engineer I`,date:`March 2022`}],url:`https://www.linkedin.com/company/mckinsey/`,date:`March 2022 - Present`,descriptionSummary:`At McKinsey I am the sole architecture owner of <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/solutions/b2c-pricing-solutions/promotion-performance" target="_blank">Promotion Advisor</a>, a flagship multi-tenant SaaS in the <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/overview" target="_blank">Periscope</a> suite for CPG and retail clients. I co-built Platform AI, Periscope's enterprise agent platform, and designed the agentic layer that runs on it. I lead 65+ engineers across five development squads and a core support squad, and partner with senior consulting leaders on high-stakes RFPs and enterprise implementations.`,achievements:[{title:`Platform Architecture Ownership`,description:`Own the architecture of Promotion Advisor end to end: the planning application (React, TypeScript, Node.js, GraphQL, C# / .NET microservices), the Analytics Engine (Databricks, PySpark, DBT, PostgreSQL), and the agentic layer. Accountable for the configuration framework (GitOps-based, zero-downtime configuration delivery), the security model, polyglot persistence (PostgreSQL, Redis, Databricks Delta tables, ClickHouse), ETL, the Periscope Reporting Engine, and the external API surface.`},{title:`Platform AI: Enterprise Agent Platform`,description:`Co-built Platform AI, Periscope's enterprise agent platform: a GitOps Agent Definition Manager that versions every agent as Git artifacts, not prompt text; a LangChain harness on Kubernetes running one agent loop for all product agents; and a Tenant MCP gateway owning authentication, tool discovery, and quota. Caller identity survives every hop.`},{title:`Cortex: Deterministic Business-Logic Engine`,description:`Built Cortex, a stateless engine that runs business logic written as configuration. Rules compose from three operations (acquire, derive, assert) into playbooks; a purpose-built TypeScript compiler parses the typed YAML into executable binaries. Business rules stay deterministic and unit-testable, so agent output is reproducible and auditable.`},{title:`Context-Scoped Catalog: Tool Selection at Fleet Scale`,description:`Solved context pollution: an agent cannot reach a large tool estate if every tool is bound up front. Designed the selection algorithm (pinned tools, a free BM25 shortlist, then a cheap router model for the near-duplicates) and scoped the catalog per tenant, which makes version gating exact and routing deterministic. Version-mismatch failures dropped to zero, and a new solution registers without per-tool wiring.`},{title:`Periscope Reporting Engine on ClickHouse & Real-Time Conflict Detection`,description:`Built the Periscope Reporting Engine on ClickHouse (Projections, Dictionaries, billion-row sub-second queries): users compose their own reports and every aggregation resolves at request time against a governed ontology through a dynamic Query Builder, which removes the batch-prep step and the analytics-team dependency for each new measure. Also designed the multi-dimensional promotion conflict detection algorithm, progressive candidate narrowing over sorted item arrays: sub-2s at 20 concurrent users across 2M promotions, 5,000x faster on large item groups.`},{title:`AI-Assisted Engineering & Agent Tooling`,description:`Drove org-wide adoption of Cursor and Spec-Driven Development (OpenSpec, SpecKit), which raised team capacity 37%. Built the agent library behind it: 10+ production agents for architecture diagrams, ADR and APR authorship, and technical communications, plus an SDD Agent that runs an 11-dimension anti-hallucination audit per spec. The Repo Mastery Agent replaced a heavy Graph RAG documentation system with a Registry Pattern over vector binaries and explicit dependency relations.`}]},{title:`Eptura (formerly Condeco)`,url:`https://www.linkedin.com/company/eptura/`,subTitle:`Principal Engineer`,date:`April 2021 - March 2022`,descriptionSummary:`At Eptura I re-architected a single-tenant workspace SaaS, <a href="https://www.condecosoftware.com/products/book/meeting-room-booking/meeting-room-screens/" target="_blank">Condeco Connect</a> (meeting room booking software), to cloud-native microservices on AKS and built a global IoT release orchestrator that pushes firmware to 300M+ devices. Directed 20 engineers across four squads.`,achievements:[{title:`Cloud-Native Re-Architecture`,description:`Migrated legacy single-tenant SaaS to cloud-native microservices on Azure Kubernetes Service (AKS): 60% faster incident recovery, and single-tenant scaling bottlenecks eliminated.`},{title:`Global IoT Release Orchestration`,description:`Built a release orchestration system (Azure IoT Hub, Azure Functions, Azure CosmosDB) that delivers firmware updates to 300M+ IoT devices worldwide with zero-downtime rollouts.`},{title:`Engineering Leadership`,description:`Directed 20 engineers (4 tech leads) across four squads. Established a structured mentorship program: +20% retention and faster engineering progression.`}]},{title:`Nagarro`,url:`https://www.linkedin.com/company/nagarro/`,subTitle:`Senior Engineer`,date:`December 2019 - April 2021`,descriptionSummary:`At Nagarro I shipped full-stack web and mobile applications for e-commerce and HR enterprise clients on Angular, .NET Core, PostgreSQL, and Ionic. CI/CD and IaC practices cut deployment failures by 70% across client projects.`,achievements:[{title:`Full-Stack Web + Mobile Delivery`,description:`Delivered production web and mobile apps on Angular, .NET Core, PostgreSQL, and Ionic Framework for e-commerce and HR clients at 99.5%+ uptime.`},{title:`CI/CD & Infrastructure as Code`,description:`Established CI/CD pipelines and IaC practices: 70% reduction in deployment failures across client projects.`}]},{title:`Eptura (formerly Condeco)`,url:`https://www.linkedin.com/company/eptura/`,subTitle:`Software Engineer`,date:`September 2018 - December 2019`,descriptionSummary:`At Condeco I built C# / .NET / React / SQL Server microservices for the <a href="https://www.condecosoftware.com/products/book/meeting-room-booking/meeting-room-screens/" target="_blank">Condeco Connect</a> workspace SaaS that carried 3x customer growth without reliability regressions. Cut build times 40% and core query latency 3x through data model refactoring.`,achievements:[{title:`Microservices for 3x Customer Scale`,description:`Designed and shipped C# / .NET / React / SQL Server microservices that carried 3x customer growth without reliability regressions.`},{title:`CI/CD & Data Model Optimization`,description:`Cut build times 40% and refactored core data models to reduce average query latency 3x.`}]},{title:`Gartner`,url:`https://www.linkedin.com/company/gartner/`,subTitle:`Associate Software Engineer`,previously:`Intern`,date:`February 2016 - August 2018`,descriptionSummary:`At Gartner I built backend features on C# / .NET Core / React for an HR analytics SaaS, which improved survey data accuracy 60% for consulting clients. Automated SQL workflows saved 240+ engineering hours annually.`,achievements:[{title:`SaaS Analytics Backend`,description:`Built backend features on C# / .NET Core / React for the HR analytics platform, which improved employee survey data accuracy 60% for consulting clients.`},{title:`SQL Workflow Automation`,description:`Automated SQL workflows (stored procedures, SQL Agent jobs): saved 240+ engineering hours annually.`}]}]},technologyProficiency:{skills:[{category:`AI & Agentic Engineering`,layer:`Agentic AI`,skills:[`Multi-Agent Orchestration`,`MCP (servers and clients)`,`Tool Discovery & Routing`,`Context Engineering`,`Cursor (Rules / Skills / Agents / Hooks / SDK)`,`Spec-Driven Development (OpenSpec, SpecKit)`]},{category:`Frontend`,layer:`Frontend`,skills:[`React`,`TypeScript`,`Angular`,`Micro-Frontends`]},{category:`Backend`,layer:`Backend`,skills:[`TypeScript / Node.js / Fastify`,`C# / .NET Core`,`GraphQL & REST APIs`,`Python`]},{category:`Architecture`,layer:`Architecture`,skills:[`Multi-Tenant SaaS Architecture`,`Microservices & Distributed Systems`,`Configuration-Driven Architecture`,`Domain-Driven Design (DDD)`,`Polyglot Persistence`,`ADR / APR Authorship`]},{category:`Data Engineering & Real-Time Analytics`,layer:`Data Engineering`,skills:[`ClickHouse Analytics (Projections, Dictionaries)`,`Real-Time Analytics & Query Engines`,`Databricks (PySpark)`,`DBT & Blue-Green ETL`]},{category:`Data & Storage`,layer:`Data & Storage`,skills:[`PostgreSQL`,`ClickHouse`,`SQL Server`,`Redis`]},{category:`Cloud & Infrastructure`,layer:`Cloud & Infra`,skills:[`Microsoft Azure`,`Kubernetes (AKS)`,`Terraform & GitOps`,`Amazon Web Services (AWS)`]},{category:`Security & Compliance`,layer:`Security`,skills:[`Two-Layer FAC + DAC Architecture`,`Casbin RBAC / ABAC`,`SOC2 / Secure SDLC`]}]}};function qy(){let[e,t]=(0,y.useState)(!1);return(0,L.jsxs)(Ah,{children:[(0,L.jsx)(wh,{}),(0,L.jsx)(`a`,{href:`#main-content`,className:`skip-link`,children:`Skip to main content`}),(0,L.jsx)(g_,{revealed:e}),(0,L.jsxs)(`main`,{id:`main-content`,children:[(0,L.jsx)(lv,{data:Ky.homeSection,start:e}),(0,L.jsx)(Dv,{data:Ky.aboutSection}),(0,L.jsx)(qv,{data:Ky.technologyProficiency}),(0,L.jsx)(Sy,{data:Ky.professionalExperience}),(0,L.jsx)(Gy,{data:Ky.contactMe})]}),(0,L.jsx)(w_,{}),(0,L.jsx)(Xc,{children:!e&&(0,L.jsx)(E_,{onComplete:()=>t(!0)},`intro`)})]})}`scrollRestoration`in history&&(history.scrollRestoration=`manual`),window.scrollTo(0,0),(0,fp.createRoot)(document.getElementById(`root`)).render((0,L.jsx)(y.StrictMode,{children:(0,L.jsx)(qy,{})}));
